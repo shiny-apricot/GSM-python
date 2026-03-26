@@ -71,6 +71,11 @@ class InferenceSummary:
     bundle_id: str
     model_name: str
     ensemble_strategy: str
+    training_dataset: str = ""
+    n_training_samples: int = 0
+    n_features_expected: int = 0
+    bundle_created_at: str = ""
+    bundle_sklearn_version: str = ""
 
 
 ##### Constants #####
@@ -448,6 +453,11 @@ def infer(
         bundle_id=meta.bundle_id,
         model_name=meta.model_name,
         ensemble_strategy=strategy,
+        training_dataset=meta.dataset_name,
+        n_training_samples=meta.n_training_samples,
+        n_features_expected=meta.n_features,
+        bundle_created_at=meta.created_at,
+        bundle_sklearn_version=meta.sklearn_version,
     )
 
 

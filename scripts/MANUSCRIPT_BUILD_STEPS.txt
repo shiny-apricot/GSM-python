@@ -2,7 +2,7 @@
   GSM Manuscript Build Steps
   --------------------------
   Run these scripts IN ORDER before building the manuscript DOCX.
-  Last updated: 2026-03-09
+  Last updated: 2026-03-14
 ===============================================================================
 
 Each phase depends on the previous one.  Scripts within the same phase are
@@ -81,6 +81,39 @@ PHASE 2 — Scripts that depend on Phase 1 outputs
       Depends on: Phase 0 (main pipeline runs)
       → output/gsm_*/biological_validation/ (updated in-place)
       Time: ~5 min
+
+
+PHASE 2.5 — External cohort transfer pilot (optional, supplementary)
+----------------------------------------------------------------------
+Use this phase only for exploratory transfer analysis on newly downloaded
+cohorts (e.g., same-cancer external GEO datasets).  These outputs are NOT
+part of the core 7-dataset benchmark tables unless harmonization quality is
+validated and feature compatibility is acceptable.
+
+  2.5a. python scripts/download_geo_series_matrix.py \
+          --datasets GSE46602 GSE6919 GSE70768 \
+          --output-dir data/expression_data
+       → data/expression_data/GSE*.csv
+       Time: ~2-10 min (depends on GEO download speed)
+
+  2.5b. python scripts/run_prostate_transfer_experiment.py \
+          --test-datasets GDS2545 GDS2547 GSE46602 GSE6919_GPL8300 GSE70768
+       → output/cross_dataset_transfer_prostate/
+       Time: ~5-20 min
+
+  2.5c. (Optional broader transfer)
+       python scripts/cross_dataset_transfer.py \
+          --test-datasets <dataset_ids...> --output-dir output/cross_dataset_transfer_custom
+
+  2.5d. Feature-space compatibility map (recommended with 2.5b/2.5c)
+       python scripts/feature_space_overlap.py
+       → output/feature_space_overlap/
+       Time: < 1 min
+
+  Integration rule:
+    - Keep core manuscript result tables based on the original 7 benchmark datasets.
+    - Keep cross-dataset transfer analysis in presentation/supplementary by default.
+    - Move into main manuscript results only if harmonization and label-quality checks pass.
 
 
 PHASE 3 — Data aggregation
@@ -163,6 +196,11 @@ Reads all upstream artifacts and generates the Word document.
     10 - Group configuration
     11 - Seed stability
 
+  Note:
+    Core benchmark tables remain the 7-dataset GSM study.
+    External cohort transfer (Phase 2.5) should be summarized as
+    supplementary or limitation evidence unless validated for inclusion.
+
 
 ===============================================================================
   Quick reference: Minimal rebuild (no new experiments)
@@ -184,6 +222,9 @@ Reads all upstream artifacts and generates the Word document.
   3. python scripts/generate_baseline_comparison.py   # if baselines changed
   4. python scripts/verify_gene_lists.py              # optional QA
   5. python scripts/build_manuscript_docx.py
+
+  Optional external transfer add-on:
+  6. python scripts/run_prostate_transfer_experiment.py --test-datasets ...
 
 
 ===============================================================================
@@ -207,5 +248,9 @@ Reads all upstream artifacts and generates the Word document.
   seed_stability_experiment.py
     → rerun_seed_bio_validation.py (if API failed)
     → build_manuscript_docx.py (reads seed_stability_results.json directly)
+
+  download_geo_series_matrix.py
+    → run_prostate_transfer_experiment.py
+    → (supplementary transfer diagnostics / limitations)
 
   generate_flowchart.py → build_manuscript_docx.py (Figure 1)

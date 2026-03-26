@@ -47,6 +47,11 @@ def generate_clinical_report(summary: InferenceSummary) -> str:
         f"  Model Bundle:      {summary.bundle_id}",
         f"  Classifier:        {summary.model_name}",
         f"  Ensemble Strategy: {summary.ensemble_strategy}",
+        f"  Training Dataset:  {summary.training_dataset or 'N/A'}",
+        f"  Training Samples:  {summary.n_training_samples}",
+        f"  Expected Features: {summary.n_features_expected}",
+        f"  Bundle Created:    {summary.bundle_created_at or 'N/A'}",
+        f"  sklearn Version:   {summary.bundle_sklearn_version or 'N/A'}",
         "",
         "  ── Summary ──",
         f"  Total Samples:     {summary.n_samples}",
@@ -83,6 +88,17 @@ def generate_clinical_report(summary: InferenceSummary) -> str:
 
     # Disclaimer
     lines.extend([
+        "",
+        "═" * 62,
+        "  CLINICAL USE NOTES",
+        "═" * 62,
+        "  1) Prefer bundles trained on a disease cohort matching the",
+        "     current patient context (e.g., prostate bundle for prostate cases).",
+        "  2) If no disease-matched bundle exists, treat predictions as",
+        "     exploratory and require external clinical corroboration.",
+        "  3) Escalate caution when confidence < 55% or model agreement < 70%.",
+        "  4) Use multi-bundle consensus only as a secondary signal, not",
+        "     a replacement for disease-specific validation.",
         "",
         "═" * 62,
         "  ⚠️  DISCLAIMER",
@@ -242,6 +258,15 @@ def generate_multi_bundle_report(summary: MultiBundleSummary) -> str:
         lines.append("  └" + "─" * 40)
 
     lines.extend([
+        "",
+        "═" * 62,
+        "  CLINICAL USE NOTES",
+        "═" * 62,
+        "  1) Prefer disease-matched bundles in the consensus set.",
+        "  2) If bundle votes conflict, treat output as uncertain and",
+        "     prioritize disease-specific confirmatory testing.",
+        "  3) Multi-bundle consensus is best used for triage/research support,",
+        "     not as a standalone diagnostic decision.",
         "",
         "═" * 62,
         "  ⚠️  DISCLAIMER",

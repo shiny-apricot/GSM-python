@@ -20,6 +20,24 @@ Key Functions:
 Example Usage:
     >>> from src.utils.generate_figures import generate_all_figures
     >>> generate_all_figures(output_dir, results_json_path, logger)
+
+File Map:
+        Entry point:
+                - generate_all_figures(): calls all plotters for a run
+
+        Performance plots:
+                - plot_performance_boxplot(), plot_auc_roc_comparison(),
+                    plot_confidence_interval_forest(), plot_iteration_performance_summary()
+
+        Ranking plots:
+                - plot_best_averaged_groups(), plot_best_averaged_features()
+
+        Group analysis:
+                - plot_group_count_optimization(), plot_group_performance_heatmap(),
+                    plot_group_usage_frequency()
+
+        Feature analysis:
+                - plot_feature_importance_aggregated(), plot_feature_occurrence_frequency()
 """
 
 import json

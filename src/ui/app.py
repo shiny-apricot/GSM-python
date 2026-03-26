@@ -12,6 +12,20 @@ Key Features:
     - Live log streaming during pipeline execution
     - Rich results dashboard with all figures and metrics
     - Historical run browser with one-click result loading
+
+File Map:
+    Data loading:
+        - smart_read_csv(), _load_report_text(), _find_figures(), _load_json_results()
+        - _discover_output_runs(), _discover_bundles(), _discover_patient_files()
+
+    UI pages:
+        - render_results_dashboard(): full metrics + figures
+        - render_inference_page(): single-bundle clinical inference
+        - render_multi_bundle_page(): multi-bundle consensus inference
+        - render_dataset_explorer(): dataset stats and previews
+
+    Deployment guard + entry:
+        - _is_huggingface_space(), main()
 """
 
 import json

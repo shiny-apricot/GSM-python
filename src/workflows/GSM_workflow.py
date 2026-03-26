@@ -31,6 +31,26 @@ Notes:
     - Ensures reproducibility through fixed random seeds
     - Implements comprehensive error handling and logging
     - Supports both notebook and script execution modes
+
+File Map:
+    Runtime config + logging:
+        - format_duration(), save_runtime_config(), build_runtime_log_items(),
+          log_runtime_config()
+
+    Group utilities:
+        - count_unique_features_for_top_groups(): avoids duplicate features
+        - expand_groups_until_feature_increase(): ensures feature growth
+
+    Pipeline entry point:
+        - gsm_run(): validates inputs, orchestrates Phase I–III, writes outputs
+          Sub-steps inside: data load → preprocess → grouping → scoring →
+          modeling → rank aggregation → validation → bundling
+
+    Core loop:
+        - gsm_main_loop(): per-iteration split, filter, group, score, model
+
+    Seeds + CLI:
+        - generate_iteration_seed(), set_random_seed(), main()
 """
 
 ##### Imports #####

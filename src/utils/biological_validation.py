@@ -24,6 +24,23 @@ API References:
     - Enrichr: https://maayanlab.cloud/Enrichr/
     - STRING: https://string-db.org/cgi/help.pl?subpage=api
     - DisGeNET: https://www.disgenet.org/api/
+
+File Map:
+    Entry point:
+        - run_biological_validation(): orchestrates API calls + outputs
+
+    Data extraction:
+        - extract_top_genes(): reads top-N genes from results JSON
+
+    API queries:
+        - query_enrichr(), query_string_db(), query_disgenet()
+
+    Persistence + reports:
+        - save_enrichr_results(), save_string_results(), save_disgenet_results()
+        - save_validation_summary(), save_biological_validation_explanation()
+
+    Group-level validation:
+        - validate_top_groups(), save_group_validation_results()
 """
 
 import json

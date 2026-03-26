@@ -23,6 +23,28 @@ Example Usage:
     python -m gsm
     python -m gsm train --test --iterations 5
     python -m gsm infer -b bundle.gsm.zip -p patients.csv
+
+File Map:
+    Discovery helpers:
+        - _discover_datasets(), _discover_grouping_files(), _discover_bundles(),
+          _discover_patient_files(), _discover_output_runs()
+
+    Job management + monitoring:
+        - _load_jobs(), _save_jobs(), _is_pid_alive(), _refresh_job_statuses()
+        - _read_progress_file(), _show_bg_jobs_banner(), _interactive_monitor_jobs()
+
+    Interaction + prompts:
+        - _prompt_choice(), _prompt_text(), _prompt_yes_no()
+        - _collect_advanced_params(), _show_runtime_estimate()
+
+    Interactive actions:
+        - _interactive_train(), _interactive_infer(), _interactive_multi_infer()
+        - _interactive_bundle_info(), _interactive_browse_outputs(), _inspect_run()
+        - _execute_bio_validate(), _launch_background_train_with_config()
+        - _stop_job(), _clear_completed_jobs(), _launch_streamlit(), _quick_test()
+
+    Entry points:
+        - interactive_menu(), main()
 """
 
 import argparse
@@ -2240,6 +2262,8 @@ def _execute_infer(
     console.print(Panel(
         f"  Models:   [bold]{bundle.metadata.n_models_saved}[/bold] "
         f"in ensemble\n"
+        f"  Train DS: [bold]{bundle.metadata.dataset_name}[/bold]\n"
+        f"  Train N:  [bold]{bundle.metadata.n_training_samples}[/bold]\n"
         f"  Features: [bold]{bundle.metadata.n_features}[/bold] genes\n"
         f"  F1:       [bold]{bundle.metadata.ensemble_f1_mean:.4f}[/bold]"
         f" ± {bundle.metadata.ensemble_f1_std:.4f}\n"

@@ -12,9 +12,39 @@ Purpose:
 
 Usage:
     python scripts/build_manuscript_docx.py
+
+File Map:
+    Data structures:
+        - AuthorInfo: paper title/authors/affiliations/metadata
+
+    Layout + styling helpers:
+        - _set_cell_shading(), _set_cell_borders(), _style_table()
+        - add_algorithm_box(): algorithm-style boxed pseudocode
+        - add_table(), add_figure(), heading(), para(), bullet(), numbered()
+
+    Math rendering helpers:
+        - _m(), _make_m_elem(), _m_run(), _m_sub(), _m_frac(), _m_nary()
+        - add_equation_Sg(), add_equation_Xg()
+
+    Data loaders + narratives:
+        - _load_classifier_comparison_table()
+        - _build_classifier_comparison_narrative()
+        - _write_sensitivity_methods()
+
+    Manuscript sections:
+        - write_title_page(), write_abstract(), write_highlights()
+        - write_introduction(), write_methods()
+        - write_results(): all Results subsections + tables/figures
+        - write_discussion(), write_conclusions(), write_references()
+        - write_back_matter(), write_supplementary(), _write_sensitivity_table()
+
+    Orchestration:
+        - _get_next_version(), build()
 """
 
 import json
+import re
+from datetime import datetime
 from dataclasses import dataclass
 from pathlib import Path
 from lxml import etree
@@ -44,7 +74,7 @@ class AuthorInfo:
 
 AUTHOR = AuthorInfo(
     title=(
-        "Knowledge-Driven Feature Selection via the G-S-M Framework "
+        "Knowledge-Driven Feature Selection with the G-S-M Framework "
         "for Biomarker Discovery in High-Dimensional Transcriptomic Data"
     ),
     authors=[
@@ -97,6 +127,10 @@ DATASET_META = {
 FLOWCHART_PATH = str(
     project_root / "reports_ARCHIVE" / "manuscript_figures"
     / "fig_pipeline_flowchart.png"
+)
+
+MANUSCRIPT_VERSIONS_DIR = (
+    project_root / "reports_ARCHIVE" / "manuscript_versions"
 )
 
 
@@ -776,9 +810,9 @@ def write_abstract(doc, perf):
         "classifier to new patient samples and generate confidence-scored "
         "diagnostic reports \u2014 a capability not previously available "
         "in G-S-M tools.  "
-        "A multi-bundle consensus mode further enables cross-dataset "
-        "validation by aggregating F1-weighted predictions from bundles "
-        "trained on different cohorts."
+        "An optional multi-bundle consensus mode is provided for "
+        "exploratory research when disease context and feature-space "
+        "compatibility between bundles are carefully checked."
     )
     p = doc.add_paragraph(text)
     for r in p.runs:
@@ -928,8 +962,9 @@ def write_introduction(doc):
             "transcriptomics to metagenomic biomarker discovery for "
             "colorectal cancer [63,70].  The present work builds on "
             "this lineage \u2014 particularly GediNET \u2014 and refines "
-            "it with iterative multi-seed stability analysis, dual-metric "
-            "feature ranking, and automated biological validation."
+            "it into a reproducible end-to-end research platform with "
+            "statistical safeguards, integrated biological validation, "
+            "clinical inference, and researcher-facing interfaces."
         ),
         # Paragraph 3e - DisGeNET gap
         (
@@ -940,11 +975,14 @@ def write_introduction(doc):
             "mechanism.  However, the statistical safeguards, multi-seed "
             "stability analysis, and automated biological validation "
             "pipeline presented here go substantially beyond GediNET's "
-            "original implementation.  The present work extends the "
-            "G-S-M framework with iterative bootstrapped confidence "
-            "intervals, Robust Rank Aggregation applied to both group "
-            "scores and model-native feature importances, seed stability "
-            "analysis, and end-to-end STRING/Enrichr validation."
+            "original implementation.  Beyond methodology alone, the "
+            "present work adds a practical research stack: iterative "
+            "bootstrap-based uncertainty reporting, dual-metric Robust "
+            "Rank Aggregation (group-derived and model-native), seed and "
+            "sensitivity analyses, classifier-selection via biological "
+            "coherence, knowledge-source comparison, automatic figure and "
+            "table generation, a rich CLI workflow, a browser-based UI, "
+            "and portable clinical-inference model bundles."
         ),
         # Paragraph 4 - the GSM framework
         (
@@ -985,17 +1023,23 @@ def write_introduction(doc):
         ),
         # Paragraph 6 - contributions
         (
-            "The paper makes three contributions.  "
-            "(i) It proposes the G-S-M approach for knowledge-driven "
-            "feature selection and evaluates its ability to identify "
-            "biologically coherent biomarker panels from high-dimensional "
+            "This work makes six contributions.  "
+            "(i) It implements a complete, reproducible G-S-M pipeline for "
+            "knowledge-driven biomarker discovery from high-dimensional "
             "transcriptomic data.  "
-            "(ii) It evaluates the approach on seven publicly available "
-            "cancer microarray datasets covering a range of tumour types, "
-            "with rigorous statistical safeguards at every stage.  "
-            "(iii) It provides biological validation showing that the "
-            "selected gene sets coincide with established cancer pathways "
-            "and protein interaction networks.  "
+            "(ii) It evaluates the framework on seven public cancer datasets "
+            "with repeated-split design and explicit uncertainty reporting.  "
+            "(iii) It introduces dual-metric feature prioritisation by "
+            "combining group-derived scores with model-native importances "
+            "through Robust Rank Aggregation.  "
+            "(iv) It reports broader empirical analyses, including seed "
+            "stability, sensitivity analysis, classifier selection by "
+            "biological coherence, and cross-knowledge-source comparison.  "
+            "(v) It integrates end-to-end biological validation with "
+            "Enrichr, STRING-db and DisGeNET.  "
+            "(vi) It delivers a usable software platform with automated "
+            "reporting/figure generation, a rich CLI, a browser interface, "
+            "and portable clinical-inference model bundles.  "
             "To support reproducibility and independent evaluation, the "
             "complete implementation — together with a browser-based "
             "graphical interface for non-programmers — is released as "
@@ -1355,7 +1399,9 @@ def write_methods(doc, perf, figs):
          "to install dependencies and edit configuration files manually.  "
          "To lower this barrier — particularly for biologists and "
          "clinicians without programming experience — a browser-based "
-         "graphical interface was built using Streamlit (Figure 2).  "
+            "graphical interface was built using Streamlit (Figure 2), "
+            "alongside a rich command-line interface for terminal-first "
+            "workflows (Figure 3).  "
          "The interface provides access to all pipeline parameters "
          "through labelled fields and dropdowns, accepts CSV uploads or "
          "a built-in data repository, streams log output in real time, "
@@ -1544,6 +1590,14 @@ def write_methods(doc, perf, figs):
                "preview uploaded data in the main panel (centre), and inspect "
                "results and plots after execution completes (bottom).",
                width=6.0)
+
+    cli_screenshot = str(project_root / "assets" / "gsm_cli.png")
+    add_figure(doc, cli_screenshot,
+               "Figure 3. Rich command-line interface for GSM.  The CLI "
+               "supports guided menu-based execution and direct subcommands "
+               "for training, single-bundle inference, multi-bundle "
+               "consensus, bundle inspection, and run monitoring.",
+               width=6.0)
     doc.add_paragraph()
 
     # 2.7
@@ -1574,23 +1628,17 @@ def write_methods(doc, perf, figs):
          "the top end up with low aggregated p-values.")
 
     para(doc,
-         "Output files.  "
-         "The pipeline writes four files for feature-level analysis: "
-         "(i) model_feature_importance_all_iterations.xlsx, recording "
-         "Random Forest Gini-importance for every gene in every "
-         "iteration; "
-         "(ii) aggregated_model_feature_importance_rra.xlsx, the RRA "
-         "aggregation of (i), ranking genes by consistency across "
-         "iterations (aggregated p-value, average rank, average "
-         "importance, occurrence count); "
-         "(iii) aggregated_feature_ranking_rra.xlsx, the RRA aggregation "
-         "of group-derived scores; and "
-         "(iv) best_averaged_features.xlsx, a plain average of model "
-         "importances across iterations and group-count steps.  "
-         "A gene with a low aggregated p-value in both the model-based "
-         "and group-derived RRA files is a strong biomarker candidate: "
-         "it sits in a consistently top-performing disease-gene group "
-         "and the classifier consistently relies on it.")
+         "Feature-analysis artefacts.  "
+         "The pipeline exports four feature-level artefacts: "
+         "(i) per-iteration model-native importances, "
+         "(ii) RRA aggregation of model-native importances, "
+         "(iii) RRA aggregation of group-derived feature scores, and "
+         "(iv) an averaged feature-importance summary across iterations.  "
+         "A gene that ranks consistently well in both RRA views is a "
+         "strong biomarker candidate because it is supported by both "
+         "knowledge-group discrimination and model reliance.  "
+         "Exact filenames are implementation details and are documented "
+         "in the repository outputs documentation.")
 
     # 2.8 Sensitivity Analysis
     heading(doc, "2.8 Sensitivity Analysis", 2)
@@ -1639,21 +1687,29 @@ def write_methods(doc, perf, figs):
          "level, agreement ratio, top contributing genes) and a prominent "
          "research-only disclaimer.  Reports are saved in both plain-text "
          "and Excel formats.  The inference pipeline is accessible through "
-         "three interfaces \u2014 a command-line tool (python -m gsm infer), "
-         "a Python API (from src.inference import load_bundle, infer), "
+         "two interfaces \u2014 a command-line tool (python -m gsm infer) "
          "and a dedicated Clinical Inference tab in the Streamlit web "
          "interface \u2014 making it usable by bioinformaticians, clinician-"
          "researchers, and hospital IT systems alike.",
          bold_prefix="Clinical report.  ")
+    para(doc,
+         "For clinical use, the report should be interpreted with three "
+         "guardrails: (i) prefer disease-matched bundles whenever possible; "
+         "(ii) treat low-confidence predictions (< 0.55) or low model "
+         "agreement (< 0.70) as uncertain; and (iii) use predictions as "
+         "decision-support evidence alongside standard diagnostic workup, "
+         "not as a standalone diagnosis.",
+         bold_prefix="Clinical interpretation guardrails.  ")
 
     # 2.10 Multi-Bundle Consensus Inference
     heading(doc, "2.10 Multi-Bundle Consensus Inference", 2)
     para(doc,
-         "While a single model bundle captures the discriminative patterns "
-         "learned from one dataset, clinical confidence may benefit from "
-         "cross-dataset validation.  We therefore introduced a multi-bundle "
-         "consensus mode that aggregates predictions from bundles trained "
-         "on different GEO datasets.")
+            "The primary and recommended deployment path is single-bundle "
+            "inference with a disease-matched bundle.  Because transcriptomic "
+            "datasets often differ in feature space, platform effects and cohort "
+            "composition, cross-bundle aggregation is treated as exploratory.  "
+            "We therefore provide a multi-bundle consensus mode as an optional "
+            "research tool, not as the default clinical path.")
     para(doc,
          "Given B bundles and a patient expression matrix, the multi-bundle "
          "engine runs independent inference through each bundle and merges "
@@ -1665,7 +1721,10 @@ def write_methods(doc, perf, figs):
          "consensus class label, a mean confidence score, a bundle "
          "agreement ratio (fraction of bundles that concur), and a merged "
          "gene-importance ranking that pools perturbation-based local "
-         "importances across all B bundles.",
+         "importances across all B bundles.  In practice, this mode should "
+         "be used only when bundle compatibility is justified (e.g., similar "
+         "disease context and sufficient feature overlap), and its outputs "
+         "should be interpreted as supportive sensitivity evidence.",
          bold_prefix="F1-weighted consensus.  ")
     para(doc,
          "The consensus results are collected into a structured multi-bundle "
@@ -1674,9 +1733,8 @@ def write_methods(doc, perf, figs):
          "(ii) a per-bundle breakdown showing individual predictions, "
          "F1 scores, and dataset provenance; and (iii) summary statistics "
          "across all bundles.  Reports are saved in plain-text and Excel "
-         "formats.  The multi-bundle mode is accessible through the CLI "
-         "(python -m gsm multi-infer) and the Python API "
-         "(from src.inference import multi_infer).",
+            "formats.  The multi-bundle mode is accessible through the CLI "
+            "(python -m gsm multi-infer) and the Streamlit web interface.",
          bold_prefix="Multi-bundle report.  ")
 
 
@@ -2141,6 +2199,15 @@ def write_results(doc, perf, val, m_figs, ds_figs):
         rows = []
         for r in grp_cmp:
             ds_short = DATASET_SHORT.get(r["dataset"], r["dataset"])
+
+            string_ppi = r.get("string_ppi")
+            top_kegg_p = r.get("top_kegg_p")
+            top_disgenet_p = r.get("top_disgenet_p")
+
+            string_str = str(string_ppi) if string_ppi is not None else "NA"
+            kegg_str = f"{top_kegg_p:.2e}" if top_kegg_p is not None else "NA"
+            dg_str = f"{top_disgenet_p:.2e}" if top_disgenet_p is not None else "NA"
+
             rows.append([
                 f"{r['dataset']} ({ds_short})",
                 r["grouping"],
@@ -2149,38 +2216,52 @@ def write_results(doc, perf, val, m_figs, ds_figs):
                 f"{r['f1_ci_lower']:.3f}\u2013{r['f1_ci_upper']:.3f}",
                 str(r["groups_used"]),
                 str(r["features_used"]),
+                string_str,
+                kegg_str,
+                dg_str,
             ])
         add_table(doc,
                   ["Dataset", "Knowledge Source", "F1", "AUC-ROC",
-                   "F1 95% CI", "Groups", "Features"],
+                   "F1 95% CI", "Groups", "Features", "STRING PPI",
+                   "Top KEGG q", "Top DisGeNET q"],
                   rows,
                   "Classification performance by knowledge source.  "
-                  "All runs used Random Forest, 100 iterations, seed 44.")
+                  "All runs used Random Forest, 100 iterations, seed 44. "
+                  "Top KEGG q / Top DisGeNET q are smallest adjusted "
+                  "p-values from Enrichr.")
 
         para(doc,
              "Classification performance was largely consistent across "
              "all three knowledge sources.  On the hardest dataset "
-             "(GDS2545, Prostate), all three sources achieved similar "
-             "F1 scores (0.696\u20130.697) and AUC-ROC values "
-             "(0.773\u20130.787).  On GDS3257 (AML), both DisGeNET "
-             "and KEGG reached perfect classification (F1 = 1.000), "
-             "while miRNA targets were close behind (F1 = 0.997).  "
-             "On GDS1962 (Glioblastoma), the gap was similarly narrow "
-             "(0.922\u20130.936).")
+               "(GDS2545, Prostate), all three sources achieved very "
+               "similar F1 scores (0.857\u20130.865) and AUC-ROC values "
+               "(0.866\u20130.885).  On GDS3257 (AML) and GDS1962 "
+               "(Glioblastoma), all three sources reached perfect "
+               "classification (F1 = 1.000, AUC-ROC = 1.000).")
 
         para(doc,
-             "The key difference lies in feature-set composition.  "
-             "KEGG pathways produced gene panels with 23\u201395 features "
-             "drawn from broad biological processes, whereas miRNA "
-             "targets yielded the most compact panels (19\u201342 features).  "
-             "DisGeNET, with its larger gene universe (15 991 genes), "
-             "retained the most features (17\u2013230).  "
-             "These findings demonstrate that the G-S-M framework is "
-             "knowledge-source agnostic: any gene-to-group mapping "
-             "that captures biologically meaningful structure can serve "
-             "as the grouping function, and the choice of source "
-             "primarily affects the interpretive lens rather than "
-             "predictive power.")
+               "The key difference lies in feature-set composition.  "
+               "KEGG pathways produced gene panels with 9\u2013100 features "
+               "drawn from broad biological processes, whereas miRNA "
+               "targets yielded the most compact panels (8\u201317 features).  "
+               "DisGeNET, with its larger gene universe (15 991 genes), "
+               "showed the widest dynamic range (6\u2013248 features).  "
+               "These findings demonstrate that the G-S-M framework is "
+               "knowledge-source agnostic: any gene-to-group mapping "
+               "that captures biologically meaningful structure can serve "
+               "as the grouping function, and the choice of source "
+               "primarily affects the interpretive lens rather than "
+               "predictive power.")
+
+        para(doc,
+             "Biological validation trends were also source-dependent.  "
+             "Across the three datasets, DisGeNET grouping recovered the "
+             "most STRING interactions overall (86 total), KEGG recovered "
+             "30, and maTE recovered 49.  At the same time, all three "
+             "sources produced statistically significant pathway signals "
+             "(small adjusted p-values in KEGG and DisGeNET Enrichr "
+             "libraries), indicating that each source can yield biologically "
+             "coherent signatures even when their selected gene panels differ.")
 
 
 
@@ -2405,15 +2486,17 @@ def write_discussion(doc, perf, val):
          "compact, biologically interpretable feature set sourced entirely from "
          "disease-gene associations.  GediNET [57] pioneered DisGeNET-based "
          "grouping and was subsequently validated on breast cancer "
-         "subtyping [69]; the present work extends it with multi-seed "
-         "stability analysis, dual-metric RRA, and automated biological "
-         "validation, none of which were present in the original tool.  "
+            "subtyping [69]; the present work extends it with a broader "
+            "research and translation stack: richer uncertainty analysis, "
+            "dual-metric RRA, seed/sensitivity diagnostics, classifier "
+            "selection by biological coherence, knowledge-source comparison, "
+            "integrated clinical inference, and user-facing CLI/web interfaces.  "
          "Among the broader G-S-M family — including CogNet [59] (KEGG "
          "grouping), 3Mint/3Mont [43,67] (multi-omics), ReScore [61] "
          "(ensemble scoring), and CCPred [63] (metagenomic biomarkers) "
-         "— this study extends DisGeNET-based grouping with bootstrap CIs, "
-         "seed sensitivity analysis, and end-to-end STRING/Enrichr "
-         "validation across seven cancer transcriptomic datasets.")
+            "— this study expands DisGeNET-based grouping into a reproducible "
+            "end-to-end pipeline with automated outputs and validation across "
+            "seven cancer transcriptomic datasets.")
 
     # 4.3
     heading(doc, "4.3 Statistical Rigour", 2)
@@ -2422,15 +2505,20 @@ def write_discussion(doc, perf, val):
     para(doc,
          "A frequent criticism of ML studies in biomedicine is that a "
          "single train-test split can produce overly optimistic "
-         "numbers [17].  To guard against this, we ran 100 independent "
-         "iterations with different random seeds, used 3-fold stratified "
-         "CV inside each iteration, and computed bootstrap confidence "
-         f"intervals.  For most datasets these intervals turned out quite "
+            "numbers [17].  To guard against this, we use two complementary "
+            "uncertainty views: (i) within-split uncertainty via bootstrap "
+            "confidence intervals for each evaluated model, and (ii) between-"
+            "split variability across 100 independent iterations with different "
+            "random partitions.  We also use 3-fold stratified CV inside each "
+            "iteration to stabilise group scoring.  For most datasets the "
+            "bootstrap intervals of the selected models turned out quite "
          f"narrow (e.g. {example_ds['dataset_id']}: "
          f"F1 = {example_ds['f1_score']:.2f}, 95% CI "
          f"{example_ds['f1_ci_lower']:.2f}-{example_ds['f1_ci_upper']:.2f}), "
-         "which suggests the performance is not an artefact of a particular "
-         "data split.")
+            "and the cross-iteration dispersion remained limited, suggesting "
+            "that performance is not an artefact of a single favourable split.  "
+            "To avoid optimistic reporting, manuscript-level conclusions are "
+            "based on multi-iteration behaviour, not on a single best run.")
 
     # 4.4 - Perfect classification caveat
     heading(doc, "4.4 Perfect Classification: Caveats and Interpretation", 2)
@@ -2553,14 +2641,11 @@ def write_discussion(doc, perf, val):
          "time — all prerequisites for a future regulatory pathway.")
     para(doc,
          "The multi-bundle consensus mode (Section 2.10) extends this "
-         "further by enabling cross-dataset validation at the patient "
-         "level.  When bundles trained on different cancer cohorts agree "
-         "on a prediction, the resulting consensus carries stronger "
-         "evidence than any single bundle alone.  The F1-weighted "
-         "averaging mechanism ensures that high-performing bundles "
-         "dominate the consensus, reducing the influence of weaker "
-         "models.  This design aggregates independent predictions in a manner "
-         "analogous to multi-expert consensus.")
+            "by providing an optional secondary confidence signal at the "
+            "patient level.  The F1-weighted averaging mechanism ensures that "
+            "high-performing bundles contribute more than weaker bundles, "
+            "which can reduce single-model brittleness when bundle provenance "
+            "is clinically appropriate.")
 
     # 4.8
     heading(doc, "4.8 Limitations", 2)
@@ -2585,6 +2670,18 @@ def write_discussion(doc, perf, val):
          "platforms and represent cancer transcriptomics.  Generalisability "
          "to RNA-seq, other array platforms, or non-cancer phenotypes "
          "has not been assessed and should not be assumed."),
+        ("Cross-cohort feature compatibility.  "
+         "Feature spaces can differ substantially between independent GEO "
+         "cohorts due annotation, platform, and header heterogeneity.  "
+         "Compatibility is quantified with the Jaccard index, "
+         "J(A,B)=|A\u2229B|/|A\u222aB|, where A and B are dataset feature sets.  "
+         "Across available cohorts, pairwise Jaccard overlap was often low "
+         "(median approximately 9.03%), so direct cross-dataset transfer "
+         "requires explicit harmonisation (feature mapping, batch correction, "
+         "or domain adaptation) before clinical interpretation.  To avoid "
+         "confounding the core benchmark narrative, cross-dataset transfer "
+         "experiments are treated as supplementary/presentation diagnostics "
+         "rather than main manuscript results."),
         ("Retrospective evaluation only.  "
          "All experiments were conducted on publicly available GEO datasets "
          "under retrospective conditions.  Prospective validation on "
@@ -2704,9 +2801,8 @@ def write_conclusions(doc, perf, val):
         "predictions, risk classification, and per-sample feature "
         "importance — bridging the gap between research pipelines "
         "and clinical decision-support tools.  The multi-bundle "
-        "consensus mode further enables cross-dataset validation, "
-        "aggregating predictions from bundles trained on different "
-        "cohorts via F1-weighted averaging.",
+        "consensus mode provides an optional exploratory secondary signal "
+        "via F1-weighted averaging across bundles.",
     ]
     for c in conclusions:
         numbered(doc, c)
@@ -3101,33 +3197,98 @@ def _write_sensitivity_table(doc):
 #                                     MAIN                                      #
 # ============================================================================ #
 
+def _extract_version(path: Path) -> int:
+    """Extract manuscript version from file path or parent folder."""
+    file_match = re.search(r"_v(\d+)$", path.stem)
+    if file_match:
+        return int(file_match.group(1))
+    dir_match = re.search(r"^v(\d+)$", path.parent.name)
+    if dir_match:
+        return int(dir_match.group(1))
+    return 0
+
+
+def _collect_existing_manuscripts() -> dict[int, Path]:
+    """Collect existing manuscript files from legacy and versioned layouts."""
+    manuscripts: dict[int, Path] = {}
+
+    legacy_dir = project_root / "reports_ARCHIVE"
+    for path in sorted(legacy_dir.glob("GSM_Manuscript_v*.docx")):
+        version = _extract_version(path)
+        if version > 0:
+            manuscripts[version] = path
+
+    for path in sorted(MANUSCRIPT_VERSIONS_DIR.glob("v*/GSM_Manuscript_v*.docx")):
+        version = _extract_version(path)
+        if version > 0:
+            manuscripts[version] = path
+
+    return manuscripts
+
+
 def _get_next_version() -> int:
     """Find the latest manuscript version and return the next version number."""
-    archive_dir = project_root / "reports_ARCHIVE"
-    if not archive_dir.exists():
-        return 1
-    
-    # Find all GSM_Manuscript_v*.docx files
-    existing = list(archive_dir.glob("GSM_Manuscript_v*.docx"))
-    if not existing:
-        return 1
-    
-    # Extract version numbers
-    versions = []
-    for path in existing:
-        try:
-            # Extract number from "GSM_Manuscript_v5.docx" -> 5
-            version_str = path.stem.split("_v")[-1]
-            versions.append(int(version_str))
-        except (ValueError, IndexError):
-            continue
-    
-    return max(versions) + 1 if versions else 1
+    existing = _collect_existing_manuscripts()
+    return (max(existing) + 1) if existing else 1
+
+
+def _get_previous_manuscript(version: int) -> tuple[int, Path] | tuple[None, None]:
+    """Get the latest manuscript before the given version."""
+    existing = _collect_existing_manuscripts()
+    previous_versions = [v for v in existing if v < version]
+    if not previous_versions:
+        return None, None
+    prev_version = max(previous_versions)
+    return prev_version, existing[prev_version]
+
+
+def _write_build_log(log_path: Path, lines: list[str]) -> None:
+    """Write build log lines to disk."""
+    log_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _write_manuscript_comparison(
+    *,
+    previous_path: Path,
+    previous_version: int,
+    new_path: Path,
+    new_version_dir: Path,
+) -> Path | None:
+    """Generate paragraph-level comparison markdown against previous manuscript."""
+    try:
+        import manuscript_changelog as mch
+
+        old_paras = mch.extract_paragraphs(previous_path)
+        new_paras = mch.extract_paragraphs(new_path)
+        changelog = mch.compute_changelog(
+            old_paras, new_paras, previous_path, new_path
+        )
+        report = mch.format_changelog(changelog)
+        comparison_path = (
+            new_version_dir
+            / f"comparison_with_v{previous_version}.md"
+        )
+        comparison_path.write_text(report, encoding="utf-8")
+        return comparison_path
+    except Exception:
+        return None
 
 
 def build():
     """Orchestrate full manuscript generation."""
+    build_started_at = datetime.now()
     version = _get_next_version()
+    MANUSCRIPT_VERSIONS_DIR.mkdir(parents=True, exist_ok=True)
+    version_dir = MANUSCRIPT_VERSIONS_DIR / f"v{version:03d}"
+    version_dir.mkdir(parents=True, exist_ok=True)
+    out = version_dir / f"GSM_Manuscript_v{version}.docx"
+    log_path = version_dir / "build_log.txt"
+    log_lines = [
+        "=" * 70,
+        f"GSM Manuscript DOCX Builder (v{version})",
+        "=" * 70,
+        f"Started: {build_started_at.isoformat(timespec='seconds')}",
+    ]
     
     print("=" * 70)
     print(f"  GSM Manuscript DOCX Builder (v{version})")
@@ -3146,9 +3307,16 @@ def build():
     m_figs = data["manuscript_figures"]
     ds_figs = data["dataset_figures"]
 
-    print(f"  Datasets:   {len(perf)}")
-    print(f"  Figures:    {len(m_figs)} cross-dataset + "
-          f"{sum(len(v) for v in ds_figs.values())} per-dataset")
+    dataset_count = len(perf)
+    cross_fig_count = len(m_figs)
+    per_ds_fig_count = sum(len(v) for v in ds_figs.values())
+    print(f"  Datasets:   {dataset_count}")
+    print(f"  Figures:    {cross_fig_count} cross-dataset + "
+          f"{per_ds_fig_count} per-dataset")
+    log_lines.append(f"Datasets: {dataset_count}")
+    log_lines.append(
+        f"Figures: {cross_fig_count} cross-dataset + {per_ds_fig_count} per-dataset"
+    )
 
     doc = Document()
 
@@ -3175,12 +3343,42 @@ def build():
     write_back_matter(doc)
     write_supplementary(doc, perf, val, ds_figs)
 
-    out_dir = project_root / "reports_ARCHIVE"
-    out = out_dir / f"GSM_Manuscript_v{version}.docx"
     doc.save(str(out))
     kb = out.stat().st_size / 1024
+    finished_at = datetime.now()
+
+    prev_version, prev_path = _get_previous_manuscript(version)
+    comparison_path = None
+    if prev_path is not None and prev_version is not None:
+        comparison_path = _write_manuscript_comparison(
+            previous_path=prev_path,
+            previous_version=prev_version,
+            new_path=out,
+            new_version_dir=version_dir,
+        )
+
+    log_lines.extend([
+        f"Saved: {out}",
+        f"Size: {kb:.0f} KB",
+        f"Finished: {finished_at.isoformat(timespec='seconds')}",
+        f"Duration: {(finished_at - build_started_at).total_seconds():.1f} seconds",
+    ])
+    if prev_path is not None and prev_version is not None:
+        log_lines.append(f"Previous manuscript: {prev_path}")
+        if comparison_path is not None:
+            log_lines.append(f"Comparison: {comparison_path}")
+        else:
+            log_lines.append("Comparison: failed to generate")
+    else:
+        log_lines.append("Previous manuscript: none")
+
+    _write_build_log(log_path, log_lines)
+
     print(f"\n  Saved:  {out}")
     print(f"  Size:   {kb:.0f} KB")
+    print(f"  Log:    {log_path}")
+    if comparison_path is not None:
+        print(f"  Diff:   {comparison_path}")
     print("=" * 70)
 
 

@@ -208,17 +208,17 @@ Key functions: `interactive_menu()`, `_prompt_choice()`, `_prompt_text()`, `_pro
 
 | File | Purpose | Output location |
 |------|---------|-----------------|
+| `MANUSCRIPT_BUILD_STEPS.txt` | Build order documentation for GSM manuscript | — | CHECK THIS FILE BEFORE MAKING CHANGES TO MANUSCRIPT BUILD SCRIPTS OR RUNNING NEW ANALYSES FOR THE PAPER |
 | `run_test.py` | Quick single-dataset pipeline test (legacy; prefer `python -m gsm train --test`) | `output/gsm_<ts>_test_*/` |
 | `run_all_datasets.py` | Batch-run pipeline on all 7 GEO datasets | `output/gsm_<ts>_*/` |
 | `analyze_manuscript_results.py` | Aggregate metrics → JSON + figures | `reports_ARCHIVE/manuscript_data.json`, `reports_ARCHIVE/manuscript_figures/` |
-| `build_manuscript_docx.py` | Generate Word manuscript | `reports_ARCHIVE/GSM_Manuscript_v*.docx` |
+| `build_manuscript_docx.py` | Generate Word manuscript | `reports_ARCHIVE/manuscript_versions/v###/GSM_Manuscript_v*.docx` + per-version `build_log.txt` + auto `comparison_with_v*.md` |
 | `generate_flowchart.py` | Figure 1: pipeline flowchart | `reports_ARCHIVE/manuscript_figures/` |
 | `generate_baseline_comparison.py` | Baseline comparison figure | `reports_ARCHIVE/manuscript_figures/` |
 | `compare_gl_vs_gsm.py` | GSM vs Group Lasso side-by-side comparison (metrics, gene overlap, figures) | `output/comparison_gl_vs_gsm/` |
 | `gl_ablation_study.py` | Compare 3 overlap strategies: duplication (=Latent GL), naive single-group, no-group L1 | `output/gl_ablation_<dataset>_<ts>/` |
 | `run_gl_all_datasets.py` | Run GL workflow on all 7 cancer datasets with cross-dataset summary | `output/gl_all_datasets_<ts>/` |
 | `gl_hyperparameter_search.py` | Grid search over λ₁, λ₂ and filter thresholds with heatmap output | `output/gl_hyperparam_<dataset>_<ts>/` |
-| `MANUSCRIPT_BUILD_STEPS.txt` | Build order documentation for GSM manuscript | — |
 | `manuscript_changelog.py` | Compare two manuscript .docx versions and output a word-level diff changelog | `reports_ARCHIVE/changelog_v*_v*.txt` (with `--output`) or stdout |
 | `run_baselines.py` | Non-GSM baseline classifiers | `output/baselines/baseline_results.json` |
 | `run_sensitivity_analysis.py` | One-at-a-time sensitivity analysis | `output/sensitivity_runs/sensitivity_results.json` |
@@ -232,7 +232,11 @@ Key functions: `interactive_menu()`, `_prompt_choice()`, `_prompt_text()`, `_pro
 | `verify_gene_lists.py` | Sanity-check gene lists | stdout |
 | `_rerun_bio_validation.py` | Internal helper: re-run biological validation for specific runs | In-place in `output/<run>/biological_validation/` |
 | `run_publication_experiments.py` | Orchestrate all publication experiments end-to-end | Various `output/` sub-dirs |
-| `run_grouping_comparison.py` | Compare 3 knowledge sources (DisGeNET, KEGG, maTE) × 3 datasets | `output/grouping_comparison_results.json` |
+| `run_grouping_comparison.py` | Compare 3 knowledge sources (DisGeNET, KEGG, maTE) × 3 datasets; optional Enrichr/STRING validation and export of STRING + top adjusted p-value metrics | `output/grouping_comparison_results.json` |
+| `cross_dataset_transfer.py` | Evaluate bundle→dataset transfer with compatibility diagnostics and heatmaps; now supports CLI filters for bundle datasets, test datasets, and output directory | `output/cross_dataset_transfer/` (or custom via `--output-dir`) |
+| `feature_space_overlap.py` | Compute pairwise feature-space overlap matrices (counts, Jaccard %, coverage %) across expression datasets and render a heatmap | `output/feature_space_overlap/` |
+| `download_geo_series_matrix.py` | Download GEO GSE series matrix files and convert to GSM-compatible expression CSV (`class` + numeric features) using keyword-based label inference | `data/expression_data/<GSE>.csv` |
+| `run_prostate_transfer_experiment.py` | Run prostate-focused transfer experiment (disease-matched setting) using selected bundles and test datasets | `output/cross_dataset_transfer_prostate/` |
 | `finalize_publication.py` | Final checks and packaging for publication submission | — |
 
 ---
@@ -296,6 +300,8 @@ Each pipeline run creates a timestamped folder. Organized subdirectories:
 | `gl_hyperparam_<dataset>_<ts>/` | Hyperparameter grid search results and heatmaps |
 | `classifier_comparison/` | XGBoost vs RF and extended classifier runs |
 | `seed_stability/` | Seed stability experiment results |
+| `cross_dataset_transfer/` | Cross-dataset transfer diagnostics (`transfer_results.csv/json`, transfer matrices, F1/AUC heatmaps, in-vs-out-domain figure) |
+| `feature_space_overlap/` | Pairwise feature-space overlap diagnostics (`feature_overlap_*` CSVs, summary JSON, Jaccard heatmap figure) |
 | `sensitivity_runs/` | Sensitivity analysis runs + results JSON |
 | `baselines/` | Baseline comparison results |
 | `benchmark/` | Scoring model benchmark results |
@@ -305,11 +311,12 @@ Each pipeline run creates a timestamped folder. Organized subdirectories:
 
 ## `reports_ARCHIVE/` — Manuscript Artefacts (gitignored)
 
-`manuscript_data.json`, `manuscript_figures/`, generated `.docx` files,
+`manuscript_data.json`, `manuscript_figures/`, versioned manuscript builds,
 supplementary PDFs, and related publications.
 
 | Subfolder | Contents |
 |-----------|----------|
+| `manuscript_versions/` | Versioned GSM manuscripts in `v###/` folders. Each folder contains `GSM_Manuscript_v*.docx`, a `build_log.txt`, and an auto-generated `comparison_with_v*.md` against the previous version when available. |
 | `group_lasso_manuscript/` | GL manuscript builder (`build_gl_manuscript.py`) and generated `GL_Manuscript_v*.docx` files. Accepts `--comparison-dir` for GSM vs GL data and reads bio validation results automatically. |
 
 ---
@@ -335,6 +342,7 @@ supplementary PDFs, and related publications.
 | `WEB_DEPLOYMENT.md` | Web deployment options, costs, and architecture for publishing inference as a website |
 | `TROUBLESHOOTING.md` | Common fixes |
 | `DATASET_EXCLUSIONS.md` | Rationale for excluding GDS3268 and GDS4206 |
+| `CLINICAL_MODEL_SELECTION.md` | Clinician-facing guidance for disease-matched bundle selection and interpretation thresholds |
 | `README.md` | Documentation index |
 | `aggregated_group_ranking_explanation.txt` | Explanation of aggregated group ranking algorithm |
 | `feature_ranking_methods_explanation.txt` | Explanation of feature ranking methods (RRA, etc.) |

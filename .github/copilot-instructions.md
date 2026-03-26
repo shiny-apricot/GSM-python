@@ -251,6 +251,14 @@ def process_large_dataset(file_path: str) -> dd.DataFrame:
 
 ## Documentation Standards
 
+### File Maps for Long Files
+When a Python file grows beyond ~500 lines, add a **File Map** section near the
+top docstring (or module header) in the same style as `PROJECT_MAP.md`:
+- Use grouped headings (e.g., "Data loading", "Core loop", "Entry points").
+- Include 1-line purpose explanations for each function or sub-function.
+- If a function is long or multi-purpose, list its major sub-steps.
+- Keep it compact and human-scannable; avoid duplicating full docstrings.
+
 ### File Headers
 ```python
 """
@@ -259,7 +267,7 @@ Gene Group Analysis Module 🧬
 Purpose:
     Implements gene grouping algorithms based on expression patterns.
 
-Key Functions:
+File Map:
     - group_genes(): Creates gene groups from expression data
     - score_groups(): Evaluates group significance
     - optimize_groups(): Refines group assignments
@@ -342,12 +350,6 @@ Full list: `dependencies.txt`
 ---
 
 ## Key Conventions Quick-Reference
-- **Default classifier**: Random Forest (seed = 44) for both scoring and modeling.
-- **Iterations**: 100 per run, each with a new random seed.
-- **FDR threshold**: α = 0.05, Welch t-test + Benjamini–Hochberg.
-- **CV folds**: 3-fold stratified (scoring and modeling).
-- **Feature ranking**: Robust Rank Aggregation (Stuart et al.).
-- **Excluded datasets**: GDS3268 (breast, 100 % zero-sig), GDS4206 (HCC, 92 % zero-sig). See `DATASET_EXCLUSIONS.md`.
 - **Manuscripts**: Built programmatically via `scripts/build_manuscript_docx.py` from `reports_ARCHIVE/manuscript_data.json`.
 - **Biological validation**: Enrichr + STRING-db + DisGeNET. Results in `output/<run>/biological_validation/`.
 - **Pre-trained models**: Distributed via `models/pretrained/` (Git LFS).

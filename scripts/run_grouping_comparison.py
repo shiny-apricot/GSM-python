@@ -14,6 +14,7 @@ collects F1, AUC-ROC, group counts, and feature counts.
 import json
 import sys
 import time
+import argparse
 from pathlib import Path
 
 import pandas as pd
@@ -54,6 +55,42 @@ GROUPING_CONFIGS = {
 
 N_ITERATIONS = 100
 SEED = 44
+RUN_BIO_VALIDATION = True
+BIO_TOP_N_GENES = 20
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments for grouping comparison."""
+    parser = argparse.ArgumentParser(
+        description=(
+            "Compare DisGeNET, KEGG, and maTE grouping sources across "
+            "representative datasets."
+        )
+    )
+    parser.add_argument(
+        "--iterations",
+        type=int,
+        default=N_ITERATIONS,
+        help="Number of Monte-Carlo iterations per run (default: 100)",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=SEED,
+        help="Initial random seed (default: 44)",
+    )
+    parser.add_argument(
+        "--bio-top-genes",
+        type=int,
+        default=BIO_TOP_N_GENES,
+        help="Top-N genes used for biological validation (default: 20)",
+    )
+    parser.add_argument(
+        "--skip-bio-validation",
+        action="store_true",
+        help="Skip Enrichr/STRING validation for faster runs",
+    )
+    return parser.parse_args()
 
 
 def load_expression_data(dataset_id: str) -> pd.DataFrame:
@@ -83,6 +120,10 @@ def run_single_experiment(
     group_config: dict,
     expr_data: pd.DataFrame,
     group_data: pd.DataFrame,
+    n_iterations: int,
+    initial_seed: int,
+    run_bio_validation: bool,
+    bio_top_n_genes: int,
 ) -> dict:
     """Run one GSM experiment and extract results."""
     print(f"\n{'='*60}")
@@ -96,43 +137,62 @@ def run_single_experiment(
         output_dir = gsm_run(
             input_data=expr_data,
             group_data=group_data,
-            n_iterations=N_ITERATIONS,
-            initial_seed=SEED,
+            n_iterations=n_iterations,
+            initial_seed=initial_seed,
             gene_column=group_config["gene_col"],
             group_column=group_config["group_col"],
             input_data_name=dataset_id,
             group_data_name=group_name,
-            run_biological_validation_flag=False,  # skip bio validation for speed
+            run_biological_validation_flag=run_bio_validation,
+            bio_validation_top_n_genes=bio_top_n_genes,
             run_name=f"grouping_cmp_{group_name}",
         )
         elapsed = time.time() - start
 
-        # Read results
-        results_path = output_dir / "results.json"
-        if results_path.exists():
-            with open(results_path) as f:
-                results = json.load(f)
-
-            return {
-                "dataset": dataset_id,
-                "grouping": group_name,
-                "f1_score": results.get("f1_score", 0),
-                "auc_roc": results.get("auc_roc", 0),
-                "f1_ci_lower": results.get("f1_ci_lower", 0),
-                "f1_ci_upper": results.get("f1_ci_upper", 0),
-                "groups_used": results.get("groups_used", 0),
-                "features_used": results.get("features_used", 0),
-                "elapsed_s": round(elapsed, 1),
-                "output_dir": str(output_dir),
-                "status": "OK",
-            }
-        else:
+        # Read results from current pipeline output format
+        results_path = output_dir / "modeling_results_all_iterations.json"
+        if not results_path.exists():
             return {
                 "dataset": dataset_id,
                 "grouping": group_name,
                 "status": "NO_RESULTS",
                 "elapsed_s": round(elapsed, 1),
             }
+
+        with open(results_path) as f:
+            all_iterations = json.load(f)
+
+        # Select the single best model across all iterations and top-group steps
+        best = None
+        for iteration in all_iterations:
+            for step in iteration.get("results", []):
+                if best is None or step.get("f1_score", 0) > best.get("f1_score", 0):
+                    best = step
+
+        if best is None:
+            return {
+                "dataset": dataset_id,
+                "grouping": group_name,
+                "status": "NO_RESULTS",
+                "elapsed_s": round(elapsed, 1),
+            }
+
+        result = {
+            "dataset": dataset_id,
+            "grouping": group_name,
+            "f1_score": round(best.get("f1_score", 0), 4),
+            "auc_roc": round(best.get("auc_roc", 0), 4),
+            "f1_ci_lower": round(best.get("f1_ci_lower", 0), 4),
+            "f1_ci_upper": round(best.get("f1_ci_upper", 0), 4),
+            "groups_used": int(best.get("num_groups_used", 0)),
+            "features_used": int(best.get("num_features_used", 0)),
+            "elapsed_s": round(elapsed, 1),
+            "output_dir": str(output_dir),
+            "status": "OK",
+        }
+
+        result.update(load_biological_metrics(Path(output_dir)))
+        return result
 
     except Exception as e:
         elapsed = time.time() - start
@@ -145,7 +205,56 @@ def run_single_experiment(
         }
 
 
+def load_biological_metrics(output_dir: Path) -> dict:
+    """Load top-level Enrichr/STRING metrics from biological validation files."""
+    validation_dir = output_dir / "biological_validation"
+    enrichr_path = validation_dir / "enrichr_results.csv"
+    string_path = validation_dir / "string_interactions.csv"
+
+    if not enrichr_path.exists() and not string_path.exists():
+        return {
+            "string_ppi": None,
+            "top_kegg_p": None,
+            "top_disgenet_p": None,
+            "bio_status": "MISSING",
+        }
+
+    string_ppi = 0
+    if string_path.exists():
+        try:
+            string_df = pd.read_csv(string_path)
+            string_ppi = int(len(string_df))
+        except Exception:
+            string_ppi = 0
+
+    top_kegg_p = None
+    top_disgenet_p = None
+    if enrichr_path.exists():
+        try:
+            enrichr_df = pd.read_csv(enrichr_path)
+
+            kegg_df = enrichr_df[enrichr_df["Library"] == "KEGG_2021_Human"]
+            if not kegg_df.empty:
+                top_kegg_p = float(kegg_df["Adjusted P-value"].min())
+
+            dg_df = enrichr_df[enrichr_df["Library"] == "DisGeNET"]
+            if not dg_df.empty:
+                top_disgenet_p = float(dg_df["Adjusted P-value"].min())
+        except Exception:
+            top_kegg_p = None
+            top_disgenet_p = None
+
+    return {
+        "string_ppi": string_ppi,
+        "top_kegg_p": top_kegg_p,
+        "top_disgenet_p": top_disgenet_p,
+        "bio_status": "OK",
+    }
+
+
 def main():
+    args = parse_args()
+    run_bio_validation = RUN_BIO_VALIDATION and not args.skip_bio_validation
     all_results = []
 
     for ds_id in DATASETS:
@@ -159,7 +268,15 @@ def main():
             print(f"  Grouping data: {grp_data.shape}")
 
             result = run_single_experiment(
-                ds_id, grp_name, grp_config, expr_data, grp_data
+                ds_id,
+                grp_name,
+                grp_config,
+                expr_data,
+                grp_data,
+                args.iterations,
+                args.seed,
+                run_bio_validation,
+                args.bio_top_genes,
             )
             all_results.append(result)
             print(f"  Result: {result.get('status', '?')} "
