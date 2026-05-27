@@ -251,7 +251,7 @@ python -m gsm train --test
 python -m gsm train
 
 # Batch run on all 7 datasets (100 iterations each)
-python scripts/run_all_datasets.py --iterations 100
+python scripts/experiments/run_all_datasets.py --iterations 100
 
 # Streamlit Web UI (training + inference)
 streamlit run src/ui/app.py
@@ -289,16 +289,16 @@ python -m src.workflows.GSM_workflow
 
 ### Batch Run (Multiple Datasets)
 ```bash
-python scripts/run_all_datasets.py                              # All 7 datasets, 100 iterations
-python scripts/run_all_datasets.py --iterations 50              # Custom iterations
-python scripts/run_all_datasets.py --datasets GDS2545 GDS3257   # Specific datasets
-python scripts/run_all_datasets.py --list                       # List available datasets
+python scripts/experiments/run_all_datasets.py                              # All 7 datasets, 100 iterations
+python scripts/experiments/run_all_datasets.py --iterations 50              # Custom iterations
+python scripts/experiments/run_all_datasets.py --datasets GDS2545 GDS3257   # Specific datasets
+python scripts/experiments/run_all_datasets.py --list                       # List available datasets
 ```
 
 For long-running jobs, use `screen` to keep them alive after disconnecting:
 ```bash
 screen -S gsm_batch
-python scripts/run_all_datasets.py --iterations 100
+python scripts/experiments/run_all_datasets.py --iterations 100
 # Ctrl+A then D to detach — reattach later with: screen -r gsm_batch
 ```
 

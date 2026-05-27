@@ -96,6 +96,23 @@ patient features, scales them, and runs ensemble prediction.
 
 ---
 
+## Gitignored Folders
+
+These folders are intentionally excluded from version control (`.gitignore`),
+typically because they are environment-local, generated artefacts, or archives.
+
+| Folder/pattern | Why it exists | Git status |
+|----------------|---------------|------------|
+| `venv/` | Local Python virtual environment | **gitignored** |
+| `.venv` | Alternative local virtual environment name | **gitignored** |
+| `env/` | Alternative local virtual environment name | **gitignored** |
+| `output/` | Generated pipeline run artefacts and experiment outputs | **gitignored** |
+| `reports_ARCHIVE/` | Manuscript artefacts, generated figures, and versioned docs | **gitignored** |
+| `output_ARCHIVE/` | Archived output snapshots (`*ARCHIVE*/` pattern) | **gitignored** |
+| `malik-burcu-PUBLICATIONS/` | Local publication-support files | **gitignored** |
+
+---
+
 ## `src/` — Core Pipeline Code
 
 ### `src/data_processing/`
@@ -204,22 +221,25 @@ Key functions: `interactive_menu()`, `_prompt_choice()`, `_prompt_text()`, `_pro
 
 ---
 
-## `scripts/` — Analysis, Batch Runners & Manuscript Tooling
+## `scripts/` — Tooling by purpose
 
+### `scripts/manuscript/`
 | File | Purpose | Output location |
 |------|---------|-----------------|
-| `MANUSCRIPT_BUILD_STEPS.txt` | Build order documentation for GSM manuscript | — | CHECK THIS FILE BEFORE MAKING CHANGES TO MANUSCRIPT BUILD SCRIPTS OR RUNNING NEW ANALYSES FOR THE PAPER |
-| `run_test.py` | Quick single-dataset pipeline test (legacy; prefer `python -m gsm train --test`) | `output/gsm_<ts>_test_*/` |
+| `MANUSCRIPT_BUILD_STEPS.txt` | Build order documentation for GSM manuscript | — |
+| `analyze_manuscript_results.py` | Aggregate metrics → JSON + figures | `reports_ARCHIVE/manuscript/data/manuscript_data.json`, `reports_ARCHIVE/manuscript/figures/` |
+| `build_manuscript_docx.py` | Generate Word manuscript | `reports_ARCHIVE/manuscript/versions/v###/GSM_Manuscript_v*.docx` + per-version `build_log.txt` + auto `comparison_with_v*.md` |
+| `generate_flowchart.py` | Figure 1: pipeline flowchart | `reports_ARCHIVE/manuscript/figures/` |
+| `generate_baseline_comparison.py` | Baseline comparison figure | `reports_ARCHIVE/manuscript/figures/` |
+| `manuscript_changelog.py` | Compare two manuscript .docx versions and output a word-level diff changelog | `reports_ARCHIVE/manuscript/versions/v###/comparison_with_v*.md` (with `--output`) or stdout |
+| `manuscript_review_bridge.py` | Automate Google Docs review loop: upload latest manuscript, download/export active Google Doc, pull comments, generate action packet, and log addressed IDs | `reports_ARCHIVE/manuscript/versions/v###/review/` + Google Drive folders |
+| `parse_docx_reviews.py` | Parse reviewed DOCX into tracked-change markdown | `reports_ARCHIVE/manuscript/review/docx_imports/parsed_reviews.md` |
+| `finalize_publication.py` | Final checks and packaging for publication submission | — |
+
+### `scripts/experiments/`
+| File | Purpose | Output location |
+|------|---------|-----------------|
 | `run_all_datasets.py` | Batch-run pipeline on all 7 GEO datasets | `output/gsm_<ts>_*/` |
-| `analyze_manuscript_results.py` | Aggregate metrics → JSON + figures | `reports_ARCHIVE/manuscript_data.json`, `reports_ARCHIVE/manuscript_figures/` |
-| `build_manuscript_docx.py` | Generate Word manuscript | `reports_ARCHIVE/manuscript_versions/v###/GSM_Manuscript_v*.docx` + per-version `build_log.txt` + auto `comparison_with_v*.md` |
-| `generate_flowchart.py` | Figure 1: pipeline flowchart | `reports_ARCHIVE/manuscript_figures/` |
-| `generate_baseline_comparison.py` | Baseline comparison figure | `reports_ARCHIVE/manuscript_figures/` |
-| `compare_gl_vs_gsm.py` | GSM vs Group Lasso side-by-side comparison (metrics, gene overlap, figures) | `output/comparison_gl_vs_gsm/` |
-| `gl_ablation_study.py` | Compare 3 overlap strategies: duplication (=Latent GL), naive single-group, no-group L1 | `output/gl_ablation_<dataset>_<ts>/` |
-| `run_gl_all_datasets.py` | Run GL workflow on all 7 cancer datasets with cross-dataset summary | `output/gl_all_datasets_<ts>/` |
-| `gl_hyperparameter_search.py` | Grid search over λ₁, λ₂ and filter thresholds with heatmap output | `output/gl_hyperparam_<dataset>_<ts>/` |
-| `manuscript_changelog.py` | Compare two manuscript .docx versions and output a word-level diff changelog | `reports_ARCHIVE/changelog_v*_v*.txt` (with `--output`) or stdout |
 | `run_baselines.py` | Non-GSM baseline classifiers | `output/baselines/baseline_results.json` |
 | `run_sensitivity_analysis.py` | One-at-a-time sensitivity analysis | `output/sensitivity_runs/sensitivity_results.json` |
 | `compute_sensitivity_impact.py` | Δ-F1 impact rankings | `output/sensitivity_runs/sensitivity_impact.json` |
@@ -227,17 +247,30 @@ Key functions: `interactive_menu()`, `_prompt_choice()`, `_prompt_text()`, `_pro
 | `compare_classifiers_bio_validation.py` | XGBoost vs RF bio coherence | `output/classifier_comparison/classifier_comparison_results.json` |
 | `extend_classifier_comparison.py` | Extended 4-classifier comparison | `output/classifier_comparison/classifier_comparison_results.json` |
 | `seed_stability_experiment.py` | Seed stability analysis | `output/seed_stability/seed_stability_results.json` |
+| `run_publication_experiments.py` | Orchestrate all publication experiments end-to-end | Various `output/` sub-dirs |
+| `run_grouping_comparison.py` | Compare knowledge sources across datasets | `output/grouping_comparison_results.json` |
+| `cross_dataset_transfer.py` | Evaluate bundle→dataset transfer with compatibility diagnostics and heatmaps | `output/cross_dataset_transfer/` (or custom via `--output-dir`) |
+| `feature_space_overlap.py` | Compute pairwise feature-space overlap matrices and render a heatmap | `output/feature_space_overlap/` |
+| `run_prostate_transfer_experiment.py` | Prostate-focused transfer experiment | `output/cross_dataset_transfer_prostate/` |
+| `compare_gl_vs_gsm.py` | GSM vs Group Lasso side-by-side comparison | `output/comparison_gl_vs_gsm/` |
+| `gl_ablation_study.py` | Compare overlap strategies (Latent GL vs alternatives) | `output/gl_ablation_<dataset>_<ts>/` |
+| `run_gl_all_datasets.py` | Run GL workflow on all 7 cancer datasets | `output/gl_all_datasets_<ts>/` |
+| `gl_hyperparameter_search.py` | Grid search over λ₁, λ₂ and filter thresholds | `output/gl_hyperparam_<dataset>_<ts>/` |
+
+### `scripts/maintenance/`
+| File | Purpose | Output location |
+|------|---------|-----------------|
+| `run_test.py` | Quick single-dataset pipeline test (legacy; prefer `python -m gsm train --test`) | `output/gsm_<ts>_test_*/` |
 | `rerun_bio_validation.py` | Re-run failed bio validations | In-place in `output/<run>/biological_validation/` |
 | `rerun_seed_bio_validation.py` | Re-run seed bio validations | `output/seed_stability/seed_stability_results.json` |
 | `verify_gene_lists.py` | Sanity-check gene lists | stdout |
 | `_rerun_bio_validation.py` | Internal helper: re-run biological validation for specific runs | In-place in `output/<run>/biological_validation/` |
-| `run_publication_experiments.py` | Orchestrate all publication experiments end-to-end | Various `output/` sub-dirs |
-| `run_grouping_comparison.py` | Compare 3 knowledge sources (DisGeNET, KEGG, maTE) × 3 datasets; optional Enrichr/STRING validation and export of STRING + top adjusted p-value metrics | `output/grouping_comparison_results.json` |
-| `cross_dataset_transfer.py` | Evaluate bundle→dataset transfer with compatibility diagnostics and heatmaps; now supports CLI filters for bundle datasets, test datasets, and output directory | `output/cross_dataset_transfer/` (or custom via `--output-dir`) |
-| `feature_space_overlap.py` | Compute pairwise feature-space overlap matrices (counts, Jaccard %, coverage %) across expression datasets and render a heatmap | `output/feature_space_overlap/` |
-| `download_geo_series_matrix.py` | Download GEO GSE series matrix files and convert to GSM-compatible expression CSV (`class` + numeric features) using keyword-based label inference | `data/expression_data/<GSE>.csv` |
-| `run_prostate_transfer_experiment.py` | Run prostate-focused transfer experiment (disease-matched setting) using selected bundles and test datasets | `output/cross_dataset_transfer_prostate/` |
-| `finalize_publication.py` | Final checks and packaging for publication submission | — |
+| `download_geo_series_matrix.py` | Download GEO series matrix files → expression CSV | `data/expression_data/<GSE>.csv` |
+
+### `scripts/legacy/`
+| File | Purpose |
+|------|---------|
+| `baseline_comparison.py` | Legacy baseline comparison script (superseded) |
 
 ---
 
@@ -309,15 +342,16 @@ Each pipeline run creates a timestamped folder. Organized subdirectories:
 
 ---
 
-## `reports_ARCHIVE/` — Manuscript Artefacts (gitignored)
+## `reports_ARCHIVE/` — Publications & Artefacts (gitignored)
 
-`manuscript_data.json`, `manuscript_figures/`, versioned manuscript builds,
-supplementary PDFs, and related publications.
+Organized by artifact type to keep manuscript work, presentations, and references separate.
 
 | Subfolder | Contents |
 |-----------|----------|
-| `manuscript_versions/` | Versioned GSM manuscripts in `v###/` folders. Each folder contains `GSM_Manuscript_v*.docx`, a `build_log.txt`, and an auto-generated `comparison_with_v*.md` against the previous version when available. |
-| `group_lasso_manuscript/` | GL manuscript builder (`build_gl_manuscript.py`) and generated `GL_Manuscript_v*.docx` files. Accepts `--comparison-dir` for GSM vs GL data and reads bio validation results automatically. |
+| `manuscript/` | Manuscript assets: `data/` (manuscript_data.json), `figures/`, `versions/` (v### builds), `review/` (incl. `personas/`), `reviews/`, `notes/` (collab_memory.md), `supplementary/`, `submissions/` |
+| `presentations/` | Slide decks and LaTeX sources (`gsm/`, `group_lasso/`) |
+| `literature/` | PDFs and notes (`papers/`, `related/`, `notes/`) |
+| `reference/` | Writing guides, dataset snippets, images (`writing/`, `datasets/`, `images/`) |
 
 ---
 

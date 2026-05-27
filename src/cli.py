@@ -1932,11 +1932,11 @@ def _show_help(console) -> None:
     )
     t.add_row("python -m gsm ui", "Streamlit dashboard", "")
     t.add_row(
-        "python scripts/run_test.py", "Quick test (legacy)",
+        "python scripts/maintenance/run_test.py", "Quick test (legacy)",
         "--iterations 5",
     )
     t.add_row(
-        "python scripts/run_all_datasets.py", "Batch all datasets",
+        "python scripts/experiments/run_all_datasets.py", "Batch all datasets",
         "--iterations 50",
     )
     console.print(t)

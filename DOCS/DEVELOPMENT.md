@@ -60,7 +60,7 @@ src/
 data/                      # Input datasets (GEO + DisGeNET)
 output/                    # Pipeline results (timestamped folders)
 tests/                     # Unit tests (pytest)
-scripts/                   # Manuscript, baselines, sensitivity analysis
+scripts/                   # Manuscript, experiments, maintenance
 DOCS/                      # This documentation
 ```
 

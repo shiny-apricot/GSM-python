@@ -7,6 +7,16 @@ output/
 *ARCHIVE*/
 malik-burcu-PUBLICATIONS/
 
+# OAuth / review bridge secrets
+secrets/
+
+# Explicit review-bridge artifacts (already covered by *ARCHIVE*/, kept for clarity)
+reports_ARCHIVE/manuscript/review/
+reports_ARCHIVE/manuscript/versions/*/review/
+
+# Ignore local review-bridge guide (user preference)
+DOCS/GOOGLE_DOCS_REVIEW_BRIDGE_GUIDE.md
+
 # Runtime logs — never commit these
 *.log
 

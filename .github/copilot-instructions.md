@@ -35,24 +35,26 @@ Before making any change, ask yourself:
   deployment?
 - **Could it be simpler?**  The best code is the code you don't write.
 
-### Progressive refinement
-Large tasks should follow a plan → implement → verify loop:
-1. **Plan** — Write a temporary roadmap file (`.roadmap_<name>.md`)
-   with concrete steps.  This is more reliable than mental to-do
-   lists because the agent's to-do step limit is small.
-2. **Implement** — Work through the plan one step at a time.
-3. **Verify** — After each meaningful change, run `pytest` and fix
-   any failures before moving on.  Never hand back broken code.
-4. **Clean up** — Delete the roadmap file.  Update `PROJECT_MAP.md`
-   if the change added/removed/renamed files or functions.
+### long-term systems thinking (default mode)
+- solve root causes; prefer reusable helpers and data-driven behavior over one-off edits.
+- keep changes traceable so edits transfer cleanly to google docs.
+- reduce maintenance: minimize coupling, avoid duplicated logic, centralize defaults/config.
+- plan for scale: watch for n^2 patterns, memory spikes, and heavy io; add batching/streaming when needed.
+- keep operations clear: define inputs/outputs, run steps, cleanup, rollback; archive artefacts correctly.
+- treat testing as product quality; add regression tests and document verification steps.
+- preserve stability: keep backward compatibility or document migrations.
+- keep the repo tidy; avoid root-level clutter.
+- update `PROJECT_MAP.md` when structure, functions, or conventions change.
+
+### Large tasks (plan → implement → verify → clean)
+- **Plan**: create `.roadmap_<name>.md` with steps, success criteria, and risks.
+- **Implement**: work stepwise and update the roadmap as you go.
+- **Verify**: run `pytest` after meaningful changes; fix failures before continuing.
+- **Clean**: delete the roadmap; update `PROJECT_MAP.md` if structure changes.
 
 ### Testing discipline
-- At the end of **every** response that modifies code, run
-  `pytest` and fix any failures.
-- If a new function is non-trivial, add a test.
-- If a bug is fixed, add a regression test.
-- Never skip tests to save time — broken tests invalidate
-  everything built on top.
+- After any code change, run `pytest` and fix failures.
+- Add tests for non-trivial functions and regression tests for bugs.
 
 ### Communication style
 - Be concise.  The user is a researcher, not a tourist.
@@ -73,6 +75,16 @@ Large tasks should follow a plan → implement → verify loop:
 - Never ask for permission to continue after an intermediate step.
   Just continue.
 
+### Complex problems (scope control)
+- Break the work into smaller subproblems; solve sequentially.
+- Use a `.roadmap_<name>.md` or `.summary_<name>.md` when context is large.
+
+### What if there is critical deficiency or error in the copilot-instructions file itself?
+- If you identify a critical deficiency or error in this `copilot-instructions.md` file that would lead to widespread issues if followed, you should:
+  1. Make the necessary correction directly in this file.
+  2. Add a comment at the top of the file explaining the change and why it was necessary.
+  3. Update `PROJECT_MAP.md` if the change affects any files, functions, or conventions listed there.
+ 
 ---
 
 ## Big-Picture Architecture 🗺️
@@ -161,11 +173,6 @@ def group_genes(filtered_data: FilteredData, logger: Logger) -> list[GeneGroup]:
     normalized_data = normalize_expression(filtered_data)
     clusters = perform_clustering(normalized_data)
     return create_gene_groups(clusters)
-
-# Level 3: Helper Functions (grouping/cluster_utils.py)
-def perform_clustering(normalized_data: np.ndarray) -> np.ndarray:
-    """Helper function for specific clustering logic."""
-    # Implementation details
 ```
 
 ```python
@@ -245,7 +252,7 @@ def process_large_dataset(file_path: str) -> dd.DataFrame:
 - Model bundles: `bundle_<dataset>_<classifier>_<seed>.gsm.zip`
 - Pre-trained bundles: placed in `models/pretrained/`
 - Data files: kept in `data/<subfolder>/` (LFS-tracked if large)
-- Docs: Markdown in `DOCS/`, presentation in `reports_ARCHIVE/presentation/`
+- Docs: Markdown in `DOCS/`, presentations in `reports_ARCHIVE/presentations/`
 
 ---
 
@@ -274,7 +281,6 @@ File Map:
 
 Example Usage:
     groups = group_genes(expression_data, logger)
-    scores = score_groups(groups, logger)
 """
 ```
 
@@ -295,11 +301,6 @@ def group_genes(
 
     Returns:
         List of GeneGroup objects
-
-    Example:
-        >>> data = load_expression_data("data.csv")
-        >>> groups = group_genes(data, min_size=15, logger=logger)
-        >>> print(f"Found {len(groups)} gene groups")
     """
 ```
 
@@ -312,15 +313,6 @@ def group_genes(
 - Tests live in `tests/` and follow naming `test_<thing>.py`
 - Tests must pass before any PR merge — `pytest` from repo root
 - After every code change, run `pytest` and fix failures before proceeding
-
-```python
-def test_gene_grouping():
-    """Test gene grouping with a small dataset."""
-    test_data = load_test_data()
-    groups = group_genes(test_data, min_size=5, logger=test_logger)
-    assert len(groups) > 0, "Should create at least one group"
-    assert all(len(g.genes) >= 5 for g in groups), "Groups should meet size requirement"
-```
 
 ---
 
@@ -350,7 +342,7 @@ Full list: `dependencies.txt`
 ---
 
 ## Key Conventions Quick-Reference
-- **Manuscripts**: Built programmatically via `scripts/build_manuscript_docx.py` from `reports_ARCHIVE/manuscript_data.json`.
+- **Manuscripts**: Built via `scripts/manuscript/build_manuscript_docx.py` from `reports_ARCHIVE/manuscript/data/manuscript_data.json`.
 - **Biological validation**: Enrichr + STRING-db + DisGeNET. Results in `output/<run>/biological_validation/`.
 - **Pre-trained models**: Distributed via `models/pretrained/` (Git LFS).
 
@@ -362,4 +354,25 @@ Copilot (or any contributor) should update **`PROJECT_MAP.md`** (not this file) 
 - New scripts or workflow configs are introduced.
 
 Update **this file** only when coding conventions, design principles, or
-documentation standards change.
+documentation standards change.# Review Processing Workflow (AI System)
+
+
+## Offline DOCX Review Workflow (AI System)
+
+When the user says they have downloaded a Google Docs manuscript with inline "Suggestions" (Tracked Changes) as a `.docx` file and wants the AI to apply them:
+
+1. **Ask the user to place the downloaded `.docx`** in `reports_ARCHIVE/manuscript/review/docx_imports/` (e.g., `reviewed_manuscript.docx`).
+2. **Run the parser:** 
+  `python scripts/manuscript/parse_docx_reviews.py reports_ARCHIVE/manuscript/review/docx_imports/<FILE_NAME>.docx reports_ARCHIVE/manuscript/review/docx_imports/parsed_reviews.md`
+3. **Read the `parsed_reviews.md` file.** It contains paragraph-by-paragraph tracked changes (`**++ inserted ++**`, `~~ deleted ~~`, and inline `💬 [COMMENT]`).
+4. **Consult the Persona:** Read `DOCS/MUSTAFA_TEMIZ_REVIEW_PERSONA.md` to internalize the reviewer's preferences (e.g. academic flow, context-first, no deep methodology in intro, avoiding subheading fragmentation). Apply this thought process pre-emptively to all your edits.
+5. **Think step-by-step** about how to update and improve and fix the manuscript based on the tracked changes and comments. You can save the roadmap for this in a temporary file like `.roadmap_review.md`.
+6. **Make The Necessary Changes to `scripts/manuscript/build_manuscript_docx.py`** to apply the tracked changes *visually*. Do not "accept all" as plain text! Instead:
+   - Parse the markdown strings containing `**++...++**` (insertions), `~~...~~` (deletions), and `💬 [...]` (comments).
+   - Use the helper function `add_reviewed_paragraph(doc, text)` in `build_manuscript_docx.py` (which color-codes green for insertions and red-strikethrough for deletions).
+   - Use the `author_note` wrapper generously across the document to point out structural/grammatical AI interventions.
+   - **CRITICAL TONE FOR AUTHOR NOTES:** All `author_note` text must be written in **Turkish**, using a **highly simplified, natural, conversational, and direct tone** (almost like primary school level, avoiding stiff or overly formal grammatical rules). Example: *"Hocam buradaki kısa cümleleri birleştirdik, sizin dediğiniz gibi yöntemi aşağıya taşıdık."*
+   - Place these notes immediately preceding the paragraph they refer to.
+   - This creates a **Visual Diff DOCX** directly from the python builder.
+7. **Rebuild the manuscript** via `python scripts/manuscript/build_manuscript_docx.py` to see the changes reflected in the generated `.docx` file.
+8. **Generate a diff** comparing the last active version with the new version using `scripts/manuscript/manuscript_changelog.py` so the user can verify the edits contextually.

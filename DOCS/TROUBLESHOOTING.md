@@ -367,7 +367,7 @@ export HTTPS_PROXY=http://proxy.company.com:8080
 4. Re-run just the bio validation without re-running the entire pipeline:
 
 ```bash
-python scripts/rerun_bio_validation.py
+python scripts/maintenance/rerun_bio_validation.py
 ```
 
 ---
