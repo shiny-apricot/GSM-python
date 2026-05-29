@@ -1,7 +1,7 @@
 # Troubleshooting 🔧
 
 This page covers common problems when installing and running the GSM pipeline.
-For WSL-specific issues (installation, networking, VPN), see [INSTALL_WSL.md](INSTALL_WSL.md).
+For WSL-specific issues (installation, networking, VPN), see [INSTALLATION.md](INSTALLATION.md).
 
 ---
 
@@ -196,7 +196,7 @@ pip install streamlit
 1. **Confirm Streamlit is running** — check the terminal for errors.
 2. **Try the full URL** that Streamlit prints (e.g., `http://localhost:8501`).
 3. **Try `127.0.0.1`** instead: `http://127.0.0.1:8501`.
-4. **WSL users:** See [INSTALL_WSL.md](INSTALL_WSL.md#cannot-connect-to-localhost--streamlit-url-doesnt-open) for network fixes.
+4. **WSL users:** See [INSTALLATION.md](INSTALLATION.md#cannot-connect-to-localhost--streamlit-url-doesnt-open) for network fixes.
 5. **VPN/firewall:** Some VPNs block local ports. Try disconnecting the VPN temporarily.
 
 ---
@@ -303,7 +303,7 @@ Your dataset may be too large for available RAM.
 
 **Fixes:**
 1. Close other applications to free memory.
-2. Increase WSL memory (see [INSTALL_WSL.md](INSTALL_WSL.md#wsl-out-of-memory-or-process-killed)).
+2. Increase WSL memory (see [INSTALLATION.md](INSTALLATION.md#wsl-out-of-memory-or-process-killed)).
 3. Reduce iterations: `python run_all_datasets.py --iterations 10`.
 4. Run one dataset at a time instead of batch.
 
@@ -326,7 +326,7 @@ cd ~/GSM-to-python
 
 ### Merge conflicts
 
-Don't panic — conflicts are Git asking you to choose between two edits. See [GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md) for guidance.
+Don't panic — conflicts are Git asking you to choose between two edits. See [GITHUB_WORKFLOW.md](developer/GITHUB_WORKFLOW.md) for guidance.
 
 ### "Your branch is behind origin/main"
 
@@ -395,5 +395,5 @@ When asking for help, provide:
 Open an issue on GitHub with this information, or ask a colleague.
 
 See also:
-- [WSL Troubleshooting](INSTALL_WSL.md#wsl-troubleshooting-guide-) — WSL installation and networking
+- [WSL Troubleshooting](INSTALLATION.md#wsl-troubleshooting-guide-) — WSL installation and networking
 - [Microsoft WSL Docs](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting) — Official reference

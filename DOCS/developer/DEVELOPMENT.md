@@ -156,7 +156,16 @@ Guidelines:
 
 ---
 
-## 6) Coding Standards
+## 6) Data & Large File Storage (LFS)
+
+Because this pipeline works with biological datasets and generates machine learning bundles (`.gsm.zip`), we **must** use Git LFS to keep the repository lightweight. If you commit a 50MB CSV without LFS, it breaks GitHub pushes for everyone.
+- Always run `git lfs install` on your system.
+- Before committing any `.csv`, `.zip`, `.xlsx`, or `.txt` in the `data/` folder, ensure it is covered by the `.gitattributes` file.
+- If you're adding a new large file format, track it explicitly: `git lfs track "*.xyz"`
+
+---
+
+## 7) Coding Standards
 
 This project aims to be understandable by researchers who are not Python experts.
 
@@ -218,7 +227,7 @@ def analyze_genes(genes: list[str], *, logger: Logger) -> GeneResults:
 
 ---
 
-## 7) Testing Your Changes
+## 8) Testing Your Changes
 
 After editing code, always verify:
 
@@ -248,7 +257,7 @@ python -m src.workflows.GSM_workflow
 
 ---
 
-## 8) Share Your Changes
+## 9) Share Your Changes
 
 See [GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md) for the complete guide on branching, committing, and submitting Pull Requests.
 
@@ -262,7 +271,7 @@ See [GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md) for the complete guide on branching
 
 ---
 
-## 9) Getting Help
+## 10) Getting Help
 
 If you get stuck:
 1. Copy the **exact command** you ran
@@ -274,4 +283,4 @@ If you get stuck:
 
 See also:
 - [TROUBLESHOOTING.md](TROUBLESHOOTING.md) — Common fixes
-- [INSTALL_WSL.md](INSTALL_WSL.md) — WSL-specific issues
+- [INSTALLATION.md](INSTALLATION.md) — WSL-specific issues

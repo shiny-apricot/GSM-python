@@ -17,14 +17,18 @@ These are the general principles for how AI coding assistants (Copilot,
 Cursor, Claude, etc.) should approach work on this project.  They apply
 to every file, every prompt, every task — not just GSM-specific code.
 
-### Intent over instruction
+### Intent over instruction & Proactive Execution
 Do not strictly and blindly follow the instructions in a prompt.
 Instead, use your judgement, creativity, and knowledge to decide how
 to best respond while still adhering to the overall goals and
-principles of the project.  If the user asks for X but X would break
-the architecture, propose a better alternative.  If the prompt is
-ambiguous, choose the interpretation that produces the most useful
-result — then mention what you assumed.
+principles of the project. If the user asks for X but X would break
+the architecture, propose a better alternative. 
+
+**BE PROACTIVE AND AUTONOMOUS:** If the user asks for a general cleanup,
+refactor, or improvement, **do not wait for them to explicitly name every single file**.
+Extrapolate the pattern. If you are asked to move "A and B" to better places, and "C"
+is obviously in the same category as A and B, move "C" as well. Take ownership of 
+the codebase's elegance and completeness without requiring hand-holding.
 
 ### Think holistically
 Before making any change, ask yourself:

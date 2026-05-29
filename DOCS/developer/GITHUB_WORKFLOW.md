@@ -104,6 +104,8 @@ git diff           # See what changed
 
 ### Step 5: Commit (Save to Git History)
 
+> **⚠️ CRITICAL (Git LFS):** This project uses **Git Large File Storage (LFS)** for datasets and models (`*.csv`, `*.txt` in data dirs, `*.zip`, etc.). Before adding a new large file, check that it's tracked in `.gitattributes`. Run `git lfs track "*.csv"` if adding a new format. Always run `git lfs install` on your machine before pushing.
+
 **VS Code:**
 1. Source Control → click **+** next to files to stage them
 2. Write a commit message (e.g., "Fix upload validation in UI")

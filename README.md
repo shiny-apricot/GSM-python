@@ -63,7 +63,7 @@ GEO Expression Data + DisGeNET Gene-Disease Knowledge
 **Mean F1 = 0.937 | Mean AUC = 0.947 | 4/7 datasets achieve perfect F1 = 1.00**
 
 > Two additional datasets (GDS3268 Breast, GDS4206 HCC) were excluded due
-> to severe t-test filtering issues — see [DATASET_EXCLUSIONS.md](DOCS/DATASET_EXCLUSIONS.md).
+> to severe t-test filtering issues — see [DATASET_EXCLUSIONS.md](DOCS/methods/DATASET_EXCLUSIONS.md).
 
 ---
 
@@ -71,15 +71,17 @@ GEO Expression Data + DisGeNET Gene-Disease Knowledge
 
 | Guide | Description |
 |-------|-------------|
-| [Installation (WSL/Linux)](DOCS/INSTALL_WSL.md) | Step-by-step setup for Windows (WSL2) and native Linux |
+| [Installation (WSL/Linux)](DOCS/INSTALLATION.md) | Step-by-step setup for Windows (WSL2) and native Linux |
 | [Running the Pipeline](DOCS/RUNNING.md) | CLI, batch runner, Streamlit UI, `screen` for long jobs |
-| [Development Guide](DOCS/DEVELOPMENT.md) | Project structure, testing, coding standards |
-| [GitHub Workflow](DOCS/GITHUB_WORKFLOW.md) | Branching, PRs, and safe collaboration |
+| [Development Guide](DOCS/developer/DEVELOPMENT.md) | Project structure, testing, coding standards |
+| [GitHub Workflow](DOCS/developer/GITHUB_WORKFLOW.md) | Branching, PRs, and safe collaboration |
 | [Troubleshooting](DOCS/TROUBLESHOOTING.md) | Common errors and fixes |
-| [GitHub Copilot Guide](DOCS/COPILOT.md) | AI-assisted coding setup |
+| [GitHub Copilot Guide](DOCS/developer/COPILOT.md) | AI-assisted coding setup |
 | [Project Map](PROJECT_MAP.md) | Complete file/folder/function reference |
-| [Dataset Exclusions](DOCS/DATASET_EXCLUSIONS.md) | Why GDS3268 and GDS4206 were dropped |
-| [Web Deployment](DOCS/WEB_DEPLOYMENT.md) | Options for publishing inference as a website |
+| [Feature Ranking Methods](DOCS/methods/FEATURE_METHODS.md) | Explains the two methods for feature ranking |
+| [Aggregated Ranking](DOCS/methods/RANKING_EXPLANATION.md) | Explains robust rank aggregation (RRA) |
+| [Dataset Exclusions](DOCS/methods/DATASET_EXCLUSIONS.md) | Why GDS3268 and GDS4206 were dropped |
+| [Web Deployment](DOCS/advanced/WEB_DEPLOYMENT.md) | Options for publishing inference as a website |
 
 ---
 
@@ -210,7 +212,7 @@ with collaborators who don't use the terminal.
 
 - **Python 3.10+** (3.11 or 3.12 recommended)
 - **Git** with [Git LFS](https://git-lfs.com/) installed
-- **Linux** or **Windows with WSL2** (see [Installation Guide](DOCS/INSTALL_WSL.md))
+- **Linux** or **Windows with WSL2** (see [Installation Guide](DOCS/INSTALLATION.md))
 
 ### 1. Clone & Fetch Data
 
@@ -266,7 +268,7 @@ python -m gsm bundle-info --bundle output/.../bundle.gsm.zip
 python -m gsm ui                    # Launch Streamlit dashboard
 ```
 
-For detailed setup, see the [Installation Guide](DOCS/INSTALL_WSL.md).
+For detailed setup, see the [Installation Guide](DOCS/INSTALLATION.md).
 
 ---
 
@@ -391,14 +393,14 @@ See [PROJECT_MAP.md](PROJECT_MAP.md) for the full function-level reference.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and
-[DOCS/GITHUB_WORKFLOW.md](DOCS/GITHUB_WORKFLOW.md) for the branch/PR workflow.
+[DOCS/developer/GITHUB_WORKFLOW.md](DOCS/developer/GITHUB_WORKFLOW.md) for the branch/PR workflow.
 
 ---
 
 ## Troubleshooting
 
 Common issues and fixes are documented in [DOCS/TROUBLESHOOTING.md](DOCS/TROUBLESHOOTING.md).
-WSL-specific problems are covered in [DOCS/INSTALL_WSL.md](DOCS/INSTALL_WSL.md).
+WSL-specific problems are covered in [DOCS/INSTALLATION.md](DOCS/INSTALLATION.md).
 
 ### Common Issues
 1. **ImportError or ModuleNotFoundError**:

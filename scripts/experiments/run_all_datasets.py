@@ -50,7 +50,7 @@ from src.workflows.GSM_workflow_config import (
 EXPRESSION_DATA_DIR = Path("data/expression_data")
 GROUPING_DATA_FILE = Path("data/grouping_data/cancer-DisGeNET_gedinet.txt")
 DEFAULT_ITERATIONS = 100
-# Datasets excluded from publication experiments (see DOCS/DATASET_EXCLUSIONS.md)
+# Datasets excluded from publication experiments (see DOCS/methods/DATASET_EXCLUSIONS.md)
 EXCLUDED_DATASETS = {"GDS3268", "GDS4206"}
 
 

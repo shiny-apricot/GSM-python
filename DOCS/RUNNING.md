@@ -29,7 +29,7 @@ cd ~/GSM-to-python
 source venv/bin/activate      # Adjust to .venv if that's what you used
 ```
 
-If you don't have an environment yet, see [INSTALL_WSL.md](INSTALL_WSL.md).
+If you don't have an environment yet, see [INSTALLATION.md](INSTALLATION.md).
 
 ---
 
@@ -96,35 +96,24 @@ python run_all_datasets.py --datasets GDS2545 GDS3257
 python run_all_datasets.py --list
 ```
 
-### Keep Batch Jobs Running After Disconnecting
+### Keeping Jobs Running (Advanced Trick)
 
-For long jobs (2+ hours), use `screen` so the job survives terminal disconnects:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Your Terminal (SSH/WSL)                                    │
-│    └──► screen session (persists on server)                 │
-│              └──► python run_all_datasets.py                │
-│                   (keeps running even if you disconnect!)   │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Step-by-step:**
+For long jobs (2+ hours), you might want to learn a terminal trick called `screen`. This lets the job keep running even if you accidentally close your terminal window. *If you run the pipeline directly inside VS Code integrated terminal and keep VS Code open, you don't need this.*
 
 ```bash
-# 1. Create a named session
+# 1. Create a named background session
 screen -S gsm_batch
 
-# 2. Start the job
+# 2. Start the job as usual
 cd ~/GSM-to-python
 source venv/bin/activate
 python run_all_datasets.py --iterations 100
 
-# 3. Detach: press Ctrl+A, then D
-#    You'll see: [detached from session gsm_batch]
-#    Now you can close the terminal safely.
+# 3. Leave it running in the background (Detach)
+#    Press [Ctrl+A], let go, then press [D].
+#    You can now safely close the window.
 
-# 4. Reattach later
+# 4. Check on it later
 screen -r gsm_batch
 ```
 
@@ -172,7 +161,7 @@ Open the URL it prints (usually `http://localhost:8501`) in your browser.
 
 > **WSL tip:** If the URL doesn't auto-open, manually paste it into your Windows browser.
 > If `localhost` doesn't work, try `http://127.0.0.1:8501`.
-> See [INSTALL_WSL.md](INSTALL_WSL.md#cannot-connect-to-localhost--streamlit-url-doesnt-open) for more network fixes.
+> See [INSTALLATION.md](INSTALLATION.md#cannot-connect-to-localhost--streamlit-url-doesnt-open) for more network fixes.
 
 ---
 
@@ -213,8 +202,9 @@ python -m gsm train --data data/expression_data/GDS2545.csv \
                      --model XGBoost --seed 88 --iterations 50 --no-bio-validation
 ```
 
-After training, a `.gsm.zip` model bundle is automatically saved in
-`output/<run>/bundles/`.
+After training, a `.gsm.zip` model bundle is automatically saved in `output/<run>/bundles/`. 
+
+> **What is a `.gsm.zip` bundle?** Think of it as a "save file" that freezes the fully trained AI model and all biological group rules into a single zip file. You can share this file with other labs or clinicians so they can predict disease on their own patients without needing to retrain anything.
 
 ### Inspect a Model Bundle
 

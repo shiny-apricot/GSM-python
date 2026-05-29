@@ -6,8 +6,8 @@ Thank you for your interest in contributing! This document explains how to repor
 
 ## Quick Links
 
-- [Development Guide](DOCS/DEVELOPMENT.md) — Project structure, testing, coding standards
-- [GitHub Workflow](DOCS/GITHUB_WORKFLOW.md) — Branching, committing, Pull Requests
+- [Development Guide](DOCS/developer/DEVELOPMENT.md) — Project structure, testing, coding standards
+- [GitHub Workflow](DOCS/developer/GITHUB_WORKFLOW.md) — Branching, committing, Pull Requests
 - [Troubleshooting](DOCS/TROUBLESHOOTING.md) — Common issues and fixes
 
 ---
@@ -33,7 +33,7 @@ Open an issue to discuss new features **before** implementing them. Include:
 
 1. **Fork** the repo (or create a branch if you have collaborator access)
 2. Create a **feature branch** (`git checkout -b feature-my-change`)
-3. Make your changes following the [coding standards](DOCS/DEVELOPMENT.md#6-coding-standards)
+3. Make your changes following the [coding standards](DOCS/developer/DEVELOPMENT.md#6-coding-standards)
 4. Run **tests** to ensure nothing is broken: `pytest`
 5. **Commit** with a clear message
 6. Submit a **Pull Request** (PR)

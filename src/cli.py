@@ -80,8 +80,8 @@ BANNER = r"""
    ║   ╚██████╔╝███████║██║ ╚═╝ ██║                               ║
    ║    ╚═════╝ ╚══════╝╚═╝     ╚═╝                               ║
    ║                                                              ║
-   ║   [bold white]Group  ·  Score  ·  Model[/bold white]                               ║
-   ║   [dim]Bioinformatics Gene Expression Pipeline[/dim]                   ║
+   ║   [bold white]Group  ·  Score  ·  Model[/bold white]         ║
+   ║   [dim]Bioinformatics Gene Expression Pipeline[/dim]         ║
    ║                                                              ║
    ╚══════════════════════════════════════════════════════════════╝
 [/bold cyan]"""
@@ -1974,7 +1974,7 @@ def _show_help(console) -> None:
     docs_t.add_column("File", style="bold")
     docs_t.add_column("Description")
     docs_t.add_row("DOCS/RUNNING.md", "Detailed usage guide")
-    docs_t.add_row("DOCS/DEVELOPMENT.md", "Developer guide")
+    docs_t.add_row("DOCS/developer/DEVELOPMENT.md", "Developer guide")
     docs_t.add_row("DOCS/TROUBLESHOOTING.md", "Common issues & fixes")
     docs_t.add_row("README.md", "Project overview")
     console.print(docs_t)

@@ -1,26 +1,21 @@
-# Installation Guide (Windows + WSL) 🖥️
+# Installation Guide 🖥️
 
-This project runs best in Linux. On Windows, the easiest way is **WSL2** (Windows Subsystem for Linux).
+This project runs best in Linux.
 
-If you are new to this:
-- **Windows** is the "outside building".
-- **WSL (Ubuntu)** is a "small Linux lab inside Windows".
-- We will run the pipeline inside that Linux lab.
-
-> **Native Linux / macOS users:** Skip to [Step 3](#3-install-basic-tools-inside-ubuntu) — you already have a Linux terminal.
+> **Native Linux / macOS users:** Skip to [Step 3](#3-install-basic-tools) — you already have a Linux terminal. On Windows, the easiest way is **WSL2** (Windows Subsystem for Linux).
 
 ---
 
 ## 0) What You Need
 
-- Windows 10 (version 2004+, Build 19041+) or Windows 11
 - Internet connection
 - At least **4 GB free disk space** for Python packages and datasets
 - Admin access on your computer
+- (Windows only): Windows 10 (version 2004+, Build 19041+) or Windows 11
 
 ---
 
-## 1) Install WSL + Ubuntu
+## 1) Install WSL + Ubuntu (Windows Only)
 
 ### Option A (recommended): One Command
 
@@ -60,16 +55,16 @@ wsl --install -d Ubuntu
 
 ---
 
-## 3) Install Basic Tools Inside Ubuntu
+## 3) Install Basic Tools
 
-In the Ubuntu terminal:
+In the Ubuntu/Linux terminal (or macOS Terminal with Homebrew):
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git git-lfs python3 python3-venv python3-pip build-essential curl
 ```
 
-(`sudo` will ask for the password you created for Ubuntu.)
+(`sudo` will ask for the password you created for Ubuntu. Mac users should use `brew install git git-lfs python3` instead).
 
 ---
 
@@ -101,18 +96,9 @@ While you're at it, also install:
 
 ---
 
-## 5) Clone the Project into WSL
+## 5) Clone the Project
 
-### Method A: VS Code (easiest)
-
-1. In VS Code, press `Ctrl+Shift+P` → **WSL: New WSL Window**
-2. Verify `WSL: Ubuntu` appears in the bottom-left corner
-3. Press `Ctrl+Shift+P` → **Git: Clone**
-4. Paste: `https://github.com/shiny-apricot/GSM-to-python.git`
-5. Choose your Linux home folder (`/home/<you>/`)
-6. Click **Open** when prompted
-
-### Method B: Terminal
+### Method A: Terminal (recommended to ensure data downloads correctly)
 
 ```bash
 cd ~
@@ -122,7 +108,17 @@ cd GSM-to-python
 git lfs pull    # Download actual data files (not just LFS pointers)
 ```
 
-> **Tip:** Avoid cloning into `/mnt/c/...` (Windows filesystem). Keeping the code inside Linux (`/home/<you>/...`) is **significantly faster** for file I/O.
+### Method B: VS Code
+
+1. In VS Code, press `Ctrl+Shift+P` → **WSL: New WSL Window**
+2. Verify `WSL: Ubuntu` appears in the bottom-left corner
+3. Press `Ctrl+Shift+P` → **Git: Clone**
+4. Paste: `https://github.com/shiny-apricot/GSM-to-python.git`
+5. Choose your Linux home folder (`/home/<you>/`)
+6. Click **Open** when prompted
+7. **Important:** Open the VS Code terminal (`Ctrl+~`) and run `git lfs install && git lfs pull` to download the actual data files.
+
+> **Tip:** (Windows) Avoid cloning into `/mnt/c/...` (Windows filesystem). Keeping the code inside Linux (`/home/<you>/...`) is **significantly faster** for file I/O.
 
 ---
 

@@ -91,17 +91,16 @@ class AuthorInfo:
     corresponding_email: str
 
 
-##### CONSTANTS #####
-
 AUTHOR = AuthorInfo(
     title=(
-        "Knowledge-Driven Feature Selection with the G-S-M Framework "
-        "for Biomarker Discovery in High-Dimensional Transcriptomic Data"
+        "Knowledge-Driven Feature Selection with the G-S-M Framework for "
+        "Biomarker Discovery in High-Dimensional Transcriptomic Data"
     ),
     authors=[
         "Malik Yousef¹",
         "Jens Allmer²",
         "Yasin İnal³*",
+        "Mustafa Temiz4",
         "Burcu Bakir-Gungor³",
     ],
     affiliations=[
@@ -110,6 +109,9 @@ AUTHOR = AuthorInfo(
         "University of Applied Sciences, Mülheim an der Ruhr, Germany",
         "³ Department of Computer Engineering, Abdullah Gül University, "
         "Kayseri, Türkiye",
+        "4 Department of Management Information Systems, Faculty of Economics "
+        "and Administrative Sciences, Sivas Cumhuriyet University, Sivas, 58140, "
+        "Türkiye",
     ],
     corresponding_email="yasin.inal@agu.edu.tr",
 )
@@ -943,122 +945,112 @@ def write_introduction(doc):
     heading(doc, "1. Introduction", 1)
 
     para(doc,
-         "Transcriptomic data profiling provides a comprehensive snapshot of gene "
-         "expression levels across the genome, playing a critical role in "
-         "unraveling the molecular mechanisms underlying complex diseases and "
-         "discovering robust diagnostic biomarkers. Studies, such as the "
-         "GediNET and CogNet architectures, have demonstrated how integrating "
-         "such molecular expression profiles with disease networks can reveal "
-         "critical biological pathways. Microarray and RNA-seq experiments "
-         "routinely measure tens of thousands of transcripts, yet a typical "
-         "study collects only a few hundred samples. This disparity, commonly "
-         "referred to as the 'curse of dimensionality', causes classifiers to "
-         "fit noise in the training data and produce models that appear accurate "
-         "in-sample but generalise poorly to new patients [1,2]. To address this "
-         "problem, feature selection methods are frequently preferred as they "
-         "can reduce dimensionality and mitigate the risk of overfitting.")
+            "Transcriptomic data profiling provides a comprehensive snapshot of gene "
+            "expression levels across the genome, playing a critical role in unraveling "
+            "the molecular mechanisms underlying complex diseases and discovering robust "
+            "diagnostic biomarkers. Studies, such as the GediNET  and CogNet architectures, "
+            "have demonstrated how integrating such molecular expression profiles with "
+            "disease networks can reveal critical biological pathways. Microarray and "
+            "RNA-seq experiments routinely measure tens of thousands of transcripts, yet "
+            "a typical study collects only a few hundred samples.  This disparity, "
+            "commonly referred to as the 'curse of dimensionality', causes classifiers to "
+            "fit noise in the training data and produce models that appear accurate "
+            "in-sample but generalise poorly to new patients [1,2]. To address this "
+            "problem, feature selection methods are frequently preferred as they can "
+            "reduce dimensionality and mitigate the risk of overfitting.")
 
     para(doc,
-         "Feature selection methods are an effective way to identify a smaller "
-         "number of relevant features from high-dimensional data. Feature "
-         "selection methods consist of three different approaches: i) Filter "
-         "methods rank genes by a univariate statistic such as a t-test; ii) "
-         "wrapper methods evaluate subsets through repeated classification; and "
-         "iii) embedded methods such as LASSO or Random-Forest importance "
-         "combine selection with model fitting [3]. All three feature selection "
-         "approaches treat each feature as an independent entity in analyses "
-         "such as classification. However, when genes are considered as entities, "
-         "they function within pathways, protein complexes, and regulatory "
-         "circuits. Therefore, while a list of sequenced genes may provide useful "
-         "insights, it offers little guidance to a biologist or clinician "
-         "seeking to understand the underlying mechanisms. Many groups have "
-         "attempted to incorporate biological structure into this process to "
-         "address the problem. Network-based classifiers propagate weights over "
-         "protein-protein interaction graphs [4,37]; gene-set enrichment analysis "
-         "(GSEA) assesses whether predefined pathway sets are overrepresented "
-         "among top-ranked features [5]; and group-penalised regression "
-         "approaches such as group LASSO [20] include or exclude entire pathways "
-         "from the model simultaneously. To prioritise genes, integrative tools "
-         "such as GeneMANIA [35] and PARADIGM [36] provide multidimensional "
-         "analytical methodologies that incorporate data from various network "
-         "types.")
+            "Feature selection methods are an effective way to identify a smaller number "
+            "of relevant features from high-dimensional data. Feature selection methods "
+            "consist of three different approaches:  i) Filter methods rank genes by a "
+            "univariate statistic such as a t-test; ii) wrapper methods evaluate subsets "
+            "through repeated classification; and iii) embedded methods such as LASSO or "
+            "Random-Forest importance combine selection with model fitting [3]. All three "
+            "feature selection approaches treat each feature as an independent entity in "
+            "analyses such as classification. However, when genes are considered as "
+            "entities, they function within pathways, protein complexes, and regulatory "
+            "circuits. Therefore, while a list of sequenced genes may provide useful "
+            "insights, it offers little guidance to a biologist or clinician seeking to "
+            "understand the underlying mechanisms. Many groups have attempted to "
+            "incorporate biological structure into this process to address the problem. "
+            "Network-based classifiers propagate weights over protein-protein interaction "
+            "graphs [4,37]; gene-set enrichment analysis (GSEA) assesses whether "
+            "predefined pathway sets are overrepresented among top-ranked features [5]; "
+            "and group-penalised regression approaches such as  group LASSO [20] include "
+            "or exclude  entire pathways from the model simultaneously.  To prioritise "
+            "genes, integrative tools such as GeneMANIA [35] and PARADIGM [36] provide "
+            "multidimensional analytical methodologies that incorporate data from various "
+            "network types.")
 
     para(doc,
-         "Many studies in the literature use genetic information as feature data, "
-         "particularly in prediction problems. KEGG pathway annotations remain the "
-         "most popular source of information for group-based selection, using "
-         "gene information as a feature. DGPathinter uses knowledge-driven matrix "
-         "factorisation with interactome and pathway priors to identify driver "
-         "genes [38]; integrative sparse K-means (is-Kmeans) applies sparse "
-         "overlapping group LASSO guided by pathway sets for subtype discovery "
-         "[39]; PersonaDrive constructs patient-specific bipartite graphs with "
-         "KEGG/Reactome coverage scoring for personalised driver identification "
-         "[40]; a genetic algorithm enriched with KEGG keywords has been used to "
-         "evolve robust gene signatures [41]; KDVS combines enrichment analysis "
-         "with variable selection in a single step [42]; and 3Mint extends "
-         "pathway-based grouping to multi-omics breast-cancer data [43]. At the "
-         "ontology level, the 'GO supergenes' method summarises Gene Ontology "
-         "categories into category-level predictors through modified PCA, and has "
-         "been shown to improve survival prediction over single-gene approaches "
-         "[44]. The LASSO group and its related sparse variants form another "
-         "important family of methods highlighted in the literature. Ma et al. "
-         "[45] introduced supervised group LASSO with K-means clusters on "
-         "microarray data; Li et al. [46] added adaptive within-group sparsity "
-         "using conditional mutual information; Tian et al. [47] incorporated "
-         "biological network constraints for multi-class cancer subtype "
-         "prediction; Wang et al. [48] proposed weighted general group LASSO "
-         "with WGCNA-based gene modules; Huo et al. [49] combined sparse group "
-         "LASSO with SVM; and Li et al. [50] demonstrated that adaptive sparse "
-         "group LASSO with robust PCA pre-processing improves acute-leukaemia "
-         "diagnosis. The common finding across these studies is that enforcing "
-         "group structure on the penalty term yields better predictions with "
-         "fewer selected features.")
+            "Many studies in the literature use genetic information as feature data, "
+            "particularly in prediction problems. KEGG pathway annotations remain the "
+            "most popular source of information for group-based selection, using gene "
+            "information as a feature. DGPathinter uses knowledge-driven matrix factorisation "
+            "with interactome and pathway priors to identify driver genes [38]; integrative "
+            "sparse K-means (is-Kmeans) applies sparse overlapping group LASSO guided by "
+            "pathway sets for subtype discovery [39]; PersonaDrive constructs patient-specific "
+            "bipartite graphs with KEGG/Reactome coverage scoring for personalised driver "
+            "identification [40]; a genetic algorithm enriched with KEGG keywords has been "
+            "used to evolve robust gene signatures [41]; KDVS combines enrichment analysis "
+            "with variable selection in a single step [42]; and 3Mint extends pathway-based "
+            "grouping to multi-omics breast-cancer data [43].  At the ontology level, the "
+            "'GO supergenes' method summarises Gene Ontology categories into category-level "
+            "predictors through modified PCA, and has been shown to improve survival "
+            "prediction over single-gene approaches [44]. The LASSO group and its related "
+            "sparse variants form another important family of methods highlighted in the "
+            "literature.  Ma et al. [45] introduced supervised group LASSO with K-means "
+            "clusters on microarray data; Li et al. [46] added adaptive within-group sparsity "
+            "using conditional mutual information; Tian et al. [47] incorporated biological "
+            "network constraints for multi-class cancer subtype prediction; Wang et al. [48] "
+            "proposed weighted general group LASSO with WGCNA-based gene modules; Huo et al. "
+            "[49] combined sparse group LASSO with SVM; and Li et al. [50] demonstrated that "
+            "adaptive sparse group LASSO with robust PCA pre-processing improves acute-"
+            "leukaemia diagnosis.  The common finding across these studies is that enforcing "
+            "group structure on the penalty term yields better predictions with fewer selected "
+            "features.")
 
     para(doc,
-         "To standardize these knowledge-driven processes, recent research has "
-         "formalised the three-phase Grouping-Scoring-Modeling (G-S-M) paradigm "
-         "[23,24]. This paradigm, originating from methods like SVM-RCE [25], "
-         "has evolved from using data-driven clusters to leveraging biological "
-         "knowledge networks. For instance, CogNet utilized KEGG subnetworks "
-         "[26], GeNetOntology employed Gene Ontology terms [27], and GediNET "
-         "used DisGeNET associations [28]. The present study builds upon this "
-         "lineage, refining the framework into an end-to-end reproducible "
-         "research platform that ensures statistical validity, biological "
-         "relevance, and clinical applicability. GediNET [57] was an early tool "
-         "to use DisGeNET disease-gene associations as a direct grouping "
-         "function in the G-S-M framework, and demonstrated that disease-disease "
-         "associations could be discovered through the group-scoring mechanism. "
-         "However, the statistical safeguards, multi-seed stability analysis, and "
-         "automated biological validation pipeline presented here go "
-         "substantially beyond GediNET's original implementation. Beyond "
-         "methodology alone, the present work adds a practical research stack: "
-         "iterative bootstrap-based uncertainty reporting, dual-metric Robust "
-         "Rank Aggregation (group-derived and model-native), seed and sensitivity "
-         "analyses, classifier-selection via biological coherence, knowledge-source "
-         "comparison, automatic figure and table generation, a rich CLI workflow, "
-         "a browser-based UI, and portable clinical-inference model bundles.")
+            "To standardize these knowledge-driven processes, recent research has "
+            "formalised the three-phase Grouping-Scoring-Modeling (G-S-M) paradigm "
+            "[23,24]. This paradigm, originating from methods like SVM-RCE [25], has "
+            "evolved from using data-driven clusters to leveraging biological knowledge "
+            "networks. For instance, CogNet utilized KEGG subnetworks [26], GeNetOntology "
+            "employed Gene Ontology terms [27], and GediNET used DisGeNET associations "
+            "[28]. The present study builds upon this lineage, refining the framework into "
+            "an end-to-end reproducible research platform that ensures statistical validity, "
+            "biological relevance, and clinical applicability. GediNET [57] was an early "
+            "tool to use DisGeNET disease-gene associations as a direct grouping function "
+            "in the G-S-M framework, and demonstrated that disease-disease associations "
+            "could be discovered through the group-scoring mechanism.  However, the "
+            "statistical safeguards, multi-seed stability analysis, and automated "
+            "biological validation pipeline presented here go substantially beyond "
+            "GediNET's original implementation.  Beyond methodology alone, the present "
+            "work adds a practical research stack: iterative bootstrap-based uncertainty "
+            "reporting, dual-metric Robust Rank Aggregation (group-derived and model-native), "
+            "seed and sensitivity analyses, classifier-selection via biological coherence, "
+            "knowledge-source comparison, automatic figure and table generation, a rich "
+            "CLI workflow, a browser-based UI, and portable clinical-inference model bundles.")
 
     para(doc,
-         "This study aims to achieve superior machine learning performance with "
-         "fewer features by utilising transcriptomic data linked to various "
-         "diseases. To this end, it addresses six key challenges: (i) It "
-         "implements a complete, reproducible G-S-M pipeline for knowledge-driven "
-         "biomarker discovery from high-dimensional transcriptomic data,. (ii) It "
-         "evaluates the framework on seven public cancer datasets using a "
-         "repeated-split design with explicit uncertainty reporting, (iii) It "
-         "introduces dual-metric feature prioritisation by combining group-derived "
-         "scores with model-native importances through Robust Rank Aggregation, "
-         "(iv) It reports broader empirical analyses, including seed stability, "
-         "sensitivity analysis, classifier selection by biological coherence, and "
-         "cross-knowledge-source comparison, (v) It integrates end-to-end "
-         "biological validation with Enrichr, STRING-db and DisGeNET, (vi) It "
-         "delivers a usable software platform with automated reporting and figure "
-         "generation, a rich CLI, a browser interface, and portable clinical-"
-         "inference model bundles. To support reproducibility and independent "
-         "evaluation for researchers, the complete implementation, benchmark "
-         "outputs, and manuscript generation workflow are released in open-source "
-         "form so that other groups can reproduce, compare, and extend these "
-         "results (github adresi eklenebilir).")
+            "This study aims to achieve superior machine learning performance with fewer "
+            "features by utilising transcriptomic data linked to various diseases. To this "
+            "end, it addresses six key challenges: (i) It implements a complete, "
+            "reproducible G-S-M pipeline for knowledge-driven biomarker discovery from "
+            "high-dimensional transcriptomic data,.  (ii) It evaluates the framework on "
+            "seven public cancer datasets using a repeated-split design with explicit "
+            "uncertainty reporting,  (iii) It introduces dual-metric feature prioritisation "
+            "by combining group-derived scores with model-native importances through Robust "
+            "Rank Aggregation,  (iv) It reports broader empirical analyses, including seed "
+            "stability, sensitivity analysis, classifier selection by biological coherence, "
+            "and cross-knowledge-source comparison,  (v) It integrates end-to-end biological "
+            "validation with Enrichr, STRING-db and DisGeNET,  (vi) It delivers a usable "
+            "software platform with automated reporting and figure generation, a rich CLI, a "
+            "browser interface, and portable clinical-inference model bundles.  To support "
+            "reproducibility and independent evaluation for researchers, the complete "
+            "implementation, benchmark outputs, and manuscript generation workflow are "
+            "released in open-source form so that other groups can reproduce, compare, and "
+            "extend these results (github adresi eklenebilir).")
 
 
 def write_methods(doc, perf, figs):
@@ -1070,25 +1062,22 @@ def write_methods(doc, perf, figs):
     n = len(perf)
 
     para(doc,
-         "This study also uses seven gene expression datasets downloaded from the "
-         "Gene Expression Omnibus (GEO) [11] to test the proposed method. All "
-         "were generated on Affymetrix microarray platforms and cover a range of "
-         "malignancies, from haematological cancers to solid tumours (Table 2). "
-         "Two additional GEO datasets (GDS3268, breast cancer; GDS4206, "
-         "hepatocellular carcinoma) were screened during initial curation but "
-         "excluded before benchmarking because the BH-adjusted t-test filter "
-         "retained almost no significant features in most iterations (100 % and "
-         "92 % zero-signal runs, respectively). This followed a predefined "
-         "data-quality rule for repeated zero-signal filtering outcomes. We "
-         "mention these exclusions briefly for transparency and reproducibility; "
-         "full details are documented in the repository. Gene-disease "
-         "associations were taken from DisGeNET v7.0, a platform that integrates "
-         "curated repositories (UniProt, ClinGen), GWAS catalogues and "
-         "literature-mining pipelines [6]. At the time of access, the database "
-         "contained more than 1.1 million associations covering over 24.000 "
-         "diseases. To limit noise from weakly supported annotations, only "
-         "associations confirmed by at least two independent sources were "
-         "retained.")
+            "seven gene expression datasets downloaded from the Gene Expression Omnibus "
+            "(GEO) [11]. All were generated on Affymetrix microarray platforms and cover "
+            "a range of malignancies, from haematological cancers to solid tumours (Table "
+            "2).  Two additional GEO datasets (GDS3268, breast cancer; GDS4206, "
+            "hepatocellular carcinoma) were screened during initial curation but excluded "
+            "before benchmarking because the BH-adjusted t-test filter retained almost no "
+            "significant features in most iterations (100 % and 92 % zero-signal runs, "
+            "respectively).  This followed a predefined data-quality rule for repeated "
+            "zero-signal filtering outcomes.  We mention these exclusions briefly for "
+            "transparency and reproducibility; full details are documented in the repository. "
+            "Gene-disease associations were taken from DisGeNET v7.0, a platform that "
+            "integrates curated repositories (UniProt, ClinGen), GWAS catalogues and "
+            "literature-mining pipelines [6].  At the time of access, the database contained "
+            "more than 1.1 million associations covering over 24.000 diseases.  To limit "
+            "noise from weakly supported annotations, only associations confirmed by at "
+            "least two independent sources were retained.")
 
     ds_rows = []
     for d in perf:
@@ -1116,43 +1105,40 @@ def write_methods(doc, perf, figs):
     # 2.2 The G-S-M Approach
     heading(doc, "2.2 The G-S-M Approach", 2)
     para(doc,
-         "In this section, we present a detailed explanation of the Grouping-"
-         "Scoring-Modeling (G-S-M) approach, which aims to achieve superior "
-         "machine learning performance using fewer features. The pipeline has "
-         "three sequential phases (Grouping, Scoring and Modeling) and is "
-         "repeated over multiple random train/test splits so that the resulting "
-         "performance estimates are not tied to a single favourable or "
-         "unfavourable partition. The Grouping-Scoring-Modeling (G-S-M) approach "
-         "is implemented through the following sequential steps. In the grouping "
-         "component, genes are statistically filtered on the training partition "
-         "using Welch t-tests with BH FDR control. The surviving genes are then "
-         "partitioned into groups defined by disease-gene associations catalogued "
-         "in DisGeNET [6]. In the scoring component, each group is then scored "
-         "by training a classifier on its member genes and recording the "
-         "cross-validated F1 score. In the modelling component, genes from the "
-         "highest-scoring groups are pooled to train a final predictive model. "
-         "This three-phase design, which builds on the G-S-M paradigm formalised "
-         "in [58] and earlier recursive-cluster-elimination [22], ontology-based "
-         "grouping [23], and DisGeNET-based grouping work [57], has two concrete "
-         "advantages. First, it shrinks the search space from thousands of "
-         "individual genes to a handful of biologically meaningful groups. Second, "
-         "every gene that reaches the final model can be traced to a named disease "
-         "association, giving immediate biological context for any downstream "
-         "interpretation. Because the pipeline runs thousands of statistical tests "
-         "(one per gene during training-only pre-filtering), false positives "
-         "accumulate fast. Two standard protective measures are implemented to "
-         "address this issue and are briefly explained below. The Benjamini-"
-         "Hochberg (BH) procedure [7] adjusts p-values so that the expected share "
-         "of false discoveries among all rejected hypotheses stays below a chosen "
-         "threshold (5% here). Unlike the stricter Bonferroni correction, BH "
-         "retains more statistical power when many tests are correlated, which is "
-         "common with gene-expression data. The bootstrap [8] is a resampling "
-         "approach: draw many same-size samples with replacement from the test "
-         "set, recompute the metric each time, and take the 2.5th and 97.5th "
-         "percentiles as a 95% confidence interval. Together, BH-corrected "
-         "filtering and bootstrap confidence intervals keep the numbers reported "
-         "here reproducible and appropriately cautious. The general workflow of "
-         "the G-S-M approach is shown in Figure 1.")
+            "In this section, we present a detailed explanation of the Grouping-Scoring-"
+            "Modeling (G-S-M) approach, which aims to achieve superior machine learning "
+            "performance using fewer features. The pipeline has three sequential phases "
+            "(Grouping, Scoring and Modeling) and is repeated over multiple random train/"
+            "test splits so that the resulting performance estimates are not tied to a "
+            "single favourable or unfavourable partition. The Grouping-Scoring-Modeling "
+            "(G-S-M) approach is implemented through the following sequential steps.  In "
+            "the grouping component, genes are statistically filtered on the training "
+            "partition using Welch t-tests with BH FDR control.  The surviving genes are "
+            "then partitioned into groups defined by disease-gene associations catalogued "
+            "in DisGeNET [6]. In the scoring component, each group is then scored by "
+            "training a classifier on its member genes and recording the cross-validated "
+            "F1 score.  In the modelling component, genes from the highest-scoring groups "
+            "are pooled to train a final predictive model.  This three-phase design, which "
+            "builds on the G-S-M paradigm formalised in [58] and earlier recursive-cluster-"
+            "elimination [22], ontology-based grouping [23], and DisGeNET-based grouping "
+            "work [57], has two concrete advantages.  First, it shrinks the search space "
+            "from thousands of individual genes to a handful of biologically meaningful "
+            "groups.  Second, every gene that reaches the final model can be traced to a "
+            "named disease association, giving immediate biological context for any "
+            "downstream interpretation. Because the pipeline runs thousands of statistical "
+            "tests (one per gene during training-only pre-filtering), false positives "
+            "accumulate fast.  Two standard protective measures are implemented to address "
+            "this issue and are briefly explained below.  The Benjamini-Hochberg (BH) "
+            "procedure [7] adjusts p-values so that the expected share of false discoveries "
+            "among all rejected hypotheses stays below a chosen threshold (5% here).  "
+            "Unlike the stricter Bonferroni correction, BH retains more statistical power "
+            "when many tests are correlated, which is common with gene-expression data.  "
+            "The bootstrap [8] is a resampling approach: draw many same-size samples with "
+            "replacement from the test set, recompute the metric each time, and take the "
+            "2.5th and 97.5th percentiles as a 95% confidence interval.  Together, BH-"
+            "corrected filtering and bootstrap confidence intervals keep the numbers "
+            "reported here reproducible and appropriately cautious. The general workflow "
+            "of the G-S-M approach is shown in Figure 1.")
 
     # Insert pipeline flowchart as Figure 1
     add_figure(doc, FLOWCHART_PATH,
@@ -1256,94 +1242,84 @@ def write_methods(doc, perf, figs):
     heading(doc, "2.1.1 Phase I - Grouping Component", 3)
 
     para(doc,
-         "In the Grouping component, a filtering technique is applied using "
-         "biological domain knowledge to create subgroups containing only "
-         "meaningful information. Because the pipeline runs thousands of "
-         "statistical tests (one per gene during training-only pre-filtering), "
-         "false positives accumulate fast. The Benjamini-Hochberg (BH) procedure "
-         "[7] adjusts p-values so that the expected share of false discoveries "
-         "among all rejected hypotheses stays below a chosen threshold (5% "
-         "here). Unlike the stricter Bonferroni correction, BH retains more "
-         "statistical power when many tests are correlated, which is common "
-         "with gene-expression data. The bootstrap [8] is a resampling approach: "
-         "draw many same-size samples with replacement from the test set, "
-         "recompute the metric each time, and take the 2.5th and 97.5th "
-         "percentiles as a 95% confidence interval. Together, BH-corrected "
-         "filtering and bootstrap confidence intervals keep the numbers reported "
-         "here reproducible and appropriately cautious.")
+            "In the Grouping component, a filtering technique is applied using biological "
+            "domain knowledge to create subgroups containing only meaningful information. "
+            "Because the pipeline runs thousands of statistical tests (one per gene during "
+            "training-only pre-filtering), false positives accumulate fast.  The Benjamini-"
+            "Hochberg (BH) procedure [7] adjusts p-values so that the expected share of "
+            "false discoveries among all rejected hypotheses stays below a chosen threshold "
+            "(5% here). Unlike the stricter Bonferroni correction, BH retains more "
+            "statistical power when many tests are correlated, which is common with gene-"
+            "expression data. The bootstrap [8] is a resampling approach: draw many same-"
+            "size samples with replacement from the test set, recompute the metric each "
+            "time, and take the 2.5th and 97.5th percentiles as a 95% confidence interval. "
+            "Together, BH-corrected filtering and bootstrap confidence intervals keep the "
+            "numbers reported here reproducible and appropriately cautious.")
 
-        para(doc,
-            "Let X be the n x p gene-expression matrix (n samples, p genes) "
-            "and y the binary class-label vector. A knowledge mapping K links "
-            "each biological group g to a subset of gene indices. Here, K can be "
-            "any gene-to-group mapping; the default uses DisGeNET [6], which was "
-            "first employed as a grouping function for gene classification in "
-            "GediNET [57]. Alternative sources such as KEGG biological pathways "
-            "or miRNA-target databases can be substituted without modifying the "
-            "pipeline (see the knowledge-source comparison in Results). DisGeNET "
-            "collects experimentally supported and literature-mined disease-gene "
-            "associations. For a given group g the projected sub-matrix is:")
+    para(doc,
+            "Let X be the n x p gene-expression matrix (n samples, p genes) and y the "
+            "binary class-label vector.  A knowledge mapping K links each biological group "
+            "g to a subset of gene indices.  Here, K can be any gene-to-group mapping; the "
+            "default uses DisGeNET [6], which was first employed as a grouping function for "
+            "gene classification in GediNET [57].  Alternative sources such as KEGG biological "
+            "pathways or miRNA-target databases can be substituted without modifying the "
+            "pipeline (see the knowledge-source comparison in Results).  DisGeNET collects "
+            "experimentally supported and literature-mined disease-gene associations.  For a "
+            "given group g the projected sub-matrix is:")
     add_equation_Xg(doc)
-        para(doc,
-            "This step breaks the original high-dimensional problem into several "
-            "smaller ones, each confined to a biologically coherent feature set. "
-            "Within each train/test split, the group projection is preceded by a "
-            "training-only Welch t-test with Benjamini-Hochberg correction (FDR 5%). "
-            "Genes failing this criterion are excluded before group construction and "
-            "all downstream scoring and modeling steps.")
+    para(doc,
+            "This step breaks the original high-dimensional problem into several smaller "
+            "ones, each confined to a biologically coherent feature set. Within each train/"
+            "test split, the group projection is preceded by a training-only Welch t-test "
+            "with Benjamini-Hochberg correction (FDR 5%).  Genes failing this criterion are "
+            "excluded before group construction and all downstream scoring and modeling steps.")
 
-        # 2.1.2 Phase II - Scoring Component
-        heading(doc, "2.1.2 Phase II - Scoring Component", 3)
-        para(doc,
-            "In the scoring component, importance scores are assigned to the "
-            "subgroups identified by the grouping component. On the training "
-            "partition only, a Welch t-test is run gene by gene to flag "
-            "differentially expressed transcripts. The resulting p-values are "
-            "corrected for multiple testing with the Benjamini-Hochberg "
-            "procedure at a 5% false-discovery rate. Genes that do not pass this "
-            "threshold are dropped before grouping and scoring. A related but "
-            "complementary approach was recently proposed by Khokhar et al. [66], "
-            "who introduce a Limma-based pre-scoring step that statistically "
-            "prioritises groups before the machine-learning scoring phase, "
-            "reducing computational cost on large gene panels.")
-        para(doc,
-            "For each group, a classifier is trained with stratified k-fold "
-            "cross-validation (k = 3 by default). The group score equals the "
-            "mean F1 across folds:")
+    # 2.1.2 Phase II - Scoring Component
+    heading(doc, "2.1.2 Phase II - Scoring Component", 3)
+    para(doc,
+            "In the scoring component, importance scores are assigned to the subgroups "
+            "identified by the grouping component.  On the training partition only, a "
+            "Welch t-test is run gene by gene to flag differentially expressed transcripts. "
+            "The resulting p-values are corrected for multiple testing with the "
+            "Benjamini-Hochberg procedure at a 5% false-discovery rate.  Genes that do not "
+            "pass this threshold are dropped before grouping and scoring.  A related but "
+            "complementary approach was recently proposed by Khokhar et al. [66], who "
+            "introduce a Limma-based pre-scoring step that statistically prioritises groups "
+            "before the machine-learning scoring phase, reducing computational cost on large "
+            "gene panels.")
+    para(doc,
+            "For each group, a classifier is trained with stratified k-fold cross-validation "
+            "(k = 3 by default).  The group score equals the mean F1 across folds:")
     add_equation_Sg(doc)
-        para(doc,
-            "The scoring component runs once per group, per fold, per iteration, "
-            "so it dominates overall wall-clock time. We benchmarked eleven "
-            "classifiers on GDS2545 (1.562 groups, 3-fold CV). Per-group F1 "
-            "scores differed by less than 0.08 across all models, but a "
-            "systematic biological-coherence experiment (Section 2.6) revealed "
-            "that Random Forest produces gene panels with nearly double the "
-            "protein-protein interactions and enrichment p-values three to six "
-            "orders of magnitude more significant than those selected by "
-            "XGBoost — the next-best alternative. Random Forest is therefore the "
-            "default scoring model. In a 100-iteration run on the largest dataset "
-            "(GDS1962, 54.613 features), RF scoring takes roughly 1.5 hours "
-            "compared with 35 minutes for XGBoost — a manageable penalty given "
-            "the substantially improved biological coherence. All eleven models "
-            "remain available as alternatives.")
+    para(doc,
+            "The scoring component runs once per group, per fold, per iteration, so it "
+            "dominates overall wall-clock time.  We benchmarked eleven classifiers on "
+            "GDS2545 (1.562 groups, 3-fold CV).  Per-group F1 scores differed by less than "
+            "0.08 across all models, but a systematic biological-coherence experiment "
+            "(Section 2.6) revealed that Random Forest produces gene panels with nearly "
+            "double the protein-protein interactions and enrichment p-values three to six "
+            "orders of magnitude more significant than those selected by XGBoost — the "
+            "next-best alternative.  Random Forest is therefore the default scoring model. "
+            "In a 100-iteration run on the largest dataset (GDS1962, 54.613 features), RF "
+            "scoring takes roughly 1.5 hours compared with 35 minutes for XGBoost — a "
+            "manageable penalty given the substantially improved biological coherence.  All "
+            "eleven models remain available as alternatives.")
 
-        # 2.1.3 Phase III - Modeling Component
-        heading(doc, "2.1.3 Phase III - Modeling Component", 3)
-        para(doc,
-            "After importance scores are assigned to the groups during the "
-            "scoring component, operations are carried out on these groups in "
-            "the modelling component. Groups are sorted by their score in "
-            "descending order. The top m groups are selected and their member "
-            "genes pooled (duplicates removed) into one feature set. A classifier "
-            "is then trained on this reduced representation. Random Forest is the "
-            "default final classifier (see Section 2.6 for the empirical "
-            "justification), but the framework is designed to be "
-            "classifier-agnostic: XGBoost, SVM, KNN, DecisionTree and MLP "
-            "(Multi-Layer Perceptron) are also supported and can be swapped in "
-            "with a single configuration parameter. In particular, the inclusion "
-            "of MLP allows users to apply a neural-network-based model to the "
-            "reduced feature space, which may capture non-linear expression "
-            "patterns that tree-based models miss.")
+    # 2.1.3 Phase III - Modeling Component
+    heading(doc, "2.1.3 Phase III - Modeling Component", 3)
+    para(doc,
+            "After importance scores are assigned to the groups during the scoring component, "
+            "operations are carried out on these groups in the modelling component. Groups "
+            "are sorted by their score in descending order.  The top m groups are selected "
+            "and their member genes pooled (duplicates removed) into one feature set.  A "
+            "classifier is then trained on this reduced representation.  Random Forest is "
+            "the default final classifier (see Section 2.6 for the empirical justification), "
+            "but the framework is designed to be classifier-agnostic: XGBoost, SVM, KNN, "
+            "DecisionTree and MLP (Multi-Layer Perceptron) are also supported and can be "
+            "swapped in with a single configuration parameter.  In particular, the inclusion "
+            "of MLP allows users to apply a neural-network-based model to the reduced feature "
+            "space, which may capture non-linear expression patterns that tree-based models "
+            "miss.")
     para(doc,
          "The default choice of Random Forest for the final model is "
          "motivated by three considerations: (i) its bagging ensemble "
@@ -1358,116 +1334,112 @@ def write_methods(doc, perf, figs):
          "negatives in their particular setting (e.g. 0.3 for screening, "
          "0.7 for confirmatory diagnosis).")
 
-        # Why tree-based models
-        para(doc,
-            "Although the framework is classifier-agnostic and supports non-tree "
-            "methods (SVM, KNN, MLP), tree-based ensembles such as Random Forest "
-            "and XGBoost are preferred in both the scoring and modeling phases for "
-            "four reasons that are specific to biomarker-discovery pipelines. "
-            "First, tree-based models produce native per-feature importance scores "
-            "(Gini impurity for RF, gain for XGBoost), which feed directly into the "
-            "dual-metric Robust Rank Aggregation used to rank genes across "
-            "iterations (Section 2.7); SVM (with non-linear kernels), KNN and "
-            "standard MLP do not provide analogous per-gene attributions without "
-            "post-hoc methods such as SHAP, which would multiply the already "
-            "dominant scoring time by an order of magnitude. Second, decision trees "
-            "handle mixed-scale and high-dimensional feature spaces without "
-            "requiring feature normalisation, which simplifies the preprocessing "
-            "pipeline when genes from heterogeneous disease groups are pooled. "
-            "Third, the hierarchical split structure of trees captures gene-gene "
-            "interactions implicitly — an important property when the selected "
-            "features are biologically co-regulated within disease groups. Fourth, "
-            "ensemble trees (bagging in RF, boosting in XGBoost) are inherently "
-            "robust to irrelevant features because each tree only considers a "
-            "random subset, reducing the risk that noise genes from low-scoring "
-            "groups dominate the model. These properties make tree-based "
-            "classifiers the natural default, though users with specific "
-            "requirements — for instance, neural-network interpretability via "
-            "gradient-based saliency maps — can switch to MLP or other models with "
-            "a single configuration parameter. A pseudocode of the proposed "
+    # Why tree-based models
+    para(doc,
+            "Although the framework is classifier-agnostic and supports non-tree methods "
+            "(SVM, KNN, MLP), tree-based ensembles such as Random Forest and XGBoost are "
+            "preferred in both the scoring and modeling phases for four reasons that are "
+            "specific to biomarker-discovery pipelines.  First, tree-based models produce "
+            "native per-feature importance scores (Gini impurity for RF, gain for XGBoost), "
+            "which feed directly into the dual-metric Robust Rank Aggregation used to rank "
+            "genes across iterations (Section 2.7); SVM (with non-linear kernels), KNN and "
+            "standard MLP do not provide analogous per-gene attributions without post-hoc "
+            "methods such as SHAP, which would multiply the already dominant scoring time "
+            "by an order of magnitude.  Second, decision trees handle mixed-scale and "
+            "high-dimensional feature spaces without requiring feature normalisation, "
+            "which simplifies the preprocessing pipeline when genes from heterogeneous "
+            "disease groups are pooled.  Third, the hierarchical split structure of trees "
+            "captures gene-gene interactions implicitly — an important property when the "
+            "selected features are biologically co-regulated within disease groups.  "
+            "Fourth, ensemble trees (bagging in RF, boosting in XGBoost) are inherently "
+            "robust to irrelevant features because each tree only considers a random "
+            "subset, reducing the risk that noise genes from low-scoring groups dominate "
+            "the model.  These properties make tree-based classifiers the natural default, "
+            "though users with specific requirements — for instance, neural-network "
+            "interpretability via gradient-based saliency maps — can switch to MLP or other "
+            "models with a single configuration parameter. A pseudocode of the proposed "
             "approach is shown in Figure 2.")
 
-        # 2.3 Experimental Design
-        heading(doc, "2.3 Experimental Design, Statistical Validation and Additional Analyses", 2)
+    # 2.3 Experimental Design
+    heading(doc, "2.3 Experimental Design, Statistical Validation and Additional Analyses", 2)
 
-        para(doc,
-            "In this section, all methodological extensions – including statistical "
-            "validation, sensitivity analysis, platform applications, and clinical "
-            "inference workflows – are described to ensure comprehensive validation "
-            "and eliminate the problem of excessive sub-segmentation. On a standard "
-            "workstation (Intel Core i7, 8 cores, 16 GB RAM), a 10-iteration, "
-            "3-fold-CV run on the largest dataset (GDS1962: 54 613 features, 180 "
-            "samples, 6 groups) took about 12 minutes. Scaling to 100 iterations "
-            "brought the time to roughly 1.5 hours for the same dataset. Profiling "
-            "the pipeline on GDS2545 shows that the scoring phase accounts for more "
-            "than 90 % of wall-clock time per iteration; data loading and preprocessing "
-            "take under 1 s, t-test filtering under 0.5 s, and final model training "
-            "under 2 s. Joblib parallelism across CPU cores cuts scoring wall-clock "
-            "time by a factor roughly equal to the number of physical cores. The "
-            "application is written in Python 3.10+, backed by Pandas and NumPy for "
-            "matrix operations and scikit-learn for machine learning models. Earlier "
-            "G-S-M implementations were distributed as workflows requiring users to "
-            "install dependencies. To lower this barrier — particularly for biologists — "
-            "a browser-based graphical interface was built using Streamlit, alongside a "
-            "rich command-line interface for terminal-first workflows. The interface "
-            "provides access to all pipeline parameters and renders interactive plots "
-            "without manual scripting. Class ratios in the datasets range from 1.0:1 "
-            "to 6.8:1, so countermeasures were strictly enforced. Both the train/test "
-            "splits and the CV folds use stratified random sampling to keep the class "
-            "distribution intact in every subset. An optional balancing module can "
-            "detect imbalanced distributions and apply random undersampling or random "
-            "oversampling before training. Additionally, we report F1 and AUC-ROC "
-            "rather than raw accuracy, because accuracy can be misleading when one "
-            "class dominates [10].")
+    para(doc,
+         "In this section, all methodological extensions – including statistical "
+         "validation, sensitivity analysis, platform applications, and clinical "
+         "inference workflows – are described to ensure comprehensive validation "
+         "and eliminate the problem of excessive sub-segmentation. On a standard "
+         "workstation (Intel Core i7, 8 cores, 16 GB RAM), a 10-iteration, "
+         "3-fold-CV run on the largest dataset (GDS1962: 54 613 features, 180 "
+         "samples, 6 groups) took about 12 minutes. Scaling to 100 iterations "
+         "brought the time to roughly 1.5 hours for the same dataset. Profiling "
+         "the pipeline on GDS2545 shows that the scoring phase accounts for more "
+         "than 90 % of wall-clock time per iteration; data loading and preprocessing "
+         "take under 1 s, t-test filtering under 0.5 s, and final model training "
+         "under 2 s. Joblib parallelism across CPU cores cuts scoring wall-clock "
+         "time by a factor roughly equal to the number of physical cores. The "
+         "application is written in Python 3.10+, backed by Pandas and NumPy for "
+         "matrix operations and scikit-learn for machine learning models. Earlier "
+         "G-S-M implementations were distributed as workflows requiring users to "
+         "install dependencies. To lower this barrier — particularly for biologists — "
+         "a browser-based graphical interface was built using Streamlit, alongside a "
+         "rich command-line interface for terminal-first workflows. The interface "
+         "provides access to all pipeline parameters and renders interactive plots "
+         "without manual scripting. Class ratios in the datasets range from 1.0:1 "
+         "to 6.8:1, so countermeasures were strictly enforced. Both the train/test "
+         "splits and the CV folds use stratified random sampling to keep the class "
+         "distribution intact in every subset. An optional balancing module can "
+         "detect imbalanced distributions and apply random undersampling or random "
+         "oversampling before training. Additionally, we report F1 and AUC-ROC "
+         "rather than raw accuracy, because accuracy can be misleading when one "
+         "class dominates [10].")
 
-        para(doc,
-            "Cross-validation alone is known to yield optimistic bias in "
-            "high-dimensional small-sample settings [32]. To provide rigorous estimates "
-            "of generalisation performance, the entire G-S-M pipeline is executed inside "
-            "a repeated hold-out protocol. For each dataset, the samples are randomly "
-            "split into 70% training and 30% test sets, stratified by class. Grouping, "
-            "scoring, and feature selection are performed entirely on the training set "
-            "to prevent data leakage [33]. The final model is then evaluated on the "
-            "withheld 30%. This process is repeated N = 100 times with different random "
-            "seeds, producing an empirical distribution of test-set scores. The reported "
-            "performance is taking the 2.5th and 97.5th percentiles as a 95% confidence "
-            "interval. To evaluate how robust the G-S-M pipeline is to variations in the "
-            "data, a comprehensive stability experiment was conducted using the GDS2545 "
-            "(prostate cancer) dataset. The framework was repeatedly tested across noise "
-            "injection, feature dropout, sample size reduction, and class imbalance "
-            "stress conditions. To check how sensitive the results are to hyperparameter "
-            "choices, we ran a one-at-a-time (OAT) sensitivity analysis on three datasets, "
-            "GDS2545, GDS2771, and GDS3257, chosen to represent different levels of "
-            "classification difficulty. Three parameters were varied one at a time, with "
-            "the others held at their baseline values (FDR = 0.05, CV folds = 3, max groups = 10):")
+    para(doc,
+         "Cross-validation alone is known to yield optimistic bias in "
+         "high-dimensional small-sample settings [32].  To provide rigorous estimates "
+         "of generalisation performance, the entire G-S-M pipeline is executed inside "
+         "a repeated hold-out protocol.  For each dataset, the samples are randomly "
+         "split into 70% training and 30% test sets, stratified by class.  Grouping, "
+         "scoring, and feature selection are performed entirely on the training set "
+         "to prevent data leakage [33].  The final model is then evaluated on the "
+         "withheld 30%. This process is repeated N = 100 times with different random "
+         "seeds, producing an empirical distribution of test-set scores.  The reported "
+         "performance is taking the 2.5th and 97.5th percentiles as a 95% confidence "
+         "interval. To evaluate how robust the G-S-M pipeline is to variations in the "
+         "data, a comprehensive stability experiment was conducted using the GDS2545 "
+         "(prostate cancer) dataset. The framework was repeatedly tested across noise "
+         "injection, feature dropout, sample size reduction, and class imbalance "
+         "stress conditions. To check how sensitive the results are to hyperparameter "
+         "choices, we ran a one-at-a-time (OAT) sensitivity analysis on three datasets, "
+         "GDS2545, GDS2771, and GDS3257, chosen to represent different levels of "
+         "classification difficulty.  Three parameters were varied one at a time, with "
+         "the others held at their baseline values (FDR = 0.05, CV folds = 3, max groups = 10):")
 
-        para(doc, "· FDR threshold α in {0.01, 0.05, 0.10}")
-        para(doc, "· Cross-validation folds k in {3, 5, 10}")
-        para(doc, "· Maximum retained groups m in {5, 10, 20}")
+    para(doc, "·       FDR threshold α in {0.01, 0.05, 0.10}")
+    para(doc, "·       Cross-validation folds k in {3, 5, 10}")
+    para(doc, "·       Maximum retained groups m in {5, 10, 20}")
 
-        para(doc,
-            "Each configuration was run over 10 pipeline iterations with separate "
-            "random training and test splits, and the average F1 score and standard "
-            "deviation were calculated. The impact of the parameters was measured as the "
-            "range of F1 scores (maximum minus minimum) across the tested values and "
-            "averaged across the datasets. The results (Supplementary Table S2) indicate "
-            "that the pipeline is robust to all tested hyperparameters: the largest F1 "
-            "swing for any single parameter on any dataset was ≤ 0.038. Averaging over "
-            "datasets, the parameters ranked by impact were FDR threshold (mean ΔF1 = "
-            "0.021), Max groups (mean ΔF1 = 0.010), CV folds (mean ΔF1 = 0.001). These "
-            "numbers support the default settings used throughout the study.")
+    para(doc,
+         "Each configuration was run over 10 pipeline iterations with separate random "
+         "training and test splits, and the average F1 score and standard deviation were "
+         "calculated. The impact of the parameters was measured as the range of F1 "
+         "scores (maximum minus minimum) across the tested values and averaged across "
+         "the datasets. The results (Supplementary Table S2) indicate that the pipeline "
+         "is robust to all tested hyperparameters: the largest F1 swing for any single "
+         "parameter on any dataset was ≤ 0.038.  Averaging over datasets, the parameters "
+         "ranked by impact were FDR threshold (mean ΔF1 = 0.021), Max groups (mean ΔF1 = "
+         "0.010), CV folds (mean ΔF1 = 0.001).  These numbers support the default settings "
+         "used throughout the study.")
 
-        para(doc,
-            "At the end of a successful training run, the framework serialises the "
-            "data scaler (mean and variance vectors for z-score normalisation), the "
-            "exact feature indices and names required by the final model, the trained "
-            "final classifier object (e.g. the Random Forest ensemble), and the top-"
-            "ranked biological groups that drove the selection. These components are "
-            "packaged into a single archive. The separate inference module can later "
-            "extract this bundle, accept a new raw patient expression profile, "
-            "automatically subset and scale the required genes, and emit a diagnostic "
-            "probability — executing in milliseconds on standard clinical hardware "
-            "without access to the original training cohort.")
+    para(doc,
+         "At the end of a successful training run, the framework serialises the data "
+         "scaler (mean and variance vectors for z-score normalisation), the exact feature "
+         "indices and names required by the final model, the trained final classifier "
+         "object (e.g. the Random Forest ensemble), and the top-ranked biological groups "
+         "that drove the selection.  These components are packaged into a single archive. "
+         " The separate inference module can later extract this bundle, accept a new raw "
+         "patient expression profile, automatically subset and scale the required genes, "
+         "and emit a diagnostic probability — executing in milliseconds on standard "
+            "clinical hardware without access to the original training cohort.")
 
     add_table(doc,
               ["Dataset", "Genes (p)", "Groups", "Time / iter (s)",
@@ -1508,14 +1480,14 @@ def write_results(doc, perf, val, m_figs, ds_figs):
     min_f1 = min(d["f1_score"] for d in perf)
     max_f1 = max(d["f1_score"] for d in perf)
 
-        para(doc,
-            "In this section, we will comprehensively evaluate the machine learning "
-            "performance of the G-S-M approach, as well as its performance when "
-            "applied to various datasets. Machine learning performance is evaluated "
-            "in terms of accuracy, sensitivity, specificity, F1 score, and AUC. "
-            "sonuçlardan önce sınıflandırma performansı nasıl elde edildi hangi "
-            "sınıflandırıcılar kullanıldı bununla ilgili açıklamalara yer verilmeli "
-            "ve tabloyu verdikten sonra altına tablonun yorumlaması yapılmalı.")
+    para(doc,
+         "In this section, we will comprehensively evaluate the machine learning "
+         "performance of the G-S-M approach, as well as its performance when "
+         "applied to various datasets. Machine learning performance is evaluated "
+         "in terms of accuracy, sensitivity, specificity, F1 score, and AUC. "
+         "sonuçlardan önce sınıflandırma performansı nasıl elde edildi hangi "
+         "sınıflandırıcılar kullanıldı bununla ilgili açıklamalara yer verilmeli "
+         "ve tabloyu verdikten sonra altına tablonun yorumlaması yapılmalı.")
 
     para(doc,
          "From a reuse perspective, this benchmark contributes a rare "
@@ -1569,7 +1541,7 @@ def write_results(doc, perf, val, m_figs, ds_figs):
     if "metrics_radar" in m_figs:
         add_figure(doc, m_figs["metrics_radar"],
                    f"{FIG_RESULTS_RADAR}. Radar chart comparing five performance "
-                   "metrics across datasets. Each axis spans 0.5.0.")
+                   "metrics across datasets.  Each axis spans 0.5–1.0.")
 
     para(doc,
          "BUrada önce genel bir en yüksek değerlerin bilgisi verilip daha sonra "
@@ -1587,33 +1559,22 @@ def write_results(doc, perf, val, m_figs, ds_figs):
          "elde edilen üstün başarı performansı bu özelliklerin gücünü "
          "vurgulamaktadır.")
 
-    para(doc,
-         f"The mean F1 was {avg_f1:.2f} (range {min_f1:.2f}{max_f1:.2f}) and "
-         f"the mean AUC-ROC was {avg_auc:.2f}. Several datasets (n = {perfect}) "
-         "showed near-ceiling held-out performance in evaluation splits. The "
-         "hardest dataset was GDS2771 (Lung Cancer), where the pipeline still "
-         "reached F1 = 0.85 with a confidence interval well above chance.")
 
     # ------- 3.2 Biological Validation (moved up — strongest evidence) ------- #
     doc.add_page_break()
     heading(doc, "3.2 Biological Validation", 2)
-        para(doc,
-            "Biyolojik açıdan değerlendirildiğinde işte kaç farklı açıdan "
-            "değerlendiriliyorsa, bu kadar açıdan değerlednirilmiştir. İlk olarka "
-            "…. Değerlendirilmiş ve bu incelenmiştir. Diyerek tüm açılardan "
-            "bahsetmelisin")
-
-        para(doc,
-            "Pathway enrichment (Enrichr) and protein-protein interaction (PPI) "
-            "network queries (STRING-db v12) were run for each dataset to assess "
-            "whether the genes selected by the pipeline have established roles in "
-            "cancer biology. All seven datasets returned complete enrichment and "
-            "interaction data.")
+    para(doc,
+         "Biyolojik açıdan değerlendirildiğinde işte kaç farklı açıdan "
+         "değerlendiriliyorsa, bu kadar açıdan değerlednirilmiştir. İlk olarka "
+         "…. Değerlendirilmiş ve bu incelenmiştir. Diyerek tüm açılardan "
+         "bahsetmelisin")
 
     # 3.2.1 Pathway Enrichment
     heading(doc, "3.2.1 Pathway Enrichment", 3)
-        para(doc,
-            "Nedir pathway enrichmetn nerede kullanılır bizim yöntemimizde nasıl kullanıdlı.")
+    para(doc,
+            "Nedir pathway enrichmetn nerede kullanılır bizim yöntemimizde nasıl kullanıdlı. "
+            "Tablo8 de gösterilmektedir olarak tablo 8 de neyin gösterildiğini "
+            "vurgulaman lazım")
     val_rows = []
     for v in val:
         dg = v["top_disgenet_terms"][0] if v["top_disgenet_terms"] else {}
@@ -2316,62 +2277,62 @@ def write_conclusions(doc, perf, val):
     min_grp = min(d["groups_used"] for d in perf)
     max_grp = max(d["groups_used"] for d in perf)
 
-        para(doc,
-            "We introduced the G-S-M framework, a knowledge-driven pipeline that folds "
-            "external biological knowledge into the feature-selection step for high-"
-            "dimensional transcriptomic data. The main findings are:")
+    para(doc,
+         "We introduced the G-S-M framework, a knowledge-driven pipeline that folds "
+         "external biological knowledge into the feature-selection step for high-"
+         "dimensional transcriptomic data. The main findings are:")
 
-        para(doc,
-            "Classification performance. Across 7 cancer datasets the approach achieved "
-            "a mean F1 of 0.95 and a mean AUC-ROC of 0.95, demonstrating that external "
-            "biological knowledge can serve as an effective basis for feature selection "
-            "in transcriptomic classification.")
+    para(doc,
+         "Classification performance. Across 7 cancer datasets the approach achieved "
+         "a mean F1 of 0.95 and a mean AUC-ROC of 0.95, demonstrating that external "
+         "biological knowledge can serve as an effective basis for feature selection "
+         "in transcriptomic classification.")
 
-        para(doc,
-            "Knowledge-source consistency in this benchmark. Replacing DisGeNET disease-"
-            "gene associations with KEGG biological pathways or miRNA-target mappings "
-            "produced comparable classification performance, indicating that the G-S-M "
-            "architecture transferred across the tested biologically meaningful gene-to-"
-            "group mapping.")
+    para(doc,
+         "Knowledge-source consistency in this benchmark. Replacing DisGeNET disease-"
+         "gene associations with KEGG biological pathways or miRNA-target mappings "
+         "produced comparable classification performance, indicating that the G-S-M "
+         "architecture transferred across the tested biologically meaningful gene-to-"
+         "group mapping.")
 
-        para(doc,
-            "Very high discrimination in benchmark splits. 4 of 7 datasets reached F1 = "
-            "1.00, using between 1 and 7 disease-associated groups and as few as 6 "
-            "features, indicating that the approach can identify strongly discriminative "
-            "gene sets.")
+    para(doc,
+         "Very high discrimination in benchmark splits. 4 of 7 datasets reached F1 = "
+         "1.00, using between 1 and 7 disease-associated groups and as few as 6 "
+         "features, indicating that the approach can identify strongly discriminative "
+         "gene sets.")
 
-        para(doc,
-            f"Feature efficiency. The selected gene sets were compact ({min_feat}–"
-            f"{max_feat} features, {min_grp}–{max_grp} groups) yet biologically "
-            "interpretable, with minimal or no loss in predictive power compared to "
-            "models trained on the full feature space.")
+    para(doc,
+         f"Feature efficiency. The selected gene sets were compact ({min_feat}-"
+         f"{max_feat} features, {min_grp}-{max_grp} groups) yet biologically "
+         "interpretable, with minimal or no loss in predictive power compared to "
+         "models trained on the full feature space.")
 
-        para(doc,
-            f"Biological coherence. {total_ppi} protein-protein interactions were "
-            "identified among selected features, and disease-specific pathway "
-            "enrichment was observed across all 7 datasets, indicating that the "
-            "selected biomarkers align with known disease biology.")
+    para(doc,
+         f"Biological coherence. {total_ppi} protein-protein interactions were "
+         "identified among selected features, and disease-specific pathway "
+         "enrichment was observed across all 7 datasets, indicating that the "
+         "selected biomarkers align with known disease biology.")
 
-        para(doc,
-            "Reproducibility and accessibility. To enable independent verification and "
-            "to lower the barrier for researchers who do not write code, the complete "
-            "implementation, together with a browser-based interface, is released as "
-            "open-source software.")
+    para(doc,
+         "Reproducibility and accessibility. To enable independent verification and "
+         "to lower the barrier for researchers who do not write code, the complete "
+         "implementation, together with a browser-based interface, is released as "
+         "open-source software.")
 
-        para(doc,
-            "Clinical inference. The framework extends the G-S-M lineage with portable "
-            "model bundles that support patient-level inference with confidence-scored "
-            "predictions, risk classification, and per-sample feature importance — "
-            "bridging the gap between research pipelines and clinical decision-support "
-            "tools.")
+    para(doc,
+         "Clinical inference. The framework extends the G-S-M lineage with portable "
+         "model bundles that support patient-level inference with confidence-scored "
+         "predictions, risk classification, and per-sample feature importance - "
+         "bridging the gap between research pipelines and clinical decision-support "
+         "tools.")
 
-        para(doc,
-            "Taken together, these results indicate that anchoring the feature space in "
-            "external biological knowledge can improve both the interpretability and "
-            "the predictive accuracy of transcriptomic classifiers, and that this "
-            "benefit is not limited to a single knowledge source. The openly released "
-            "methods and tools are intended to facilitate adoption and independent "
-            "evaluation by the broader bioinformatics community.")
+    para(doc,
+         "Taken together, these results indicate that anchoring the feature space in "
+         "external biological knowledge can improve both the interpretability and "
+         "the predictive accuracy of transcriptomic classifiers, and that this "
+         "benefit is not limited to a single knowledge source. The openly released "
+         "methods and tools are intended to facilitate adoption and independent "
+         "evaluation by the broader bioinformatics community.")
 
 
 def write_references(doc):
@@ -2654,9 +2615,9 @@ def write_supplementary(doc, perf, val=None, ds_figs=None):
     heading(doc, "Supplementary Material", 1)
 
     heading(doc, "S1. Algorithm Pseudocode", 2)
-        para(doc,
-            "The full G-S-M pseudocode (Algorithm 1) is presented in Section 2.1 "
-            "of the main text.")
+    para(doc,
+         "The full G-S-M pseudocode (Algorithm 1) is presented in Section 2.1 "
+         "of the main text.")
 
     # S2. Sensitivity Analysis Table
     _write_sensitivity_table(doc)
@@ -2873,6 +2834,31 @@ def _maybe_refresh_review_docx(version: int, clean_path: Path) -> Path | None:
         return None
 
 
+def _maybe_generate_gdoc_diff(version: int, clean_path: Path) -> Path | None:
+    """Compare against ACTIVE Google Doc and write a diff report if enabled."""
+    config_path = MANUSCRIPT_ROOT / "review" / "review_bridge_config.json"
+    if not config_path.exists():
+        return None
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+    if not bool(config.get("auto_compare_active_docx", True)):
+        return None
+    try:
+        bridge = _load_review_bridge_module()
+        diff_path, has_changes = bridge._build_gdoc_diff_from_active(
+            version,
+            clean_path,
+        )
+        if has_changes and bool(config.get("compare_fail_on_diff", False)):
+            raise RuntimeError(
+                "Active Google Doc differs from local manuscript. "
+                f"See {diff_path} for details."
+            )
+        return diff_path
+    except Exception as exc:
+        print(f"Warning: auto Google Doc diff failed: {exc}")
+        return None
+
+
 def build():
     """Orchestrate full manuscript generation."""
     build_started_at = datetime.now()
@@ -2962,6 +2948,7 @@ def build():
         )
 
     refreshed_review = _maybe_refresh_review_docx(version, clean_out)
+    gdoc_diff_path = _maybe_generate_gdoc_diff(version, clean_out)
 
     log_lines.extend([
         f"Saved (clean): {clean_out}",
@@ -2973,6 +2960,8 @@ def build():
     ])
     if refreshed_review is not None:
         log_lines.append(f"Refreshed review DOCX: {refreshed_review}")
+    if gdoc_diff_path is not None:
+        log_lines.append(f"Active Google Doc diff: {gdoc_diff_path}")
     if prev_path is not None and prev_version is not None:
         log_lines.append(f"Previous manuscript: {prev_path}")
         if comparison_path is not None:
@@ -2990,6 +2979,8 @@ def build():
     print(f"  Size (review):  {review_kb:.0f} KB")
     if refreshed_review is not None:
         print(f"  Refreshed review DOCX: {refreshed_review}")
+    if gdoc_diff_path is not None:
+        print(f"  Google Doc diff: {gdoc_diff_path}")
     print(f"  Log:    {log_path}")
     if comparison_path is not None:
         print(f"  Diff:   {comparison_path}")

@@ -368,18 +368,18 @@ Organized by artifact type to keep manuscript work, presentations, and reference
 
 | File | Topic |
 |------|-------|
-| `DEVELOPMENT.md` | Project structure & coding standards |
+| `developer/DEVELOPMENT.md` | Project structure & coding standards |
 | `RUNNING.md` | How to run the pipeline |
-| `INSTALL_WSL.md` | WSL/Linux setup |
-| `GITHUB_WORKFLOW.md` | Branching & PR guidelines |
-| `COPILOT.md` | GitHub Copilot usage |
-| `WEB_DEPLOYMENT.md` | Web deployment options, costs, and architecture for publishing inference as a website |
+| `INSTALLATION.md` | WSL/Linux setup |
+| `developer/GITHUB_WORKFLOW.md` | Branching & PR guidelines |
+| `developer/COPILOT.md` | GitHub Copilot usage |
+| `advanced/WEB_DEPLOYMENT.md` | Web deployment options, costs, and architecture for publishing inference as a website |
 | `TROUBLESHOOTING.md` | Common fixes |
-| `DATASET_EXCLUSIONS.md` | Rationale for excluding GDS3268 and GDS4206 |
-| `CLINICAL_MODEL_SELECTION.md` | Clinician-facing guidance for disease-matched bundle selection and interpretation thresholds |
+| `methods/DATASET_EXCLUSIONS.md` | Rationale for excluding GDS3268 and GDS4206 |
+| `advanced/CLINICAL_MODEL_SELECTION.md` | Clinician-facing guidance for disease-matched bundle selection and interpretation thresholds |
 | `README.md` | Documentation index |
-| `aggregated_group_ranking_explanation.txt` | Explanation of aggregated group ranking algorithm |
-| `feature_ranking_methods_explanation.txt` | Explanation of feature ranking methods (RRA, etc.) |
+| `methods/RANKING_EXPLANATION.md` | Explanation of aggregated group ranking algorithm |
+| `methods/FEATURE_METHODS.md` | Explanation of feature ranking methods (RRA, etc.) |
 
 ---
 
@@ -394,7 +394,7 @@ Organized by artifact type to keep manuscript work, presentations, and reference
 | CV folds (validation) | 5-fold stratified | Phase III final model |
 | Feature ranking | Robust Rank Aggregation | Stuart et al. method |
 | Biological validation | Enrichr + STRING-db + DisGeNET | Optional, external APIs |
-| Excluded datasets | GDS3268 (breast), GDS4206 (HCC) | See `DOCS/DATASET_EXCLUSIONS.md` |
+| Excluded datasets | GDS3268 (breast), GDS4206 (HCC) | See `DOCS/methods/DATASET_EXCLUSIONS.md` |
 | Supported classifiers | RF, XGBoost, DecisionTree, SVM, KNN, MLP | Via `get_classifier()` factory |
 | Python version | 3.10+ | 3.11 or 3.12 recommended |
 | Model bundle format | `.gsm.zip` | Top-10 models by F1 + scaler + feature names + metadata |

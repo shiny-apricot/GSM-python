@@ -73,6 +73,9 @@ class ReviewConfig:
     carry_forward_fixed_comments: bool = False
     carry_forward_max_comments_per_doc: int = 30
     auto_refresh_review_docx: bool = True
+    auto_compare_active_docx: bool = True
+    compare_fail_on_diff: bool = False
+    compare_write_report: bool = True
     active_file_id: str = ""
 
 
@@ -232,6 +235,9 @@ def _config_template() -> ReviewConfig:
         carry_forward_fixed_comments=False,
         carry_forward_max_comments_per_doc=30,
         auto_refresh_review_docx=True,
+        auto_compare_active_docx=True,
+        compare_fail_on_diff=False,
+        compare_write_report=True,
         active_file_id="",
     )
 
@@ -258,6 +264,9 @@ def _load_config() -> ReviewConfig:
         carry_forward_fixed_comments=bool(data.get("carry_forward_fixed_comments", False)),
         carry_forward_max_comments_per_doc=int(data.get("carry_forward_max_comments_per_doc", 30)),
         auto_refresh_review_docx=bool(data.get("auto_refresh_review_docx", True)),
+        auto_compare_active_docx=bool(data.get("auto_compare_active_docx", True)),
+        compare_fail_on_diff=bool(data.get("compare_fail_on_diff", False)),
+        compare_write_report=bool(data.get("compare_write_report", True)),
         active_file_id=data.get("active_file_id", ""),
     )
 
@@ -1547,6 +1556,37 @@ def _build_review_docx_from_active(version: int, local_docx_path: Path) -> Path:
     output_path = local_docx_path.parent / f"{local_docx_path.stem}_review.docx"
     _generate_review_docx(export_path, local_docx_path, output_path)
     return output_path
+
+
+def _build_gdoc_diff_from_active(
+    version: int,
+    local_docx_path: Path,
+    output_path: Path | None = None,
+) -> tuple[Path, bool]:
+    """Download ACTIVE Google Doc and write a changelog diff against local."""
+    config = _load_config()
+    review_dir = _review_dir_for_version(version)
+    meta_path = review_dir / "gdoc_meta.json"
+    file_id = ""
+    if meta_path.exists():
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        file_id = meta.get("google_file_id", "")
+
+    if not file_id:
+        file_id = _extract_drive_id(config.active_file_id)
+    if not file_id:
+        raise RuntimeError(f"Missing metadata: {meta_path}")
+
+    drive = _get_drive_service(config)
+    export_path = review_dir / f"gdoc_export_v{version:03d}.docx"
+    _export_google_doc_as_docx(drive, file_id, export_path)
+
+    diff_text = _build_docx_changelog(local_docx_path, export_path)
+    diff_path = output_path or (review_dir / "gdoc_diff.md")
+    diff_path.write_text(diff_text + "\n", encoding="utf-8")
+
+    has_changes = "No changes detected" not in diff_text
+    return diff_path, has_changes
 
 
 def cmd_packet(args: argparse.Namespace) -> int:
