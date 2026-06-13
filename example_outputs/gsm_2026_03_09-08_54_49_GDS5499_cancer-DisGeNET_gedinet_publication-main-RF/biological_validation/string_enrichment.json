@@ -1,0 +1,6454 @@
+[
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0005634",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 4787,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 8.19e-06,
+    "fdr": 0.0188,
+    "description": "Nucleus"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0043227",
+    "number_of_genes": 18,
+    "number_of_genes_in_background": 9083,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 9.58e-06,
+    "fdr": 0.0188,
+    "description": "Membrane-bounded organelle"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0070062",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 428,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "DNAJB1",
+      "WNT7A",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "DNAJB1",
+      "WNT7A",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 4.5e-05,
+    "fdr": 0.0345,
+    "description": "Extracellular exosome"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051173",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 3166,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.56e-09,
+    "fdr": 4.02e-05,
+    "description": "Positive regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010604",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 3533,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 1.22e-08,
+    "fdr": 9.54e-05,
+    "description": "Positive regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051247",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1512,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.38e-08,
+    "fdr": 0.00012,
+    "description": "Positive regulation of protein metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048583",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 3931,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 5.49e-08,
+    "fdr": 0.00016,
+    "description": "Regulation of response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051171",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 5734,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 7.07e-08,
+    "fdr": 0.00016,
+    "description": "Regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051246",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 2622,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 5.2e-08,
+    "fdr": 0.00016,
+    "description": "Regulation of protein metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080090",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 5899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 1.12e-07,
+    "fdr": 0.00022,
+    "description": "Regulation of primary metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006915",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1041,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 1.89e-07,
+    "fdr": 0.00033,
+    "description": "Apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060255",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 6249,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.84e-07,
+    "fdr": 0.00042,
+    "description": "Regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0033554",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1572,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 5.06e-07,
+    "fdr": 0.00061,
+    "description": "Cellular response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0097201",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 14,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 5.11e-07,
+    "fdr": 0.00061,
+    "description": "Negative regulation of transcription from RNA polymerase II promoter in response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048584",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2131,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 7.99e-07,
+    "fdr": 0.00083,
+    "description": "Positive regulation of response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031323",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 5681,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 8.72e-07,
+    "fdr": 0.00085,
+    "description": "Regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010243",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 963,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 1.56e-06,
+    "fdr": 0.0014,
+    "description": "Response to organonitrogen compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0034599",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 224,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 2.06e-06,
+    "fdr": 0.0016,
+    "description": "Cellular response to oxidative stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080134",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1373,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "DNAJB1",
+      "WNT7A",
+      "FXR1",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "DNAJB1",
+      "WNT7A",
+      "FXR1",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 1.93e-06,
+    "fdr": 0.0016,
+    "description": "Regulation of response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901652",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 437,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.63e-06,
+    "fdr": 0.002,
+    "description": "Response to peptide"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010557",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1935,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 3.41e-06,
+    "fdr": 0.0022,
+    "description": "Positive regulation of macromolecule biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048518",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 6207,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 3.23e-06,
+    "fdr": 0.0022,
+    "description": "Positive regulation of biological process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048519",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5313,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 3.57e-06,
+    "fdr": 0.0022,
+    "description": "Negative regulation of biological process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0065009",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3085,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 3.75e-06,
+    "fdr": 0.0023,
+    "description": "Regulation of molecular function"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031325",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3114,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2"
+    ],
+    "p_value": 4.15e-06,
+    "fdr": 0.0024,
+    "description": "Positive regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051726",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1108,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 4.43e-06,
+    "fdr": 0.0025,
+    "description": "Regulation of cell cycle"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031328",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2041,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 5.53e-06,
+    "fdr": 0.0028,
+    "description": "Positive regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031399",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1560,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 5.54e-06,
+    "fdr": 0.0028,
+    "description": "Regulation of protein modification process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901700",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1547,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 5.17e-06,
+    "fdr": 0.0028,
+    "description": "Response to oxygen-containing compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070887",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2609,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 6.03e-06,
+    "fdr": 0.0029,
+    "description": "Cellular response to chemical stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010556",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 3980,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 7.43e-06,
+    "fdr": 0.0031,
+    "description": "Regulation of macromolecule biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048522",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5584,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 7.02e-06,
+    "fdr": 0.0031,
+    "description": "Positive regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048523",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 4736,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 7.16e-06,
+    "fdr": 0.0031,
+    "description": "Negative regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010033",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2692,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 8.21e-06,
+    "fdr": 0.0033,
+    "description": "Response to organic substance"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042221",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 4010,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 8.1e-06,
+    "fdr": 0.0033,
+    "description": "Response to chemical"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050776",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 844,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "PLA2G4A",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "PLA2G4A",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 8.69e-06,
+    "fdr": 0.0034,
+    "description": "Regulation of immune response"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006950",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3358,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 9.33e-06,
+    "fdr": 0.0036,
+    "description": "Response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0019219",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 4074,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 9.74e-06,
+    "fdr": 0.0036,
+    "description": "Regulation of nucleobase-containing compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042127",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1669,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 9.63e-06,
+    "fdr": 0.0036,
+    "description": "Regulation of cell population proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010605",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2760,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 1.05e-05,
+    "fdr": 0.0037,
+    "description": "Negative regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045944",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1250,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 1.08e-05,
+    "fdr": 0.0037,
+    "description": "Positive regulation of transcription by RNA polymerase II"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031326",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 4143,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 1.18e-05,
+    "fdr": 0.004,
+    "description": "Regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001922",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 1.32e-05,
+    "fdr": 0.0044,
+    "description": "B-1 B cell homeostasis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031324",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2265,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.41e-05,
+    "fdr": 0.0046,
+    "description": "Negative regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000351",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 51,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ABL1",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "ABL1",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 1.82e-05,
+    "fdr": 0.0056,
+    "description": "Regulation of endothelial cell apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009719",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1363,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2"
+    ],
+    "p_value": 2.02e-05,
+    "fdr": 0.0061,
+    "description": "Response to endogenous stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050790",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2370,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.11e-05,
+    "fdr": 0.0061,
+    "description": "Regulation of catalytic activity"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051128",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2365,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "DNAJB1",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "DNAJB1",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC"
+    ],
+    "p_value": 2.07e-05,
+    "fdr": 0.0061,
+    "description": "Regulation of cellular component organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009966",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2978,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.2e-05,
+    "fdr": 0.0062,
+    "description": "Regulation of signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051172",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2403,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 2.39e-05,
+    "fdr": 0.0062,
+    "description": "Negative regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051254",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1845,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 2.17e-05,
+    "fdr": 0.0062,
+    "description": "Positive regulation of RNA metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0019220",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1405,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.52e-05,
+    "fdr": 0.0065,
+    "description": "Regulation of phosphate metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0002682",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1438,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "PLA2G4A",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "PLA2G4A",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 2.98e-05,
+    "fdr": 0.0074,
+    "description": "Regulation of immune system process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051252",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3759,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 3.08e-05,
+    "fdr": 0.0076,
+    "description": "Regulation of RNA metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042981",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1462,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 3.36e-05,
+    "fdr": 0.0081,
+    "description": "Regulation of apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001775",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 693,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "KLF6",
+      "FPR2"
+    ],
+    "p_value": 3.55e-05,
+    "fdr": 0.0084,
+    "description": "Cell activation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070432",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 8,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 3.94e-05,
+    "fdr": 0.0091,
+    "description": "Regulation of nucleotide-binding oligomerization domain containing 2 signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080135",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 712,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "DNAJB1",
+      "WNT7A",
+      "FXR1",
+      "ABL1",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "DNAJB1",
+      "WNT7A",
+      "FXR1",
+      "ABL1",
+      "HSPA1A"
+    ],
+    "p_value": 4.12e-05,
+    "fdr": 0.0094,
+    "description": "Regulation of cellular response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006357",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2586,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 4.56e-05,
+    "fdr": 0.0102,
+    "description": "Regulation of transcription by RNA polymerase II"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001932",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1108,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 5.01e-05,
+    "fdr": 0.0111,
+    "description": "Regulation of protein phosphorylation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044093",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1587,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "DNAJB1",
+      "NR4A2",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "DNAJB1",
+      "NR4A2",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2"
+    ],
+    "p_value": 6.05e-05,
+    "fdr": 0.013,
+    "description": "Positive regulation of molecular function"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010632",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 229,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "RGCC"
+    ],
+    "preferredNames": [
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "RGCC"
+    ],
+    "p_value": 6.41e-05,
+    "fdr": 0.0136,
+    "description": "Regulation of epithelial cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0090084",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 11,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DNAJB1",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "DNAJB1",
+      "HSPA1A"
+    ],
+    "p_value": 6.82e-05,
+    "fdr": 0.0143,
+    "description": "Negative regulation of inclusion body assembly"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031397",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 84,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 7.64e-05,
+    "fdr": 0.0154,
+    "description": "Negative regulation of protein ubiquitination"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010468",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 4899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 7.95e-05,
+    "fdr": 0.0157,
+    "description": "Regulation of gene expression"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043085",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1191,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "NR4A2",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "NR4A2",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2"
+    ],
+    "p_value": 7.92e-05,
+    "fdr": 0.0157,
+    "description": "Positive regulation of catalytic activity"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006355",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3460,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 9.28e-05,
+    "fdr": 0.0175,
+    "description": "Regulation of transcription, DNA-templated"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0033993",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 827,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "WNT7A",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 9.44e-05,
+    "fdr": 0.0175,
+    "description": "Response to lipid"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031400",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 506,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 9.86e-05,
+    "fdr": 0.0178,
+    "description": "Negative regulation of protein modification process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070423",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 14,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFAIP3"
+    ],
+    "p_value": 0.0001,
+    "fdr": 0.0183,
+    "description": "Nucleotide-binding oligomerization domain containing signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1902531",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1726,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0185,
+    "description": "Regulation of intracellular signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043066",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 891,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.0232,
+    "description": "Negative regulation of apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032495",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFAIP3"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0315,
+    "description": "Response to muramyl dipeptide"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0034614",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 118,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0316,
+    "description": "Cellular response to reactive oxygen species"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0002764",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 312,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0319,
+    "description": "Immune response-regulating signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032496",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 314,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0324,
+    "description": "Response to lipopolysaccharide"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044087",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 971,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DNAJB1",
+      "WNT7A",
+      "FXR1",
+      "ABL1",
+      "HSPA1A",
+      "RGCC"
+    ],
+    "preferredNames": [
+      "DNAJB1",
+      "WNT7A",
+      "FXR1",
+      "ABL1",
+      "HSPA1A",
+      "RGCC"
+    ],
+    "p_value": 0.00023,
+    "fdr": 0.0342,
+    "description": "Regulation of cellular component biogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050794",
+    "number_of_genes": 18,
+    "number_of_genes_in_background": 11025,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00026,
+    "fdr": 0.0389,
+    "description": "Regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051716",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 6357,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00026,
+    "fdr": 0.0389,
+    "description": "Cellular response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1902533",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 997,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2"
+    ],
+    "p_value": 0.00026,
+    "fdr": 0.0389,
+    "description": "Positive regulation of intracellular signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044419",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1490,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00032,
+    "fdr": 0.0456,
+    "description": "Biological process involved in interspecies interaction between organisms"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0035994",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 26,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.00033,
+    "fdr": 0.0459,
+    "description": "Response to muscle stretch"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051248",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 1038,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00032,
+    "fdr": 0.0459,
+    "description": "Negative regulation of protein metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0071310",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 2019,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "WNT7A",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00033,
+    "fdr": 0.0459,
+    "description": "Cellular response to organic substance"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009617",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 663,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00034,
+    "fdr": 0.0473,
+    "description": "Response to bacterium"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051130",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 1049,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "WNT7A",
+      "ABL1",
+      "HSPA1A",
+      "RGCC"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "WNT7A",
+      "ABL1",
+      "HSPA1A",
+      "RGCC"
+    ],
+    "p_value": 0.00034,
+    "fdr": 0.0473,
+    "description": "Positive regulation of cellular component organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043032",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "PLA2G4A"
+    ],
+    "preferredNames": [
+      "JUND",
+      "PLA2G4A"
+    ],
+    "p_value": 0.00035,
+    "fdr": 0.0475,
+    "description": "Positive regulation of macrophage activation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045786",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 359,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ABL1",
+      "TSPYL2",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "ABL1",
+      "TSPYL2",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00035,
+    "fdr": 0.0475,
+    "description": "Negative regulation of cell cycle"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901701",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 1057,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00036,
+    "fdr": 0.0476,
+    "description": "Cellular response to oxygen-containing compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009967",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1525,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "WNT7A",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00037,
+    "fdr": 0.0486,
+    "description": "Positive regulation of signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050678",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 366,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "WNT7A",
+      "JUN",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "WNT7A",
+      "JUN",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00038,
+    "fdr": 0.0489,
+    "description": "Regulation of epithelial cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1903055",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ABL1",
+      "RGCC"
+    ],
+    "preferredNames": [
+      "ABL1",
+      "RGCC"
+    ],
+    "p_value": 0.00038,
+    "fdr": 0.0489,
+    "description": "Positive regulation of extracellular matrix organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2001233",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 365,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "NR4A2",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "NR4A2",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00037,
+    "fdr": 0.0489,
+    "description": "Regulation of apoptotic signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030522",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 148,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "NR4A2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "NR4A2",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0493,
+    "description": "Intracellular receptor signaling pathway"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0035976",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN"
+    ],
+    "p_value": 1.84e-05,
+    "fdr": 0.0377,
+    "description": "Transcription factor AP-1 complex"
+  },
+  {
+    "category": "Function",
+    "term": "GO:0005515",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 7242,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "WNT7A",
+      "NR4A2",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "ABL1",
+      "TSPYL2",
+      "HSPA1A",
+      "RGCC",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 3.02e-06,
+    "fdr": 0.0149,
+    "description": "Protein binding"
+  },
+  {
+    "category": "Function",
+    "term": "GO:0019899",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2084,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "NXT1",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 6.68e-06,
+    "fdr": 0.0165,
+    "description": "Enzyme binding"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000583",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 442,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 2.81e-06,
+    "fdr": 0.0068,
+    "description": "Bone marrow cancer cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000570",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2755,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "ABL1",
+      "HSPA1A",
+      "KLF6",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "FXR1",
+      "PLA2G4A",
+      "ABL1",
+      "HSPA1A",
+      "KLF6",
+      "FPR2"
+    ],
+    "p_value": 1.03e-05,
+    "fdr": 0.0125,
+    "description": "Hematopoietic system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0003099",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2804,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "NXT1",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "TSPYL2",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "NXT1",
+      "WNT7A",
+      "MYLIP",
+      "FXR1",
+      "JUN",
+      "TSPYL2",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "p_value": 1.23e-05,
+    "fdr": 0.0125,
+    "description": "Internal female genital organ"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001546",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 222,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 5.69e-05,
+    "fdr": 0.0345,
+    "description": "Chronic lymphocytic leukemia cell"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04657",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 91,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.85e-06,
+    "fdr": 0.00062,
+    "description": "IL-17 signaling pathway"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05164",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 163,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "NXT1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "NXT1"
+    ],
+    "p_value": 1.74e-05,
+    "fdr": 0.0029,
+    "description": "Influenza A"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05130",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 187,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 2.95e-05,
+    "fdr": 0.0033,
+    "description": "Pathogenic Escherichia coli infection"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04210",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 131,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0143,
+    "description": "Apoptosis"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04217",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 147,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "PLA2G4A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "PLA2G4A",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00038,
+    "fdr": 0.0143,
+    "description": "Necroptosis"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04380",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 120,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0143,
+    "description": "Osteoclast differentiation"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04668",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 111,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0143,
+    "description": "TNF signaling pathway"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04722",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 112,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0143,
+    "description": "Neurotrophin signaling pathway"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05162",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 137,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00031,
+    "fdr": 0.0143,
+    "description": "Measles"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04621",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 173,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00061,
+    "fdr": 0.0205,
+    "description": "NOD-like receptor signaling pathway"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05169",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 192,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 0.00082,
+    "fdr": 0.0251,
+    "description": "Epstein-Barr virus infection"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05132",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 209,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN"
+    ],
+    "p_value": 0.001,
+    "fdr": 0.0293,
+    "description": "Salmonella infection"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05200",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 515,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "WNT7A",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "WNT7A",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 0.0013,
+    "fdr": 0.0347,
+    "description": "Pathways in cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05120",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.0019,
+    "fdr": 0.045,
+    "description": "Epithelial cell signaling in Helicobacter pylori infection"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05140",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 69,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.0021,
+    "fdr": 0.0471,
+    "description": "Leishmaniasis"
+  },
+  {
+    "category": "Pfam",
+    "term": "PF03957",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN"
+    ],
+    "p_value": 8.78e-06,
+    "fdr": 0.0203,
+    "description": "Jun-like transcription factor"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36746519",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 57,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 1.32e-13,
+    "fdr": 3.9e-07,
+    "description": "(2023) Distinct transcriptional signatures in purified circulating immune cells drive heterogeneity in disease location in IBD."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30700158",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 7.57e-14,
+    "fdr": 3.9e-07,
+    "description": "(2019) Comprehensive and combined omics analysis reveals factors of ischemia-reperfusion injury in liver transplantation."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37400761",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 75,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 8.01e-13,
+    "fdr": 1.37e-06,
+    "description": "(2023) Gene expression profiling unveils the temporal dynamics of CIGB-300-regulated transcriptome in AML cell lines."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34360995",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "DNAJB1",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 1.71e-12,
+    "fdr": 1.86e-06,
+    "description": "(2021) Methods of Attenuating Ischemia-Reperfusion Injury in Liver Transplantation for Hepatocellular Carcinoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24265505",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 82,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.45e-12,
+    "fdr": 1.86e-06,
+    "description": "(2014) Transcriptome characterization by RNA sequencing identifies a major molecular and clinical subdivision in chronic lymphocytic leukemia."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:19077262",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 44,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 5.16e-12,
+    "fdr": 4.42e-06,
+    "description": "(2008) TRAIL and Taurolidine induce apoptosis and decrease proliferation in human fibrosarcoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36960063",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 121,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.94e-11,
+    "fdr": 1.43e-05,
+    "description": "(2023) Tissue specific imprinting on innate lymphoid cells during homeostasis and disease process revealed by integrative inference of single-cell transcriptomics."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37886355",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUN",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUN",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 1.97e-11,
+    "fdr": 1.43e-05,
+    "description": "(2023) Dysregulated metal ion homeostasis underscores non-canonical function of CD8(+) T cell during COVID-19."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37700317",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 64,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 4.21e-11,
+    "fdr": 2.4e-05,
+    "description": "(2023) SARS-CoV-2 infection induces a long-lived pro-inflammatory transcriptional profile."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28263993",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 247,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 4.69e-11,
+    "fdr": 2.41e-05,
+    "description": "(2017) Analysis of the human monocyte-derived macrophage transcriptome and response to lipopolysaccharide provides new insights into genetic aetiology of inflammatory bowel disease."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28355270",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 66,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 5.01e-11,
+    "fdr": 2.41e-05,
+    "description": "(2017) The NF-kappaB-dependent and -independent transcriptome and chromatin landscapes of human coronavirus 229E-infected cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:38063198",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 71,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 7.58e-11,
+    "fdr": 3.25e-05,
+    "description": "(2023) Single-cell transcriptomics reveals variations in monocytes and Tregs between gout flare and remission."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34294125",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 76,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "p_value": 1.12e-10,
+    "fdr": 4.41e-05,
+    "description": "(2021) EGR1 dysregulation defines an inflammatory and leukemic program in cell trajectory of human-aged hematopoietic stem cells (HSC)."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:40590007",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 1.29e-10,
+    "fdr": 4.42e-05,
+    "description": "(2025) Exploring the Molecular Mechanisms of Autophagy-related Genes in Hepatic IschemiaReperfusion Injury Using Bioinformatics."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37564651",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 77,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 1.2e-10,
+    "fdr": 4.42e-05,
+    "description": "(2023) Transcriptomic profile of TNF(high) MAIT cells is linked to B cell response following SARS-CoV-2 vaccination."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29161272",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 165,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "MYLIP",
+      "JUN",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "JUND",
+      "NR4A2",
+      "MYLIP",
+      "JUN",
+      "KLF6"
+    ],
+    "p_value": 1.57e-10,
+    "fdr": 5.04e-05,
+    "description": "(2017) Global transcriptome profile reveals abundance of DNA damage response and repair genes in individuals from high level natural radiation areas of Kerala coast."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37006305",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 37,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 3.9e-10,
+    "fdr": 0.00012,
+    "description": "(2023) Analysis of potential immune-related genes involved in the pathogenesis of ischemia-reperfusion injury following liver transplantation."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37127630",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 41,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 6.27e-10,
+    "fdr": 0.00018,
+    "description": "(2023) Genome-wide expression analysis reveals different heat shock responses in indigenous (Bos indicus) and crossbred (Bos indicus X Bos taurus) cattle."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25416019",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 13,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.45e-09,
+    "fdr": 0.00039,
+    "description": "(2015) The marine natural product microsclerodermin A is a novel inhibitor of the nuclear factor kappa B and induces apoptosis in pancreatic cancer cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25944781",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 49,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.44e-09,
+    "fdr": 0.00039,
+    "description": "(2015) Cross talk between cytokine and hyperthermia-induced pathways: identification of different subsets of NF-kappaB-dependent genes regulated by TNFalpha and heat shock."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37355988",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 125,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "ABL1",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 1.94e-09,
+    "fdr": 0.00043,
+    "description": "(2023) Understanding heterogeneity of human bone marrow plasma cell maturation and survival pathways by single-cell analyses."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35812726",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 51,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 1.74e-09,
+    "fdr": 0.00043,
+    "description": "(2022) Dissecting Immunosuppressive Cell Communication Patterns Reveals JunB Proto-Oncogene (JUNB) Shaping a Non-Inflamed Tumor Microenvironment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32406909",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 124,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "FXR1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "DNAJB1",
+      "FXR1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 1.85e-09,
+    "fdr": 0.00043,
+    "description": "(2020) G3BP1-linked mRNA partitioning supports selective protein synthesis in response to oxidative stress."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22455445",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 54,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN"
+    ],
+    "p_value": 2.27e-09,
+    "fdr": 0.00049,
+    "description": "(2012) Identification of bovine leukemia virus tax function associated with host cell transcription, signaling, stress response and immune response pathway by microarray-based gene expression analysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:17692132",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 54,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6"
+    ],
+    "p_value": 2.27e-09,
+    "fdr": 0.00049,
+    "description": "(2007) Mapping of oxidative stress responses of human tumor cells following photodynamic therapy using hexaminolevulinate."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31835892",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 136,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 3.15e-09,
+    "fdr": 0.00062,
+    "description": "(2019) Transcriptomic Analyses Revealed Systemic Alterations in Gene Expression in Circulation and Tumor Microenvironment of Colorectal Cancer Patients."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30201992",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 59,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 3.45e-09,
+    "fdr": 0.00066,
+    "description": "(2018) Tissue signals imprint ILC2 identity with anticipatory function."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37695745",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 60,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 3.73e-09,
+    "fdr": 0.00067,
+    "description": "(2023) Diversity of intratumoral regulatory T cells in B-cell non-Hodgkin lymphoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23308215",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUN",
+      "ABL1",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUN",
+      "ABL1",
+      "HSPA1A"
+    ],
+    "p_value": 3.65e-09,
+    "fdr": 0.00067,
+    "description": "(2013) Effects of warm ischemic time on gene expression profiling in colorectal cancer tissues and normal mucosa."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33859619",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 63,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 4.7e-09,
+    "fdr": 0.00081,
+    "description": "(2021) Estrogen Receptor Beta Influences the Inflammatory p65 Cistrome in Colon Cancer Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27078000",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 63,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 4.7e-09,
+    "fdr": 0.00081,
+    "description": "(2016) Computational Reconstruction of NFkappaB Pathway Interaction Mechanisms during Prostate Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35987078",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 5.45e-09,
+    "fdr": 0.00088,
+    "description": "(2022) Transcriptomic analysis reveals crucial regulatory roles of immediate-early response genes and related signaling pathways in coronavirus infectious bronchitis virus infection."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36400935",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 151,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 5.77e-09,
+    "fdr": 0.00088,
+    "description": "(2022) Single-cell profiling of vascular endothelial cells reveals progressive organ-specific vulnerabilities during obesity."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32817457",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "RGCC",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "RGCC",
+      "KLF6"
+    ],
+    "p_value": 5.45e-09,
+    "fdr": 0.00088,
+    "description": "(2020) MARTX Toxin-Stimulated Interplay between Human Cells and Vibrio vulnificus."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34447800",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 67,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 6.3e-09,
+    "fdr": 0.00093,
+    "description": "(2021) Transcriptome Analysis Identifies Strategies Targeting Immune Response-Related Pathways to Control Enterotoxigenic Escherichia coli Infection in Porcine Intestinal Epithelial Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35915069",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 69,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 7.24e-09,
+    "fdr": 0.001,
+    "description": "(2022) Single-cell analysis reveals differences among iNKT cells colonizing peripheral organs and identifies Klf2 as a key gene for iNKT emigration."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35935760",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 70,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 7.76e-09,
+    "fdr": 0.001,
+    "description": "(2022) Intrarenal Single-Cell Sequencing of Hepatitis B Virus Associated Membranous Nephropathy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34442429",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 7.69e-09,
+    "fdr": 0.001,
+    "description": "(2021) Inference of an Integrative, Executable Network for Rheumatoid Arthritis Combining Data-Driven Machine Learning Approaches and a State-of-the-Art Mechanistic Disease Map."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26924932",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 7.69e-09,
+    "fdr": 0.001,
+    "description": "(2016) Blood Transcriptome Profiling in Myasthenia Gravis Patients to Assess Disease Activity: A Pilot RNA-seq Study."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21655103",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 158,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 7.49e-09,
+    "fdr": 0.001,
+    "description": "(2011) Inflammatory gene regulatory networks in amnion cells following cytokine stimulation: translational systems approach to modeling human parturition."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28988120",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 22,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUND",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUND",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 9.08e-09,
+    "fdr": 0.0011,
+    "description": "(2017) Endoplasmic reticulum stress and MAPK signaling pathway activation underlie leflunomide-induced toxicity in HepG2 Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24083678",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 22,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 9.08e-09,
+    "fdr": 0.0011,
+    "description": "(2013) Sulindac activates NF-kappaB signaling in colon cancer cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31506261",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 1.07e-08,
+    "fdr": 0.0013,
+    "description": "(2019) Transcriptome Profiling Analysis of Bovine Vaginal Epithelial Cell Response to an Isolated Lactobacillus Strain."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22666440",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 77,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.22e-08,
+    "fdr": 0.0014,
+    "description": "(2012) Ubiquitous [Na+]i[K+]i-sensitive transcriptome in mammalian cells: evidence for Ca(2+)i-independent excitation-transcription coupling."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:18497982",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.24e-08,
+    "fdr": 0.0014,
+    "description": "(2008) Synergistic apoptotic effects of taurolidine and TRAIL on squamous carcinoma cells of the esophagus."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33723257",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 79,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "RGCC",
+      "TNFAIP3"
+    ],
+    "p_value": 1.38e-08,
+    "fdr": 0.0015,
+    "description": "(2021) Circulating mucosal-associated invariant T cells identify patients responding to anti-PD-1 therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34135910",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 78,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 1.3e-08,
+    "fdr": 0.0015,
+    "description": "(2021) Single-Cell Profiling Reveals Transcriptional Signatures and Cell-Cell Crosstalk in Anti-PLA2R Positive Idiopathic Membranous Nephropathy Patients."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35046994",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 178,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.49e-08,
+    "fdr": 0.0015,
+    "description": "(2021) Single-Cell RNA-Seq of Bone Marrow Cells in Aplastic Anemia."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35117712",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.44e-08,
+    "fdr": 0.0015,
+    "description": "(2020) RNA sequencing analysis reveals apoptosis induction by hydrogen treatment in endometrial cancer via TNF and NF-kappaB pathways."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22248188",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 78,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.3e-08,
+    "fdr": 0.0015,
+    "description": "(2012) Interleukin-8 is the single most up-regulated gene in whole genome profiling of H. pylori exposed gastric epithelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22462553",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 1.44e-08,
+    "fdr": 0.0015,
+    "description": "(2012) STI571 reduces TRAIL-induced apoptosis in colon cancer cells: c-Abl activation by the death receptor leads to stress kinase-dependent cell death."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33219307",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 26,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.66e-08,
+    "fdr": 0.0016,
+    "description": "(2020) Chronic exposure to TNF reprograms cell signaling pathways in fibroblast-like synoviocytes by establishing long-term inflammatory memory."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33314666",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 26,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 1.66e-08,
+    "fdr": 0.0016,
+    "description": "(2020) An incoherent feedforward loop interprets NFkappaBRelA dynamics to determine TNF-induced necroptosis decisions."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37701571",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.91e-08,
+    "fdr": 0.0018,
+    "description": "(2023) Longitudinal study across SARS-CoV-2 variants identifies transcriptionally active microbes (TAMs) associated with Delta severity."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25447897",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "DNAJB1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "DNAJB1",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.91e-08,
+    "fdr": 0.0018,
+    "description": "(2015) TNIP1 reduction of HSPA6 gene expression occurs in promoter regions lacking binding sites for known TNIP1-repressed transcription factors."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36498988",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "PLA2G4A",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "PLA2G4A",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 2.18e-08,
+    "fdr": 0.002,
+    "description": "(2022) Red Algae Sarcodia suieae Acetyl-Xylogalactan Downregulate Heat-Induced Macrophage Stress Factors Ddit3 and Hyou1 Compared to the Aquatic Animal Model of Nile Tilapia (Oreochromis niloticus) Brain Arachidonic Acid Expression"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33083450",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "NR4A2",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 2.18e-08,
+    "fdr": 0.002,
+    "description": "(2020) Identification of Key Genes Involved in Acute Myocardial Infarction by Comparative Transcriptome Analysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31531018",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUN",
+      "HSPA1A",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUN",
+      "HSPA1A",
+      "FPR2"
+    ],
+    "p_value": 2.18e-08,
+    "fdr": 0.002,
+    "description": "(2019) Noninvasive Identification of Immune-Related Biomarkers in Hepatocellular Carcinoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23241658",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "NR4A2",
+      "JUN"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "NR4A2",
+      "JUN"
+    ],
+    "p_value": 2.18e-08,
+    "fdr": 0.002,
+    "description": "(2012) Niche-modulated and niche-modulating genes in bone marrow cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30781807",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 29,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUND",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 2.47e-08,
+    "fdr": 0.0021,
+    "description": "(2019) The Enigmatic Protein Kinase C-eta."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30186861",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 29,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "p_value": 2.47e-08,
+    "fdr": 0.0021,
+    "description": "(2018) Reperfusion Activates AP-1 and Heat Shock Response in Donor Kidney Parenchyma after Warm Ischemia."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28461114",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "ABL1",
+      "TNFAIP3"
+    ],
+    "p_value": 2.65e-08,
+    "fdr": 0.0022,
+    "description": "(2017) miR-17-92 promotes leukemogenesis in chronic myeloid leukemia via targeting A20 and activation of NF-kappaB signaling."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:9175757",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN"
+    ],
+    "p_value": 2.65e-08,
+    "fdr": 0.0022,
+    "description": "(1997) Expression of glutathione and gamma-glutamylcysteine synthetase mRNA is Jun dependent."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36224302",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 93,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 3.01e-08,
+    "fdr": 0.0023,
+    "description": "(2022) Decoding the transcriptome of calcified atherosclerotic plaque at single-cell resolution."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31857650",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 2.8e-08,
+    "fdr": 0.0023,
+    "description": "(2019) An ultrasensitive fiveplex activity assay for cellular kinases."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27656771",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 2.8e-08,
+    "fdr": 0.0023,
+    "description": "(2017) Trinitrobenzene sulfonic acid-induced intestinal injury in neonatal mice activates transcriptional networks similar to those seen in human necrotizing enterocolitis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28914774",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 92,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 2.86e-08,
+    "fdr": 0.0023,
+    "description": "(2017) Targeting Heat Shock Proteins in Cancer: A Promising Therapeutic Approach."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36352190",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 3.16e-08,
+    "fdr": 0.0024,
+    "description": "(2023) mTOR inhibition amplifies the anti-lymphoma effect of PI3Kbetadelta blockage in diffuse large B-cell lymphoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34765746",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 3.16e-08,
+    "fdr": 0.0024,
+    "description": "(2021) The impact of stress on the transcriptomic signature of iNKT1 cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31575057",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 94,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "TNFSF10",
+      "JUN",
+      "TSPYL2",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "TNFSF10",
+      "JUN",
+      "TSPYL2",
+      "KLF6"
+    ],
+    "p_value": 3.17e-08,
+    "fdr": 0.0024,
+    "description": "(2019) The Role of the Cyclin Dependent Kinase Inhibitor p21(cip1waf1) in Targeting Cancer: Molecular Mechanisms and Novel Therapeutics."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35945902",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "p_value": 3.56e-08,
+    "fdr": 0.0026,
+    "description": "(2022) Loss of heat shock factor 1 promotes hepatic stellate cell activation and drives liver fibrosis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34201993",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 3.56e-08,
+    "fdr": 0.0026,
+    "description": "(2021) Efficient Heat Shock Response Affects Hyperthermia-Induced Radiosensitization in a Tumor Spheroid Control Probability Assay."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36533448",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "JUND",
+      "NR4A2",
+      "JUN",
+      "KLF6"
+    ],
+    "p_value": 3.98e-08,
+    "fdr": 0.0027,
+    "description": "(2023) DRAGON: Determining Regulatory Associations using Graphical models on multi-Omic Networks."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30642258",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 98,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 3.87e-08,
+    "fdr": 0.0027,
+    "description": "(2019) Transcriptomic and proteomic analyses reveal new insights into the regulation of immune pathways during adenovirus type 2 infection."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28860159",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 98,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 3.87e-08,
+    "fdr": 0.0027,
+    "description": "(2017) Physiologicalpathological ramifications of transcription factors in the unfolded protein response."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23771139",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 3.98e-08,
+    "fdr": 0.0027,
+    "description": "(2013) A probabilistic approach to learn chromatin architecture and accurate inference of the NF-kappaBRelA regulatory network using ChIP-Seq."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:39839184",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 4.23e-08,
+    "fdr": 0.0028,
+    "description": "(2025) Comprehensive Analysis of Programmed Cell Death-Related Genes in Diagnosis and Synovitis During Osteoarthritis Development: Based on Bulk and Single-Cell RNA Sequencing Data."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:18794131",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "DNAJB1",
+      "JUN"
+    ],
+    "preferredNames": [
+      "JUND",
+      "DNAJB1",
+      "JUN"
+    ],
+    "p_value": 4.23e-08,
+    "fdr": 0.0028,
+    "description": "(2008) Curcumin inhibits lung cancer cell invasion and metastasis through the tumor suppressor HLJ1."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34774803",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 34,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 4.45e-08,
+    "fdr": 0.0029,
+    "description": "(2022) Temporal Transcript Profiling Identifies a Role for Unfolded Protein Stress in Human Gut Ischemia-Reperfusion Injury."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29212196",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 34,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 4.45e-08,
+    "fdr": 0.0029,
+    "description": "(2017) Juglanin inhibits lung cancer by regulation of apoptosis, ROS and autophagy induction."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28931758",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 217,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "FPR2"
+    ],
+    "preferredNames": [
+      "JUND",
+      "DNAJB1",
+      "NR4A2",
+      "JUN",
+      "KLF6",
+      "FPR2"
+    ],
+    "p_value": 4.69e-08,
+    "fdr": 0.003,
+    "description": "(2017) Molecular characterization of the transition from acute to chronic kidney injury following ischemiareperfusion."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24612742",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 35,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 4.96e-08,
+    "fdr": 0.0031,
+    "description": "(2014) A bioinformatics approach reveals novel interactions of the OVOL transcription factors in the regulation of epithelial - mesenchymal cell reprogramming and cancer progression."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:18755030",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 35,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "KLF6"
+    ],
+    "p_value": 4.96e-08,
+    "fdr": 0.0031,
+    "description": "(2008) Hepatocyte RXRalpha deficiency in matured and aged mice: impact on the expression of cancer-related hepatic genes in a gender-specific manner."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32117605",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "NR4A2",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "NR4A2",
+      "JUN"
+    ],
+    "p_value": 5.5e-08,
+    "fdr": 0.0034,
+    "description": "(2020) Identification of key genes associated with multiple sclerosis based on gene expression data from peripheral blood mononuclear cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24199619",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 5.5e-08,
+    "fdr": 0.0034,
+    "description": "(2013) A systems biology approach to suppress TNF-induced proinflammatory gene expressions."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21354647",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "WNT7A",
+      "PLA2G4A",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "WNT7A",
+      "PLA2G4A",
+      "JUN"
+    ],
+    "p_value": 5.5e-08,
+    "fdr": 0.0034,
+    "description": "(2011) Molecular cross-regulation between PPAR-gamma and other signaling pathways: implications for lung cancer therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:16940169",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "DNAJB1",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "DNAJB1",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 5.5e-08,
+    "fdr": 0.0034,
+    "description": "(2006) NF-kappaB translocation prevents host cell death after low-dose challenge by Legionella pneumophila."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35381424",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 6.35e-08,
+    "fdr": 0.0036,
+    "description": "(2022) Single-cell transcriptional diversity of neonatal umbilical cord blood immune cells reveals neonatal immune tolerance."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28720906",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 37,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 6.09e-08,
+    "fdr": 0.0036,
+    "description": "(2017) Trail (TNF-related apoptosis-inducing ligand) induces an inflammatory response in human adipocytes."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24278542",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "DNAJB1",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "DNAJB1",
+      "HSPA1A"
+    ],
+    "p_value": 6.35e-08,
+    "fdr": 0.0036,
+    "description": "(2011) Lipid peroxidation and its toxicological implications."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:19806201",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 37,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 6.09e-08,
+    "fdr": 0.0036,
+    "description": "(2009) Basal cancer cell survival involves JNK2 suppression of a novel JNK1c-JunBcl-3 apoptotic network."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:12009850",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN"
+    ],
+    "p_value": 6.35e-08,
+    "fdr": 0.0036,
+    "description": "(2002) JunBAP-1 and NF-kappa B-mediated induction of nitric oxide synthase by bovine type I collagen in serum-stimulated murine macrophages."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:7968376",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN",
+      "RGCC"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN",
+      "RGCC"
+    ],
+    "p_value": 6.35e-08,
+    "fdr": 0.0036,
+    "description": "(1994) Immediate early gene expression in axotomized and regenerating retinal ganglion cells of the adult rat."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34608310",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 6.73e-08,
+    "fdr": 0.0037,
+    "description": "(2021) Joint single-cell measurements of nuclear proteins and RNA in vivo."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26516076",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 232,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "JUN"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "JUN"
+    ],
+    "p_value": 6.91e-08,
+    "fdr": 0.0037,
+    "description": "(2015) Tumor cell survival pathways activated by photodynamic therapy: a molecular basis for pharmacological inhibition strategies."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24569695",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 6.73e-08,
+    "fdr": 0.0037,
+    "description": "(2014) Markers of inflammation and stress distinguish subsets of individuals with schizophrenia and bipolar disorder."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21915344",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 6.73e-08,
+    "fdr": 0.0037,
+    "description": "(2011) Inhibitor of kappa B epsilon (IkappaBepsilon) is a non-redundant regulator of c-Rel-dependent gene expression in murine T and B cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35891399",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 112,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "DNAJB1",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 7.34e-08,
+    "fdr": 0.0039,
+    "description": "(2022) Advances in Crosstalk between Porcine Circoviruses and Host."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30704470",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 112,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "RGCC",
+      "KLF6",
+      "TNFAIP3"
+    ],
+    "p_value": 7.34e-08,
+    "fdr": 0.0039,
+    "description": "(2019) Glucocorticoid-driven transcriptomes in human airway epithelial cells: commonalities, differences and functional insight from cell lines and primary cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29273011",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 112,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "MYLIP",
+      "PLA2G4A",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "MYLIP",
+      "PLA2G4A",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 7.34e-08,
+    "fdr": 0.0039,
+    "description": "(2017) Time course study of the response to LPS targeting the pig immune gene networks."
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-162582",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 2540,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "MYLIP",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "PPP1R15A",
+      "NFKBIA",
+      "TNFSF10",
+      "JUND",
+      "DNAJB1",
+      "WNT7A",
+      "MYLIP",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "FPR2",
+      "TNFAIP3"
+    ],
+    "p_value": 4.49e-07,
+    "fdr": 0.001,
+    "description": "Signal Transduction"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP1772",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 89,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 1.7e-06,
+    "fdr": 0.0013,
+    "description": "Apoptosis modulation and signaling"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3888",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 428,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "NR4A2",
+      "PLA2G4A",
+      "JUN",
+      "ABL1",
+      "HSPA1A"
+    ],
+    "p_value": 2.34e-06,
+    "fdr": 0.0013,
+    "description": "VEGFA-VEGFR2 signaling"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2516",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 9.14e-06,
+    "fdr": 0.0022,
+    "description": "ATM signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2526",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "PLA2G4A",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "PLA2G4A",
+      "JUN"
+    ],
+    "p_value": 9.14e-06,
+    "fdr": 0.0022,
+    "description": "PDGF pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2882",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 312,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "JUND",
+      "DNAJB1",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 1.01e-05,
+    "fdr": 0.0022,
+    "description": "Nuclear receptors meta-pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP4630",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 135,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "HSPA1A",
+      "TNFAIP3"
+    ],
+    "p_value": 8.44e-06,
+    "fdr": 0.0022,
+    "description": "Measles virus infection"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2324",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 66,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "PLA2G4A",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "PLA2G4A",
+      "JUN"
+    ],
+    "p_value": 3.82e-05,
+    "fdr": 0.0043,
+    "description": "AGE/RAGE pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP231",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 92,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN",
+      "TNFAIP3"
+    ],
+    "p_value": 9.93e-05,
+    "fdr": 0.0072,
+    "description": "TNF-alpha signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2355",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 92,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUND",
+      "NR4A2"
+    ],
+    "p_value": 9.93e-05,
+    "fdr": 0.0072,
+    "description": "Corticotropin-releasing hormone signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2435",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 15,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.00012,
+    "fdr": 0.0072,
+    "description": "Quercetin and Nf-kB / AP-1 induced apoptosis"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP254",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 83,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFSF10",
+      "JUN"
+    ],
+    "p_value": 7.38e-05,
+    "fdr": 0.0072,
+    "description": "Apoptosis"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP382",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 245,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "PLA2G4A",
+      "JUN",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "JUND",
+      "PLA2G4A",
+      "JUN",
+      "HSPA1A"
+    ],
+    "p_value": 8.29e-05,
+    "fdr": 0.0072,
+    "description": "MAPK signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP4919",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 13,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 9.17e-05,
+    "fdr": 0.0072,
+    "description": "Neuroinflammation"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP710",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 109,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "WNT7A",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "WNT7A",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 0.00016,
+    "fdr": 0.009,
+    "description": "DNA damage response (only ATM dependent)"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP1742",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "ABL1"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.0095,
+    "description": "TP53 network"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP366",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 132,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN",
+      "KLF6"
+    ],
+    "p_value": 0.00028,
+    "fdr": 0.0137,
+    "description": "TGF-beta signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP437",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 162,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN",
+      "ABL1"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.0232,
+    "description": "EGF/EGFR signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP4496",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.0232,
+    "description": "Signal transduction through IL1R"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP4880",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.0232,
+    "description": "Host-pathogen interaction of human coronaviruses - interferon induction"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2036",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 42,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.00081,
+    "fdr": 0.0317,
+    "description": "TNF-related weak inducer of apoptosis (TWEAK) signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2873",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 45,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN"
+    ],
+    "p_value": 0.00093,
+    "fdr": 0.0345,
+    "description": "Aryl hydrocarbon receptor pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3611",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 50,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFSF10",
+      "JUN"
+    ],
+    "preferredNames": [
+      "TNFSF10",
+      "JUN"
+    ],
+    "p_value": 0.0011,
+    "fdr": 0.0402,
+    "description": "Photodynamic therapy-induced AP-1 survival signaling"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2864",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 53,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "ABL1"
+    ],
+    "preferredNames": [
+      "JUND",
+      "ABL1"
+    ],
+    "p_value": 0.0013,
+    "fdr": 0.043,
+    "description": "Apoptosis-related network due to altered Notch3 in ovarian cancer"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP195",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 55,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.0014,
+    "fdr": 0.0443,
+    "description": "IL-1 signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2018",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 55,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.0014,
+    "fdr": 0.0443,
+    "description": "RANKL/RANK signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3863",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 62,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "JUN"
+    ],
+    "p_value": 0.0017,
+    "fdr": 0.0498,
+    "description": "T-cell antigen receptor (TCR) pathway during Staphylococcus aureus infection"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP5072",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 61,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NFKBIA",
+      "TNFAIP3"
+    ],
+    "preferredNames": [
+      "NFKBIA",
+      "TNFAIP3"
+    ],
+    "p_value": 0.0017,
+    "fdr": 0.0498,
+    "description": "Modulators of TCR signaling and T cell activation"
+  },
+  {
+    "category": "NetworkNeighborAL",
+    "term": "CL:1777",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DNAJB1",
+      "HSPA1A"
+    ],
+    "preferredNames": [
+      "DNAJB1",
+      "HSPA1A"
+    ],
+    "p_value": 1.84e-05,
+    "fdr": 0.0223,
+    "description": "Denatured protein binding, and DnaJ homolog subfamily A member 1/2-like"
+  },
+  {
+    "category": "NetworkNeighborAL",
+    "term": "CL:18504",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "JUND",
+      "JUN",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "JUND",
+      "JUN",
+      "KLF6"
+    ],
+    "p_value": 4.87e-06,
+    "fdr": 0.0223,
+    "description": "Mixed, incl. Basic region leucin zipper, and Early growth response, N-terminal"
+  }
+]

@@ -1,0 +1,103 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+PLA2G4A, TNFAIP3, JUN, PVT1, NXT1, MYLIP, JUND, HSPA1A, NFKBIA, KLF6, NR4A2, WNT7A, RGCC, ABL1, PPP1R15A, FPR2, DNAJB1, TSPYL2, FXR1, TNFSF10
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+GO_Biological_Process_2023:
+  • Negative Regulation Of Inclusion Body Assembly (GO:0090084)
+    P-value: 4.25e-05, Combined Score: 2791.90
+    Genes: DNAJB1, HSPA1A
+  • Regulation Of Inclusion Body Assembly (GO:0090083)
+    P-value: 4.25e-05, Combined Score: 2791.90
+    Genes: DNAJB1, HSPA1A
+  • Negative Regulation Of Inflammatory Response (GO:0050728)
+    P-value: 1.77e-04, Combined Score: 280.52
+    Genes: FXR1, TNFAIP3, FPR2
+
+WikiPathway_2023_Human:
+  • Neuroinflammation WP4919
+    P-value: 7.36e-05, Combined Score: 1919.58
+    Genes: NFKBIA, JUN
+  • ATM Signaling Pathway WP2516
+    P-value: 8.25e-06, Combined Score: 1113.37
+    Genes: NFKBIA, JUN, ABL1
+  • PDGF Pathway WP2526
+    P-value: 8.25e-06, Combined Score: 1113.37
+    Genes: NFKBIA, JUN, PLA2G4A
+
+GO_Molecular_Function_2023:
+  • C3HC4-type RING Finger Domain Binding (GO:0055131)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: HSPA1A
+  • Annealing Activity (GO:0140666)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: FXR1
+  • Ceramide 1-Phosphate Binding (GO:1902387)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: PLA2G4A
+
+Reactome_2022:
+  • Attenuation Phase R-HSA-3371568
+    P-value: 3.04e-04, Combined Score: 748.11
+    Genes: DNAJB1, HSPA1A
+  • HSF1 Activation R-HSA-3371511
+    P-value: 3.80e-04, Combined Score: 646.76
+    Genes: DNAJB1, HSPA1A
+  • HSF1-dependent Transactivation R-HSA-3371571
+    P-value: 5.86e-04, Combined Score: 485.06
+    Genes: DNAJB1, HSPA1A
+
+KEGG_2021_Human:
+  • IL-17 signaling pathway
+    P-value: 2.09e-06, Combined Score: 722.51
+    Genes: NFKBIA, JUN, JUND, TNFAIP3
+  • Measles
+    P-value: 9.93e-06, Combined Score: 423.37
+    Genes: NFKBIA, JUN, TNFAIP3, HSPA1A
+  • Influenza A
+    P-value: 2.30e-05, Combined Score: 314.89
+    Genes: NFKBIA, DNAJB1, NXT1, TNFSF10
+
+DisGeNET:
+  • Malignant neoplasm of lung
+    P-value: 1.70e-10, Combined Score: 486.49
+    Genes: TSPYL2, JUN, NXT1, JUND, PVT1
+  • Non-Small Cell Lung Carcinoma
+    P-value: 9.63e-10, Combined Score: 385.77
+    Genes: JUN, NXT1, JUND, PVT1, PLA2G4A
+  • Cardiovascular Diseases
+    P-value: 2.46e-08, Combined Score: 353.83
+    Genes: NR4A2, MYLIP, JUN, KLF6, JUND
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 25
+
+  Top interactions by confidence:
+  • JUND <-> JUN (score: 0.999)
+  • DNAJB1 <-> HSPA1A (score: 0.989)
+  • NFKBIA <-> JUN (score: 0.908)
+  • NFKBIA <-> TNFAIP3 (score: 0.870)
+  • JUN <-> KLF6 (score: 0.822)
+  • JUN <-> ABL1 (score: 0.784)
+  • NFKBIA <-> HSPA1A (score: 0.686)
+  • PPP1R15A <-> JUN (score: 0.680)
+  • NR4A2 <-> JUN (score: 0.623)
+  • NFKBIA <-> ABL1 (score: 0.569)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=PLA2G4A%0dTNFAIP3%0dJUN%0dPVT1%0dNXT1%0dMYLIP%0dJUND%0dHSPA1A%0dNFKBIA%0dKLF6%0dNR4A2%0dWNT7A%0dRGCC%0dABL1%0dPPP1R15A%0dFPR2%0dDNAJB1%0dTSPYL2%0dFXR1%0dTNFSF10&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================
