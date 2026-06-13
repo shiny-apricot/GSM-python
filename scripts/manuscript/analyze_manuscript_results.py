@@ -458,6 +458,9 @@ def generate_biological_validation_chart(
     ax1.set_xticklabels(labels, fontsize=9)
     ax1.tick_params(axis="y", labelcolor="#5C6BC0")
     ax2.tick_params(axis="y", labelcolor="#26A69A")
+    # Add 20% headroom to the top of both axes
+    ax1.set_ylim(0, max(interactions) * 1.2)
+    ax2.set_ylim(0, max(gene_counts) * 1.2)
 
     # Combined legend
     lines1, labels1 = ax1.get_legend_handles_labels()

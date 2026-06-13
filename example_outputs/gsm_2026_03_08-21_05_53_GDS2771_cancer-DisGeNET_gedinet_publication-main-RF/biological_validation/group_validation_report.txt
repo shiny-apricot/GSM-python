@@ -1,0 +1,249 @@
+======================================================================
+GROUP-LEVEL BIOLOGICAL VALIDATION REPORT
+======================================================================
+
+This report shows how your TOP RANKED GROUPS from the GSM pipeline
+relate to known biological pathways and protein interactions.
+
+----------------------------------------------------------------------
+WHY THIS MATTERS:
+----------------------------------------------------------------------
+• Groups with significant pathway enrichment are biologically meaningful
+• High protein-protein interactions suggest functional gene modules
+• This validates that your classification is based on real biology
+
+======================================================================
+GROUP: Liver carcinoma
+======================================================================
+
+Genes in group: 5725
+Sample genes: A1BG, A2M, NAT1, NAT2, SERPINA3, AADAC, AAVS1, ABCA1, ABCA2, ABCF1 ... and 5715 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Alcohol Dehydrogenase Activity, Zinc-Dependent (GO:0004024)
+  P-value: 4.76e-13, Score: 62891.7
+  Genes: ADH4, ADH1C, ADH1B, ADH5, ADH6
+
+• Ethanol Oxidation (GO:0006069)
+  P-value: 1.66e-12, Score: 30058.0
+  Genes: ADH4, ADH1C, ADH1B, ADH1A, ADH6
+
+• Alcohol Dehydrogenase (NAD+) Activity (GO:0004022)
+  P-value: 4.43e-12, Score: 19314.4
+  Genes: ADH4, ADH1C, ADH1B, ADH5, ADH6
+
+• Fatty acid degradation
+  P-value: 2.07e-22, Score: 10131.5
+  Genes: ADH4, ADH1C, ADH1B, ACOX1, ADH1A
+
+• Ethanol Oxidation R-HSA-71384
+  P-value: 3.63e-11, Score: 8878.4
+  Genes: ADH1C, ADH1B, ADH1A, ADH5, ADH6
+
+• Ethanol Metabolic Process (GO:0006067)
+  P-value: 1.56e-10, Score: 5558.5
+  Genes: ADH4, ADH1C, ADH1B, ADH1A, ADH6
+
+• Alcohol Dehydrogenase [NAD(P)+] Activity (GO:0018455)
+  P-value: 5.11e-07, Score: 4611.1
+  Genes: ADH4, ADH1C, ADH6
+
+• Peroxisomal Beta Oxidation Of Tetracosanoyl CoA WP1941
+  P-value: 3.66e-05, Score: 4245.0
+  Genes: ACOX1, ACAA1
+
+• Fatty Acid Omega Oxidation WP206
+  P-value: 4.81e-10, Score: 3960.9
+  Genes: ADH4, ADH1C, ADH1B, ADH1A, ADH6
+
+• Pyruvate metabolism
+  P-value: 2.26e-15, Score: 3879.1
+  Genes: ADH4, ADH1C, ADH1B, ADH1A, ACACA
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 101
+View network: https://string-db.org/api/image/network?identifiers=A1BG%0dA2M%0dNAT1%0dNAT2%0dSERPINA3%0dAADAC%0dAAVS1%0dABCA1%0dABCA2%0dABCF1%0dABCA4%0dABL2%0dABO%0dACAA1%0dACACA%0dACADS%0dACADSB%0dACAT1%0dACAT2%0dACHE%0dACLY%0dACO1%0dACR%0dACO2%0dACOX1%0dACP1%0dACP5%0dACTA2%0dACTB%0dACTG1%0dACTG2%0dACTN4%0dACTL6A%0dACVRL1%0dADA%0dADAM8%0dADAM10%0dADAR%0dADARB1%0dADCY5%0dADD1%0dADD3%0dPLIN2%0dADH1A%0dADH1B%0dADH1C%0dADH4%0dADH5%0dADH6%0dADM&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Malignant neoplasm of pancreas
+======================================================================
+
+Genes in group: 2667
+Sample genes: NAT1, NAT2, SERPINA3, ABCA4, ABO, ACADS, ACO1, ACP3, ACTA2, ACTB ... and 2657 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Ethanol Oxidation (GO:0006069)
+  P-value: 1.66e-12, Score: 30058.0
+  Genes: ADH4, ADH1C, ADH1B, ADH1A, ADH6
+
+• Ethanol Oxidation R-HSA-71384
+  P-value: 1.29e-16, Score: 29700.3
+  Genes: ADH1C, ALDH1B1, ALDH2, ADH1B, ADH1A
+
+• Alcohol Dehydrogenase Activity, Zinc-Dependent (GO:0004024)
+  P-value: 5.16e-10, Score: 18546.7
+  Genes: ADH4, ADH1C, ADH1B, ADH6
+
+• Fatty Acid Omega Oxidation WP206
+  P-value: 7.51e-15, Score: 10557.0
+  Genes: ADH4, ADH1C, ALDH2, ADH1B, ADH1A
+
+• Alcohol Dehydrogenase (NAD+) Activity (GO:0004022)
+  P-value: 2.40e-09, Score: 8606.1
+  Genes: ADH4, ADH1C, ADH1B, ADH6
+
+• Adrenoceptors R-HSA-390696
+  P-value: 4.31e-09, Score: 6681.3
+  Genes: ADRB3, ADRB2, ADRA1A, ADRA2B
+
+• Regulation Of Systemic Arterial Blood Pressure By Renin-Angiotensin (GO:0003081)
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: AGTR1, AGTR2, AGT
+
+• Ethanol Metabolic Process (GO:0006067)
+  P-value: 1.56e-10, Score: 5558.5
+  Genes: ADH4, ADH1C, ADH1B, ADH1A, ADH6
+
+• Alcohol Dehydrogenase [NAD(P)+] Activity (GO:0018455)
+  P-value: 5.11e-07, Score: 4611.1
+  Genes: ADH4, ADH1C, ADH6
+
+• Non Classical Role Of Vitamin D WP5133
+  P-value: 8.16e-07, Score: 3569.4
+  Genes: AGTR1, AGTR2, AGT
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 137
+View network: https://string-db.org/api/image/network?identifiers=NAT1%0dNAT2%0dSERPINA3%0dABCA4%0dABO%0dACADS%0dACO1%0dACP3%0dACTA2%0dACTB%0dACTN4%0dACVR1%0dACVR1B%0dACVR2A%0dADAM8%0dADAM10%0dADH1A%0dADH1B%0dADH1C%0dADH4%0dADH6%0dADM%0dPARP1%0dPARP4%0dADRA1A%0dADRA2B%0dADRB2%0dADRB3%0dGRK2%0dAP2A1%0dCRISP1%0dAFP%0dAGER%0dJAG1%0dAGT%0dAGTR1%0dAGTR2%0dAHR%0dAKT1%0dAKT2%0dALB%0dALCAM%0dALDH1A1%0dALDH2%0dALDH1B1%0dALDH1A3%0dALDOA%0dAKR1B1%0dALK%0dALOX5&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Pancreatic carcinoma
+======================================================================
+
+Genes in group: 2689
+Sample genes: NAT1, NAT2, SERPINA3, ABCA4, ABO, ACADS, ACO1, ACP3, ACTA2, ACTB ... and 2679 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 134
+View network: https://string-db.org/api/image/network?identifiers=NAT1%0dNAT2%0dSERPINA3%0dABCA4%0dABO%0dACADS%0dACO1%0dACP3%0dACTA2%0dACTB%0dACTN4%0dACVR1%0dACVR1B%0dACVRL1%0dADAM8%0dADAM10%0dADH1A%0dADH1B%0dADH1C%0dADH4%0dADH6%0dADM%0dPARP1%0dPARP4%0dADRA1A%0dADRA2B%0dADRB2%0dADRB3%0dGRK2%0dAP2A1%0dCRISP1%0dAFP%0dAGER%0dJAG1%0dAGT%0dAGTR1%0dAGTR2%0dAHR%0dAKT1%0dAKT2%0dALB%0dALCAM%0dALDH1A1%0dALDH2%0dALDH1B1%0dALDH1A3%0dALDOA%0dAKR1B1%0dALK%0dALOX5&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Malignant neoplasm of breast
+======================================================================
+
+Genes in group: 6940
+Sample genes: NAT1, NAT2, SERPINA3, AADAC, AAMP, AANAT, AARS1, ABCA1, ABCA3, ABCB7 ... and 6930 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Activin Receptor Activity (GO:0017002)
+  P-value: 8.16e-07, Score: 3569.4
+  Genes: ACVRL1, ACVR2B, ACVR2A
+
+• Positive Regulation Of Activin Receptor Signaling Pathway (GO:0032927)
+  P-value: 6.10e-05, Score: 2688.8
+  Genes: ACVR2B, ACVR2A
+
+• Caffeine metabolism
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: NAT1, NAT2
+
+• Adenosine To Inosine Editing (GO:0006382)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ADAR, ADARB1
+
+• Acid Phosphatase Activity (GO:0003993)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ACP5, ACP3
+
+• Oxidoreductase Activity, Acting On The CH-CH Group Of Donors, With A Flavin As Acceptor (GO:0052890)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ACADM, ACADSB
+
+• Alcohol Dehydrogenase Activity, Zinc-Dependent (GO:0004024)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ADH1C, ADH1B
+
+• Ethanol Oxidation (GO:0006069)
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ADH1C, ADH1B
+
+• tRNA-specific Adenosine Deaminase Activity (GO:0008251)
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ADAR, ADARB1
+
+• ChREBP Activates Metabolic Gene Expression R-HSA-163765
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ACLY, ACACA
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 79
+View network: https://string-db.org/api/image/network?identifiers=NAT1%0dNAT2%0dSERPINA3%0dAADAC%0dAAMP%0dAANAT%0dAARS1%0dABCA1%0dABCA3%0dABCB7%0dABCA4%0dABL1%0dAOC1%0dABL2%0dABO%0dABR%0dACACA%0dACADM%0dACADSB%0dACAT2%0dACHE%0dACLY%0dACR%0dACO2%0dACP1%0dACP5%0dACP3%0dACTA1%0dACTA2%0dACTB%0dACTC1%0dACTG1%0dACTG2%0dACTN4%0dACTN1%0dACVR1%0dACVR2A%0dACVR2B%0dACVRL1%0dACY1%0dACYP2%0dADA%0dADAM8%0dADAM10%0dADAR%0dADARB1%0dADCYAP1R1%0dPLIN2%0dADH1B%0dADH1C&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Breast Carcinoma
+======================================================================
+
+Genes in group: 6775
+Sample genes: NAT1, NAT2, SERPINA3, AADAC, AAMP, AANAT, AARS1, ABCA1, ABCB7, ABCF1 ... and 6765 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Activin Receptor Activity (GO:0017002)
+  P-value: 2.40e-09, Score: 8606.1
+  Genes: ACVRL1, ACVR1B, ACVR2B, ACVR2A
+
+• cAMP Biosynthetic Process (GO:0006171)
+  P-value: 1.22e-06, Score: 2888.7
+  Genes: ADCY9, ADCY3, ADCY8
+
+• Positive Regulation Of Activin Receptor Signaling Pathway (GO:0032927)
+  P-value: 6.10e-05, Score: 2688.8
+  Genes: ACVR2B, ACVR2A
+
+• Transmembrane Receptor Protein Serine/Threonine Kinase Activity (GO:0004675)
+  P-value: 4.62e-08, Score: 2662.2
+  Genes: ACVRL1, ACVR1B, ACVR2B, ACVR2A
+
+• Regulation Of Signaling By NODAL R-HSA-1433617
+  P-value: 2.39e-06, Score: 2059.5
+  Genes: ACVR1B, ACVR2B, ACVR2A
+
+• Acid Phosphatase Activity (GO:0003993)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ACP5, ACP3
+
+• Oxidoreductase Activity, Acting On The CH-CH Group Of Donors, With A Flavin As Acceptor (GO:0052890)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ACADM, ACADSB
+
+• cAMP Metabolic Process (GO:0046058)
+  P-value: 3.18e-06, Score: 1790.1
+  Genes: ADCY9, ADCY3, ADCY8
+
+• ChREBP Activates Metabolic Gene Expression R-HSA-163765
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ACLY, ACACA
+
+• Whooping cough due to unspecified organism
+  P-value: 5.25e-06, Score: 1406.6
+  Genes: SERPINA3, ACTG2, ACTG1
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 84
+View network: https://string-db.org/api/image/network?identifiers=NAT1%0dNAT2%0dSERPINA3%0dAADAC%0dAAMP%0dAANAT%0dAARS1%0dABCA1%0dABCB7%0dABCF1%0dABCA4%0dABL1%0dAOC1%0dABL2%0dABO%0dABR%0dACACA%0dACADM%0dACADSB%0dACAT2%0dACHE%0dACLY%0dACR%0dACO2%0dACP1%0dACP5%0dACP3%0dACTA1%0dACTA2%0dACTB%0dACTC1%0dACTG1%0dACTG2%0dACTN4%0dACTN1%0dACVR1%0dACVR1B%0dACVR2A%0dACVR2B%0dACVRL1%0dACYP2%0dADA%0dADAM8%0dADAM10%0dADAR%0dADARB1%0dADCY3%0dADCY8%0dADCY9%0dADCYAP1R1&species=9606&network_flavor=confidence
+
+======================================================================
+END OF GROUP VALIDATION REPORT
+======================================================================

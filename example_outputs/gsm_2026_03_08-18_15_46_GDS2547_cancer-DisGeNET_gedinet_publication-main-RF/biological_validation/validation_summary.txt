@@ -1,0 +1,100 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+KITLG, SPAG5, KANK2, ANXA2, LINC00665, CAMKK2, CENPM, RRAS, PABPC1, PDE4A, DDR2, FBXW4, NF1, ARFGEF3, CFL2, HNRNPD, SLC22A17, CLU, RBM39, WDR1
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+GO_Biological_Process_2023:
+  • CRD-mediated mRNA Stabilization (GO:0070934)
+    P-value: 4.25e-05, Combined Score: 2791.90
+    Genes: HNRNPD, PABPC1
+  • Actin Filament Depolymerization (GO:0030042)
+    P-value: 4.25e-05, Combined Score: 2791.90
+    Genes: WDR1, CFL2
+  • Negative Regulation Of Nuclear-Transcribed mRNA Catabolic Process, Deadenylation-Dependent Decay (GO:1900152)
+    P-value: 5.20e-05, Combined Score: 2432.24
+    Genes: HNRNPD, PABPC1
+
+DisGeNET:
+  • Desmoplastic melanoma
+    P-value: 8.58e-05, Combined Score: 1731.14
+    Genes: NF1, CLU
+  • Optic Nerve Glioma
+    P-value: 1.13e-04, Combined Score: 1440.04
+    Genes: NF1, PDE4A
+  • Synovitis
+    P-value: 4.21e-06, Combined Score: 569.36
+    Genes: KITLG, PDE4A, CLU, DDR2
+
+Reactome_2022:
+  • RAS Signaling Downstream Of NF1 Loss-Of-Function Variants R-HSA-6802953
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: NF1
+  • Activation Of RAC1 Downstream Of NMDARs R-HSA-9619229
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: CAMKK2
+  • Terminal Pathway Of Complement R-HSA-166665
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: CLU
+
+WikiPathway_2023_Human:
+  • Pilocytic Astrocytoma WP2253
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: NF1
+  • MAPK And NFkB Signaling Pathways Inhibited By Yersinia YopJ WP3849
+    P-value: 1.19e-02, Combined Score: 423.08
+    Genes: RRAS
+  • Metabolic Pathway Of LDL HDL And TG Including Diseases WP4522
+    P-value: 1.69e-02, Combined Score: 268.08
+    Genes: ANXA2
+
+GO_Molecular_Function_2023:
+  • Phosphatidylethanolamine Binding (GO:0008429)
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: NF1
+  • Phospholipase Inhibitor Activity (GO:0004859)
+    P-value: 8.97e-03, Combined Score: 619.44
+    Genes: ANXA2
+  • cAMP Binding (GO:0030552)
+    P-value: 1.09e-02, Combined Score: 474.51
+    Genes: PDE4A
+
+KEGG_2021_Human:
+  • Ras signaling pathway
+    P-value: 1.52e-03, Combined Score: 98.79
+    Genes: KITLG, RRAS, NF1
+  • Autophagy
+    P-value: 8.16e-03, Combined Score: 78.53
+    Genes: RRAS, CAMKK2
+  • Phospholipase D signaling pathway
+    P-value: 9.47e-03, Combined Score: 70.33
+    Genes: KITLG, RRAS
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 7
+
+  Top interactions by confidence:
+  • CFL2 <-> WDR1 (score: 0.993)
+  • RRAS <-> NF1 (score: 0.960)
+  • PABPC1 <-> HNRNPD (score: 0.960)
+  • NF1 <-> KITLG (score: 0.551)
+  • CENPM <-> SPAG5 (score: 0.497)
+  • RBM39 <-> HNRNPD (score: 0.474)
+  • RBM39 <-> PABPC1 (score: 0.430)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=KITLG%0dSPAG5%0dKANK2%0dANXA2%0dLINC00665%0dCAMKK2%0dCENPM%0dRRAS%0dPABPC1%0dPDE4A%0dDDR2%0dFBXW4%0dNF1%0dARFGEF3%0dCFL2%0dHNRNPD%0dSLC22A17%0dCLU%0dRBM39%0dWDR1&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================

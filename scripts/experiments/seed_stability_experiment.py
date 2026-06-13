@@ -174,11 +174,19 @@ def run_pipeline_with_seed(
                 f1_scores.append(r.get("f1_score", 0))
                 auc_scores.append(r.get("auc_roc", 0))
 
+        # if f1_scores:
+        #     result.f1_score = max(f1_scores)
+        #     result.mean_f1 = sum(f1_scores) / len(f1_scores)
+        # if auc_scores:
+        #     result.auc_roc = max(auc_scores)
         if f1_scores:
-            result.f1_score = max(f1_scores)
-            result.mean_f1 = sum(f1_scores) / len(f1_scores)
+            # Calculate the consistent average rather than the peak anomaly
+            result.f1_score = sum(f1_scores) / len(f1_scores)
+            result.mean_f1 = result.f1_score  # Kept in sync just in case it's referenced later
+            
         if auc_scores:
-            result.auc_roc = max(auc_scores)
+            # Calculate average AUC-ROC across iterations
+            result.auc_roc = sum(auc_scores) / len(auc_scores)
 
     # Extract top genes
     logger.info(f"  Extracting top {TOP_N_GENES} genes...")

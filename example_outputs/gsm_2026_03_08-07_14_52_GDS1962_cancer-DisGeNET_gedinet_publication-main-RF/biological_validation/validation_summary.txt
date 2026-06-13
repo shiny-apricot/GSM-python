@@ -1,0 +1,103 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+TP53, STMN1, EZH2, TOP2A, SMO, CYLD, MYC, AR, HEY1, NES, TIMP3, EIF4EBP1, PCNA, MAML2, IRX3, UHRF1, NONO, WEE1, EPS15, CALD1
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+WikiPathway_2023_Human:
+  • Metastatic Brain Tumor WP2249
+    P-value: 1.42e-05, Combined Score: 6193.21
+    Genes: MYC, TP53
+  • Retinoblastoma Gene In Cancer WP2446
+    P-value: 2.10e-10, Combined Score: 2346.26
+    Genes: TOP2A, WEE1, PCNA, MYC, STMN1
+  • Gastric Cancer Network 2 WP2363
+    P-value: 3.78e-06, Combined Score: 1570.21
+    Genes: TOP2A, MYC, TP53
+
+Reactome_2022:
+  • Transcription Of E2F Targets Under Negative Control By DREAM Complex R-HSA-1362277
+    P-value: 8.20e-07, Combined Score: 3085.72
+    Genes: TOP2A, PCNA, MYC
+  • G0 And Early G1 R-HSA-1538133
+    P-value: 2.46e-06, Combined Score: 1894.96
+    Genes: TOP2A, PCNA, MYC
+  • TP53 Regulates Transcription Of Genes Involved In G2 Cell Cycle Arrest R-HSA-6804114
+    P-value: 1.44e-04, Combined Score: 1226.39
+    Genes: PCNA, TP53
+
+DisGeNET:
+  • Neuroectodermal Tumor, Primitive
+    P-value: 1.09e-09, Combined Score: 1627.35
+    Genes: PCNA, SMO, HEY1, MYC, STMN1
+  • Medulloblastoma
+    P-value: 3.95e-14, Combined Score: 1553.97
+    Genes: AR, WEE1, PCNA, SMO, UHRF1
+  • Secondary malignant neoplasm of liver
+    P-value: 5.37e-10, Combined Score: 681.80
+    Genes: AR, WEE1, PCNA, CALD1, MYC
+
+GO_Biological_Process_2023:
+  • Negative Regulation Of Fibroblast Proliferation (GO:0048147)
+    P-value: 1.28e-04, Combined Score: 1325.55
+    Genes: MYC, TP53
+  • Response To Gamma Radiation (GO:0010332)
+    P-value: 2.17e-04, Combined Score: 935.50
+    Genes: MYC, TP53
+  • Cellular Response To Xenobiotic Stimulus (GO:0071466)
+    P-value: 3.04e-04, Combined Score: 748.11
+    Genes: MYC, TP53
+
+GO_Molecular_Function_2023:
+  • Core Promoter Sequence-Specific DNA Binding (GO:0001046)
+    P-value: 5.54e-04, Combined Score: 503.58
+    Genes: MYC, TP53
+  • Promoter-Specific Chromatin Binding (GO:1990841)
+    P-value: 7.99e-04, Combined Score: 395.07
+    Genes: TP53, EZH2
+  • Receptor Tyrosine Kinase Binding (GO:0030971)
+    P-value: 1.57e-03, Combined Score: 250.73
+    Genes: PCNA, TP53
+
+KEGG_2021_Human:
+  • Cell cycle
+    P-value: 6.31e-06, Combined Score: 495.37
+    Genes: WEE1, PCNA, MYC, TP53
+  • Thyroid cancer
+    P-value: 6.20e-04, Combined Score: 467.69
+    Genes: MYC, TP53
+  • Bladder cancer
+    P-value: 7.61e-04, Combined Score: 407.96
+    Genes: MYC, TP53
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 48
+
+  Top interactions by confidence:
+  • TP53 <-> MYC (score: 0.997)
+  • EZH2 <-> MYC (score: 0.984)
+  • EZH2 <-> AR (score: 0.978)
+  • TP53 <-> PCNA (score: 0.913)
+  • TP53 <-> AR (score: 0.905)
+  • TP53 <-> EZH2 (score: 0.899)
+  • TOP2A <-> UHRF1 (score: 0.855)
+  • TP53 <-> TOP2A (score: 0.843)
+  • EZH2 <-> UHRF1 (score: 0.810)
+  • HEY1 <-> MAML2 (score: 0.802)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=TP53%0dSTMN1%0dEZH2%0dTOP2A%0dSMO%0dCYLD%0dMYC%0dAR%0dHEY1%0dNES%0dTIMP3%0dEIF4EBP1%0dPCNA%0dMAML2%0dIRX3%0dUHRF1%0dNONO%0dWEE1%0dEPS15%0dCALD1&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================

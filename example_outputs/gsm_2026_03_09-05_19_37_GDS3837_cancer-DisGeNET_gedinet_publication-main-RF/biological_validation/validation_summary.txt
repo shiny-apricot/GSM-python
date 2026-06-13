@@ -1,0 +1,103 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+AGER, GOLM1, ACE, CD36, QKI, DLC1, PSAT1, CCBE1, DCC, SNCA, KLF6, KLF4, TAL1, CTHRC1, BDNF, NHS, PCAT6, COL10A1, DACH1, EMP2
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+WikiPathway_2023_Human:
+  • Conversion Of Angiotensinogen To Angiotensin II WP4818
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: ACE
+  • Involvement Of Secretase In Neurodegenerative Diseases WP5372
+    P-value: 1.28e-04, Combined Score: 1325.55
+    Genes: BDNF, SNCA
+  • Let 7 Inhibition Of ES Cell Reprogramming WP3299
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: KLF4
+
+DisGeNET:
+  • Leiomyosarcoma of uterus
+    P-value: 5.48e-06, Combined Score: 1332.61
+    Genes: DCC, BDNF, DLC1
+  • Dementia, Vascular
+    P-value: 1.10e-06, Combined Score: 898.61
+    Genes: ACE, BDNF, AGER, SNCA
+  • Familial lichen amyloidosis
+    P-value: 3.47e-07, Combined Score: 664.40
+    Genes: KLF6, BDNF, PSAT1, DLC1, KLF4
+
+KEGG_2021_Human:
+  • Vitamin B6 metabolism
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: PSAT1
+  • Renin-angiotensin system
+    P-value: 2.28e-02, Combined Score: 180.61
+    Genes: ACE
+  • Diabetic cardiomyopathy
+    P-value: 1.03e-03, Combined Score: 119.98
+    Genes: ACE, CD36, AGER
+
+Reactome_2022:
+  • Scavenging By Class B Receptors R-HSA-3000471
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: CD36
+  • Cross-presentation Of Particulate Exogenous Antigens (Phagosomes) R-HSA-1236973
+    P-value: 7.97e-03, Combined Score: 725.58
+    Genes: CD36
+  • Netrin Mediated Repulsion Signals R-HSA-418886
+    P-value: 7.97e-03, Combined Score: 725.58
+    Genes: DCC
+
+GO_Biological_Process_2023:
+  • Regulation Of Heterotypic Cell-Cell Adhesion (GO:0034114)
+    P-value: 2.59e-04, Combined Score: 832.55
+    Genes: KLF4, AGER
+  • Amyloid Fibril Formation (GO:1990000)
+    P-value: 2.59e-04, Combined Score: 832.55
+    Genes: CD36, SNCA
+  • Regulation Of Reactive Oxygen Species Biosynthetic Process (GO:1903426)
+    P-value: 3.04e-04, Combined Score: 748.11
+    Genes: CD36, SNCA
+
+GO_Molecular_Function_2023:
+  • Cuprous Ion Binding (GO:1903136)
+    P-value: 7.97e-03, Combined Score: 725.58
+    Genes: SNCA
+  • Phospholipase Inhibitor Activity (GO:0004859)
+    P-value: 8.97e-03, Combined Score: 619.44
+    Genes: SNCA
+  • Transaminase Activity (GO:0008483)
+    P-value: 1.39e-02, Combined Score: 345.57
+    Genes: PSAT1
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 11
+
+  Top interactions by confidence:
+  • BDNF <-> SNCA (score: 0.798)
+  • AGER <-> CD36 (score: 0.734)
+  • KLF4 <-> KLF6 (score: 0.690)
+  • CD36 <-> SNCA (score: 0.590)
+  • COL10A1 <-> CTHRC1 (score: 0.560)
+  • CTHRC1 <-> CCBE1 (score: 0.483)
+  • AGER <-> BDNF (score: 0.447)
+  • ACE <-> AGER (score: 0.437)
+  • KLF4 <-> BDNF (score: 0.433)
+  • ACE <-> CD36 (score: 0.408)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=AGER%0dGOLM1%0dACE%0dCD36%0dQKI%0dDLC1%0dPSAT1%0dCCBE1%0dDCC%0dSNCA%0dKLF6%0dKLF4%0dTAL1%0dCTHRC1%0dBDNF%0dNHS%0dPCAT6%0dCOL10A1%0dDACH1%0dEMP2&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================

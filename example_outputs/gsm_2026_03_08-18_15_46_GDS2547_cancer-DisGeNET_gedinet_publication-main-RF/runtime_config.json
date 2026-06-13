@@ -1,0 +1,34 @@
+{
+  "run_name": "publication-main-RF",
+  "input_data": "GDS2547",
+  "input_shape": [
+    164,
+    12647
+  ],
+  "grouping_data": "cancer-DisGeNET_gedinet",
+  "grouping_shape": [
+    329936,
+    2
+  ],
+  "n_iterations": 100,
+  "sample_ratio": 0.7,
+  "model_name": "RandomForest",
+  "label_column": "class",
+  "positive_class_label": "pos",
+  "negative_class_label": "neg",
+  "gene_column": "feature_id",
+  "group_column": "group_name",
+  "normalization_method": "zscore",
+  "initial_feature_filter_size": 0,
+  "initial_seed": 44,
+  "ttest_threshold": 0.05,
+  "cross_validation_folds": 3,
+  "best_groups_to_keep": 10,
+  "save_intermediate_results": true,
+  "apply_class_balancing": true,
+  "min_class_balance_ratio": 0.5,
+  "sampling_method": "undersampling",
+  "scoring_model": "RandomForest",
+  "run_biological_validation": true,
+  "biological_validation_top_genes": 20
+}

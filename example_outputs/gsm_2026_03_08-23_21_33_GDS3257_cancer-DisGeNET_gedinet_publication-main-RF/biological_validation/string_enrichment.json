@@ -1,0 +1,7686 @@
+[
+  {
+    "category": "Process",
+    "term": "GO:0001568",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 505,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.98e-11,
+    "fdr": 3.1e-07,
+    "description": "Blood vessel development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032101",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 964,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 4.55e-10,
+    "fdr": 2.38e-06,
+    "description": "Regulation of response to external stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048522",
+    "number_of_genes": 19,
+    "number_of_genes_in_background": 5584,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.92e-10,
+    "fdr": 2.38e-06,
+    "description": "Positive regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048731",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 3867,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.06e-10,
+    "fdr": 2.38e-06,
+    "description": "System development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0035295",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 880,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SLIT2"
+    ],
+    "p_value": 4.08e-09,
+    "fdr": 9.15e-06,
+    "description": "Tube development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032501",
+    "number_of_genes": 19,
+    "number_of_genes_in_background": 6490,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 9.65e-09,
+    "fdr": 1.51e-05,
+    "description": "Multicellular organismal process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003013",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 493,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 1.58e-08,
+    "fdr": 2.15e-05,
+    "description": "Circulatory system process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0072001",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 305,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "CD34",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "CD34",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 1.51e-08,
+    "fdr": 2.15e-05,
+    "description": "Renal system development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060429",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1069,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 2.58e-08,
+    "fdr": 3.11e-05,
+    "description": "Epithelium development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0065008",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 3654,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.48e-08,
+    "fdr": 6.35e-05,
+    "description": "Regulation of biological quality"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045595",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1582,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 7.83e-08,
+    "fdr": 7.23e-05,
+    "description": "Regulation of cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030855",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 617,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "p_value": 8.76e-08,
+    "fdr": 7.63e-05,
+    "description": "Epithelial cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0008015",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 403,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 9.8e-08,
+    "fdr": 8.09e-05,
+    "description": "Blood circulation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048514",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 419,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "p_value": 1.27e-07,
+    "fdr": 9.63e-05,
+    "description": "Blood vessel morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070887",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 2609,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 1.23e-07,
+    "fdr": 9.63e-05,
+    "description": "Cellular response to chemical stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007155",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 965,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.73e-07,
+    "fdr": 0.00011,
+    "description": "Cell adhesion"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0035239",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 669,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "p_value": 1.62e-07,
+    "fdr": 0.00011,
+    "description": "Tube morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048513",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 3246,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 1.59e-07,
+    "fdr": 0.00011,
+    "description": "Animal organ development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003018",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 262,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 1.97e-07,
+    "fdr": 0.00012,
+    "description": "Vascular process in circulatory system"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009888",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1723,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 1.87e-07,
+    "fdr": 0.00012,
+    "description": "Tissue development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051239",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 2749,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 2.29e-07,
+    "fdr": 0.00013,
+    "description": "Regulation of multicellular organismal process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009719",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1363,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 2.51e-07,
+    "fdr": 0.00014,
+    "description": "Response to endogenous stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0072073",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 136,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CD34",
+      "EDNRB",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CD34",
+      "EDNRB",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 2.48e-07,
+    "fdr": 0.00014,
+    "description": "Kidney epithelium development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001822",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 296,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CD34",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CD34",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 3.97e-07,
+    "fdr": 0.0002,
+    "description": "Kidney development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009725",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 762,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2"
+    ],
+    "p_value": 4.33e-07,
+    "fdr": 0.00021,
+    "description": "Response to hormone"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010604",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 3533,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.71e-07,
+    "fdr": 0.00021,
+    "description": "Positive regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030154",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 3507,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "PECAM1"
+    ],
+    "p_value": 4.28e-07,
+    "fdr": 0.00021,
+    "description": "Cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051240",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1505,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 6.29e-07,
+    "fdr": 0.00027,
+    "description": "Positive regulation of multicellular organismal process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001525",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 325,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "p_value": 6.8e-07,
+    "fdr": 0.00029,
+    "description": "Angiogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050793",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 2492,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 8.04e-07,
+    "fdr": 0.00033,
+    "description": "Regulation of developmental process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0071310",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2019,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 9.31e-07,
+    "fdr": 0.00037,
+    "description": "Cellular response to organic substance"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031325",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 3114,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.01e-06,
+    "fdr": 0.00039,
+    "description": "Positive regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0014070",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 861,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "SLIT2"
+    ],
+    "p_value": 1.08e-06,
+    "fdr": 0.00041,
+    "description": "Response to organic cyclic compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045597",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 876,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 1.23e-06,
+    "fdr": 0.00046,
+    "description": "Positive regulation of cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051173",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 3166,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.22e-06,
+    "fdr": 0.00046,
+    "description": "Positive regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050878",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 371,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "CD36"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "CD36"
+    ],
+    "p_value": 1.45e-06,
+    "fdr": 0.00051,
+    "description": "Regulation of body fluid levels"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007204",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 201,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36"
+    ],
+    "p_value": 1.62e-06,
+    "fdr": 0.00055,
+    "description": "Positive regulation of cytosolic calcium ion concentration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048646",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 938,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2"
+    ],
+    "p_value": 2.05e-06,
+    "fdr": 0.00068,
+    "description": "Anatomical structure formation involved in morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0072010",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "p_value": 2.88e-06,
+    "fdr": 0.00094,
+    "description": "Glomerular epithelium development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003158",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 98,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "p_value": 3.07e-06,
+    "fdr": 0.00098,
+    "description": "Endothelium development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031323",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 5681,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.18e-06,
+    "fdr": 0.001,
+    "description": "Regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080134",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1373,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 3.29e-06,
+    "fdr": 0.001,
+    "description": "Regulation of response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051171",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 5734,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.64e-06,
+    "fdr": 0.0011,
+    "description": "Regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000026",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1389,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 3.62e-06,
+    "fdr": 0.0011,
+    "description": "Regulation of multicellular organismal development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042592",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1406,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4e-06,
+    "fdr": 0.0012,
+    "description": "Homeostatic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0061061",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 498,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CAV1",
+      "EDNRB"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CAV1",
+      "EDNRB"
+    ],
+    "p_value": 7.73e-06,
+    "fdr": 0.0022,
+    "description": "Muscle structure development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051145",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 37,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "EDNRB"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "EDNRB"
+    ],
+    "p_value": 8.61e-06,
+    "fdr": 0.0024,
+    "description": "Smooth muscle cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050794",
+    "number_of_genes": 20,
+    "number_of_genes_in_background": 11025,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 9.17e-06,
+    "fdr": 0.0025,
+    "description": "Regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003008",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2029,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 9.51e-06,
+    "fdr": 0.0026,
+    "description": "System process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060249",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 296,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.03e-05,
+    "fdr": 0.0027,
+    "description": "Anatomical structure homeostasis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0033993",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 827,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "SLIT2"
+    ],
+    "p_value": 1.13e-05,
+    "fdr": 0.0029,
+    "description": "Response to lipid"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060255",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 6249,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.25e-05,
+    "fdr": 0.0032,
+    "description": "Regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010941",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1651,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "GATA6",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "GATA6",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 1.48e-05,
+    "fdr": 0.0037,
+    "description": "Regulation of cell death"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048583",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 3931,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 1.5e-05,
+    "fdr": 0.0037,
+    "description": "Regulation of response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0072011",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 1.46e-05,
+    "fdr": 0.0037,
+    "description": "Glomerular endothelium development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0040017",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 570,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.65e-05,
+    "fdr": 0.0039,
+    "description": "Positive regulation of locomotion"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0016477",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 903,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.99e-05,
+    "fdr": 0.0046,
+    "description": "Cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1903034",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 162,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CD36"
+    ],
+    "p_value": 2.11e-05,
+    "fdr": 0.0048,
+    "description": "Regulation of response to wounding"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1905952",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 167,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "SPP1",
+      "AGTR1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "SPP1",
+      "AGTR1",
+      "CD36"
+    ],
+    "p_value": 2.37e-05,
+    "fdr": 0.0053,
+    "description": "Regulation of lipid localization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010243",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 963,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "p_value": 3.01e-05,
+    "fdr": 0.0064,
+    "description": "Response to organonitrogen compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048871",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 372,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.04e-05,
+    "fdr": 0.0064,
+    "description": "Multicellular organismal homeostasis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045428",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 59,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 3.25e-05,
+    "fdr": 0.0067,
+    "description": "Regulation of nitric oxide biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032102",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 387,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "CD34",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "CD34",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 3.67e-05,
+    "fdr": 0.0075,
+    "description": "Negative regulation of response to external stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080090",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.24e-05,
+    "fdr": 0.0083,
+    "description": "Regulation of primary metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001955",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 8,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CDH5"
+    ],
+    "p_value": 4.38e-05,
+    "fdr": 0.0085,
+    "description": "Blood vessel maturation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030193",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 70,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 5.3e-05,
+    "fdr": 0.0101,
+    "description": "Regulation of blood coagulation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901701",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1057,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "p_value": 5.44e-05,
+    "fdr": 0.0103,
+    "description": "Cellular response to oxygen-containing compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901652",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 437,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36"
+    ],
+    "p_value": 6.49e-05,
+    "fdr": 0.0117,
+    "description": "Response to peptide"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0071495",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1103,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 7.12e-05,
+    "fdr": 0.0126,
+    "description": "Cellular response to endogenous stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007494",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 11,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EDNRB"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EDNRB"
+    ],
+    "p_value": 7.57e-05,
+    "fdr": 0.0132,
+    "description": "Midgut development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901700",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1547,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "GATA6",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "p_value": 7.82e-05,
+    "fdr": 0.0135,
+    "description": "Response to oxygen-containing compound"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045446",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 82,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "p_value": 8.36e-05,
+    "fdr": 0.0142,
+    "description": "Endothelial cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001894",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 238,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 9.19e-05,
+    "fdr": 0.0155,
+    "description": "Tissue homeostasis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0038166",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 13,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "AGTR1"
+    ],
+    "p_value": 0.0001,
+    "fdr": 0.0168,
+    "description": "Angiotensin-activated signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003007",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 247,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "SLIT2"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0173,
+    "description": "Heart morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032870",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 489,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "AGTR1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "GATA6",
+      "CAV1",
+      "AGTR1",
+      "SLIT2"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0176,
+    "description": "Cellular response to hormone stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048584",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2131,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "VWF",
+      "GATA6",
+      "S1PR1",
+      "CAV1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "VWF",
+      "GATA6",
+      "S1PR1",
+      "CAV1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0176,
+    "description": "Positive regulation of response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050900",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 249,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "PECAM1"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0176,
+    "description": "Leukocyte migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051716",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 6357,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0176,
+    "description": "Cellular response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1903522",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 250,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0176,
+    "description": "Regulation of blood circulation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045019",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 14,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CAV1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CAV1"
+    ],
+    "p_value": 0.00012,
+    "fdr": 0.0179,
+    "description": "Negative regulation of nitric oxide biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060284",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 506,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ASPA",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "ASPA",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0192,
+    "description": "Regulation of cell development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0090066",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 505,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "SLIT2"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0192,
+    "description": "Regulation of anatomical structure size"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006950",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3358,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAT",
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0194,
+    "description": "Response to stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042127",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1669,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CDH5"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0196,
+    "description": "Regulation of cell population proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007200",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 97,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.0197,
+    "description": "Phospholipase C-activating G protein-coupled receptor signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0120162",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 97,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.0197,
+    "description": "Positive regulation of cold-induced thermogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0062197",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 272,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "EPAS1",
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAT",
+      "EPAS1",
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 0.00015,
+    "fdr": 0.0217,
+    "description": "Cellular response to chemical stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030335",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 529,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00016,
+    "fdr": 0.0223,
+    "description": "Positive regulation of cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009653",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2229,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00016,
+    "fdr": 0.0224,
+    "description": "Anatomical structure morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001666",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 278,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "EPAS1",
+      "GATA6",
+      "CAV1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "EPAS1",
+      "GATA6",
+      "CAV1"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.023,
+    "description": "Response to hypoxia"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0002027",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 104,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CAV1",
+      "EDNRB"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CAV1",
+      "EDNRB"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.023,
+    "description": "Regulation of heart rate"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006355",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3460,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.023,
+    "description": "Regulation of transcription, DNA-templated"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010468",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 4899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.023,
+    "description": "Regulation of gene expression"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030510",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 104,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "CAV1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "CAV1",
+      "CDH5"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.023,
+    "description": "Regulation of BMP signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031326",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 4143,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "CD36"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.023,
+    "description": "Regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0098609",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 542,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.023,
+    "description": "Cell-cell adhesion"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010744",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 18,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "AGTR1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "AGTR1",
+      "CD36"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.0234,
+    "description": "Positive regulation of macrophage derived foam cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0090130",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 108,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.0234,
+    "description": "Tissue migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003014",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 111,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0247,
+    "description": "Renal system process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0035813",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0247,
+    "description": "Regulation of renal sodium excretion"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1905954",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 111,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "SPP1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "SPP1",
+      "CD36"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0247,
+    "description": "Positive regulation of lipid localization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044057",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 567,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1"
+    ],
+    "p_value": 0.00022,
+    "fdr": 0.0261,
+    "description": "Regulation of system process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0071636",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "CD34"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "CD34"
+    ],
+    "p_value": 0.00022,
+    "fdr": 0.0265,
+    "description": "Positive regulation of transforming growth factor beta production"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030334",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 927,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00024,
+    "fdr": 0.0285,
+    "description": "Regulation of cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009605",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2355,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "CAT",
+      "FOXF1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2"
+    ],
+    "p_value": 0.00024,
+    "fdr": 0.0286,
+    "description": "Response to external stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0055093",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CAV1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CAV1"
+    ],
+    "p_value": 0.00024,
+    "fdr": 0.0286,
+    "description": "Response to hyperoxia"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0090287",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 314,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "CAV1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "CAV1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00026,
+    "fdr": 0.03,
+    "description": "Regulation of cellular response to growth factor stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003081",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 22,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0302,
+    "description": "Regulation of systemic arterial blood pressure by renin-angiotensin"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0008284",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 945,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "NME1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "NME1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0302,
+    "description": "Positive regulation of cell population proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003206",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 124,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "SLIT2"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "SLIT2"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0305,
+    "description": "Cardiac chamber morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000831",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SPP1",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "SPP1",
+      "AGTR1"
+    ],
+    "p_value": 0.00029,
+    "fdr": 0.0317,
+    "description": "Regulation of steroid hormone secretion"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050896",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 7835,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.0003,
+    "fdr": 0.0318,
+    "description": "Response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030879",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 128,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "NME1",
+      "CAV1"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "NME1",
+      "CAV1"
+    ],
+    "p_value": 0.0003,
+    "fdr": 0.0321,
+    "description": "Mammary gland development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003071",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00031,
+    "fdr": 0.0329,
+    "description": "Renal system process involved in regulation of systemic arterial blood pressure"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044087",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 971,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00031,
+    "fdr": 0.0329,
+    "description": "Regulation of cellular component biogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048565",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 131,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "EDNRB"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "EDNRB"
+    ],
+    "p_value": 0.00032,
+    "fdr": 0.0332,
+    "description": "Digestive tract development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031347",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 638,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "GATA6",
+      "EDNRB",
+      "AGTR1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "GATA6",
+      "EDNRB",
+      "AGTR1",
+      "CDH5"
+    ],
+    "p_value": 0.00037,
+    "fdr": 0.0376,
+    "description": "Regulation of defense response"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032368",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 139,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "SPP1",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "SPP1",
+      "AGTR1"
+    ],
+    "p_value": 0.00038,
+    "fdr": 0.0381,
+    "description": "Regulation of lipid transport"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0019934",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EDNRB",
+      "CD36"
+    ],
+    "preferredNames": [
+      "EDNRB",
+      "CD36"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0386,
+    "description": "cGMP-mediated signaling"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060548",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 1016,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "CDH5"
+    ],
+    "p_value": 0.0004,
+    "fdr": 0.0386,
+    "description": "Negative regulation of cell death"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0097746",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 140,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0386,
+    "description": "Blood vessel diameter maintenance"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042981",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1462,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "GATA6",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "GATA6",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00041,
+    "fdr": 0.0392,
+    "description": "Regulation of apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043434",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 355,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00042,
+    "fdr": 0.0395,
+    "description": "Response to peptide hormone"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050678",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 366,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1"
+    ],
+    "p_value": 0.00047,
+    "fdr": 0.043,
+    "description": "Regulation of epithelial cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051482",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "AGTR1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "AGTR1"
+    ],
+    "p_value": 0.00048,
+    "fdr": 0.0437,
+    "description": "Positive regulation of cytosolic calcium ion concentration involved in phospholipase C-activating G protein-coupled signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050727",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 371,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "FOXF1",
+      "EDNRB",
+      "AGTR1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "FOXF1",
+      "EDNRB",
+      "AGTR1",
+      "CDH5"
+    ],
+    "p_value": 0.00049,
+    "fdr": 0.0444,
+    "description": "Regulation of inflammatory response"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0071453",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 152,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "GATA6",
+      "CAV1"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "GATA6",
+      "CAV1"
+    ],
+    "p_value": 0.00049,
+    "fdr": 0.0444,
+    "description": "Cellular response to oxygen levels"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006357",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2586,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36"
+    ],
+    "p_value": 0.0005,
+    "fdr": 0.0446,
+    "description": "Regulation of transcription by RNA polymerase II"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043534",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.0451,
+    "description": "Blood vessel endothelial cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0055017",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "S1PR1"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "S1PR1"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.0451,
+    "description": "Cardiac muscle tissue growth"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031328",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 2041,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "SPP1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "SPP1",
+      "CD36"
+    ],
+    "p_value": 0.00054,
+    "fdr": 0.0469,
+    "description": "Positive regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051092",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 157,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 0.00054,
+    "fdr": 0.0469,
+    "description": "Positive regulation of NF-kappaB transcription factor activity"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051129",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 691,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CAV1",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CAV1",
+      "SPP1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00054,
+    "fdr": 0.0469,
+    "description": "Negative regulation of cellular component organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001935",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CAV1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CAV1"
+    ],
+    "p_value": 0.00057,
+    "fdr": 0.0491,
+    "description": "Endothelial cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051494",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 161,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 0.00058,
+    "fdr": 0.0491,
+    "description": "Negative regulation of cytoskeleton organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0061028",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EDNRB",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "EDNRB",
+      "PECAM1"
+    ],
+    "p_value": 0.00057,
+    "fdr": 0.0491,
+    "description": "Establishment of endothelial barrier"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0009897",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 388,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 3.71e-05,
+    "fdr": 0.0305,
+    "description": "External side of plasma membrane"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0045121",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 320,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 1.49e-05,
+    "fdr": 0.0305,
+    "description": "Membrane raft"
+  },
+  {
+    "category": "Function",
+    "term": "GO:0005515",
+    "number_of_genes": 18,
+    "number_of_genes_in_background": 7242,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.23e-06,
+    "fdr": 0.0061,
+    "description": "Protein binding"
+  },
+  {
+    "category": "Function",
+    "term": "GO:0005102",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1499,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 6.76e-06,
+    "fdr": 0.0167,
+    "description": "Signaling receptor binding"
+  },
+  {
+    "category": "Function",
+    "term": "GO:0061629",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 353,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CD34"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CD34"
+    ],
+    "p_value": 2.38e-05,
+    "fdr": 0.0391,
+    "description": "RNA polymerase II-specific DNA-binding transcription factor binding"
+  },
+  {
+    "category": "Function",
+    "term": "GO:0004046",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 7,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "ASPA"
+    ],
+    "preferredNames": [
+      "CAT",
+      "ASPA"
+    ],
+    "p_value": 3.5e-05,
+    "fdr": 0.0432,
+    "description": "Aminoacylase activity"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000763",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 1395,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.22e-09,
+    "fdr": 2.97e-06,
+    "description": "Lung"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000174",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 2369,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "CDH5"
+    ],
+    "p_value": 2.6e-09,
+    "fdr": 3.16e-06,
+    "description": "Embryonic structure"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001085",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 420,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.63e-09,
+    "fdr": 3.74e-06,
+    "description": "Vascular system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000449",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1318,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 1.19e-08,
+    "fdr": 5.79e-06,
+    "description": "Fetus"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001854",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 74,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "S1PR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "S1PR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.34e-08,
+    "fdr": 5.79e-06,
+    "description": "Vascular endothelial cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000088",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1057,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.32e-08,
+    "fdr": 7.03e-06,
+    "description": "Cardiovascular system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001102",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 354,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.11e-08,
+    "fdr": 1.11e-05,
+    "description": "Blood vessel"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0004395",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 7.47e-08,
+    "fdr": 1.81e-05,
+    "description": "Microvessel"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001078",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1244,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 1.07e-07,
+    "fdr": 2.17e-05,
+    "description": "Placenta"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000562",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 738,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "GATA6",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.4e-07,
+    "fdr": 5.5e-05,
+    "description": "Heart"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0004574",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 2,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.86e-06,
+    "fdr": 0.00084,
+    "description": "Dermal microvascular endothelial cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0005812",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 2,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.86e-06,
+    "fdr": 0.00084,
+    "description": "Lung endothelial cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0004296",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 49,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "S1PR1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "S1PR1"
+    ],
+    "p_value": 1.91e-05,
+    "fdr": 0.0023,
+    "description": "Umbilical vein endothelial cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0003099",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2804,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 2.37e-05,
+    "fdr": 0.0026,
+    "description": "Internal female genital organ"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000421",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 954,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 2.83e-05,
+    "fdr": 0.0029,
+    "description": "Connective tissue"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0004093",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 2.73e-05,
+    "fdr": 0.0029,
+    "description": "Endothelial progenitor cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000416",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 697,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "S1PR1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "S1PR1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.08e-05,
+    "fdr": 0.0046,
+    "description": "Epithelium"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0003718",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 9,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.35e-05,
+    "fdr": 0.0046,
+    "description": "Vasculature"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001949",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 10,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.41e-05,
+    "fdr": 0.0052,
+    "description": "HUVEC cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000556",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 78,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "CD34",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "CD34",
+      "CDH5"
+    ],
+    "p_value": 7.24e-05,
+    "fdr": 0.0055,
+    "description": "Germ layer"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001393",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 16,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CDH5"
+    ],
+    "p_value": 0.00015,
+    "fdr": 0.0097,
+    "description": "Mesenchyme"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001489",
+    "number_of_genes": 20,
+    "number_of_genes_in_background": 13099,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "NME1",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00029,
+    "fdr": 0.0179,
+    "description": "Whole body"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000132",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 363,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "VWF",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "VWF",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 0.00045,
+    "fdr": 0.0274,
+    "description": "Blood platelet"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000634",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 2112,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00067,
+    "fdr": 0.039,
+    "description": "Integument"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001487",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 176,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CD34",
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 0.00075,
+    "fdr": 0.0422,
+    "description": "Adipose tissue"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001120",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 179,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EMCN",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EMCN",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 0.00079,
+    "fdr": 0.0433,
+    "description": "Epithelial cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000443",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 42,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAV1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "CAV1",
+      "CD36"
+    ],
+    "p_value": 0.0009,
+    "fdr": 0.0475,
+    "description": "Adipocyte"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0001816",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 2.05e-05,
+    "fdr": 0.0265,
+    "description": "Angiosarcoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0050852",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 9.76e-06,
+    "fdr": 0.0265,
+    "description": "Limb ischemia"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:12603",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1",
+      "CD34"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1",
+      "CD34"
+    ],
+    "p_value": 9.28e-06,
+    "fdr": 0.0265,
+    "description": "Acute leukemia"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:1287",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 493,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "AGTR1",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "AGTR1",
+      "PECAM1"
+    ],
+    "p_value": 7.3e-06,
+    "fdr": 0.0265,
+    "description": "Cardiovascular system disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:2725",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 9.76e-06,
+    "fdr": 0.0265,
+    "description": "Capillary hemangioma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:7",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 4798,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 2.17e-05,
+    "fdr": 0.0265,
+    "description": "Disease of anatomical entity"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:74",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 473,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "EPAS1",
+      "TAL1",
+      "CD34",
+      "CD36"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "EPAS1",
+      "TAL1",
+      "CD34",
+      "CD36"
+    ],
+    "p_value": 5.78e-06,
+    "fdr": 0.0265,
+    "description": "Hematopoietic system disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:5603",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 10,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1"
+    ],
+    "p_value": 6.41e-05,
+    "fdr": 0.0327,
+    "description": "T-cell acute lymphoblastic leukemia"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:930",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 10,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CD34",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CD34",
+      "PECAM1"
+    ],
+    "p_value": 6.41e-05,
+    "fdr": 0.0327,
+    "description": "Orbital disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:4",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 6291,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "CAT",
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "ASPA",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "SPP1",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 9.76e-05,
+    "fdr": 0.0408,
+    "description": "Disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:178",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 249,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "AGTR1",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "AGTR1",
+      "PECAM1"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0418,
+    "description": "Vascular disease"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0564",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 339,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 8.65e-07,
+    "fdr": 0.00058,
+    "description": "Palmitate"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0130",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 478,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.13e-06,
+    "fdr": 0.0021,
+    "description": "Cell adhesion"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04512",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 88,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "SPP1",
+      "CD36"
+    ],
+    "preferredNames": [
+      "VWF",
+      "SPP1",
+      "CD36"
+    ],
+    "p_value": 0.0001,
+    "fdr": 0.0344,
+    "description": "ECM-receptor interaction"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34030460",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 225,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 8.73e-17,
+    "fdr": 4.49e-10,
+    "description": "(2021) Integrated Single-Cell Atlas of Endothelial Cells of the Human Lung."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:19141387",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.37e-16,
+    "fdr": 1.12e-09,
+    "description": "(2009) The transcription factor LMO2 is a robust marker of vascular endothelium and vascular neoplasms and selected other entities."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22280443",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 29,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.77e-15,
+    "fdr": 4.75e-09,
+    "description": "(2012) In vitro differentiation of human skin-derived multipotent stromal cells into putative endothelial-like cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22634564",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 79,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.25e-14,
+    "fdr": 1.6e-08,
+    "description": "(2012) Isolation of primitive endoderm, mesoderm, vascular endothelial and trophoblast progenitors from human pluripotent stem cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23388453",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "CDH5"
+    ],
+    "p_value": 2.07e-14,
+    "fdr": 2.13e-08,
+    "description": "(2013) Deciphering the hierarchy of angiohematopoietic progenitors from human pluripotent stem cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22981233",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 52,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "CDH5"
+    ],
+    "p_value": 1.12e-13,
+    "fdr": 9.58e-08,
+    "description": "(2012) Identification of the hemogenic endothelial progenitor and its direct precursor in human pluripotent stem cell differentiation cultures."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34067629",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "S1PR1",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "S1PR1",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.39e-13,
+    "fdr": 1.02e-07,
+    "description": "(2021) Tissue-Nonspecific Alkaline Phosphatase in Central Nervous System Health and Disease: A Focus on Brain Microvascular Endothelial Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35927563",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.23e-13,
+    "fdr": 1.43e-07,
+    "description": "(2022) Gastruloids as in vitro models of embryonic blood development with spatial and temporal resolution."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36662068",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 63,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.9e-13,
+    "fdr": 1.45e-07,
+    "description": "(2022) Updated Perspectives on Direct Vascular Cellular Reprogramming and Their Potential Applications in Tissue Engineered Vascular Grafts."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33522307",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.78e-13,
+    "fdr": 1.45e-07,
+    "description": "(2021) Upregulation of ETV2 Expression Promotes Endothelial Differentiation of Human Dental Pulp Stem Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33745018",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 128,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "TAL1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.88e-13,
+    "fdr": 1.45e-07,
+    "description": "(2021) Angiodiversity and organotypic functions of sinusoidal endothelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34900955",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 60,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.83e-13,
+    "fdr": 1.45e-07,
+    "description": "(2021) Recent Advances on Cell-Based Co-Culture Strategies for Prevascularization in Tissue Engineering."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32499402",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 59,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "EPAS1",
+      "TAL1",
+      "EMCN",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "EPAS1",
+      "TAL1",
+      "EMCN",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.54e-13,
+    "fdr": 1.45e-07,
+    "description": "(2020) Transcriptional regulatory network controlling the ontogeny of hematopoietic stem cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29861167",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 59,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "GATA6",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "PECAM1"
+    ],
+    "p_value": 2.54e-13,
+    "fdr": 1.45e-07,
+    "description": "(2018) GATA2 Is Dispensable for Specification of Hemogenic Endothelium but Promotes Endothelial-to-Hematopoietic Transition."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28003219",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.44e-13,
+    "fdr": 1.45e-07,
+    "description": "(2017) Direct Reprogramming of Human Dermal Fibroblasts Into Endothelial Cells Using ER71ETV2."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29209108",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.44e-13,
+    "fdr": 1.45e-07,
+    "description": "(2017) Pathological process of liver sinusoidal endothelial cells in liver diseases."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24760515",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 124,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.83e-13,
+    "fdr": 1.45e-07,
+    "description": "(2014) Dextran induces differentiation of circulating endothelial progenitor cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:11162350",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.78e-13,
+    "fdr": 1.45e-07,
+    "description": "(2001) Phenotype of the endothelium in the human term placenta."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34147128",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 67,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "EPAS1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "EPAS1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.84e-13,
+    "fdr": 1.58e-07,
+    "description": "(2021) Enhanced HSC-like cell generation from mouse pluripotent stem cells in a 3D induction system cocultured with stromal cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27065170",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 69,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.09e-13,
+    "fdr": 1.82e-07,
+    "description": "(2016) Lung Circulation."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27391301",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 69,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.09e-13,
+    "fdr": 1.82e-07,
+    "description": "(2016) Generating human hematopoietic stem cells in vitro -exploring endothelial to hematopoietic transition as a portal for stemness acquisition."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24938229",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 29,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.58e-13,
+    "fdr": 1.82e-07,
+    "description": "(2014) Hypoxia-induced endothelial progenitor cell function is blunted in angiotensinogen knockout mice."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36836600",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 77,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.46e-12,
+    "fdr": 3.27e-07,
+    "description": "(2023) Pulmonary Vascular Remodeling in Pulmonary Hypertension."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24583263",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.52e-12,
+    "fdr": 3.27e-07,
+    "description": "(2014) Cooperative interaction of Etv2 and Gata2 regulates the development of endothelial and hematopoietic lineages."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26994427",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 79,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 1.73e-12,
+    "fdr": 3.56e-07,
+    "description": "(2016) Vascular endothelium - Gatekeeper of vessel health."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26249165",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 34,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.79e-12,
+    "fdr": 3.56e-07,
+    "description": "(2015) Transplant biopsy beyond light microscopy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35830837",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 83,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.4e-12,
+    "fdr": 4.58e-07,
+    "description": "(2022) Recent advances in sickle and niche research - Tribute to Dr. Paul S Frenette."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36901752",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 84,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "EDNRB",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.6e-12,
+    "fdr": 4.78e-07,
+    "description": "(2023) Molecular Mechanisms and Therapeutic Implications of Endothelial Dysfunction in Patients with Heart Failure."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37025170",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 267,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "EMCN",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.66e-12,
+    "fdr": 4.78e-07,
+    "description": "(2023) Cellular heterogeneity and stem cells of vascular endothelial cells in blood vessel formation and homeostasis: Insights from single-cell RNA sequencing."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26099567",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 11,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.71e-12,
+    "fdr": 4.78e-07,
+    "description": "(2015) To be EndMT or not to be, that is the question in pulmonary hypertension."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37173970",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 87,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.28e-12,
+    "fdr": 5.45e-07,
+    "description": "(2023) Integrins and the Metastasis-like Dissemination of Acute Lymphoblastic Leukemia to the Central Nervous System."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35715824",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 39,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.78e-12,
+    "fdr": 6.07e-07,
+    "description": "(2022) Endothelial and hematopoietic hPSCs differentiation via a hematoendothelial progenitor."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36280774",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 12,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.83e-12,
+    "fdr": 6.07e-07,
+    "description": "(2022) Caveolin-1 is a primary determinant of endothelial stiffening associated with dyslipidemia, disturbed flow, and ageing."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27804979",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 39,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.78e-12,
+    "fdr": 6.07e-07,
+    "description": "(2016) Laminin-guided highly efficient endothelial commitment from human pluripotent stem cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25739401",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.34e-12,
+    "fdr": 6.38e-07,
+    "description": "(2015) Identification of novel long noncoding RNAs underlying vertebrate cardiovascular development."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:20465783",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 4.34e-12,
+    "fdr": 6.38e-07,
+    "description": "(2010) Molecular analysis of endothelial progenitor cell (EPC) subtypes reveals two distinct cell populations with different identities."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25019369",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 41,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.98e-12,
+    "fdr": 6.92e-07,
+    "description": "(2014) Direct induction of haematoendothelial programs in human pluripotent stem cells by transcriptional regulators."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31450791",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 13,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.31e-12,
+    "fdr": 7.18e-07,
+    "description": "(2019) Bioprinting Vasculature: Materials, Cells and Emergent Techniques."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28254795",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 13,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.31e-12,
+    "fdr": 7.18e-07,
+    "description": "(2017) Reprogrammed Human Endothelial Cells: A Novel Cell Source for Regenerative Vascular Medicine."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36879408",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 95,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "S1PR1",
+      "CAV1",
+      "EDNRB",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.9e-12,
+    "fdr": 7.58e-07,
+    "description": "(2023) Tree of life: endothelial cell in norm and disease, the good guy is a partner in crime!"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32172808",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 44,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "S1PR1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.35e-12,
+    "fdr": 9.03e-07,
+    "description": "(2020) Cell-Cell Communication Breakdown and Endothelial Dysfunction."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30739275",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 44,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "S1PR1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "S1PR1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.35e-12,
+    "fdr": 9.03e-07,
+    "description": "(2019) Endothelial Progenitor Cells Modulate Inflammation-Associated Stroke Vasculome."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31138740",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 14,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.2e-12,
+    "fdr": 9.03e-07,
+    "description": "(2019) Binding Heterogeneity of Plasmodium falciparum to Engineered 3D Brain Microvessels Is Mediated by EPCR and ICAM-1."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34955553",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 99,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "AGTR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 7.76e-12,
+    "fdr": 9.08e-07,
+    "description": "(2021) Integrative Role of Albumin: Evolutionary, Biochemical and Pathophysiological Aspects."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37989727",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 45,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "S1PR1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "S1PR1",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 8.32e-12,
+    "fdr": 9.52e-07,
+    "description": "(2023) Reduced FOXF1 links unrepaired DNA damage to pulmonary arterial hypertension."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34917616",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 45,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 8.32e-12,
+    "fdr": 9.52e-07,
+    "description": "(2021) Steroid-Induced Osteonecrosis of the Femoral Head: Novel Insight Into the Roles of Bone Endothelial Cells in Pathogenesis and Treatment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37108208",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 102,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 9.48e-12,
+    "fdr": 1.03e-06,
+    "description": "(2023) Glioblastoma Microenvironment and Invasiveness: New Insights and Therapeutic Targets."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32402290",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 46,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 9.4e-12,
+    "fdr": 1.03e-06,
+    "description": "(2020) Iterative Single-Cell Analyses Define the Transcriptome of the First Functional Hematopoietic Stem Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33371458",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 46,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 9.4e-12,
+    "fdr": 1.03e-06,
+    "description": "(2020) Endothelial to Mesenchymal Transition in Pulmonary Vascular Diseases."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23845084",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 103,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.01e-11,
+    "fdr": 1.04e-06,
+    "description": "(2013) Coexpression analysis of large cancer datasets provides insight into the cellular phenotypes of the tumour microenvironment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36101460",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 104,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CAV1",
+      "EDNRB"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "EPAS1",
+      "GATA6",
+      "TAL1",
+      "CAV1",
+      "EDNRB"
+    ],
+    "p_value": 1.08e-11,
+    "fdr": 1.09e-06,
+    "description": "(2022) Identifying General Tumor and Specific Lung Cancer Biomarkers by Transcriptomic Analysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29333215",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 104,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.08e-11,
+    "fdr": 1.09e-06,
+    "description": "(2017) Markers and Biomarkers of Endothelium: When Something Is Rotten in the State."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23554273",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 16,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "CDH5"
+    ],
+    "p_value": 1.26e-11,
+    "fdr": 1.22e-06,
+    "description": "(2013) Imaging flow cytometry for morphologic and phenotypic characterization of rare circulating endothelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34746416",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 49,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.34e-11,
+    "fdr": 1.27e-06,
+    "description": "(2021) Bone marrow niches in myelodysplastic syndromes."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31958058",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 49,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.34e-11,
+    "fdr": 1.27e-06,
+    "description": "(2020) YAP1 and TAZ negatively control bone angiogenesis by limiting hypoxia-inducible factor signaling in endothelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33057196",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 49,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "EDNRB",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.34e-11,
+    "fdr": 1.27e-06,
+    "description": "(2020) Capillary cell-type specialization in the alveolus."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32127614",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 50,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.5e-11,
+    "fdr": 1.35e-06,
+    "description": "(2020) Identification of a combination of transcription factors that synergistically increases endothelial cell barrier resistance."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24719887",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 50,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.5e-11,
+    "fdr": 1.35e-06,
+    "description": "(2014) Endothelium and its alterations in cardiovascular diseases: life style intervention."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23870508",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 110,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "S1PR1",
+      "CD34",
+      "SPP1",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "S1PR1",
+      "CD34",
+      "SPP1",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.57e-11,
+    "fdr": 1.37e-06,
+    "description": "(2013) Understanding the role of ETS-mediated gene regulation in complex biological processes."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:17081366",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EDNRB",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EDNRB",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.63e-11,
+    "fdr": 1.39e-06,
+    "description": "(2006) [Endothelial progenitor cells related gene expression changes before and early after revascularization in patients with acute myocardial infarction]."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33176890",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 51,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.67e-11,
+    "fdr": 1.41e-06,
+    "description": "(2020) Multilineage differentiation potential of hematoendothelial progenitors derived from human induced pluripotent stem cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37759498",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 52,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.86e-11,
+    "fdr": 1.55e-06,
+    "description": "(2023) A Molecular Troika of Angiogenesis, Coagulopathy and Endothelial Dysfunction in the Pathology of Avascular Necrosis of Femoral Head: A Comprehensive Review."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25371905",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 52,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 1.86e-11,
+    "fdr": 1.55e-06,
+    "description": "(2014) Role of endothelial nitric oxide synthase in diabetic nephropathy: lessons from diabetic eNOS knockout mice."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30605418",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 18,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "CD34",
+      "CDH5"
+    ],
+    "p_value": 2.08e-11,
+    "fdr": 1.67e-06,
+    "description": "(2019) Vascular Regeneration With New Sources of Endothelial Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37333155",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 54,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "TAL1",
+      "EMCN",
+      "CD34",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.3e-11,
+    "fdr": 1.82e-06,
+    "description": "(2023) Genetically engineering endothelial niche in human kidney organoids enables multilineage maturation, vascularization and de novo cell types."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35709180",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 54,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CD34",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.3e-11,
+    "fdr": 1.82e-06,
+    "description": "(2022) Human intracardiac SSEA4+CD34 cells show features of cycling, immature cardiomyocytes and are distinct from Side Population and C-kit+CD45- cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27400796",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 54,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.3e-11,
+    "fdr": 1.82e-06,
+    "description": "(2016) High-Efficiency Serum-Free Feeder-Free Erythroid Differentiation of Human Pluripotent Stem Cells Using Small Molecules."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36688087",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 55,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CAV1",
+      "SPP1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.55e-11,
+    "fdr": 1.93e-06,
+    "description": "(2023) Identification of Key Biomarkers and Candidate Molecules in Non-Small-Cell Lung Cancer by Integrated Bioinformatics Analysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33668807",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.62e-11,
+    "fdr": 1.95e-06,
+    "description": "(2021) Are In Vitro Human Blood-Brain-Tumor-Barriers Suitable Replacements for In Vivo Models of Brain Permeability for Novel Therapeutics?"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30656276",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.62e-11,
+    "fdr": 1.95e-06,
+    "description": "(2019) Circulating endothelial cells as biomarker for cardiovascular diseases."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31463445",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.62e-11,
+    "fdr": 1.95e-06,
+    "description": "(2018) Successful fishing for nucleus pulposus progenitor cells of the intervertebral disc across species."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:20143331",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.62e-11,
+    "fdr": 1.95e-06,
+    "description": "(2010) Transdifferentiation potentiality of human Whartons jelly stem cells towards vascular endothelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30581475",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 56,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.82e-11,
+    "fdr": 1.99e-06,
+    "description": "(2018) Insights into Endothelial Progenitor Cells: Origin, Classification, Potentials, and Prospects."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33262705",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 121,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 2.97e-11,
+    "fdr": 2.07e-06,
+    "description": "(2020) Vascular Heterogeneity With a Special Focus on the Hepatic Microenvironment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35079138",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 57,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.12e-11,
+    "fdr": 2.14e-06,
+    "description": "(2022) Heterogeneity in endothelial cells and widespread venous arterialization during early vascular development in mammals."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36199786",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "S1PR1",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "S1PR1",
+      "AGTR1",
+      "SLIT2",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.28e-11,
+    "fdr": 2.22e-06,
+    "description": "(2022) Exploration of the Potential Link, Hub Genes, and Potential Drugs for Coronavirus Disease 2019 and Lung Cancer Based on Bioinformatics Analysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22903929",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.28e-11,
+    "fdr": 2.22e-06,
+    "description": "(2014) Human adipose-derived cells can serve as a single-cell source for the in vitro cultivation of vascularized bone grafts."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22426104",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "FOXF1",
+      "TAL1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.28e-11,
+    "fdr": 2.22e-06,
+    "description": "(2012) Mapping mouse hemangioblast maturation from headfold stages."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34066861",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 58,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "SPP1",
+      "PECAM1"
+    ],
+    "p_value": 3.44e-11,
+    "fdr": 2.24e-06,
+    "description": "(2021) Far from Health: The Bone Marrow Microenvironment in AML, A Leukemia Supportive Shelter."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35698166",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 125,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "CAV1",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.7e-11,
+    "fdr": 2.38e-06,
+    "description": "(2022) From COVID to fibrosis: lessons from single-cell analyses of the human lung."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34685692",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 125,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "EDNRB",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 3.7e-11,
+    "fdr": 2.38e-06,
+    "description": "(2021) Vascular Endothelial Cells: Heterogeneity and Targeting Approaches."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33349053",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "GATA6",
+      "TAL1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.05e-11,
+    "fdr": 2.54e-06,
+    "description": "(2020) Intravenously Injected Pluripotent Stem Cell-derived Cells Form Fetomaternal Vasculature and Prevent Miscarriage in Mouse."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33364234",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.05e-11,
+    "fdr": 2.54e-06,
+    "description": "(2020) High NESTIN Expression Marks the Endosteal Capillary Network in Human Bone Marrow."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29139170",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 60,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "FOXF1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.16e-11,
+    "fdr": 2.54e-06,
+    "description": "(2018) Single Cell Resolution of Human Hematoendothelial Cells Defines Transcriptional Signatures of Hemogenic Endothelium."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:22550504",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.05e-11,
+    "fdr": 2.54e-06,
+    "description": "(2012) Endothelial progenitors as tools to study vascular disease."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27081470",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 22,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "VWF",
+      "TAL1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 4.97e-11,
+    "fdr": 2.97e-06,
+    "description": "(2016) Therapeutic transdifferentiation of human fibroblasts into endothelial cells using forced expression of lineage-specific transcription factors."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:19839056",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 22,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "CDH5"
+    ],
+    "p_value": 4.97e-11,
+    "fdr": 2.97e-06,
+    "description": "(2009) Requirement of alpha(4)beta(1) and alpha(5)beta(1) integrin expression in bone-marrow-derived progenitor cells in preventing endotoxin-induced lung vascular injury and edema in mice."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31990676",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.37e-11,
+    "fdr": 3.14e-06,
+    "description": "(2020) OPN binds alpha V integrin to promote endothelial progenitor cell incorporation into vasculature."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28319833",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.37e-11,
+    "fdr": 3.14e-06,
+    "description": "(2017) Aortic calcified particles modulate valvular endothelial and interstitial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:16651636",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.37e-11,
+    "fdr": 3.14e-06,
+    "description": "(2006) The origin and in vivo significance of murine and human culture-expanded endothelial progenitor cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36879800",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 133,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "FOXF1",
+      "GATA6",
+      "S1PR1",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.61e-11,
+    "fdr": 3.17e-06,
+    "description": "(2023) Developmental diversity and unique sensitivity to injury of lung endothelial subtypes during postnatal growth."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37873349",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 64,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "EMCN",
+      "S1PR1",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.99e-11,
+    "fdr": 3.35e-06,
+    "description": "(2023) Post-ischemic inactivation of HIF prolyl hydroxylases in endothelium promotes maladaptive kidney repair by inducing glycolysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32091396",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 135,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "EPAS1",
+      "GATA6",
+      "S1PR1",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.2e-11,
+    "fdr": 3.35e-06,
+    "description": "(2020) Sphingosine 1-phosphate-regulated transcriptomes in heterogenous arterial and lymphatic endothelium of the aorta."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31130381",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 64,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "CD34",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.99e-11,
+    "fdr": 3.35e-06,
+    "description": "(2019) A Cellular Taxonomy of the Bone Marrow Stroma in Homeostasis and Leukemia."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27797851",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 64,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "LMO2",
+      "TAL1",
+      "CD34",
+      "AGTR1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 5.99e-11,
+    "fdr": 3.35e-06,
+    "description": "(2016) Identification of novel genes and networks governing hematopoietic stem cell development."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24282814",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "CD36",
+      "PECAM1"
+    ],
+    "p_value": 6.05e-11,
+    "fdr": 3.35e-06,
+    "description": "(2013) Isolation, characterization, and transplantation of cardiac endothelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23166670",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.05e-11,
+    "fdr": 3.35e-06,
+    "description": "(2012) Human umbilical cord blood-derived mesenchymal stem cells promote vascular growth in vivo."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:19379144",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CD36",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.05e-11,
+    "fdr": 3.35e-06,
+    "description": "(2009) Circulating endothelial cells, microparticles and progenitors: key players towards the definition of vascular competence."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34663817",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "preferredNames": [
+      "VWF",
+      "CD34",
+      "CAV1",
+      "SPP1",
+      "PECAM1",
+      "CDH5"
+    ],
+    "p_value": 6.54e-11,
+    "fdr": 3.4e-06,
+    "description": "(2021) Cellular crosstalk regulates the aqueous humor outflow pathway and provides new targets for glaucoma therapies."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36217388",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "SPP1",
+      "PECAM1"
+    ],
+    "preferredNames": [
+      "VWF",
+      "EPAS1",
+      "EMCN",
+      "SPP1",
+      "PECAM1"
+    ],
+    "p_value": 7.3e-11,
+    "fdr": 3.76e-06,
+    "description": "(2022) HIF1alpha Promotes BMP9-Mediated Osteoblastic Differentiation and Vascularization by Interacting with CBFA1."
+  }
+]

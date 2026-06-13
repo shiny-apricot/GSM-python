@@ -1,0 +1,103 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+VWF, TAL1, CAV1, PECAM1, CD34, EDNRB, CAT, SPP1, EPAS1, EMCN, S1PR1, ASPA, CD36, CDH5, AGTR1, LMO2, NME1, GATA6, FOXF1, SLIT2
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+GO_Biological_Process_2023:
+  • Glomerulus Vasculature Development (GO:0072012)
+    P-value: 9.48e-06, Combined Score: 8557.58
+    Genes: PECAM1, CD34
+  • Angiotensin-Activated Signaling Pathway (GO:0038166)
+    P-value: 1.42e-05, Combined Score: 6193.21
+    Genes: CAV1, AGTR1
+  • Smooth Muscle Cell Differentiation (GO:0051145)
+    P-value: 5.20e-05, Combined Score: 2432.24
+    Genes: EDNRB, GATA6
+
+DisGeNET:
+  • Invasive Ductal Breast Carcinoma
+    P-value: 1.97e-11, Combined Score: 1547.05
+    Genes: FOXF1, CAV1, LMO2, PECAM1, SPP1
+  • Neoplasm Metastasis
+    P-value: 2.23e-11, Combined Score: 909.57
+    Genes: VWF, EPAS1, FOXF1, CAV1, LMO2
+  • Tumor Angiogenesis
+    P-value: 5.66e-10, Combined Score: 675.97
+    Genes: VWF, EPAS1, CAV1, CAT, PECAM1
+
+GO_Molecular_Function_2023:
+  • Patched Binding (GO:0005113)
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: CAV1
+  • Roundabout Binding (GO:0048495)
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: SLIT2
+  • Nitric-Oxide Synthase Binding (GO:0050998)
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: CAV1
+
+Reactome_2022:
+  • VEGFR2 Mediated Vascular Permeability R-HSA-5218920
+    P-value: 3.28e-04, Combined Score: 711.37
+    Genes: CDH5, CAV1
+  • Transcriptional Regulation Of Pluripotent Stem Cells R-HSA-452723
+    P-value: 4.06e-04, Combined Score: 618.21
+    Genes: EPAS1, GATA6
+  • Platelet Degranulation R-HSA-114608
+    P-value: 2.51e-04, Combined Score: 238.08
+    Genes: VWF, PECAM1, CD36
+
+KEGG_2021_Human:
+  • ECM-receptor interaction
+    P-value: 8.89e-05, Combined Score: 385.30
+    Genes: VWF, SPP1, CD36
+  • Malaria
+    P-value: 1.13e-03, Combined Score: 313.05
+    Genes: PECAM1, CD36
+  • Fluid shear stress and atherosclerosis
+    P-value: 3.43e-04, Combined Score: 205.39
+    Genes: CDH5, CAV1, PECAM1
+
+WikiPathway_2023_Human:
+  • Genes Controlling Nephrogenesis WP4823
+    P-value: 8.76e-04, Combined Score: 371.32
+    Genes: SLIT2, CD36
+  • Role Of Hypoxia Angiogenesis And FGF Pathway In OA Chondrocyte Hypertrophy WP5373
+    P-value: 1.13e-03, Combined Score: 313.05
+    Genes: EPAS1, SPP1
+  • NRP1 Triggered Signaling Pathways In Pancreatic Cancer WP5144
+    P-value: 1.27e-03, Combined Score: 289.56
+    Genes: CDH5, PECAM1
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 47
+
+  Top interactions by confidence:
+  • LMO2 <-> TAL1 (score: 0.999)
+  • PECAM1 <-> CDH5 (score: 0.999)
+  • CAV1 <-> CD36 (score: 0.956)
+  • CD34 <-> PECAM1 (score: 0.940)
+  • VWF <-> PECAM1 (score: 0.918)
+  • VWF <-> CDH5 (score: 0.881)
+  • CD34 <-> CDH5 (score: 0.880)
+  • CD36 <-> PECAM1 (score: 0.851)
+  • VWF <-> CD34 (score: 0.849)
+  • VWF <-> SPP1 (score: 0.807)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=VWF%0dTAL1%0dCAV1%0dPECAM1%0dCD34%0dEDNRB%0dCAT%0dSPP1%0dEPAS1%0dEMCN%0dS1PR1%0dASPA%0dCD36%0dCDH5%0dAGTR1%0dLMO2%0dNME1%0dGATA6%0dFOXF1%0dSLIT2&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================

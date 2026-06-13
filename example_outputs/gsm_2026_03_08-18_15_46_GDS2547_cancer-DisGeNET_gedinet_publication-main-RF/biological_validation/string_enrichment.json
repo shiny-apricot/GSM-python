@@ -1,0 +1,298 @@
+[
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0106002",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PABPC1",
+      "HNRNPD"
+    ],
+    "preferredNames": [
+      "PABPC1",
+      "HNRNPD"
+    ],
+    "p_value": 1.84e-05,
+    "fdr": 0.0424,
+    "description": "mCRD-mediated mRNA stability complex"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010638",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 508,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CFL2",
+      "CAMKK2",
+      "HNRNPD",
+      "SPAG5",
+      "ANXA2",
+      "WDR1"
+    ],
+    "preferredNames": [
+      "CFL2",
+      "CAMKK2",
+      "HNRNPD",
+      "SPAG5",
+      "ANXA2",
+      "WDR1"
+    ],
+    "p_value": 6.19e-06,
+    "fdr": 0.0463,
+    "description": "Positive regulation of organelle organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030043",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CFL2",
+      "WDR1"
+    ],
+    "preferredNames": [
+      "CFL2",
+      "WDR1"
+    ],
+    "p_value": 1.32e-05,
+    "fdr": 0.0463,
+    "description": "Actin filament fragmentation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030199",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 59,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ANXA2",
+      "NF1",
+      "DDR2"
+    ],
+    "preferredNames": [
+      "ANXA2",
+      "NF1",
+      "DDR2"
+    ],
+    "p_value": 2.77e-05,
+    "fdr": 0.0463,
+    "description": "Collagen fibril organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0033024",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 2,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NF1",
+      "KITLG"
+    ],
+    "preferredNames": [
+      "NF1",
+      "KITLG"
+    ],
+    "p_value": 5.27e-06,
+    "fdr": 0.0463,
+    "description": "Mast cell apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0033025",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NF1",
+      "KITLG"
+    ],
+    "preferredNames": [
+      "NF1",
+      "KITLG"
+    ],
+    "p_value": 8.78e-06,
+    "fdr": 0.0463,
+    "description": "Regulation of mast cell apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0036135",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "RRAS",
+      "NF1"
+    ],
+    "preferredNames": [
+      "RRAS",
+      "NF1"
+    ],
+    "p_value": 8.78e-06,
+    "fdr": 0.0463,
+    "description": "Schwann cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0046578",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 200,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ARFGEF3",
+      "NF1",
+      "KANK2",
+      "KITLG"
+    ],
+    "preferredNames": [
+      "ARFGEF3",
+      "NF1",
+      "KANK2",
+      "KITLG"
+    ],
+    "p_value": 3.82e-05,
+    "fdr": 0.0463,
+    "description": "Regulation of Ras protein signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051130",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1049,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CFL2",
+      "CAMKK2",
+      "HNRNPD",
+      "CLU",
+      "SPAG5",
+      "ANXA2",
+      "DDR2",
+      "WDR1"
+    ],
+    "preferredNames": [
+      "CFL2",
+      "CAMKK2",
+      "HNRNPD",
+      "CLU",
+      "SPAG5",
+      "ANXA2",
+      "DDR2",
+      "WDR1"
+    ],
+    "p_value": 2.95e-06,
+    "fdr": 0.0463,
+    "description": "Positive regulation of cellular component organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070662",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NF1",
+      "KITLG"
+    ],
+    "preferredNames": [
+      "NF1",
+      "KITLG"
+    ],
+    "p_value": 1.32e-05,
+    "fdr": 0.0463,
+    "description": "Mast cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070666",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 8,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NF1",
+      "KITLG"
+    ],
+    "preferredNames": [
+      "NF1",
+      "KITLG"
+    ],
+    "p_value": 3.94e-05,
+    "fdr": 0.0463,
+    "description": "Regulation of mast cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1900148",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "RRAS",
+      "NF1"
+    ],
+    "preferredNames": [
+      "RRAS",
+      "NF1"
+    ],
+    "p_value": 8.78e-06,
+    "fdr": 0.0463,
+    "description": "Negative regulation of Schwann cell migration"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0106002",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PABPC1",
+      "HNRNPD"
+    ],
+    "preferredNames": [
+      "PABPC1",
+      "HNRNPD"
+    ],
+    "p_value": 1.84e-05,
+    "fdr": 0.0377,
+    "description": "mCRD-mediated mRNA stability complex"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0003099",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2804,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "CENPM",
+      "RRAS",
+      "CFL2",
+      "CAMKK2",
+      "HNRNPD",
+      "CLU",
+      "ANXA2",
+      "NF1",
+      "DDR2",
+      "WDR1",
+      "KANK2"
+    ],
+    "preferredNames": [
+      "CENPM",
+      "RRAS",
+      "CFL2",
+      "CAMKK2",
+      "HNRNPD",
+      "CLU",
+      "ANXA2",
+      "NF1",
+      "DDR2",
+      "WDR1",
+      "KANK2"
+    ],
+    "p_value": 1.23e-05,
+    "fdr": 0.0297,
+    "description": "Internal female genital organ"
+  }
+]

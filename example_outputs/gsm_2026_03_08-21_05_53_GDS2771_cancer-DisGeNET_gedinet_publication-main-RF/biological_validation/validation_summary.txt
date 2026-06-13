@@ -1,0 +1,98 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+SLC5A1, MAP2K4, HTRA1, B2M, CD82, EGR1, FXR1, SOX9, SAT1, TRIO, HUWE1, IL1R2, TRIM36, NR2F1, CENPM, C6, HLA-DQB1, CPE, TNFRSF1A, PINK1
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+GO_Biological_Process_2023:
+  • Positive Regulation Of Autophagy Of Mitochondrion In Response To Mitochondrial Depolarization (GO:1904925)
+    P-value: 9.48e-06, Combined Score: 8557.58
+    Genes: PINK1, HUWE1
+  • Response To Heparin (GO:0071503)
+    P-value: 9.48e-06, Combined Score: 8557.58
+    Genes: EGR1, SOX9
+  • Positive Regulation Of Mitophagy In Response To Mitochondrial Depolarization (GO:0098779)
+    P-value: 1.42e-05, Combined Score: 6193.21
+    Genes: PINK1, HUWE1
+
+DisGeNET:
+  • stage, bladder cancer
+    P-value: 2.65e-05, Combined Score: 3897.96
+    Genes: EGR1, CD82
+  • Tapering fingers (finding)
+    P-value: 1.73e-05, Combined Score: 803.62
+    Genes: TRIO, NR2F1, HUWE1
+  • Allergic Reaction
+    P-value: 3.43e-05, Combined Score: 592.46
+    Genes: IL1R2, TNFRSF1A, HLA-DQB1
+
+GO_Molecular_Function_2023:
+  • C3HC4-type RING Finger Domain Binding (GO:0055131)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: PINK1
+  • Annealing Activity (GO:0140666)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: FXR1
+  • Double-Stranded Methylated DNA Binding (GO:0010385)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: EGR1
+
+Reactome_2022:
+  • Intestinal Absorption R-HSA-8963676
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: SLC5A1
+  • TNFR1-mediated Ceramide Production R-HSA-5626978
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: TNFRSF1A
+  • Modulation By Mtb Of Host Immune System R-HSA-9637628
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: B2M
+
+WikiPathway_2023_Human:
+  • Let 7 Inhibition Of ES Cell Reprogramming WP3299
+    P-value: 5.99e-03, Combined Score: 1076.21
+    Genes: EGR1
+  • Photodynamic Therapy Induced AP 1 Survival Signaling WP3611
+    P-value: 1.13e-03, Combined Score: 313.05
+    Genes: MAP2K4, TNFRSF1A
+  • Cardiac Hypertrophic Response WP2795
+    P-value: 1.37e-03, Combined Score: 275.53
+    Genes: MAP2K4, TNFRSF1A
+
+KEGG_2021_Human:
+  • Human T-cell leukemia virus 1 infection
+    P-value: 5.49e-08, Combined Score: 664.92
+    Genes: MAP2K4, EGR1, IL1R2, B2M, TNFRSF1A
+  • Type I diabetes mellitus
+    P-value: 8.37e-04, Combined Score: 382.87
+    Genes: CPE, HLA-DQB1
+  • Fluid shear stress and atherosclerosis
+    P-value: 3.43e-04, Combined Score: 205.39
+    Genes: MAP2K4, IL1R2, TNFRSF1A
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 5
+
+  Top interactions by confidence:
+  • HLA-DQB1 <-> B2M (score: 0.639)
+  • SOX9 <-> NR2F1 (score: 0.505)
+  • TNFRSF1A <-> IL1R2 (score: 0.494)
+  • EGR1 <-> SOX9 (score: 0.445)
+  • HUWE1 <-> PINK1 (score: 0.434)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=SLC5A1%0dMAP2K4%0dHTRA1%0dB2M%0dCD82%0dEGR1%0dFXR1%0dSOX9%0dSAT1%0dTRIO%0dHUWE1%0dIL1R2%0dTRIM36%0dNR2F1%0dCENPM%0dC6%0dHLA-DQB1%0dCPE%0dTNFRSF1A%0dPINK1&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================

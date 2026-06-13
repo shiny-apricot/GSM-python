@@ -1,0 +1,92 @@
+======================================================================
+GROUP-LEVEL BIOLOGICAL VALIDATION REPORT
+======================================================================
+
+This report shows how your TOP RANKED GROUPS from the GSM pipeline
+relate to known biological pathways and protein interactions.
+
+----------------------------------------------------------------------
+WHY THIS MATTERS:
+----------------------------------------------------------------------
+• Groups with significant pathway enrichment are biologically meaningful
+• High protein-protein interactions suggest functional gene modules
+• This validates that your classification is based on real biology
+
+======================================================================
+GROUP: Fibroid Tumor
+======================================================================
+
+Genes in group: 413
+Sample genes: ACP1, ACTB, ACTG1, PLIN2, PARP1, AGRP, AGTR2, AHR, AKT2, ALDH1A1 ... and 403 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Malignant neoplasm of tongue
+======================================================================
+
+Genes in group: 155
+Sample genes: ACTN4, JAG1, AKT1, ANGPT2, XIAP, FAS, FASLG, AQP3, BAG1, CCND1 ... and 145 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Prostate Cancer, Hereditary, 7
+======================================================================
+
+Genes in group: 59
+Sample genes: AKT1, KLK3, AR, BGN, CAV1, RUNX2, CENPF, CSF1, CYP17A1, DSG2 ... and 49 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Chromophobe Renal Cell Carcinoma
+======================================================================
+
+Genes in group: 185
+Sample genes: ACAT1, ACHE, ACY1, ALAD, ALDH1A1, ALK, ALOX5, ALOX12B, ANPEP, ANXA4 ... and 175 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Adult Acute Lymphocytic Leukemia
+======================================================================
+
+Genes in group: 860
+Sample genes: NAT1, NAT2, ABCA3, ABL1, ABO, ACTB, ADA, ADM, ADRA1A, ADRA2B ... and 850 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+END OF GROUP VALIDATION REPORT
+======================================================================

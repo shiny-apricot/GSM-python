@@ -1,0 +1,92 @@
+======================================================================
+GROUP-LEVEL BIOLOGICAL VALIDATION REPORT
+======================================================================
+
+This report shows how your TOP RANKED GROUPS from the GSM pipeline
+relate to known biological pathways and protein interactions.
+
+----------------------------------------------------------------------
+WHY THIS MATTERS:
+----------------------------------------------------------------------
+• Groups with significant pathway enrichment are biologically meaningful
+• High protein-protein interactions suggest functional gene modules
+• This validates that your classification is based on real biology
+
+======================================================================
+GROUP: Pre B-cell acute lymphoblastic leukemia
+======================================================================
+
+Genes in group: 90
+Sample genes: ABL1, CCND1, BCL2, BCR, RUNX1, CD6, CD19, CD22, CD28, CD80 ... and 80 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Ossifying Fibroma
+======================================================================
+
+Genes in group: 19
+Sample genes: RUNX2, CD6, CD34, EZH2, GNAS, HMMR, SMAD3, MCM2, MCM7, MDM2 ... and 9 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Malignant neoplasm of salivary gland
+======================================================================
+
+Genes in group: 91
+Sample genes: ACACB, JAG1, AQP1, AR, CCND1, BCL2A1, CDH1, CDKN1A, CDKN3, VCAN ... and 81 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Lymphoid leukemia
+======================================================================
+
+Genes in group: 288
+Sample genes: ABL1, AKT1, ALK, AMPD1, ANPEP, ARR3, ASIP, ASPA, ATM, AXL ... and 278 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Adult B Acute Lymphoblastic Leukemia
+======================================================================
+
+Genes in group: 74
+Sample genes: ABL1, BCL2, BCR, RUNX1, CD6, CD19, MS4A1, CD22, CD80, CD86 ... and 64 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+END OF GROUP VALIDATION REPORT
+======================================================================

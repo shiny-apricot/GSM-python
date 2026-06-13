@@ -6,7 +6,7 @@ ARCHIVE/
 output/
 *ARCHIVE*/
 malik-burcu-PUBLICATIONS/
-
+.roadmap*
 # OAuth / review bridge secrets
 secrets/
 
@@ -22,6 +22,10 @@ reports_ARCHIVE/manuscript/review/GOOGLE_DOCS_REVIEW_BRIDGE_GUIDE.md
 
 # Word temp / lock files
 ~$*
+
+# Temporary agent roadmaps
+.roadmap*.md
+.summary*.md
 
 # data/grouping_data/
 # data/expression_data

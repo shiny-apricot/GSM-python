@@ -1,0 +1,4 @@
+STRING Network Visualization URL:
+https://string-db.org/api/image/network?identifiers=SLC5A1%0dMAP2K4%0dHTRA1%0dB2M%0dCD82%0dEGR1%0dFXR1%0dSOX9%0dSAT1%0dTRIO%0dHUWE1%0dIL1R2%0dTRIM36%0dNR2F1%0dCENPM%0dC6%0dHLA-DQB1%0dCPE%0dTNFRSF1A%0dPINK1&species=9606&network_flavor=confidence
+
+Open this URL in a browser to view the protein-protein interaction network.

@@ -1,0 +1,92 @@
+======================================================================
+GROUP-LEVEL BIOLOGICAL VALIDATION REPORT
+======================================================================
+
+This report shows how your TOP RANKED GROUPS from the GSM pipeline
+relate to known biological pathways and protein interactions.
+
+----------------------------------------------------------------------
+WHY THIS MATTERS:
+----------------------------------------------------------------------
+• Groups with significant pathway enrichment are biologically meaningful
+• High protein-protein interactions suggest functional gene modules
+• This validates that your classification is based on real biology
+
+======================================================================
+GROUP: Polycythemia Vera
+======================================================================
+
+Genes in group: 291
+Sample genes: ABL1, ACO1, ACTN2, AGER, AGT, AKT1, ALAD, ALOX5, AMBP, APOA1 ... and 281 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: stage, non-small cell lung cancer
+======================================================================
+
+Genes in group: 107
+Sample genes: AGER, AKT1, ALDH1A1, ALK, FAS, FASLG, CCND1, BCL2, CD14, CD33 ... and 97 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Adenocarcinoma of lung (disorder)
+======================================================================
+
+Genes in group: 2438
+Sample genes: NAT2, ABCA1, ABCA3, ABCF1, ABL1, ABL2, ACAT2, ACLY, ACP5, ACTA2 ... and 2428 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Noninfiltrating Intraductal Carcinoma
+======================================================================
+
+Genes in group: 486
+Sample genes: AAMP, ACTB, ADH1B, ADH1C, ADH4, ADH5, PARP1, AP2B1, JAG1, AGT ... and 476 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+GROUP: Lip and Oral Cavity Carcinoma
+======================================================================
+
+Genes in group: 734
+Sample genes: NAT2, ABO, ACTB, ADAR, ADH1C, ADM, ADORA2B, PARP1, AGER, AGT ... and 724 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+No significant pathways found (p < 0.05)
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 0
+
+======================================================================
+END OF GROUP VALIDATION REPORT
+======================================================================

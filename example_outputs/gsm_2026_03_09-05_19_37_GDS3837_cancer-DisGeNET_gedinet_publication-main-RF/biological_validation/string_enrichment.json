@@ -1,0 +1,930 @@
+[
+  {
+    "category": "Process",
+    "term": "GO:0007275",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 4209,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "COL10A1",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "NHS",
+      "DCC",
+      "BDNF",
+      "KLF6",
+      "DACH1",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "COL10A1",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "NHS",
+      "DCC",
+      "BDNF",
+      "KLF6",
+      "DACH1",
+      "CCBE1"
+    ],
+    "p_value": 1.43e-07,
+    "fdr": 0.0022,
+    "description": "Multicellular organism development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032501",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 6490,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "COL10A1",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "NHS",
+      "DCC",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "DACH1",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "COL10A1",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "NHS",
+      "DCC",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "DACH1",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 5.23e-07,
+    "fdr": 0.0041,
+    "description": "Multicellular organismal process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048731",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 3867,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "COL10A1",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "NHS",
+      "DCC",
+      "BDNF",
+      "KLF6",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "COL10A1",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "NHS",
+      "DCC",
+      "BDNF",
+      "KLF6",
+      "CCBE1"
+    ],
+    "p_value": 5.45e-07,
+    "fdr": 0.0041,
+    "description": "System development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051094",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1332,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "CCBE1"
+    ],
+    "p_value": 1.5e-06,
+    "fdr": 0.0059,
+    "description": "Positive regulation of developmental process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0040012",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1032,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DACH1",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DACH1",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 2.62e-06,
+    "fdr": 0.0068,
+    "description": "Regulation of locomotion"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050793",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2492,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "CD36",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "CD36",
+      "CCBE1"
+    ],
+    "p_value": 3.83e-06,
+    "fdr": 0.0086,
+    "description": "Regulation of developmental process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051247",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1512,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 4.28e-06,
+    "fdr": 0.0086,
+    "description": "Positive regulation of protein metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044093",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1587,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "p_value": 6.38e-06,
+    "fdr": 0.0108,
+    "description": "Positive regulation of molecular function"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045595",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1582,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "CD36"
+    ],
+    "preferredNames": [
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "CD36"
+    ],
+    "p_value": 6.21e-06,
+    "fdr": 0.0108,
+    "description": "Regulation of cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045597",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 876,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36"
+    ],
+    "preferredNames": [
+      "ACE",
+      "TAL1",
+      "CTHRC1",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36"
+    ],
+    "p_value": 1.11e-05,
+    "fdr": 0.0145,
+    "description": "Positive regulation of cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010604",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3533,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 1.6e-05,
+    "fdr": 0.0173,
+    "description": "Positive regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0022603",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 920,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "DCC",
+      "BDNF",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "CTHRC1",
+      "EMP2",
+      "KLF4",
+      "DCC",
+      "BDNF",
+      "CCBE1"
+    ],
+    "p_value": 1.52e-05,
+    "fdr": 0.0173,
+    "description": "Regulation of anatomical structure morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030334",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 927,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DACH1",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DACH1",
+      "CCBE1"
+    ],
+    "p_value": 1.6e-05,
+    "fdr": 0.0173,
+    "description": "Regulation of cell migration"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045937",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 912,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "p_value": 1.44e-05,
+    "fdr": 0.0173,
+    "description": "Positive regulation of phosphate metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051098",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 375,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "CTHRC1",
+      "KLF4",
+      "AGER",
+      "BDNF"
+    ],
+    "preferredNames": [
+      "ACE",
+      "CTHRC1",
+      "KLF4",
+      "AGER",
+      "BDNF"
+    ],
+    "p_value": 2.41e-05,
+    "fdr": 0.0202,
+    "description": "Regulation of binding"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051099",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 181,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "CTHRC1",
+      "KLF4",
+      "BDNF"
+    ],
+    "preferredNames": [
+      "ACE",
+      "CTHRC1",
+      "KLF4",
+      "BDNF"
+    ],
+    "p_value": 2.6e-05,
+    "fdr": 0.0202,
+    "description": "Positive regulation of binding"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000026",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1389,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "CCBE1"
+    ],
+    "p_value": 2.32e-05,
+    "fdr": 0.0202,
+    "description": "Regulation of multicellular organismal development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031401",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1018,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "p_value": 2.92e-05,
+    "fdr": 0.0208,
+    "description": "Positive regulation of protein modification process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051173",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3166,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 3.98e-05,
+    "fdr": 0.0265,
+    "description": "Positive regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1901888",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 201,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "BDNF",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "BDNF",
+      "SNCA"
+    ],
+    "p_value": 3.89e-05,
+    "fdr": 0.0265,
+    "description": "Regulation of cell junction assembly"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001934",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 747,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "ACE",
+      "EMP2",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "SNCA"
+    ],
+    "p_value": 5.38e-05,
+    "fdr": 0.0296,
+    "description": "Positive regulation of protein phosphorylation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0050804",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 436,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "ACE",
+      "AGER",
+      "DCC",
+      "BDNF",
+      "SNCA"
+    ],
+    "p_value": 4.91e-05,
+    "fdr": 0.0296,
+    "description": "Modulation of chemical synaptic transmission"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051246",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2622,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "BDNF",
+      "CD36",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 5.15e-05,
+    "fdr": 0.0296,
+    "description": "Regulation of protein metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0032092",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 89,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "CTHRC1",
+      "BDNF"
+    ],
+    "preferredNames": [
+      "ACE",
+      "CTHRC1",
+      "BDNF"
+    ],
+    "p_value": 9.02e-05,
+    "fdr": 0.0472,
+    "description": "Positive regulation of protein binding"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009653",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2229,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "DCC",
+      "BDNF",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "CTHRC1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "DCC",
+      "BDNF",
+      "CCBE1"
+    ],
+    "p_value": 9.79e-05,
+    "fdr": 0.048,
+    "description": "Anatomical structure morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0034616",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 14,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "ACE",
+      "KLF4"
+    ],
+    "preferredNames": [
+      "ACE",
+      "KLF4"
+    ],
+    "p_value": 0.0001,
+    "fdr": 0.0498,
+    "description": "Response to laminar fluid shear stress"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080090",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 5899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "GOLM1",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "DACH1",
+      "CCBE1",
+      "SNCA"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "ACE",
+      "TAL1",
+      "EMP2",
+      "QKI",
+      "KLF4",
+      "AGER",
+      "GOLM1",
+      "BDNF",
+      "CD36",
+      "KLF6",
+      "DACH1",
+      "CCBE1",
+      "SNCA"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0498,
+    "description": "Regulation of primary metabolic process"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0005581",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 95,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "COL10A1",
+      "CTHRC1",
+      "CD36",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "COL10A1",
+      "CTHRC1",
+      "CD36",
+      "CCBE1"
+    ],
+    "p_value": 2.19e-06,
+    "fdr": 0.0045,
+    "description": "Collagen trimer"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0176",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 83,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "COL10A1",
+      "CTHRC1",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "COL10A1",
+      "CTHRC1",
+      "CCBE1"
+    ],
+    "p_value": 7.38e-05,
+    "fdr": 0.0496,
+    "description": "Collagen"
+  },
+  {
+    "category": "HPO",
+    "term": "HP:0010787",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 118,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "DCC",
+      "BDNF",
+      "KLF6"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "DCC",
+      "BDNF",
+      "KLF6"
+    ],
+    "p_value": 5.03e-06,
+    "fdr": 0.0418,
+    "description": "Genital neoplasm"
+  },
+  {
+    "category": "HPO",
+    "term": "HP:0011793",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 732,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "DLC1",
+      "TAL1",
+      "CTHRC1",
+      "DCC",
+      "BDNF",
+      "KLF6",
+      "CCBE1"
+    ],
+    "preferredNames": [
+      "DLC1",
+      "TAL1",
+      "CTHRC1",
+      "DCC",
+      "BDNF",
+      "KLF6",
+      "CCBE1"
+    ],
+    "p_value": 3.43e-06,
+    "fdr": 0.0418,
+    "description": "Neoplasm by anatomical site"
+  }
+]

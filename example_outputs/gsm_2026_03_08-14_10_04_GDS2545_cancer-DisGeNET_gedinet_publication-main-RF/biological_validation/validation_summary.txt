@@ -1,0 +1,102 @@
+======================================================================
+BIOLOGICAL VALIDATION SUMMARY - GSM PIPELINE
+======================================================================
+
+INPUT GENES:
+----------------------------------------
+MAP1LC3B, PAFAH1B1, GSTP1, RRAS, MEN1, ANXA2, MARCKSL1, KMT2B, TNC, DAPK1, HLA-E, CD99, CD63, SIM2, CRISP3, EMP3, ERBB3, PRKAR1A, LGALS1, MSH3
+
+PATHWAY ENRICHMENT (Enrichr):
+----------------------------------------
+
+GO_Molecular_Function_2023:
+  • Mismatched DNA Binding (GO:0030983)
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: MSH3
+  • Oxidized DNA Binding (GO:0032356)
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: MSH3
+  • Unmethylated CpG Binding (GO:0045322)
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: KMT2B
+
+Reactome_2022:
+  • GRB7 Events In ERBB2 Signaling R-HSA-1306955
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: ERBB3
+  • Diseases Of Mismatch Repair (MMR) R-HSA-5423599
+    P-value: 4.99e-03, Combined Score: 1393.12
+    Genes: MSH3
+  • Sema4D Mediated Inhibition Of Cell Attachment And Migration R-HSA-416550
+    P-value: 7.97e-03, Combined Score: 725.58
+    Genes: RRAS
+
+WikiPathway_2023_Human:
+  • Arachidonate Epoxygenase Epoxide Hydrolase WP678
+    P-value: 6.98e-03, Combined Score: 869.87
+    Genes: GSTP1
+  • PAFAH1B1 Copy Number Variation WP5409
+    P-value: 1.09e-02, Combined Score: 474.51
+    Genes: PAFAH1B1
+  • MAPK And NFkB Signaling Pathways Inhibited By Yersinia YopJ WP3849
+    P-value: 1.19e-02, Combined Score: 423.08
+    Genes: RRAS
+
+DisGeNET:
+  • Non-Small Cell Lung Carcinoma
+    P-value: 1.86e-12, Combined Score: 861.32
+    Genes: CD63, MARCKSL1, ANXA2, DAPK1, GSTP1
+  • Glioblastoma
+    P-value: 5.69e-12, Combined Score: 729.79
+    Genes: CD63, MARCKSL1, ANXA2, DAPK1, GSTP1
+  • Malignant neoplasm of prostate
+    P-value: 2.43e-11, Combined Score: 720.32
+    Genes: MARCKSL1, ANXA2, DAPK1, CRISP3, GSTP1
+
+GO_Biological_Process_2023:
+  • Histone H3-K4 Methylation (GO:0051568)
+    P-value: 3.04e-04, Combined Score: 748.11
+    Genes: KMT2B, MEN1
+  • Histone Lysine Methylation (GO:0034968)
+    P-value: 4.63e-04, Combined Score: 567.33
+    Genes: KMT2B, MEN1
+  • Negative Regulation Of JNK Cascade (GO:0046329)
+    P-value: 5.23e-04, Combined Score: 523.38
+    Genes: GSTP1, MEN1
+
+KEGG_2021_Human:
+  • Mismatch repair
+    P-value: 2.28e-02, Combined Score: 180.61
+    Genes: MSH3
+  • Proteoglycans in cancer
+    P-value: 1.06e-03, Combined Score: 118.29
+    Genes: CD63, RRAS, ERBB3
+  • Allograft rejection
+    P-value: 3.73e-02, Combined Score: 93.27
+    Genes: HLA-E
+
+PROTEIN-PROTEIN INTERACTIONS (STRING-db):
+----------------------------------------
+  Total interactions found: 9
+
+  Top interactions by confidence:
+  • ANXA2 <-> CD63 (score: 0.985)
+  • MEN1 <-> KMT2B (score: 0.968)
+  • LGALS1 <-> ANXA2 (score: 0.766)
+  • MEN1 <-> PRKAR1A (score: 0.755)
+  • LGALS1 <-> EMP3 (score: 0.748)
+  • GSTP1 <-> DAPK1 (score: 0.670)
+  • GSTP1 <-> CD63 (score: 0.466)
+  • LGALS1 <-> CD63 (score: 0.455)
+  • LGALS1 <-> CD99 (score: 0.449)
+
+  Network visualization: https://string-db.org/api/image/network?identifiers=MAP1LC3B%0dPAFAH1B1%0dGSTP1%0dRRAS%0dMEN1%0dANXA2%0dMARCKSL1%0dKMT2B%0dTNC%0dDAPK1%0dHLA-E%0dCD99%0dCD63%0dSIM2%0dCRISP3%0dEMP3%0dERBB3%0dPRKAR1A%0dLGALS1%0dMSH3&species=9606&network_flavor=confidence
+
+DISEASE ASSOCIATIONS (DisGeNET):
+----------------------------------------
+  No disease associations retrieved.
+  (DisGeNET requires API key for queries)
+
+======================================================================
+END OF VALIDATION SUMMARY
+======================================================================

@@ -1,0 +1,287 @@
+======================================================================
+GROUP-LEVEL BIOLOGICAL VALIDATION REPORT
+======================================================================
+
+This report shows how your TOP RANKED GROUPS from the GSM pipeline
+relate to known biological pathways and protein interactions.
+
+----------------------------------------------------------------------
+WHY THIS MATTERS:
+----------------------------------------------------------------------
+• Groups with significant pathway enrichment are biologically meaningful
+• High protein-protein interactions suggest functional gene modules
+• This validates that your classification is based on real biology
+
+======================================================================
+GROUP: Primary malignant neoplasm of lung
+======================================================================
+
+Genes in group: 3894
+Sample genes: NAT1, NAT2, AADAC, AAMP, ABCA1, ABCA3, ABCA4, ABL1, ABO, ACACA ... and 3884 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Regulation Of Systemic Arterial Blood Pressure By Renin-Angiotensin (GO:0003081)
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: AGTR1, AGTR2, AGT
+
+• Alcohol Dehydrogenase Activity, Zinc-Dependent (GO:0004024)
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: ADH1C, ADH1B, ADH5
+
+• Ethanol Oxidation R-HSA-71384
+  P-value: 1.13e-08, Score: 4534.2
+  Genes: ADH1C, ADH1B, ALDH1A1, ADH5
+
+• Alcohol Dehydrogenase (NAD+) Activity (GO:0004022)
+  P-value: 8.16e-07, Score: 3569.4
+  Genes: ADH1C, ADH1B, ADH5
+
+• Non Classical Role Of Vitamin D WP5133
+  P-value: 8.16e-07, Score: 3569.4
+  Genes: AGTR1, AGTR2, AGT
+
+• Adrenoceptors R-HSA-390696
+  P-value: 1.22e-06, Score: 2888.7
+  Genes: ADRB2, ADRA1A, ADRA2B
+
+• Regulation Of Long-Chain Fatty Acid Import Across Plasma Membrane (GO:0010746)
+  P-value: 6.10e-05, Score: 2688.8
+  Genes: AKT2, AKT1
+
+• Adenylate Kinase Activity (GO:0004017)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: AK2, AK4
+
+• tRNA-specific Adenosine Deaminase Activity (GO:0008251)
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ADAR, ADARB1
+
+• Pyruvate metabolism
+  P-value: 1.78e-09, Score: 1334.1
+  Genes: ADH1C, ADH1B, ACYP2, ACACA, ADH5
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 103
+View network: https://string-db.org/api/image/network?identifiers=NAT1%0dNAT2%0dAADAC%0dAAMP%0dABCA1%0dABCA3%0dABCA4%0dABL1%0dABO%0dACACA%0dACAT1%0dACLY%0dACR%0dACP1%0dACP5%0dACTB%0dACTBP2%0dACTN4%0dACYP2%0dADA%0dADAM8%0dADAR%0dADARB1%0dADCY1%0dADCYAP1%0dADCYAP1R1%0dADD1%0dADH1B%0dADH1C%0dADH5%0dADM%0dADORA3%0dPARP1%0dADRA1A%0dADRA2B%0dADRB2%0dAP2A1%0dAGER%0dJAG1%0dAGT%0dAGTR1%0dAGTR2%0dAHR%0dAK2%0dAK4%0dAKT1%0dAKT2%0dALB%0dALCAM%0dALDH1A1&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Malignant neoplasm of lung
+======================================================================
+
+Genes in group: 4173
+Sample genes: A2M, NAT1, NAT2, AADAC, AAMP, ABCA1, ABCA3, ABCF1, ABCA4, ABL1 ... and 4163 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Regulation Of Systemic Arterial Blood Pressure By Renin-Angiotensin (GO:0003081)
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: AGTR1, AGTR2, AGT
+
+• Alcohol Dehydrogenase Activity, Zinc-Dependent (GO:0004024)
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: ADH1C, ADH1B, ADH5
+
+• Alcohol Dehydrogenase (NAD+) Activity (GO:0004022)
+  P-value: 8.16e-07, Score: 3569.4
+  Genes: ADH1C, ADH1B, ADH5
+
+• Non Classical Role Of Vitamin D WP5133
+  P-value: 8.16e-07, Score: 3569.4
+  Genes: AGTR1, AGTR2, AGT
+
+• Adrenoceptors R-HSA-390696
+  P-value: 1.22e-06, Score: 2888.7
+  Genes: ADRB2, ADRA1A, ADRA2B
+
+• Ethanol Oxidation R-HSA-71384
+  P-value: 2.39e-06, Score: 2059.5
+  Genes: ADH1C, ADH1B, ADH5
+
+• Adenosine To Inosine Editing (GO:0006382)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: ADAR, ADARB1
+
+• Adenylate Kinase Activity (GO:0004017)
+  P-value: 9.13e-05, Score: 1932.6
+  Genes: AK2, AK4
+
+• tRNA-specific Adenosine Deaminase Activity (GO:0008251)
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ADAR, ADARB1
+
+• SARS CoV 2 And ACE2 Receptor Molecular Mechanisms WP4883
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: AGTR1, AGT
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 71
+View network: https://string-db.org/api/image/network?identifiers=A2M%0dNAT1%0dNAT2%0dAADAC%0dAAMP%0dABCA1%0dABCA3%0dABCF1%0dABCA4%0dABL1%0dABO%0dACACA%0dACAT1%0dACLY%0dACR%0dACP1%0dACP5%0dACTA2%0dACTB%0dACTBP2%0dACTN4%0dACYP2%0dADA%0dADAM8%0dADAR%0dADARB1%0dADCY1%0dADCYAP1%0dADCYAP1R1%0dADD1%0dADH1B%0dADH1C%0dADH5%0dADM%0dADORA3%0dPARP1%0dADRA1A%0dADRA2B%0dADRB2%0dAP2A1%0dAGER%0dJAG1%0dAGT%0dAGTR1%0dAGTR2%0dNR0B1%0dAHR%0dAHSG%0dAK2%0dAK4&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: cervical cancer
+======================================================================
+
+Genes in group: 1817
+Sample genes: NAT2, ABCA4, ABL1, ACP3, ACTB, ACTN4, ACVR1, ADAM10, ADAR, ADCYAP1 ... and 1807 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Phospholipase Inhibitor Activity (GO:0004859)
+  P-value: 1.22e-06, Score: 2888.7
+  Genes: ANXA1, ANXA2, ANXA5
+
+• Alkaline Phosphatase Activity (GO:0004035)
+  P-value: 6.10e-05, Score: 2688.8
+  Genes: ALPP, ALPI
+
+• Malignant neoplasm of prostate
+  P-value: 1.68e-24, Score: 1306.3
+  Genes: ALK, ARF1, AMHR2, ARHGAP1, XIAP
+
+• Prostate carcinoma
+  P-value: 1.17e-23, Score: 1145.8
+  Genes: ALK, ARF1, ARHGAP1, XIAP, ADM
+
+• Apoptosis
+  P-value: 1.90e-12, Score: 1012.9
+  Genes: PARP1, AKT2, FAS, AKT1, XIAP
+
+• Malignant neoplasm of breast
+  P-value: 1.32e-20, Score: 1001.0
+  Genes: ALK, ARF1, AMHR2, AQP8, ARHGAP1
+
+• Mammary Neoplasms
+  P-value: 7.87e-23, Score: 979.7
+  Genes: ALK, ARF1, XIAP, ADM, ADAR
+
+• Regulation Of Necroptotic Cell Death R-HSA-5675482
+  P-value: 7.84e-07, Score: 974.4
+  Genes: XIAP, FASLG, BIRC2, BIRC3
+
+• Pancreatic carcinoma
+  P-value: 1.66e-22, Score: 960.5
+  Genes: ALK, ARHGAP1, XIAP, ADM, ADAR
+
+• Cysteine-Type Endopeptidase Inhibitor Activity Involved In Apoptotic Process (GO:0043027)
+  P-value: 1.38e-05, Score: 889.7
+  Genes: XIAP, BIRC2, BIRC3
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 163
+View network: https://string-db.org/api/image/network?identifiers=NAT2%0dABCA4%0dABL1%0dACP3%0dACTB%0dACTN4%0dACVR1%0dADAM10%0dADAR%0dADCYAP1%0dADM%0dPARP1%0dAGER%0dJAG1%0dNR0B1%0dAIF1%0dAKT1%0dAKT2%0dALB%0dALDH1A1%0dALK%0dALPI%0dALPP%0dAMH%0dAMHR2%0dANG%0dANGPT1%0dANGPT2%0dANXA1%0dANXA2%0dANXA5%0dANXA6%0dAPC%0dAPEH%0dAPEX1%0dBIRC2%0dBIRC3%0dXIAP%0dBIRC5%0dAPOB%0dAQP8%0dAPRT%0dFAS%0dFASLG%0dAQP1%0dAR%0dARF1%0dRHOB%0dARHGAP1%0dPHOX2A&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Glioma
+======================================================================
+
+Genes in group: 3097
+Sample genes: NAT2, SERPINA3, AAVS1, ABCA1, ABCA4, ACAT1, ASIC2, ACP3, ACTB, ACTC1 ... and 3087 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• NGF-independant TRKA Activation R-HSA-187024
+  P-value: 1.46e-07, Score: 10018.4
+  Genes: ADCYAP1, ADCYAP1R1, ADORA2A
+
+• Adenosine To Inosine Editing (GO:0006382)
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: ADAR, ADARB1, ADARB2
+
+• Activation Of TRKA Receptors R-HSA-187015
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: ADCYAP1, ADCYAP1R1, ADORA2A
+
+• tRNA-specific Adenosine Deaminase Activity (GO:0008251)
+  P-value: 5.11e-07, Score: 4611.1
+  Genes: ADAR, ADARB1, ADARB2
+
+• Adenosine Deaminase Activity (GO:0004000)
+  P-value: 1.22e-06, Score: 2888.7
+  Genes: ADAR, ADARB1, ADARB2
+
+• Cellular Response To Forskolin (GO:1904322)
+  P-value: 1.74e-06, Score: 2411.4
+  Genes: ADCY2, AHR, ADCY8
+
+• Response To Forskolin (GO:1904321)
+  P-value: 1.74e-06, Score: 2411.4
+  Genes: ADCY2, AHR, ADCY8
+
+• Major Receptors Targeted By Epinephrine And Norepinephrine WP4589
+  P-value: 6.15e-08, Score: 2398.9
+  Genes: ADCY2, ADRB2, ADCY8, ADRA2B
+
+• Retinal Dehydrogenase Activity (GO:0001758)
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ALDH1A3, ALDH1A1
+
+• Regulation of lipolysis in adipocytes
+  P-value: 4.73e-09, Score: 1061.7
+  Genes: AKT2, ADORA1, AKT1, ADCY2, ADRB2
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 93
+View network: https://string-db.org/api/image/network?identifiers=NAT2%0dSERPINA3%0dAAVS1%0dABCA1%0dABCA4%0dACAT1%0dASIC2%0dACP3%0dACTB%0dACTC1%0dACTG1%0dACTG2%0dACTN4%0dACTL6A%0dACVR1%0dACVR1B%0dACYP2%0dADA%0dADAM10%0dADAR%0dADARB1%0dADARB2%0dADCY2%0dADCY8%0dADCYAP1%0dADCYAP1R1%0dADK%0dADM%0dADORA1%0dADORA2A%0dPARP1%0dADRA1A%0dADRA2B%0dADRB2%0dADSL%0dAP2A1%0dAEBP1%0dAGER%0dJAG1%0dAPLNR%0dAHR%0dAIF1%0dAKT1%0dAKT2%0dALAD%0dALB%0dALDH1A1%0dALDH1A3%0dAKR1B1%0dALK&species=9606&network_flavor=confidence
+
+======================================================================
+GROUP: Childhood Neuroblastoma
+======================================================================
+
+Genes in group: 2419
+Sample genes: NAT1, AADAC, ABCA1, ABCA2, ACADM, ACAT1, ASIC2, ASIC1, ACHE, ACO1 ... and 2409 more
+
+PATHWAY ENRICHMENT:
+----------------------------------------
+• Metabolism Of Alpha Linolenic Acid WP4586
+  P-value: 2.92e-07, Score: 6385.1
+  Genes: ALOX5, ALOX15, ALOX12
+
+• Central neuroblastoma
+  P-value: 6.19e-33, Score: 2983.1
+  Genes: ALK, ACVRL1, ACHE, ADCYAP1R1, AHCY
+
+• Adrenoceptors R-HSA-390696
+  P-value: 1.22e-06, Score: 2888.7
+  Genes: ADRB3, ADRB2, ADRA2A
+
+• Neuroblastoma
+  P-value: 1.66e-32, Score: 2860.4
+  Genes: ALK, ACVRL1, ACHE, ADCYAP1R1, AHCY
+
+• Alkaline Phosphatase Activity (GO:0004035)
+  P-value: 6.10e-05, Score: 2688.8
+  Genes: ALPP, ALPI
+
+• Desensitization Of G Protein-Coupled Receptor Signaling Pathway (GO:0002029)
+  P-value: 2.39e-06, Score: 2059.5
+  Genes: GRK2, ADRB3, ADRB2
+
+• Ethanol Oxidation R-HSA-71384
+  P-value: 2.39e-06, Score: 2059.5
+  Genes: ADH1A, ALDH1A1, ADH7
+
+• Lipid Oxidation (GO:0034440)
+  P-value: 4.13e-06, Score: 1577.8
+  Genes: ALOX5, ALOX15, ALOX12
+
+• Retinal Dehydrogenase Activity (GO:0001758)
+  P-value: 1.28e-04, Score: 1490.3
+  Genes: ALDH1A3, ALDH1A1
+
+• RA Biosynthesis Pathway R-HSA-5365859
+  P-value: 2.45e-07, Score: 1465.9
+  Genes: ALDH1A3, ADH1A, ALDH1A1, ADH7
+
+PROTEIN-PROTEIN INTERACTIONS:
+----------------------------------------
+Total interactions: 98
+View network: https://string-db.org/api/image/network?identifiers=NAT1%0dAADAC%0dABCA1%0dABCA2%0dACADM%0dACAT1%0dASIC2%0dASIC1%0dACHE%0dACO1%0dACTB%0dACTG1%0dACTN4%0dACVRL1%0dACY1%0dADAM10%0dADCY2%0dADCYAP1%0dADCYAP1R1%0dADH1A%0dADH7%0dADK%0dADM%0dPARP1%0dADRA2A%0dADRB2%0dADRB3%0dGRK2%0dAGER%0dAGRP%0dJAG1%0dAGT%0dNR0B1%0dAHCY%0dAHR%0dAKT1%0dAKT2%0dALB%0dALCAM%0dALDH1A1%0dALDH1A3%0dALDOC%0dAKR1B1%0dALK%0dALOX12%0dALOX5%0dALOX15%0dALPI%0dALPP%0dALX3&species=9606&network_flavor=confidence
+
+======================================================================
+END OF GROUP VALIDATION REPORT
+======================================================================

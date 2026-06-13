@@ -109,6 +109,16 @@ def _request_with_retry(
             resp.raise_for_status()
 
         except requests.exceptions.ConnectionError as exc:
+            # FAST FAIL: Check if this is a complete DNS/internet failure
+            if "NameResolutionError" in str(exc) or "Failed to resolve" in str(exc):
+                logger.error(
+                    f"   ❌ Fatal network error (DNS) on {url}. "
+                    f"Skipping retries to save time."
+                )
+                # Immediately raise the exception to break the loop, bypassing the sleep timer
+                raise Exception(f"Network offline or DNS failure: {exc}")
+
+            # Standard retry for other types of connection interruptions
             logger.warning(
                 f"   ⚠️  Connection error on {url} "
                 f"(attempt {attempt}/{max_retries}), retrying in {backoff:.0f}s…"

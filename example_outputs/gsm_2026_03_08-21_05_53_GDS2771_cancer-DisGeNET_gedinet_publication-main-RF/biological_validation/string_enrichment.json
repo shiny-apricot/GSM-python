@@ -1,0 +1,26 @@
+[
+  {
+    "category": "KEGG",
+    "term": "hsa05166",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 210,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TNFRSF1A",
+      "EGR1",
+      "IL1R2",
+      "MAP2K4",
+      "B2M"
+    ],
+    "preferredNames": [
+      "TNFRSF1A",
+      "EGR1",
+      "IL1R2",
+      "MAP2K4",
+      "B2M"
+    ],
+    "p_value": 2e-06,
+    "fdr": 0.00067,
+    "description": "Human T-cell leukemia virus 1 infection"
+  }
+]

@@ -1,0 +1,298 @@
+======================================================================
+🏆 GSM Pipeline Summary Report 🏆
+Grouping-Scoring-Modeling (G-S-M) Gene Analysis Pipeline
+======================================================================
+
+METHODOLOGY
+----------------------------------------------------------------------
+This pipeline implements a rigorous gene group-based classification approach:
+
+1. FEATURE FILTERING:
+   - Welch's t-test for differential expression analysis
+   - Multiple comparison correction: Benjamini-Hochberg FDR
+   - Significance threshold: α = 0.05 (adjusted p-values)
+
+2. GENE GROUPING:
+   - Pre-existing knowledge-based grouping (e.g., DisGeNET pathways)
+   - Groups ranked by embedded feature selection via ML models
+
+3. MODEL TRAINING:
+   - RandomForest: Ensemble method with embedded feature importance
+   - SVM: Support vector classification with probability estimates
+   - Rationale: These methods handle high-dimensional data well and
+     provide feature importance for biological interpretation.
+
+4. VALIDATION:
+   - Stratified K-fold cross-validation for robust estimates
+   - Bootstrap confidence intervals (100 resamples, 95% CI)
+   - AUC-ROC for threshold-independent classification quality
+   - Probability predictions for risk stratification
+
+BEST PERFORMANCE ACHIEVED
+----------------------------------------------------------------------
+F1 Score:       0.8571 (95% CI: 0.7442 - 0.9524)
+Accuracy:       0.8636
+Precision:      0.8182
+Recall:         0.9000
+AUC-ROC:        0.8385 (95% CI: 0.6934 - 0.9603)
+
+Cross-Validation (5-fold):
+  CV F1 Mean:   0.7262 ± 0.0607
+
+Probability Predictions:
+  Mean P(positive): 0.4639
+  Note: Threshold can be adjusted based on clinical requirements
+        (e.g., 0.3 for high sensitivity, 0.7 for high specificity)
+
+CONFIGURATION DETAILS
+----------------------------------------------------------------------
+Iteration:      12
+Random Seed:    12044
+Groups Used:    2
+Features Used:  20
+Model Name:     RandomForest
+
+TOP CONFIGURATIONS (Top 5 by F1)
+----------------------------------------------------------------------
+1. Iter 12 | Groups 2 | F1 0.8571 | AUC 0.8385 | Acc 0.8636
+2. Iter 90 | Groups 13 | F1 0.8571 | AUC 0.8708 | Acc 0.8636
+3. Iter 10 | Groups 8 | F1 0.8372 | AUC 0.8844 | Acc 0.8409
+4. Iter 37 | Groups 5 | F1 0.8372 | AUC 0.8833 | Acc 0.8409
+5. Iter 37 | Groups 7 | F1 0.8372 | AUC 0.8948 | Acc 0.8409
+
+PER-ITERATION BEST CONFIGURATIONS
+----------------------------------------------------------------------
+Iter  1 | Groups  8 | Features 291 | F1 0.6857 | AUC 0.7542 | Acc 0.7500
+Iter  2 | Groups  2 | Features  42 | F1 0.7500 | AUC 0.8135 | Acc 0.7727
+Iter  3 | Groups  5 | Features  88 | F1 0.6842 | AUC 0.7740 | Acc 0.7273
+Iter  4 | Groups 10 | Features 176 | F1 0.6667 | AUC 0.7771 | Acc 0.7273
+Iter  5 | Groups  1 | Features  52 | F1 0.5714 | AUC 0.6885 | Acc 0.6591
+Iter  6 | Groups  3 | Features  11 | F1 0.7500 | AUC 0.7688 | Acc 0.7727
+Iter  7 | Groups  6 | Features  75 | F1 0.6667 | AUC 0.7229 | Acc 0.7273
+Iter  8 | Groups  3 | Features  82 | F1 0.7317 | AUC 0.7917 | Acc 0.7500
+Iter  9 | Groups 10 | Features 266 | F1 0.7000 | AUC 0.7646 | Acc 0.7273
+Iter 10 | Groups  8 | Features 193 | F1 0.8372 | AUC 0.8844 | Acc 0.8409
+Iter 11 | Groups  9 | Features 364 | F1 0.7179 | AUC 0.7510 | Acc 0.7500
+Iter 12 | Groups  2 | Features  20 | F1 0.8571 | AUC 0.8385 | Acc 0.8636
+Iter 13 | Groups  8 | Features 196 | F1 0.7692 | AUC 0.8260 | Acc 0.7955
+Iter 14 | Groups  7 | Features 189 | F1 0.6667 | AUC 0.7938 | Acc 0.7045
+Iter 15 | Groups  2 | Features  20 | F1 0.7727 | AUC 0.7479 | Acc 0.7727
+Iter 16 | Groups 10 | Features 255 | F1 0.7317 | AUC 0.7698 | Acc 0.7500
+Iter 17 | Groups  4 | Features  65 | F1 0.8000 | AUC 0.8260 | Acc 0.8182
+Iter 18 | Groups  5 | Features  32 | F1 0.7027 | AUC 0.8531 | Acc 0.7500
+Iter 19 | Groups 10 | Features 177 | F1 0.6829 | AUC 0.7104 | Acc 0.7045
+Iter 20 | Groups  2 | Features  19 | F1 0.8108 | AUC 0.8938 | Acc 0.8409
+Iter 21 | Groups  2 | Features  29 | F1 0.8182 | AUC 0.8250 | Acc 0.8182
+Iter 22 | Groups  6 | Features 133 | F1 0.6857 | AUC 0.8229 | Acc 0.7500
+Iter 23 | Groups  1 | Features  27 | F1 0.7692 | AUC 0.8292 | Acc 0.7955
+Iter 24 | Groups  1 | Features  11 | F1 0.6667 | AUC 0.7771 | Acc 0.7045
+Iter 25 | Groups  2 | Features 126 | F1 0.8000 | AUC 0.8521 | Acc 0.8182
+Iter 26 | Groups  1 | Features  22 | F1 0.7000 | AUC 0.7594 | Acc 0.7273
+Iter 27 | Groups 17 | Features 327 | F1 0.6857 | AUC 0.7719 | Acc 0.7500
+Iter 28 | Groups  1 | Features  37 | F1 0.7179 | AUC 0.8281 | Acc 0.7500
+Iter 29 | Groups  5 | Features  31 | F1 0.7317 | AUC 0.7667 | Acc 0.7500
+Iter 30 | Groups  3 | Features 237 | F1 0.7179 | AUC 0.7792 | Acc 0.7500
+Iter 31 | Groups  3 | Features  53 | F1 0.7059 | AUC 0.8115 | Acc 0.7727
+Iter 32 | Groups  8 | Features  56 | F1 0.7500 | AUC 0.8354 | Acc 0.7727
+Iter 33 | Groups  3 | Features  18 | F1 0.8108 | AUC 0.8542 | Acc 0.8409
+Iter 34 | Groups  2 | Features  13 | F1 0.7027 | AUC 0.7510 | Acc 0.7500
+Iter 35 | Groups  1 | Features  13 | F1 0.6857 | AUC 0.7552 | Acc 0.7500
+Iter 36 | Groups  4 | Features 201 | F1 0.7500 | AUC 0.8427 | Acc 0.7727
+Iter 37 | Groups  5 | Features  50 | F1 0.8372 | AUC 0.8833 | Acc 0.8409
+Iter 38 | Groups  1 | Features  51 | F1 0.6111 | AUC 0.7750 | Acc 0.6818
+Iter 39 | Groups 13 | Features 364 | F1 0.7222 | AUC 0.8177 | Acc 0.7727
+Iter 40 | Groups 11 | Features  54 | F1 0.7429 | AUC 0.8396 | Acc 0.7955
+Iter 41 | Groups  4 | Features  73 | F1 0.6842 | AUC 0.8135 | Acc 0.7273
+Iter 42 | Groups  2 | Features  32 | F1 0.6829 | AUC 0.7271 | Acc 0.7045
+Iter 43 | Groups  9 | Features 166 | F1 0.7027 | AUC 0.7948 | Acc 0.7500
+Iter 44 | Groups  3 | Features  76 | F1 0.7500 | AUC 0.7885 | Acc 0.7727
+Iter 45 | Groups  4 | Features 208 | F1 0.7000 | AUC 0.7604 | Acc 0.7273
+Iter 46 | Groups  9 | Features 187 | F1 0.5789 | AUC 0.6740 | Acc 0.6364
+Iter 47 | Groups  7 | Features  62 | F1 0.7500 | AUC 0.7521 | Acc 0.7727
+Iter 48 | Groups  5 | Features  35 | F1 0.7273 | AUC 0.7396 | Acc 0.7273
+Iter 49 | Groups  1 | Features   8 | F1 0.7317 | AUC 0.7906 | Acc 0.7500
+Iter 50 | Groups 13 | Features 271 | F1 0.7429 | AUC 0.8385 | Acc 0.7955
+Iter 51 | Groups  3 | Features  35 | F1 0.7692 | AUC 0.8177 | Acc 0.7955
+Iter 52 | Groups 10 | Features 116 | F1 0.7442 | AUC 0.7594 | Acc 0.7500
+Iter 53 | Groups  2 | Features  28 | F1 0.7500 | AUC 0.7979 | Acc 0.7727
+Iter 54 | Groups  7 | Features  93 | F1 0.6667 | AUC 0.7698 | Acc 0.7500
+Iter 55 | Groups  7 | Features  76 | F1 0.7778 | AUC 0.8948 | Acc 0.8182
+Iter 56 | Groups  3 | Features  40 | F1 0.6829 | AUC 0.7031 | Acc 0.7045
+Iter 57 | Groups  7 | Features 142 | F1 0.7179 | AUC 0.7812 | Acc 0.7500
+Iter 58 | Groups  6 | Features  53 | F1 0.7895 | AUC 0.8240 | Acc 0.8182
+Iter 59 | Groups  7 | Features 296 | F1 0.6667 | AUC 0.7490 | Acc 0.7045
+Iter 60 | Groups 10 | Features 118 | F1 0.7568 | AUC 0.8104 | Acc 0.7955
+Iter 61 | Groups 11 | Features 228 | F1 0.6842 | AUC 0.7812 | Acc 0.7273
+Iter 62 | Groups 11 | Features  99 | F1 0.7000 | AUC 0.7229 | Acc 0.7273
+Iter 63 | Groups  1 | Features 110 | F1 0.7442 | AUC 0.8396 | Acc 0.7500
+Iter 64 | Groups  1 | Features   3 | F1 0.7556 | AUC 0.7188 | Acc 0.7500
+Iter 65 | Groups  2 | Features  94 | F1 0.6818 | AUC 0.6760 | Acc 0.6818
+Iter 66 | Groups  1 | Features  26 | F1 0.7027 | AUC 0.7740 | Acc 0.7500
+Iter 67 | Groups  3 | Features 338 | F1 0.6829 | AUC 0.7229 | Acc 0.7045
+Iter 68 | Groups  9 | Features  66 | F1 0.7568 | AUC 0.8542 | Acc 0.7955
+Iter 69 | Groups 10 | Features 151 | F1 0.8333 | AUC 0.8594 | Acc 0.8636
+Iter 70 | Groups 10 | Features 251 | F1 0.7500 | AUC 0.8240 | Acc 0.7727
+Iter 71 | Groups  5 | Features  81 | F1 0.7368 | AUC 0.7979 | Acc 0.7727
+Iter 72 | Groups 10 | Features  68 | F1 0.7568 | AUC 0.8177 | Acc 0.7955
+Iter 73 | Groups  8 | Features 146 | F1 0.7317 | AUC 0.7938 | Acc 0.7500
+Iter 74 | Groups  6 | Features 328 | F1 0.6000 | AUC 0.6760 | Acc 0.6364
+Iter 75 | Groups  4 | Features  44 | F1 0.7222 | AUC 0.7823 | Acc 0.7727
+Iter 76 | Groups  2 | Features  42 | F1 0.6486 | AUC 0.7500 | Acc 0.7045
+Iter 77 | Groups  1 | Features   5 | F1 0.6471 | AUC 0.6458 | Acc 0.7273
+Iter 78 | Groups  7 | Features 156 | F1 0.7500 | AUC 0.8385 | Acc 0.7727
+Iter 79 | Groups  2 | Features  24 | F1 0.6486 | AUC 0.6750 | Acc 0.7045
+Iter 80 | Groups  2 | Features  21 | F1 0.7027 | AUC 0.8042 | Acc 0.7500
+Iter 81 | Groups 12 | Features 119 | F1 0.7907 | AUC 0.8323 | Acc 0.7955
+Iter 82 | Groups  1 | Features  14 | F1 0.7805 | AUC 0.8094 | Acc 0.7955
+Iter 83 | Groups  3 | Features 135 | F1 0.7179 | AUC 0.7479 | Acc 0.7500
+Iter 84 | Groups  3 | Features 174 | F1 0.7805 | AUC 0.8240 | Acc 0.7955
+Iter 85 | Groups 12 | Features 309 | F1 0.7027 | AUC 0.7729 | Acc 0.7500
+Iter 86 | Groups 10 | Features 327 | F1 0.7692 | AUC 0.8781 | Acc 0.7955
+Iter 87 | Groups  6 | Features  70 | F1 0.6829 | AUC 0.8021 | Acc 0.7045
+Iter 88 | Groups  9 | Features 142 | F1 0.6111 | AUC 0.7677 | Acc 0.6818
+Iter 89 | Groups  1 | Features  25 | F1 0.6842 | AUC 0.7333 | Acc 0.7273
+Iter 90 | Groups 13 | Features 176 | F1 0.8571 | AUC 0.8708 | Acc 0.8636
+Iter 91 | Groups  2 | Features  23 | F1 0.6286 | AUC 0.7500 | Acc 0.7045
+Iter 92 | Groups  3 | Features  68 | F1 0.7826 | AUC 0.8760 | Acc 0.7727
+Iter 93 | Groups  4 | Features  26 | F1 0.7907 | AUC 0.8760 | Acc 0.7955
+Iter 94 | Groups  9 | Features 474 | F1 0.6000 | AUC 0.6573 | Acc 0.6364
+Iter 95 | Groups  8 | Features  54 | F1 0.7778 | AUC 0.8427 | Acc 0.8182
+Iter 96 | Groups  6 | Features 263 | F1 0.6316 | AUC 0.6979 | Acc 0.6818
+Iter 97 | Groups  7 | Features 104 | F1 0.8095 | AUC 0.8438 | Acc 0.8182
+Iter 98 | Groups  3 | Features  29 | F1 0.7805 | AUC 0.7812 | Acc 0.7955
+Iter 99 | Groups  1 | Features  12 | F1 0.6286 | AUC 0.7552 | Acc 0.7045
+Iter 100 | Groups  5 | Features  32 | F1 0.7179 | AUC 0.8031 | Acc 0.7500
+
+TOP FEATURES (by importance)
+----------------------------------------------------------------------
+  MAP1LC3B: 0.0968
+  SHC1: 0.0717
+  CD63: 0.0671
+  CAV1: 0.0632
+  GSTP1: 0.0631
+  MT1A: 0.0544
+  TIMP3: 0.0533
+  FASN: 0.0516
+  DES: 0.0511
+  TYMS: 0.0490
+
+TOP GROUPS USED
+----------------------------------------------------------------------
+  1. Cutaneous Melanoma
+  2. Luminal A Breast Carcinoma
+
+======================================================================
+BEST AVERAGED GROUPS (across all iterations)
+----------------------------------------------------------------------
+Groups ranked by average F1 score when used in modeling:
+
+   1. Cervical intraepithelial neoplasia grade 2         Avg F1: 0.8170 ± 0.0218 (n=9)
+   2. HER2-negative breast cancer                        Avg F1: 0.8141 ± 0.0254 (n=6)
+   3. Anaplasia                                          Avg F1: 0.8095 ± 0.0415 (n=6)
+   4. MSI-high                                           Avg F1: 0.8049 ± 0.0422 (n=4)
+   5. Secondary malignant neoplasm of lymph node         Avg F1: 0.8002 ± 0.0272 (n=3)
+   6. Benign neoplasm of bladder                         Avg F1: 0.8002 ± 0.0235 (n=4)
+   7. Stomach Carcinoma                                  Avg F1: 0.7921 ± 0.0335 (n=7)
+   8. Locally advanced breast cancer                     Avg F1: 0.7919 ± 0.0410 (n=11)
+   9. oligodendroglioma                                  Avg F1: 0.7895 ± 0.0000 (n=1)
+  10. stage, ovarian epithelial cancer                   Avg F1: 0.7878 ± 0.0113 (n=3)
+  11. Conventional (Clear Cell) Renal Cell Carcinoma     Avg F1: 0.7805 ± 0.0000 (n=1)
+  12. Myxoid/Round Cell Liposarcoma                      Avg F1: 0.7793 ± 0.0110 (n=5)
+  13. Choroid Plexus Carcinoma                           Avg F1: 0.7793 ± 0.0110 (n=5)
+  14. Carcinoma in situ of bladder                       Avg F1: 0.7785 ± 0.0478 (n=8)
+  15. Childhood Anaplastic Ependymoma                    Avg F1: 0.7737 ± 0.0173 (n=3)
+
+BEST AVERAGED FEATURES (across all iterations)
+----------------------------------------------------------------------
+Features ranked by average importance score:
+
+   1. SLC16A5              Avg Importance: 0.0822 ± 0.0438 (n=19)
+   2. POU4F2               Avg Importance: 0.0561 ± 0.1080 (n=17)
+   3. PDCD1                Avg Importance: 0.0423 ± 0.0257 (n=9)
+   4. MAP7                 Avg Importance: 0.0399 ± 0.0732 (n=24)
+   5. TP53                 Avg Importance: 0.0389 ± 0.0254 (n=9)
+   6. CRISP3               Avg Importance: 0.0345 ± 0.0261 (n=96)
+   7. MATK                 Avg Importance: 0.0343 ± 0.0168 (n=15)
+   8. HOXC4                Avg Importance: 0.0339 ± 0.0505 (n=52)
+   9. RRAS                 Avg Importance: 0.0309 ± 0.0351 (n=364)
+  10. SF1                  Avg Importance: 0.0297 ± 0.0227 (n=12)
+  11. GSTP1                Avg Importance: 0.0287 ± 0.0322 (n=819)
+  12. MAP1LC3B             Avg Importance: 0.0275 ± 0.0213 (n=544)
+  13. EWSR1                Avg Importance: 0.0275 ± 0.0614 (n=42)
+  14. GGPS1                Avg Importance: 0.0265 ± 0.0186 (n=10)
+  15. SERPINB9             Avg Importance: 0.0261 ± 0.0164 (n=20)
+  16. SPRR1A               Avg Importance: 0.0260 ± 0.0020 (n=3)
+  17. TGFB1                Avg Importance: 0.0256 ± 0.0173 (n=9)
+  18. PHB                  Avg Importance: 0.0255 ± 0.0167 (n=10)
+  19. PAFAH1B1             Avg Importance: 0.0254 ± 0.0191 (n=473)
+  20. MEN1                 Avg Importance: 0.0250 ± 0.0312 (n=656)
+
+======================================================================
+ROBUST RANK AGGREGATION - GROUPS
+----------------------------------------------------------------------
+Groups ranked using Robust Rank Aggregation (RRA) method.
+Lower p-value = more consistently top-ranked across iterations.
+
+Rank  Group Name                                      RRA Score  Avg Rank     N
+----------------------------------------------------------------------
+  1   Adult Medulloblastoma                           70.6083     86.91   100
+  2   Childhood Medulloblastoma                       66.2588    100.38   100
+  3   Childhood Leukemia                              59.8726    152.38   100
+  4   Childhood Acute Lymphoblastic Leukemia          59.0842    141.62   100
+  5   Medulloblastoma                                 58.2195    120.03   100
+  6   Precursor Cell Lymphoblastic Leukemia Lymp      58.0160    137.10   100
+  7   Central neuroblastoma                           57.3540    178.15   100
+  8   Gastric Adenocarcinoma                          56.5699    146.98   100
+  9   Neuroblastoma                                   56.1691    179.52   100
+  10  Adenomatous Polyposis Coli                      56.0820    148.36   100
+  11  Non-Small Cell Lung Carcinoma                   56.0294    151.91   100
+  12  Glioblastoma Multiforme                         55.3819    172.70   100
+  13  Bladder Neoplasm                                55.2375    174.15   100
+  14  Malignant tumor of cervix                       55.1283    179.75   100
+  15  Colon Carcinoma                                 54.2615    185.61   100
+
+ROBUST RANK AGGREGATION - FEATURES
+----------------------------------------------------------------------
+Features ranked using Robust Rank Aggregation (RRA) method.
+Higher RRA score = more consistently top-ranked.
+
+Rank  Feature Name                RRA Score  Avg Rank   Avg Imp     N
+----------------------------------------------------------------------
+  1   MAP1LC3B                    42.3164     35.05    0.0198    83
+  2   PAFAH1B1                    38.9422     61.08    0.0198    72
+  3   GSTP1                       35.7660     29.13    0.0149    98
+  4   RRAS                        27.7326     77.79    0.0205    64
+  5   MEN1                        27.0814     41.83    0.0140    94
+  6   ANXA2                       16.3689     61.31    0.0102    94
+  7   MARCKSL1                    14.5354     62.40    0.0108    94
+  8   KMT2B                       12.2834     79.90    0.0123    69
+  9   TNC                         10.5816     67.39    0.0107    93
+  10  DAPK1                        9.8735     77.73    0.0110    83
+  11  HLA-E                        9.5681    132.72    0.0183    32
+  12  CD99                         8.7931     70.15    0.0092    86
+  13  CD63                         8.7204     79.24    0.0106    71
+  14  SIM2                         7.7439    106.03    0.0139    50
+  15  CRISP3                       7.5038    170.80    0.0267    21
+  16  EMP3                         7.2984    100.78    0.0115    54
+  17  ERBB3                        6.0790     78.44    0.0080    96
+  18  PRKAR1A                      5.9564     94.82    0.0090    80
+  19  LGALS1                       5.8720     75.88    0.0082    96
+  20  MSH3                         4.3775    117.24    0.0095    59
+  21  IL6ST                        4.2726     91.86    0.0088    83
+  22  LDHB                         4.0057    114.00    0.0082    49
+  23  CLU                          3.6756     84.29    0.0075    87
+  24  REG3A                        3.5290    129.39    0.0107    45
+  25  SND1                         3.2762    102.87    0.0079    59
+
+======================================================================
+SUMMARY STATISTICS
+----------------------------------------------------------------------
+Total Configurations Tested: 1000
+F1 Score Range: 0.3784 - 0.8571
+F1 Score Mean ± Std: 0.6682 ± 0.0735
+AUC-ROC Mean ± Std: 0.7765 ± 0.0604
+
+======================================================================
+📊 Full results saved in accompanying Excel files.
+📈 Visualizations saved in figures/ directory.
+======================================================================

@@ -1,0 +1,8856 @@
+[
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0000785",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 476,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 5.99e-06,
+    "fdr": 0.0138,
+    "description": "Chromatin"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0005654",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1146,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 8.98e-06,
+    "fdr": 0.0138,
+    "description": "Nucleoplasm"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0031981",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1850,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 3.69e-05,
+    "fdr": 0.0138,
+    "description": "Nuclear lumen"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0043232",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3309,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.69e-05,
+    "fdr": 0.0138,
+    "description": "Intracellular non-membrane-bounded organelle"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0043626",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 8,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA"
+    ],
+    "p_value": 4.38e-05,
+    "fdr": 0.0138,
+    "description": "PCNA complex"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0120217",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 3,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "TOP2A"
+    ],
+    "p_value": 9.76e-06,
+    "fdr": 0.0138,
+    "description": "DNA gyrase complex"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0043229",
+    "number_of_genes": 18,
+    "number_of_genes_in_background": 9609,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.0312,
+    "description": "Intracellular organelle"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0150005",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0346,
+    "description": "Enzyme activator complex"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0070013",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2902,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00022,
+    "fdr": 0.0414,
+    "description": "Intracellular organelle lumen"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0005622",
+    "number_of_genes": 19,
+    "number_of_genes_in_background": 11512,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00033,
+    "fdr": 0.0446,
+    "description": "Intracellular"
+  },
+  {
+    "category": "COMPARTMENTS",
+    "term": "GOCC:0038201",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1"
+    ],
+    "p_value": 0.00031,
+    "fdr": 0.0446,
+    "description": "TOR complex"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007049",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1246,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.66e-09,
+    "fdr": 0.0001,
+    "description": "Cell cycle"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048523",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 4736,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.61e-08,
+    "fdr": 0.00013,
+    "description": "Negative regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1903047",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 537,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 3.04e-08,
+    "fdr": 0.00016,
+    "description": "Mitotic cell cycle process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010558",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1532,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 5.63e-08,
+    "fdr": 0.0002,
+    "description": "Negative regulation of macromolecule biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0022402",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 835,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.07e-08,
+    "fdr": 0.0002,
+    "description": "Cell cycle process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031327",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1592,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 8.36e-08,
+    "fdr": 0.00022,
+    "description": "Negative regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0000122",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 971,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.82e-07,
+    "fdr": 0.00029,
+    "description": "Negative regulation of transcription by RNA polymerase II"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010605",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 2760,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.41e-07,
+    "fdr": 0.00029,
+    "description": "Negative regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031324",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 2265,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.82e-07,
+    "fdr": 0.00029,
+    "description": "Negative regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045892",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1322,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.89e-07,
+    "fdr": 0.00029,
+    "description": "Negative regulation of transcription, DNA-templated"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051172",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 2403,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 5.4e-07,
+    "fdr": 0.0005,
+    "description": "Negative regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044772",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 173,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 7.87e-07,
+    "fdr": 0.00065,
+    "description": "Mitotic cell cycle phase transition"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2001233",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 365,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 1.32e-06,
+    "fdr": 0.00094,
+    "description": "Regulation of apoptotic signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009968",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1252,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 1.53e-06,
+    "fdr": 0.001,
+    "description": "Negative regulation of signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045944",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1250,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.51e-06,
+    "fdr": 0.001,
+    "description": "Positive regulation of transcription by RNA polymerase II"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010556",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 3980,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.13e-06,
+    "fdr": 0.0013,
+    "description": "Regulation of macromolecule biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006355",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 3460,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 3.45e-06,
+    "fdr": 0.0019,
+    "description": "Regulation of transcription, DNA-templated"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031326",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 4143,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 3.53e-06,
+    "fdr": 0.0019,
+    "description": "Regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042981",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1462,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "NES",
+      "AR",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "NES",
+      "AR",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.51e-06,
+    "fdr": 0.0026,
+    "description": "Regulation of apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060429",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1069,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 5.39e-06,
+    "fdr": 0.0026,
+    "description": "Epithelium development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010557",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1935,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.21e-06,
+    "fdr": 0.0027,
+    "description": "Positive regulation of macromolecule biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0042752",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 117,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "TOP2A"
+    ],
+    "p_value": 6.06e-06,
+    "fdr": 0.0027,
+    "description": "Regulation of circadian rhythm"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048511",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 270,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "PCNA",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "PCNA",
+      "TOP2A"
+    ],
+    "p_value": 6.64e-06,
+    "fdr": 0.0028,
+    "description": "Rhythmic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0065009",
+    "number_of_genes": 12,
+    "number_of_genes_in_background": 3085,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 8.03e-06,
+    "fdr": 0.0032,
+    "description": "Regulation of molecular function"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0044092",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1143,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "CYLD",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "CYLD",
+      "STMN1"
+    ],
+    "p_value": 8.81e-06,
+    "fdr": 0.0035,
+    "description": "Negative regulation of molecular function"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2001235",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 130,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 9.08e-06,
+    "fdr": 0.0035,
+    "description": "Positive regulation of apoptotic signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031328",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2041,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1e-05,
+    "fdr": 0.0037,
+    "description": "Positive regulation of cellular biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006357",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2586,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.08e-05,
+    "fdr": 0.0038,
+    "description": "Regulation of transcription by RNA polymerase II"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045935",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2056,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.07e-05,
+    "fdr": 0.0038,
+    "description": "Positive regulation of nucleobase-containing compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048518",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 6207,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.14e-05,
+    "fdr": 0.0039,
+    "description": "Positive regulation of biological process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048731",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 3867,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.24e-05,
+    "fdr": 0.004,
+    "description": "System development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048522",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5584,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.06e-05,
+    "fdr": 0.006,
+    "description": "Positive regulation of cellular process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009653",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2229,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 2.2e-05,
+    "fdr": 0.0063,
+    "description": "Anatomical structure morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2001242",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 169,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 2.48e-05,
+    "fdr": 0.0068,
+    "description": "Regulation of intrinsic apoptotic signaling pathway"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031323",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5681,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.59e-05,
+    "fdr": 0.007,
+    "description": "Regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010468",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 4899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.8e-05,
+    "fdr": 0.0074,
+    "description": "Regulation of gene expression"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051171",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5734,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.92e-05,
+    "fdr": 0.0076,
+    "description": "Regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0035239",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 669,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 4.04e-05,
+    "fdr": 0.0101,
+    "description": "Tube morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0080090",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 5899,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 4.24e-05,
+    "fdr": 0.0104,
+    "description": "Regulation of primary metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0045596",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 685,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "MYC"
+    ],
+    "p_value": 4.61e-05,
+    "fdr": 0.0111,
+    "description": "Negative regulation of cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009790",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1049,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "NES",
+      "AR",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "NES",
+      "AR",
+      "TOP2A"
+    ],
+    "p_value": 5.18e-05,
+    "fdr": 0.0121,
+    "description": "Embryo development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0072088",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 69,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "IRX3",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "IRX3",
+      "MYC"
+    ],
+    "p_value": 5.09e-05,
+    "fdr": 0.0121,
+    "description": "Nephron epithelium morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060411",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 70,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "HEY1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "HEY1"
+    ],
+    "p_value": 5.3e-05,
+    "fdr": 0.0122,
+    "description": "Cardiac septum morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0031325",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3114,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.46e-05,
+    "fdr": 0.0144,
+    "description": "Positive regulation of cellular metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1904672",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 10,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "MYC"
+    ],
+    "p_value": 6.41e-05,
+    "fdr": 0.0144,
+    "description": "Regulation of somatic stem cell population maintenance"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000134",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 75,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "WEE1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "WEE1"
+    ],
+    "p_value": 6.47e-05,
+    "fdr": 0.0144,
+    "description": "Negative regulation of G1/S transition of mitotic cell cycle"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006974",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 744,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 7.28e-05,
+    "fdr": 0.0156,
+    "description": "Cellular response to DNA damage stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051173",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3166,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 7.55e-05,
+    "fdr": 0.016,
+    "description": "Positive regulation of nitrogen compound metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060255",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 6249,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 8.95e-05,
+    "fdr": 0.0187,
+    "description": "Regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0000082",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 86,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EZH2",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "EZH2",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "p_value": 9.58e-05,
+    "fdr": 0.0195,
+    "description": "G1/S transition of mitotic cell cycle"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0006259",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 785,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "UHRF1"
+    ],
+    "p_value": 9.77e-05,
+    "fdr": 0.0195,
+    "description": "DNA metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048513",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3246,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "NES",
+      "AR",
+      "PCNA",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "NES",
+      "AR",
+      "PCNA",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 9.55e-05,
+    "fdr": 0.0195,
+    "description": "Animal organ development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0035264",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 88,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "AR"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "AR"
+    ],
+    "p_value": 0.0001,
+    "fdr": 0.0201,
+    "description": "Multicellular organism growth"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007346",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 493,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "CYLD",
+      "WEE1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "CYLD",
+      "WEE1"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0206,
+    "description": "Regulation of mitotic cell cycle"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0034644",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 90,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0206,
+    "description": "Cellular response to UV"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048584",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2131,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0206,
+    "description": "Positive regulation of response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051716",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 6357,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0206,
+    "description": "Cellular response to stimulus"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000177",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 90,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NES"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NES"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0206,
+    "description": "Regulation of neural precursor cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0071236",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 14,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2"
+    ],
+    "p_value": 0.00012,
+    "fdr": 0.0207,
+    "description": "Cellular response to antibiotic"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010646",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3355,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0229,
+    "description": "Regulation of cell communication"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043065",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 507,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0229,
+    "description": "Positive regulation of apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1902532",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 519,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "NONO",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "NONO",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.025,
+    "description": "Negative regulation of intracellular signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0021549",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 104,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0279,
+    "description": "Cerebellum development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:1902531",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1726,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0279,
+    "description": "Regulation of intracellular signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0007507",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 548,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "PCNA"
+    ],
+    "p_value": 0.00019,
+    "fdr": 0.0295,
+    "description": "Heart development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0043066",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 891,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00019,
+    "fdr": 0.0306,
+    "description": "Negative regulation of apoptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0010604",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3533,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0322,
+    "description": "Positive regulation of macromolecule metabolic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048869",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 3530,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "NES",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "NES",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0322,
+    "description": "Cellular developmental process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0072359",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 901,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "PCNA"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0322,
+    "description": "Circulatory system development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048729",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 565,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00021,
+    "fdr": 0.0323,
+    "description": "Tissue morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0070266",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CYLD"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CYLD"
+    ],
+    "p_value": 0.00022,
+    "fdr": 0.0327,
+    "description": "Necroptotic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051128",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2365,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "NES",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "NES",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 0.00025,
+    "fdr": 0.036,
+    "description": "Regulation of cellular component organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0048646",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 938,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "AR"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "AR"
+    ],
+    "p_value": 0.00026,
+    "fdr": 0.0361,
+    "description": "Anatomical structure formation involved in morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0060562",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 315,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "IRX3",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "IRX3",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0365,
+    "description": "Epithelial tube morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009966",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2978,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0366,
+    "description": "Regulation of signal transduction"
+  },
+  {
+    "category": "Process",
+    "term": "GO:2000278",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 124,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0371,
+    "description": "Regulation of DNA biosynthetic process"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0022411",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 321,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 0.00028,
+    "fdr": 0.0375,
+    "description": "Cellular component disassembly"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0002053",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 23,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "MYC"
+    ],
+    "p_value": 0.00029,
+    "fdr": 0.0378,
+    "description": "Positive regulation of mesenchymal cell proliferation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0051276",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 968,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.0003,
+    "fdr": 0.0395,
+    "description": "Chromosome organization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0030855",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 617,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "SMO",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "PCNA"
+    ],
+    "p_value": 0.00032,
+    "fdr": 0.0413,
+    "description": "Epithelial cell differentiation"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0003002",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 341,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1"
+    ],
+    "p_value": 0.00036,
+    "fdr": 0.0448,
+    "description": "Regionalization"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0009887",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 997,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00036,
+    "fdr": 0.0448,
+    "description": "Animal organ morphogenesis"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0001655",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 347,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "IRX3",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "IRX3",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00038,
+    "fdr": 0.0467,
+    "description": "Urogenital system development"
+  },
+  {
+    "category": "Process",
+    "term": "GO:0062098",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CYLD"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CYLD"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0475,
+    "description": "Regulation of programmed necrotic cell death"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0043232",
+    "number_of_genes": 16,
+    "number_of_genes_in_background": 5191,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 8.53e-07,
+    "fdr": 0.0017,
+    "description": "Intracellular non-membrane-bounded organelle"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0005694",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 1850,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 4.14e-06,
+    "fdr": 0.0028,
+    "description": "Chromosome"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0034399",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 150,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "UHRF1"
+    ],
+    "p_value": 1.57e-05,
+    "fdr": 0.008,
+    "description": "Nuclear periphery"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0000785",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1285,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 2.07e-05,
+    "fdr": 0.0085,
+    "description": "Chromatin"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0005657",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 60,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "UHRF1"
+    ],
+    "p_value": 3.41e-05,
+    "fdr": 0.0116,
+    "description": "Replication fork"
+  },
+  {
+    "category": "Component",
+    "term": "GO:0043073",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "TOP2A"
+    ],
+    "p_value": 4.29e-05,
+    "fdr": 0.0125,
+    "description": "Germ cell nucleus"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000180",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 322,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EZH2",
+      "EIF4EBP1",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "EZH2",
+      "EIF4EBP1",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 5.98e-10,
+    "fdr": 1.45e-06,
+    "description": "Cervical carcinoma cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001271",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1067,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.32e-09,
+    "fdr": 1.6e-06,
+    "description": "Leukemia cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000583",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 442,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 6.85e-09,
+    "fdr": 4.87e-06,
+    "description": "Bone marrow cancer cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000744",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 419,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "UHRF1"
+    ],
+    "p_value": 1.27e-07,
+    "fdr": 6.17e-05,
+    "description": "Lymphocytic leukemia cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000297",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 161,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.57e-07,
+    "fdr": 0.00023,
+    "description": "Carcinoma cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000426",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 244,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EZH2",
+      "EIF4EBP1",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "EZH2",
+      "EIF4EBP1",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 4.1e-06,
+    "fdr": 0.0012,
+    "description": "Erythroleukemia cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000284",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2542,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 9.14e-06,
+    "fdr": 0.0025,
+    "description": "Organism form"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000379",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 824,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "NES",
+      "EPS15",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "NES",
+      "EPS15",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 1.1e-05,
+    "fdr": 0.0027,
+    "description": "Embryo"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001332",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR"
+    ],
+    "p_value": 2.05e-05,
+    "fdr": 0.0045,
+    "description": "DU-145 cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0002254",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 5,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 2.05e-05,
+    "fdr": 0.0045,
+    "description": "Vas efferens"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000174",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2369,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "EPS15",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "EPS15",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 3.75e-05,
+    "fdr": 0.0051,
+    "description": "Embryonic structure"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000255",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 188,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "STMN1"
+    ],
+    "p_value": 3.74e-05,
+    "fdr": 0.0051,
+    "description": "Brain cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000345",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2881,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1"
+    ],
+    "p_value": 3.08e-05,
+    "fdr": 0.0051,
+    "description": "Digestive gland"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000567",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 2.73e-05,
+    "fdr": 0.0051,
+    "description": "HeLa cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001130",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 7,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR"
+    ],
+    "p_value": 3.5e-05,
+    "fdr": 0.0051,
+    "description": "Prostate gland cancer cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001321",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR"
+    ],
+    "p_value": 2.73e-05,
+    "fdr": 0.0051,
+    "description": "LNCaP cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001615",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 7,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 3.5e-05,
+    "fdr": 0.0051,
+    "description": "Colorectal cancer cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0004725",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 7,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 3.5e-05,
+    "fdr": 0.0051,
+    "description": "Embryonic fibroblast"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000669",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 73,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 5.98e-05,
+    "fdr": 0.0066,
+    "description": "Embryonic cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000452",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 224,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 7.29e-05,
+    "fdr": 0.0068,
+    "description": "Fibroblast"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001541",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 219,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "EPS15"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "EPS15"
+    ],
+    "p_value": 6.69e-05,
+    "fdr": 0.0068,
+    "description": "Pronephros"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001546",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 222,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EZH2",
+      "EIF4EBP1",
+      "WEE1",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "EZH2",
+      "EIF4EBP1",
+      "WEE1",
+      "UHRF1"
+    ],
+    "p_value": 7.05e-05,
+    "fdr": 0.0068,
+    "description": "Chronic lymphocytic leukemia cell"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000759",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2125,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NONO",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "NONO",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "STMN1"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0096,
+    "description": "Liver"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001488",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 6403,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00012,
+    "fdr": 0.0102,
+    "description": "Endocrine gland"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000081",
+    "number_of_genes": 15,
+    "number_of_genes_in_background": 6444,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0107,
+    "description": "Reproductive system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000570",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2755,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.0108,
+    "description": "Hematopoietic system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0003099",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 2804,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 0.00016,
+    "fdr": 0.0122,
+    "description": "Internal female genital organ"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000167",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 107,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.0132,
+    "description": "Adenocarcinoma cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001033",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 108,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "AR"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "AR"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.0132,
+    "description": "Prostate cancer cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000449",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1318,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 0.00022,
+    "fdr": 0.0146,
+    "description": "Fetus"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000089",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1824,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 0.00025,
+    "fdr": 0.0162,
+    "description": "Blood"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000083",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 6111,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0243,
+    "description": "Female reproductive system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001913",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0243,
+    "description": "Colonic adenocarcinoma cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0002024",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 34,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA"
+    ],
+    "p_value": 0.0006,
+    "fdr": 0.034,
+    "description": "Squamous cell carcinoma cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000067",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 44,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00098,
+    "fdr": 0.0475,
+    "description": "Kidney cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000142",
+    "number_of_genes": 13,
+    "number_of_genes_in_background": 5733,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "AR",
+      "CYLD",
+      "WEE1",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "AR",
+      "CYLD",
+      "WEE1",
+      "STMN1"
+    ],
+    "p_value": 0.00094,
+    "fdr": 0.0475,
+    "description": "Brain"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000741",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 43,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00094,
+    "fdr": 0.0475,
+    "description": "Lymphocytic leukemia cell line"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0000203",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1707,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "NONO",
+      "HEY1",
+      "CALD1",
+      "EPS15",
+      "PCNA",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "NONO",
+      "HEY1",
+      "CALD1",
+      "EPS15",
+      "PCNA",
+      "STMN1"
+    ],
+    "p_value": 0.001,
+    "fdr": 0.0476,
+    "description": "Respiratory system"
+  },
+  {
+    "category": "TISSUES",
+    "term": "BTO:0001078",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 1244,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "NONO",
+      "HEY1",
+      "EIF4EBP1",
+      "NES",
+      "MYC"
+    ],
+    "p_value": 0.0011,
+    "fdr": 0.0498,
+    "description": "Placenta"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:14566",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1101,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 1.83e-09,
+    "fdr": 8.42e-06,
+    "description": "Disease of cellular proliferation"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0050687",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 451,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "AR",
+      "CYLD",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "AR",
+      "CYLD",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 7.99e-09,
+    "fdr": 1.84e-05,
+    "description": "Cell type cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:162",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 978,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 1.11e-08,
+    "fdr": 1.84e-05,
+    "description": "Cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0050686",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 757,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 4.12e-07,
+    "fdr": 0.00047,
+    "description": "Organ system cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:193",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 167,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 6.64e-07,
+    "fdr": 0.00047,
+    "description": "Reproductive organ cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:305",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 307,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "AR",
+      "CYLD",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "AR",
+      "CYLD",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 4.9e-07,
+    "fdr": 0.00047,
+    "description": "Carcinoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:4159",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 63,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "CALD1",
+      "CYLD"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "CALD1",
+      "CYLD"
+    ],
+    "p_value": 5.66e-07,
+    "fdr": 0.00047,
+    "description": "Skin cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:1115",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 73,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "MYC"
+    ],
+    "p_value": 9.93e-07,
+    "fdr": 0.00051,
+    "description": "Sarcoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:201",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 82,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "CALD1"
+    ],
+    "p_value": 1.55e-06,
+    "fdr": 0.00071,
+    "description": "Connective tissue cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:15",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 317,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 1.43e-05,
+    "fdr": 0.0054,
+    "description": "Reproductive system disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:5672",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 44,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 1.41e-05,
+    "fdr": 0.0054,
+    "description": "Large intestine cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:9261",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 4,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 1.46e-05,
+    "fdr": 0.0054,
+    "description": "Nasopharynx carcinoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:1612",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 62,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1",
+      "MYC"
+    ],
+    "p_value": 3.74e-05,
+    "fdr": 0.0108,
+    "description": "Breast cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:229",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 192,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 4.05e-05,
+    "fdr": 0.0109,
+    "description": "Female reproductive system disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0060085",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 237,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1",
+      "CYLD",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1",
+      "CYLD",
+      "STMN1"
+    ],
+    "p_value": 9.04e-05,
+    "fdr": 0.0193,
+    "description": "Organ system benign neoplasm"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:4905",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 15,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0242,
+    "description": "Pancreatic carcinoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:120",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 100,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1",
+      "MYC"
+    ],
+    "p_value": 0.00015,
+    "fdr": 0.0261,
+    "description": "Female reproductive organ cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:4001",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 16,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00015,
+    "fdr": 0.0261,
+    "description": "Ovarian carcinoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:1100",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 109,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00019,
+    "fdr": 0.0271,
+    "description": "Ovarian disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:1795",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0271,
+    "description": "Tumor of exocrine pancreas"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:219",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0271,
+    "description": "Colon cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:4706",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0271,
+    "description": "Infratentorial cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:684",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00017,
+    "fdr": 0.0271,
+    "description": "Hepatocellular carcinoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:8618",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 18,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CYLD"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CYLD"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.0271,
+    "description": "Oral cavity cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:16",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 575,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "CALD1",
+      "AR",
+      "CYLD"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "CALD1",
+      "AR",
+      "CYLD"
+    ],
+    "p_value": 0.00023,
+    "fdr": 0.0297,
+    "description": "Integumentary system disease"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0060073",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 120,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00025,
+    "fdr": 0.0303,
+    "description": "Lymphatic system cancer"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0080639",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 22,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1"
+    ],
+    "p_value": 0.00027,
+    "fdr": 0.0306,
+    "description": "Bone sarcoma"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:0060086",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1"
+    ],
+    "p_value": 0.00034,
+    "fdr": 0.037,
+    "description": "Female reproductive organ benign neoplasm"
+  },
+  {
+    "category": "DISEASES",
+    "term": "DOID:2513",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0417,
+    "description": "Basal cell carcinoma"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0832",
+    "number_of_genes": 14,
+    "number_of_genes_in_background": 2399,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 3.07e-09,
+    "fdr": 2.06e-06,
+    "description": "Ubl conjugation"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-1017",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 1717,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.81e-07,
+    "fdr": 6.08e-05,
+    "description": "Isopeptide bond"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0090",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 145,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "TOP2A"
+    ],
+    "p_value": 1.38e-05,
+    "fdr": 0.0031,
+    "description": "Biological rhythms"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0678",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 611,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "UHRF1"
+    ],
+    "p_value": 2.44e-05,
+    "fdr": 0.0041,
+    "description": "Repressor"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0238",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 1971,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.11e-05,
+    "fdr": 0.0082,
+    "description": "DNA-binding"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0597",
+    "number_of_genes": 17,
+    "number_of_genes_in_background": 8122,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "EIF4EBP1",
+      "CALD1",
+      "NES",
+      "EPS15",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 7.56e-05,
+    "fdr": 0.0085,
+    "description": "Phosphoprotein"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0805",
+    "number_of_genes": 9,
+    "number_of_genes_in_background": 2299,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "IRX3",
+      "HEY1",
+      "AR",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0195,
+    "description": "Transcription regulation"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0160",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 312,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "NONO",
+      "EPS15",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "NONO",
+      "EPS15",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 0.00026,
+    "fdr": 0.0215,
+    "description": "Chromosomal rearrangement"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0010",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 684,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "AR",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "AR",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.0345,
+    "description": "Activator"
+  },
+  {
+    "category": "Keyword",
+    "term": "KW-0007",
+    "number_of_genes": 10,
+    "number_of_genes_in_background": 3362,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "NES",
+      "EPS15",
+      "PCNA",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EIF4EBP1",
+      "NES",
+      "EPS15",
+      "PCNA",
+      "STMN1",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 0.00073,
+    "fdr": 0.0448,
+    "description": "Acetylation"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05206",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 159,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 5.25e-07,
+    "fdr": 0.00018,
+    "description": "MicroRNAs in cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04110",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 120,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 6.68e-06,
+    "fdr": 0.0011,
+    "description": "Cell cycle"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05205",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 194,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 4.21e-05,
+    "fdr": 0.0047,
+    "description": "Proteoglycans in cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05200",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 515,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 0.00014,
+    "fdr": 0.0117,
+    "description": "Pathways in cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05165",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 324,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1",
+      "EIF4EBP1",
+      "MAML2"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1",
+      "EIF4EBP1",
+      "MAML2"
+    ],
+    "p_value": 0.00029,
+    "fdr": 0.0198,
+    "description": "Human papillomavirus infection"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04218",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 150,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "p_value": 0.00047,
+    "fdr": 0.0246,
+    "description": "Cellular senescence"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05161",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 158,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 0.00055,
+    "fdr": 0.0246,
+    "description": "Hepatitis B"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05224",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 146,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1",
+      "MYC"
+    ],
+    "p_value": 0.00044,
+    "fdr": 0.0246,
+    "description": "Breast cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05216",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 37,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00071,
+    "fdr": 0.0264,
+    "description": "Thyroid cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05219",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00082,
+    "fdr": 0.0276,
+    "description": "Bladder cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa04330",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 52,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2"
+    ],
+    "p_value": 0.0014,
+    "fdr": 0.0414,
+    "description": "Notch signaling pathway"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05163",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 217,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "p_value": 0.0014,
+    "fdr": 0.0414,
+    "description": "Human cytomegalovirus infection"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05213",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 58,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.0017,
+    "fdr": 0.0432,
+    "description": "Endometrial cancer"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05217",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 63,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53"
+    ],
+    "p_value": 0.002,
+    "fdr": 0.047,
+    "description": "Basal cell carcinoma"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa01524",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 70,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "TOP2A"
+    ],
+    "p_value": 0.0024,
+    "fdr": 0.0493,
+    "description": "Platinum drug resistance"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05221",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 67,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "p_value": 0.0022,
+    "fdr": 0.0493,
+    "description": "Acute myeloid leukemia"
+  },
+  {
+    "category": "KEGG",
+    "term": "hsa05230",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 68,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.0023,
+    "fdr": 0.0493,
+    "description": "Central carbon metabolism in cancer"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34680307",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 134,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 6.94e-13,
+    "fdr": 3.57e-06,
+    "description": "(2021) A Unified Transcriptional, Pharmacogenomic, and Gene Dependency Approach to Decipher the Biology, Diagnostic Markers, and Therapeutic Targets Associated with Prostate Cancer Metastasis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27814612",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 1.29e-12,
+    "fdr": 3.57e-06,
+    "description": "(2017) miRNAs as drivers of TMPRSS2-ERG negative prostate tumors in African American men."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36640300",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 3.28e-12,
+    "fdr": 4.12e-06,
+    "description": "(2023) A multiplexed in vivo approach to identify driver genes in small cell lung cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37894361",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 11,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 2.71e-12,
+    "fdr": 4.12e-06,
+    "description": "(2023) Polyploid Giant Cancer Cells Generated from Human Cytomegalovirus-Infected Prostate Epithelial Cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34066495",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 83,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 2.4e-12,
+    "fdr": 4.12e-06,
+    "description": "(2021) Epigenetic-Based Therapy-A Prospective Chance for Medulloblastoma Patients Recovery."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30845657",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 40,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "CALD1",
+      "NES",
+      "AR",
+      "PCNA",
+      "TOP2A"
+    ],
+    "p_value": 4.34e-12,
+    "fdr": 4.12e-06,
+    "description": "(2019) The Usefulness of Immunohistochemistry in the Differential Diagnosis of Lesions Originating from the Myometrium."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36678591",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 49,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.34e-11,
+    "fdr": 6.52e-06,
+    "description": "(2023) The Implication of Topoisomerase II Inhibitors in Synthetic Lethality for Cancer Therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34760336",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 106,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 1.23e-11,
+    "fdr": 6.52e-06,
+    "description": "(2021) The role of non-coding RNAs in chemotherapy for gastrointestinal cancers."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34912714",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 101,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "NONO",
+      "EZH2",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 8.87e-12,
+    "fdr": 6.52e-06,
+    "description": "(2021) Mechanisms of Action And Clinical Implications of MicroRNAs in the Drug Resistance of Gastric Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26619402",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 46,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 9.4e-12,
+    "fdr": 6.52e-06,
+    "description": "(2015) Targeting self-renewal pathways in cancer stem cells: clinical implications for cancer therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25134838",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 47,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "EPS15",
+      "AR",
+      "MAML2"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "EPS15",
+      "AR",
+      "MAML2"
+    ],
+    "p_value": 1.06e-11,
+    "fdr": 6.52e-06,
+    "description": "(2014) NUMB inhibition of NOTCH signalling as a therapeutic target in prostate cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33658396",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 17,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.63e-11,
+    "fdr": 6.97e-06,
+    "description": "(2021) Prognostic significance of epigenetic regulatory gene expression in patients with non-small-cell lung cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34224843",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 117,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "NES",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "NES",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 2.37e-11,
+    "fdr": 9.11e-06,
+    "description": "(2021) A comprehensive review of the functions of YB-1 in cancer stemness, metastasis and drug resistance."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29264188",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 55,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 2.55e-11,
+    "fdr": 9.11e-06,
+    "description": "(2016) The evolving landscape of prostate cancer stem cell: Therapeutic implications and future challenges."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:20058236",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 54,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 2.3e-11,
+    "fdr": 9.11e-06,
+    "description": "(2010) Molecular characterization of the Ggamma-globin-Tag transgenic mouse model of hormone refractory prostate cancer: comparison to human prostate cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21304883",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 3.28e-11,
+    "fdr": 1.05e-05,
+    "description": "(2011) Nucleosomes containing methylated DNA stabilize DNA methyltransferases 3A3B and ensure faithful epigenetic inheritance."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:20370703",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 58,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NES",
+      "PCNA",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NES",
+      "PCNA",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 3.44e-11,
+    "fdr": 1.05e-05,
+    "description": "(2010) Cancer stem cells: a novel paradigm for cancer prevention and treatment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21558393",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 21,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 4.05e-11,
+    "fdr": 1.16e-05,
+    "description": "(2011) Pancreatic ductal adenocarcinoma mice lacking mucin 1 have a profound defect in tumor growth and metastasis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37325482",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 62,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 5.01e-11,
+    "fdr": 1.36e-05,
+    "description": "(2023) lncRNAs-EZH2 interaction as promising therapeutic target in cutaneous melanoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37807067",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 66,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 7.13e-11,
+    "fdr": 1.36e-05,
+    "description": "(2023) PRC2 mediated KLF2 down regulation: a therapeutic and diagnostic axis during tumor progression."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35327559",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 240,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.18e-11,
+    "fdr": 1.36e-05,
+    "description": "(2022) The Role of Epigenetic Modifications in Human Cancers and the Use of Natural Compounds as Epidrugs: Mechanistic Pathways and Pharmacodynamic Actions."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35954292",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 64,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 5.99e-11,
+    "fdr": 1.36e-05,
+    "description": "(2022) Interplay of Developmental Hippo-Notch Signaling Pathways with the DNA Damage Response in Prostate Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37077808",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "PCNA",
+      "CYLD",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "PCNA",
+      "CYLD",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.54e-11,
+    "fdr": 1.36e-05,
+    "description": "(2022) Recent progress in DNA methyltransferase inhibitors as anticancer agents."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34453639",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 136,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 6.52e-11,
+    "fdr": 1.36e-05,
+    "description": "(2021) The plasticity of pancreatic cancer stem cells: implications in therapeutic resistance."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35006426",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 6.54e-11,
+    "fdr": 1.36e-05,
+    "description": "(2021) Post-translational modifications of CDK5 and their biological roles in cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32466488",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 136,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 6.52e-11,
+    "fdr": 1.36e-05,
+    "description": "(2020) Cancer Stem Cell Functions in Hepatocellular Carcinoma and Comprehensive Therapeutic Strategies."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33095554",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 62,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.01e-11,
+    "fdr": 1.36e-05,
+    "description": "(2020) Progress in Natural CompoundssiRNA Co-delivery Employing Nanovehicles for Cancer Therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30248941",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 133,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EIF4EBP1",
+      "AR",
+      "PCNA",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 5.61e-11,
+    "fdr": 1.36e-05,
+    "description": "(2018) The Yin and Yang of Natural Compounds in Anticancer Therapy of Triple-Negative Breast Cancers."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27507929",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 62,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "NES",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "NES",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.01e-11,
+    "fdr": 1.36e-05,
+    "description": "(2016) Estrogen-related receptor beta (ERRbeta) - renaissance receptor or receptor renaissance?"
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27556486",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 66,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 7.13e-11,
+    "fdr": 1.36e-05,
+    "description": "(2016) Natural Polyphenols for Prevention and Treatment of Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26257285",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1",
+      "AR",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1",
+      "AR",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 7.3e-11,
+    "fdr": 1.36e-05,
+    "description": "(2015) SpDamID: Marking DNA Bound by Protein Complexes Identifies Notch-Dimer Responsive Enhancers."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35653190",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 8.76e-11,
+    "fdr": 1.41e-05,
+    "description": "(2022) A mitochondrial unfolded protein response inhibitor suppresses prostate cancer growth in mice via HSP60."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36212399",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 8.76e-11,
+    "fdr": 1.41e-05,
+    "description": "(2022) To bind or not to bind: Cistromic reprogramming in prostate cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:25944687",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 8.76e-11,
+    "fdr": 1.41e-05,
+    "description": "(2015) Wedelolactone disrupts the interaction of EZH2-EED complex and inhibits PRC2-dependent cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33335400",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 71,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 1.08e-10,
+    "fdr": 1.53e-05,
+    "description": "(2020) Research Progress on the Anti-Cancer Molecular Mechanisms of Huaier."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30903644",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 26,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.04e-10,
+    "fdr": 1.53e-05,
+    "description": "(2019) Oncogenic Y-box binding protein-1 as an effective therapeutic target in drug-resistant cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29845250",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 26,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.04e-10,
+    "fdr": 1.53e-05,
+    "description": "(2018) Identification of candidate biomarkers and pathways associated with SCLC by bioinformatics analysis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27600338",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 26,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 1.04e-10,
+    "fdr": 1.53e-05,
+    "description": "(2014) Identification of New Players in Hepatocarcinogenesis: Limits and Opportunities of Using Tissue Microarray (TMA)."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34359636",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 72,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.17e-10,
+    "fdr": 1.54e-05,
+    "description": "(2021) Targeting RB1 Loss in Cancers."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28315368",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 72,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.17e-10,
+    "fdr": 1.54e-05,
+    "description": "(2017) The emerging role of PI3KAKT-mediated epigenetic regulation in cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29437778",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "STMN1",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "STMN1",
+      "TOP2A"
+    ],
+    "p_value": 1.24e-10,
+    "fdr": 1.55e-05,
+    "description": "(2018) Identification of potential therapeutic targets in prostate cancer through a cross-species approach."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:24199173",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 73,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 1.26e-10,
+    "fdr": 1.55e-05,
+    "description": "(2013) Disruption of prostate epithelial differentiation pathways and prostate cancer development."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28261641",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 74,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 1.36e-10,
+    "fdr": 1.63e-05,
+    "description": "(2016) Panobinostat as Pan-deacetylase Inhibitor for the Treatment of Pancreatic Cancer: Recent Progress and Future Prospects."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37491794",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 1.46e-10,
+    "fdr": 1.7e-05,
+    "description": "(2023) Lysosome-dependent FOXA1 ubiquitination contributes to luminal lineage of advanced prostate cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35747808",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 75,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 1.47e-10,
+    "fdr": 1.7e-05,
+    "description": "(2022) Medulloblastoma and the DNA Damage Response."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31400111",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 28,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.46e-10,
+    "fdr": 1.7e-05,
+    "description": "(2019) SET8 prevents excessive DNA methylation by methylation-mediated degradation of UHRF1 and DNMT1."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37400829",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 76,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 1.59e-10,
+    "fdr": 1.74e-05,
+    "description": "(2023) Differential expression of the circadian clock network correlates with tumour progression in gliomas."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34069147",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 76,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 1.59e-10,
+    "fdr": 1.74e-05,
+    "description": "(2021) MicroRNAs as Epigenetic Determinants of Treatment Response and Potential Therapeutic Targets in Prostate Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28984489",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 76,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.59e-10,
+    "fdr": 1.74e-05,
+    "description": "(2017) Directing the use of DDR kinase inhibitors in cancer treatment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36785738",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 29,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.71e-10,
+    "fdr": 1.75e-05,
+    "description": "(2023) YB-1 Expression Is Associated with Lymph Node Metastasis and Drug Resistance to Adriamycin in Breast Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37007051",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 29,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.71e-10,
+    "fdr": 1.75e-05,
+    "description": "(2023) Toad venom-derived bufadienolides and their therapeutic application in prostate cancers: Current status and future directions."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30583549",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 158,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.79e-10,
+    "fdr": 1.77e-05,
+    "description": "(2018) Non-Coding RNAs in Glioma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33799798",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 78,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "MYC"
+    ],
+    "p_value": 1.84e-10,
+    "fdr": 1.79e-05,
+    "description": "(2021) Cancer Stem Cells: Significance in Origin, Pathogenesis and Treatment of Glioblastoma."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37922359",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 1.99e-10,
+    "fdr": 1.89e-05,
+    "description": "(2023) The STEMRI trial: Magnetic resonance spectroscopy imaging can define tumor areas enriched in glioblastoma stem-like cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35014178",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 80,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 2.13e-10,
+    "fdr": 1.89e-05,
+    "description": "(2022) MicroRNA-381 in human cancer: Its involvement in tumour biology and clinical applications potential."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36175875",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 1.99e-10,
+    "fdr": 1.89e-05,
+    "description": "(2022) Metformin regulates multiple signaling pathways within castration-resistant human prostate cancer cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31969375",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 1.99e-10,
+    "fdr": 1.89e-05,
+    "description": "(2020) The MEK5-ERK5 Kinase Axis Controls Lipid Metabolism in Small-Cell Lung Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28450738",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 30,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 1.99e-10,
+    "fdr": 1.89e-05,
+    "description": "(2017) DNA methylation: an epigenetic mark of cellular memory."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27148486",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 80,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 2.13e-10,
+    "fdr": 1.89e-05,
+    "description": "(2016) Notch Signaling in Neuroendocrine Tumors."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:32290543",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 81,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "PCNA",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "PCNA",
+      "UHRF1"
+    ],
+    "p_value": 2.28e-10,
+    "fdr": 1.96e-05,
+    "description": "(2020) EGCG Mediated Targeting of Deregulated Signaling Pathways and Non-Coding RNAs in Different Cancers: Focus on JAKSTAT, Wntbeta-Catenin, TGFSMAD, NOTCH, SHHGLI, and TRAIL Mediated Signaling Pathways."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28865460",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 2.31e-10,
+    "fdr": 1.96e-05,
+    "description": "(2017) State of the evidence 2017: an update on the connection between breast cancer and the environment."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23239665",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 2.31e-10,
+    "fdr": 1.96e-05,
+    "description": "(2013) The isolation and characterization of renal cancer initiating cells from human Wilms tumour xenografts unveils new therapeutic targets."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:38279263",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 82,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 2.45e-10,
+    "fdr": 2e-05,
+    "description": "(2024) Key Proteins of Replication Stress Response and Cell Cycle Control as Cancer Therapy Targets."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35117025",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 7,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 2.53e-10,
+    "fdr": 2e-05,
+    "description": "(2019) ONECUT2 as a new therapeutic target in androgen receptor-indifferent prostate cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:27043632",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 82,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "EIF4EBP1",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "EIF4EBP1",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 2.45e-10,
+    "fdr": 2e-05,
+    "description": "(2016) Radioresistance of Brain Tumors."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33302582",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 2.67e-10,
+    "fdr": 2.08e-05,
+    "description": "(2020) Light Pollution and Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33346248",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "STMN1"
+    ],
+    "p_value": 2.67e-10,
+    "fdr": 2.08e-05,
+    "description": "(2020) Advances in meningioma genomics, proteomics, and epigenetics: insights into biomarker identification and targeted therapies."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29550418",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EIF4EBP1",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EIF4EBP1",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 2.67e-10,
+    "fdr": 2.08e-05,
+    "description": "(2018) SOX9 Transcriptionally Regulates mTOR-Induced Proliferation of Basal Cell Carcinomas."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37799379",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 170,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "HEY1",
+      "CYLD",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 2.93e-10,
+    "fdr": 2.18e-05,
+    "description": "(2023) The role of E3 ubiquitin ligases in bone homeostasis and related diseases."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34680255",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 170,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "WEE1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "NES",
+      "WEE1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 2.93e-10,
+    "fdr": 2.18e-05,
+    "description": "(2021) Targeting Notch to Maximize Chemotherapeutic Benefits: Rationale, Advanced Strategies, and Future Perspectives."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33423692",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 3.07e-10,
+    "fdr": 2.22e-05,
+    "description": "(2021) Diffuse intrinsic pontine glioma: current insights and future directions."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:26835158",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 3.07e-10,
+    "fdr": 2.22e-05,
+    "description": "(2015) Ubiquitin-Specific Proteases as Druggable Targets."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:19221247",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 33,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "WEE1",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "WEE1",
+      "STMN1"
+    ],
+    "p_value": 3.07e-10,
+    "fdr": 2.22e-05,
+    "description": "(2009) Genomewide gene expression profiles of HPV-positive and HPV-negative oropharyngeal cancer: potential implications for treatment choices."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23261166",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 86,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "NES",
+      "MYC"
+    ],
+    "p_value": 3.21e-10,
+    "fdr": 2.23e-05,
+    "description": "(2013) Emerging roles of PDGF-D in EMT progression during tumorigenesis."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:38201233",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 87,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 3.43e-10,
+    "fdr": 2.36e-05,
+    "description": "(2023) Targeting the Ubiquitin-Proteasome System and Recent Advances in Cancer Therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29888169",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 87,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 3.43e-10,
+    "fdr": 2.36e-05,
+    "description": "(2018) Epigenetic Regulation in Prostate Cancer Progression."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:23717621",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 34,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 3.52e-10,
+    "fdr": 2.36e-05,
+    "description": "(2013) Induced pluripotency of human prostatic epithelial cells."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21127729",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 34,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1",
+      "NES",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1",
+      "NES",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 3.52e-10,
+    "fdr": 2.36e-05,
+    "description": "(2010) Inhibition of notch signaling blocks growth of glioblastoma cell lines and tumor neurospheres."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33636537",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 88,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "NES",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 3.67e-10,
+    "fdr": 2.39e-05,
+    "description": "(2021) Medulloblastoma drugs in development: Current leads, trials and drawbacks."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34858475",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 89,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "UHRF1"
+    ],
+    "p_value": 3.91e-10,
+    "fdr": 2.51e-05,
+    "description": "(2021) Role of Flavonoids as Epigenetic Modulators in Cancer Prevention and Therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33046797",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 89,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 3.91e-10,
+    "fdr": 2.51e-05,
+    "description": "(2020) Molecular tracing of prostate cancer lethality."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35627217",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 90,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 4.17e-10,
+    "fdr": 2.52e-05,
+    "description": "(2022) USP10 as a Potential Therapeutic Target in Human Cancers."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33436584",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 179,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "PCNA",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 4.15e-10,
+    "fdr": 2.52e-05,
+    "description": "(2021) Targeting the signaling in Epstein-Barr virus-associated diseases: mechanism, regulation, and clinical study."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31822799",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 35,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 4.02e-10,
+    "fdr": 2.52e-05,
+    "description": "(2020) Systematic characterization of chromatin modifying enzymes identifies KDM3B as a critical regulator in castration resistant prostate cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28235006",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 35,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 4.02e-10,
+    "fdr": 2.52e-05,
+    "description": "(2017) Genome-wide effects of MELK-inhibitor in triple-negative breast cancer cells indicate context-dependent response with p53 as a key determinant."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:21619587",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 35,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 4.02e-10,
+    "fdr": 2.52e-05,
+    "description": "(2011) PKC isoforms interact with and phosphorylate DNMT1."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36251389",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 4.57e-10,
+    "fdr": 2.7e-05,
+    "description": "(2022) The 5-Hydroxymethylcytosine Landscape of Prostate Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:30544749",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 36,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 4.57e-10,
+    "fdr": 2.7e-05,
+    "description": "(2018) Mechanisms of DNA Methyltransferase Recruitment in Mammals."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35456461",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 37,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 5.19e-10,
+    "fdr": 3e-05,
+    "description": "(2022) Identification of Potential Key Genes in Prostate Cancer with Gene Expression, Pivotal Pathways and Regulatory Networks Analysis Using Integrated Bioinformatics Methods."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33637115",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 95,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 5.68e-10,
+    "fdr": 3.25e-05,
+    "description": "(2021) SMYD3: a regulator of epigenetic and signaling pathways in cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:37359376",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 5.87e-10,
+    "fdr": 3.32e-05,
+    "description": "(2023) SETD2-H3K36ME3: an important bridge between the environment and tumors."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34006904",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 96,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.03e-10,
+    "fdr": 3.32e-05,
+    "description": "(2021) Protein arginine methyltransferases: promising targets for cancer therapy."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:35053185",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.87e-10,
+    "fdr": 3.32e-05,
+    "description": "(2021) Smell Detection Agent Optimisation Framework and Systems Biology Approach to Detect Dys-Regulated Subnetwork in Cancer Data."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:31964993",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "PCNA",
+      "WEE1",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "PCNA",
+      "WEE1",
+      "UHRF1"
+    ],
+    "p_value": 5.87e-10,
+    "fdr": 3.32e-05,
+    "description": "(2020) The E3 ubiquitin ligase TRIP12 participates in cell cycle progression and chromosome stability."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:33115461",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.87e-10,
+    "fdr": 3.32e-05,
+    "description": "(2020) Immune molecular profiling of a multiresistant primary prostate cancer with a neuroendocrine-like phenotype: a case report."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:28486105",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 5.87e-10,
+    "fdr": 3.32e-05,
+    "description": "(2017) CHD4 Has Oncogenic Functions in Initiating and Maintaining Epigenetic Suppression of Multiple Tumor Suppressor Genes."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:29276709",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 38,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "AR",
+      "PCNA",
+      "MYC"
+    ],
+    "p_value": 5.87e-10,
+    "fdr": 3.32e-05,
+    "description": "(2017) Tumor Heterogeneity in Breast Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:34944992",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 98,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 6.79e-10,
+    "fdr": 3.56e-05,
+    "description": "(2021) Transcriptome Analysis in Vulvar Squamous Cell Cancer."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36229464",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 101,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TIMP3",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 8.07e-10,
+    "fdr": 3.86e-05,
+    "description": "(2022) Single cell analysis of cribriform prostate cancer reveals cell intrinsic and tumor microenvironmental pathways of aggressive disease."
+  },
+  {
+    "category": "PMID",
+    "term": "PMID:36324565",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 41,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "TOP2A",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 8.34e-10,
+    "fdr": 3.86e-05,
+    "description": "(2022) Integrated single-cell and transcriptome sequencing analyses determines a chromatin regulator-based signature for evaluating prognosis in lung adenocarcinoma."
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-1362277",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "PCNA",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.36e-06,
+    "fdr": 0.0031,
+    "description": "Transcription of E2F targets under negative control by DREAM complex"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-162582",
+    "number_of_genes": 11,
+    "number_of_genes_in_background": 2540,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "EIF4EBP1",
+      "EPS15",
+      "AR",
+      "CYLD",
+      "STMN1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 9.07e-06,
+    "fdr": 0.0069,
+    "description": "Signal Transduction"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-2122947",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 48,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 1.8e-05,
+    "fdr": 0.0085,
+    "description": "NOTCH1 Intracellular Domain Regulates Transcription"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-453279",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 148,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 1.49e-05,
+    "fdr": 0.0085,
+    "description": "Mitotic G1 phase and G1/S transition"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-157118",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 204,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 5.1e-05,
+    "fdr": 0.0088,
+    "description": "Signaling by NOTCH"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-2644606",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 58,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 3.09e-05,
+    "fdr": 0.0088,
+    "description": "Constitutive Signaling by NOTCH1 PEST Domain Mutants"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-2894862",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 58,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 3.09e-05,
+    "fdr": 0.0088,
+    "description": "Constitutive Signaling by NOTCH1 HD+PEST Domain Mutants"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-3108232",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 166,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "PCNA",
+      "TOP2A"
+    ],
+    "p_value": 2.32e-05,
+    "fdr": 0.0088,
+    "description": "SUMO E3 ligases SUMOylate target proteins"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-5689880",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 203,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR",
+      "CYLD",
+      "MYC"
+    ],
+    "p_value": 5.01e-05,
+    "fdr": 0.0088,
+    "description": "Ub-specific processing proteases"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-74160",
+    "number_of_genes": 8,
+    "number_of_genes_in_background": 1476,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MAML2",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 5.6e-05,
+    "fdr": 0.0088,
+    "description": "Gene expression (Transcription)"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-212436",
+    "number_of_genes": 7,
+    "number_of_genes_in_background": 1215,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "HEY1",
+      "AR",
+      "PCNA",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0166,
+    "description": "Generic Transcription Pathway"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-8878159",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 94,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 0.00012,
+    "fdr": 0.0166,
+    "description": "Transcriptional regulation by RUNX3"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-69278",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 526,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 0.00015,
+    "fdr": 0.0185,
+    "description": "Cell Cycle, Mitotic"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-6804114",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 18,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA"
+    ],
+    "p_value": 0.00018,
+    "fdr": 0.02,
+    "description": "TP53 Regulates Transcription of Genes Involved in G2 Cell Cycle Arrest"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-9013695",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 20,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2"
+    ],
+    "p_value": 0.00022,
+    "fdr": 0.0231,
+    "description": "NOTCH4 Intracellular Domain Regulates Transcription"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-69206",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 130,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 0.00031,
+    "fdr": 0.0298,
+    "description": "G1/S Transition"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-8940973",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 24,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "AR"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "AR"
+    ],
+    "p_value": 0.00031,
+    "fdr": 0.0298,
+    "description": "RUNX2 regulates osteoblast differentiation"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-9013508",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 25,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2"
+    ],
+    "p_value": 0.00034,
+    "fdr": 0.0298,
+    "description": "NOTCH3 Intracellular Domain Regulates Transcription"
+  },
+  {
+    "category": "RCTM",
+    "term": "HSA-69242",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 162,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 0.00059,
+    "fdr": 0.0465,
+    "description": "S Phase"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2446",
+    "number_of_genes": 6,
+    "number_of_genes_in_background": 87,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "STMN1",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 3.43e-10,
+    "fdr": 2.68e-07,
+    "description": "Retinoblastoma gene in cancer"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3303",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 68,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "STMN1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "STMN1",
+      "MYC"
+    ],
+    "p_value": 7.57e-07,
+    "fdr": 0.00023,
+    "description": "RAC1/PAK1/p38/MMP2 pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP45",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 64,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 6.01e-07,
+    "fdr": 0.00023,
+    "description": "G1 to S cell cycle control"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP179",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 120,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA",
+      "WEE1",
+      "MYC"
+    ],
+    "p_value": 6.68e-06,
+    "fdr": 0.0009,
+    "description": "Cell cycle"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2263",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 109,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "AR",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "AR",
+      "MYC"
+    ],
+    "p_value": 4.61e-06,
+    "fdr": 0.0009,
+    "description": "Androgen receptor network in prostate cancer"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2363",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "TOP2A",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "TOP2A",
+      "MYC"
+    ],
+    "p_value": 5.23e-06,
+    "fdr": 0.0009,
+    "description": "Gastric cancer network 2"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP437",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 162,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EIF4EBP1",
+      "EPS15",
+      "PCNA",
+      "STMN1"
+    ],
+    "preferredNames": [
+      "EIF4EBP1",
+      "EPS15",
+      "PCNA",
+      "STMN1"
+    ],
+    "p_value": 2.11e-05,
+    "fdr": 0.0024,
+    "description": "EGF/EGFR signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2249",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 6,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 2.73e-05,
+    "fdr": 0.0027,
+    "description": "Metastatic brain tumor"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP61",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 61,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2",
+      "MYC"
+    ],
+    "p_value": 3.57e-05,
+    "fdr": 0.0031,
+    "description": "Notch signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3594",
+    "number_of_genes": 4,
+    "number_of_genes_in_background": 199,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "TOP2A"
+    ],
+    "preferredNames": [
+      "TP53",
+      "NONO",
+      "EZH2",
+      "TOP2A"
+    ],
+    "p_value": 4.64e-05,
+    "fdr": 0.0033,
+    "description": "Circadian rhythm genes"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3651",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 65,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 4.29e-05,
+    "fdr": 0.0033,
+    "description": "Pathways affected in adenoid cystic carcinoma"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2815",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 10,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 6.41e-05,
+    "fdr": 0.0041,
+    "description": "Mammary gland development pathway - Involution (Stage 4 of 4)"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP5087",
+    "number_of_genes": 5,
+    "number_of_genes_in_background": 434,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "MYC",
+      "UHRF1"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EZH2",
+      "EIF4EBP1",
+      "MYC",
+      "UHRF1"
+    ],
+    "p_value": 6.29e-05,
+    "fdr": 0.0041,
+    "description": "Malignant pleural mesothelioma"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP673",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 89,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "p_value": 0.00011,
+    "fdr": 0.0059,
+    "description": "ErbB signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP1545",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 15,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00013,
+    "fdr": 0.0069,
+    "description": "miRNAs involved in DNA damage response"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP1742",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 19,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.0002,
+    "fdr": 0.0099,
+    "description": "TP53 network"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3845",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 27,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MAML2"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MAML2"
+    ],
+    "p_value": 0.00039,
+    "fdr": 0.0179,
+    "description": "Canonical and non-canonical Notch signaling"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2839",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 32,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "MYC"
+    ],
+    "preferredNames": [
+      "SMO",
+      "MYC"
+    ],
+    "p_value": 0.00054,
+    "fdr": 0.022,
+    "description": "Hair follicle development: organogenesis - part 2 of 3"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3981",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "AR"
+    ],
+    "preferredNames": [
+      "TP53",
+      "AR"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.022,
+    "description": "miRNA regulation of prostate cancer signaling pathways"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP4204",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 31,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "SMO",
+      "EZH2"
+    ],
+    "preferredNames": [
+      "SMO",
+      "EZH2"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.022,
+    "description": "Tumor suppressor activity of SMARCB1"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP4262",
+    "number_of_genes": 3,
+    "number_of_genes_in_background": 154,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "HEY1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "HEY1",
+      "MYC"
+    ],
+    "p_value": 0.00051,
+    "fdr": 0.022,
+    "description": "Breast cancer pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2828",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 39,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00078,
+    "fdr": 0.0278,
+    "description": "Bladder cancer"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP1971",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 44,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.00098,
+    "fdr": 0.0334,
+    "description": "Integrated cancer pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP2203",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 47,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "EIF4EBP1",
+      "MYC"
+    ],
+    "p_value": 0.0011,
+    "fdr": 0.0363,
+    "description": "Thymic stromal lymphopoietin (TSLP) signaling pathway"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3646",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 48,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "MYC"
+    ],
+    "preferredNames": [
+      "TP53",
+      "MYC"
+    ],
+    "p_value": 0.0012,
+    "fdr": 0.0363,
+    "description": "Hepatitis C and hepatocellular carcinoma"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP3959",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 55,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "TP53",
+      "PCNA"
+    ],
+    "preferredNames": [
+      "TP53",
+      "PCNA"
+    ],
+    "p_value": 0.0015,
+    "fdr": 0.0453,
+    "description": "DNA IR-double strand breaks and cellular response via ATM"
+  },
+  {
+    "category": "WikiPathways",
+    "term": "WP5265",
+    "number_of_genes": 2,
+    "number_of_genes_in_background": 57,
+    "ncbiTaxonId": 9606,
+    "inputGenes": [
+      "HEY1",
+      "MYC"
+    ],
+    "preferredNames": [
+      "HEY1",
+      "MYC"
+    ],
+    "p_value": 0.0016,
+    "fdr": 0.0467,
+    "description": "Neurogenesis regulation in the olfactory epithelium"
+  }
+]
