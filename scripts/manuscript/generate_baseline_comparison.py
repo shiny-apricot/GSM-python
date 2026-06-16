@@ -89,58 +89,121 @@ METHOD_META = {
 METHODS_ORDER = ["G-S-M", "RF-All", "RF-ttest-100", "LASSO", "SVM-RBF"]
 
 
-##### HELPER FUNCTIONS #####
+# ##### HELPER FUNCTIONS #####
+
+# --- ADD THIS DICTIONARY WITH YOUR TABLE 3 AVERAGES ---
+AVERAGE_GSM_METRICS = {
+    "GDS1962": {"f1_score": 0.961, "auc_roc": 0.995},
+    "GDS2545": {"f1_score": 0.777, "auc_roc": 0.857},
+    "GDS2547": {"f1_score": 0.766, "auc_roc": 0.857},
+    "GDS2771": {"f1_score": 0.759, "auc_roc": 0.810},
+    "GDS3257": {"f1_score": 0.982, "auc_roc": 0.999},
+    "GDS3837": {"f1_score": 0.943, "auc_roc": 0.980},
+    "GDS5499": {"f1_score": 0.918, "auc_roc": 0.960},
+}
 
 def _load_data() -> dict[str, list[MethodResult]]:
-    """Load GSM and baseline results, grouped by dataset.
+    """Load GSM and baseline results, grouped by dataset, taking the AVERAGE F1 scores."""
+    results_by_dataset = {ds: [] for ds in DATASET_ORDER}
 
-    Returns:
-        dict mapping dataset_id → list[MethodResult]
-    """
-    # Load baselines
-    baselines = json.loads(BASELINE_PATH.read_text())
+    # 1. Load Baseline Results (Assumes baseline_results.json already contains averaged scores)
+    if BASELINE_PATH.exists():
+        with open(BASELINE_PATH, 'r') as f:
+            baseline_data = json.load(f)
+            for item in baseline_data:
+                ds_id = item["dataset_id"]
+                if ds_id in results_by_dataset:
+                    results_by_dataset[ds_id].append(
+                        MethodResult(
+                            dataset_id=ds_id,
+                            disease=item.get("disease", ""),
+                            method=item["method"],
+                            f1_score=item["f1_score"],
+                            f1_ci_lower=item.get("f1_ci_lower", item["f1_score"]),
+                            f1_ci_upper=item.get("f1_ci_upper", item["f1_score"]),
+                            auc_roc=item.get("auc_roc", 0.0),
+                            n_features=item.get("n_features", 0)
+                        )
+                    )
 
-    # Load GSM performance
-    gsm_data = json.loads(GSM_DATA_PATH.read_text())
-    gsm_perf = gsm_data["performance"]
+    # 2. Load G-S-M Results from manuscript_data.json and OVERRIDE with averages
+    if GSM_DATA_PATH.exists():
+        with open(GSM_DATA_PATH, 'r') as f:
+            gsm_data = json.load(f)
+            for item in gsm_data.get("performance", []):
+                ds_id = item["dataset_id"]
+                if ds_id in results_by_dataset:
+                    
+                    # Fetch the true average metrics instead of the JSON 'best' metrics
+                    avg_metrics = AVERAGE_GSM_METRICS.get(ds_id, {})
+                    avg_f1 = avg_metrics.get("f1_score", item["f1_score"])
+                    avg_auc = avg_metrics.get("auc_roc", item.get("auc_roc", 0.0))
 
-    # Build results dict
-    results: dict[str, list[MethodResult]] = {}
+                    results_by_dataset[ds_id].append(
+                        MethodResult(
+                            dataset_id=ds_id,
+                            disease=item.get("disease", ""),
+                            method="G-S-M",
+                            f1_score=avg_f1,          # Now uses the Table 3 Average
+                            f1_ci_lower=item.get("f1_ci_lower", avg_f1), # Keeps CI variables in tact
+                            f1_ci_upper=item.get("f1_ci_upper", avg_f1),
+                            auc_roc=avg_auc,          # Now uses the Table 3 Average
+                            n_features=item.get("features_used", 0)
+                        )
+                    )
+                    
+    return results_by_dataset
 
-    for ds_id in DATASET_ORDER:
-        results[ds_id] = []
+# def _load_data() -> dict[str, list[MethodResult]]:
+#     """Load GSM and baseline results, grouped by dataset.
 
-        # GSM result
-        gsm = next((p for p in gsm_perf if p["dataset_id"] == ds_id), None)
-        if gsm is None:
-            print(f"⚠️  No GSM result for {ds_id}, skipping")
-            continue
-        results[ds_id].append(MethodResult(
-            dataset_id=ds_id,
-            disease=DATASET_SHORT.get(ds_id, ds_id),
-            method="G-S-M",
-            f1_score=gsm["f1_score"],
-            f1_ci_lower=gsm["f1_ci_lower"],
-            f1_ci_upper=gsm["f1_ci_upper"],
-            auc_roc=gsm["auc_roc"],
-            n_features=gsm["features_used"],
-        ))
+#     Returns:
+#         dict mapping dataset_id → list[MethodResult]
+#     """
+#     # Load baselines
+#     baselines = json.loads(BASELINE_PATH.read_text())
 
-        # Baseline results
-        for bl in baselines:
-            if bl["dataset_id"] == ds_id:
-                results[ds_id].append(MethodResult(
-                    dataset_id=ds_id,
-                    disease=DATASET_SHORT.get(ds_id, ds_id),
-                    method=bl["method"],
-                    f1_score=bl["f1_score"],
-                    f1_ci_lower=bl["f1_ci_lower"],
-                    f1_ci_upper=bl["f1_ci_upper"],
-                    auc_roc=bl["auc_roc"],
-                    n_features=bl["n_features"],
-                ))
+#     # Load GSM performance
+#     gsm_data = json.loads(GSM_DATA_PATH.read_text())
+#     gsm_perf = gsm_data["performance"]
 
-    return results
+#     # Build results dict
+#     results: dict[str, list[MethodResult]] = {}
+
+#     for ds_id in DATASET_ORDER:
+#         results[ds_id] = []
+
+#         # GSM result
+#         gsm = next((p for p in gsm_perf if p["dataset_id"] == ds_id), None)
+#         if gsm is None:
+#             print(f"⚠️  No GSM result for {ds_id}, skipping")
+#             continue
+#         results[ds_id].append(MethodResult(
+#             dataset_id=ds_id,
+#             disease=DATASET_SHORT.get(ds_id, ds_id),
+#             method="G-S-M",
+#             f1_score=gsm["f1_score"],
+#             f1_ci_lower=gsm["f1_ci_lower"],
+#             f1_ci_upper=gsm["f1_ci_upper"],
+#             auc_roc=gsm["auc_roc"],
+#             n_features=gsm["features_used"],
+#         ))
+
+#         # Baseline results
+#         for bl in baselines:
+#             if bl["dataset_id"] == ds_id:
+#                 results[ds_id].append(MethodResult(
+#                     dataset_id=ds_id,
+#                     disease=DATASET_SHORT.get(ds_id, ds_id),
+#                     method=bl["method"],
+#                     f1_score=bl["f1_score"],
+#                     f1_ci_lower=bl["f1_ci_lower"],
+#                     f1_ci_upper=bl["f1_ci_upper"],
+#                     auc_roc=bl["auc_roc"],
+#                     n_features=bl["n_features"],
+#                 ))
+
+#     return results
 
 
 ##### FIGURE GENERATION #####

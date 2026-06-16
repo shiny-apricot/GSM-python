@@ -9,7 +9,8 @@ malik-burcu-PUBLICATIONS/
 .roadmap*
 # OAuth / review bridge secrets
 secrets/
-
+extract_all_the_code_of_the_project.py
+*bundle*.txt
 # Explicit review-bridge artifacts (already covered by *ARCHIVE*/, kept for clarity)
 reports_ARCHIVE/manuscript/review/
 reports_ARCHIVE/manuscript/versions/*/review/
