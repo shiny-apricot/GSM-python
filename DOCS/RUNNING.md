@@ -165,7 +165,7 @@ Open the URL it prints (usually `http://localhost:8501`) in your browser.
 
 ---
 
-## 5) Unified CLI (`python -m gsm`)
+## 5) Unified CLI (`python run_gsm.py`)
 
 The CLI supports an **interactive guided menu** (no arguments) and **direct
 subcommands** (`train`, `infer`, `bundle-info`, `ui`). Uses `rich` for
@@ -175,7 +175,7 @@ color-coded output, panels, and tables.
 
 ```bash
 # Launch the guided menu — walks you through every step
-python -m gsm
+python run_gsm.py
 ```
 
 The menu lets you:
@@ -189,15 +189,15 @@ The menu lets you:
 
 ```bash
 # Quick test run (3 iterations, test data)
-python -m gsm train --test --iterations 3
+python run_gsm.py train --test --iterations 3
 
 # Full run on real data
-python -m gsm train --data data/expression_data/GDS2545.csv \
+python run_gsm.py train --data data/expression_data/GDS2545.csv \
                      --groups data/grouping_data/cancer-DisGeNET_gedinet.txt \
                      --iterations 100
 
 # With custom options
-python -m gsm train --data data/expression_data/GDS2545.csv \
+python run_gsm.py train --data data/expression_data/GDS2545.csv \
                      --groups data/grouping_data/cancer-DisGeNET_gedinet.txt \
                      --model XGBoost --seed 88 --iterations 50 --no-bio-validation
 ```
@@ -209,7 +209,7 @@ After training, a `.gsm.zip` model bundle is automatically saved in `output/<run
 ### Inspect a Model Bundle
 
 ```bash
-python -m gsm bundle-info --bundle output/.../bundles/bundle_GDS2545_*.gsm.zip
+python run_gsm.py bundle-info --bundle output/.../bundles/bundle_GDS2545_*.gsm.zip
 ```
 
 Shows: dataset, classifier, number of models, features, groups,
@@ -220,11 +220,11 @@ loading the heavy model files.
 
 ```bash
 # Basic usage
-python -m gsm infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
+python run_gsm.py infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
                      --patients new_patients.csv
 
 # With output directory and sample ID column
-python -m gsm infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
+python run_gsm.py infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
                      --patients new_patients.csv \
                      --output inference_results/ \
                      --sample-id-column sample_id
@@ -238,7 +238,7 @@ python -m gsm infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
 Combine models trained on different datasets for more robust predictions:
 
 ```bash
-python -m gsm multi-infer \
+python run_gsm.py multi-infer \
     -b output/.../bundle_GDS2545_*.gsm.zip \
        output/.../bundle_GDS3257_*.gsm.zip \
        output/.../bundle_GDS3837_*.gsm.zip \

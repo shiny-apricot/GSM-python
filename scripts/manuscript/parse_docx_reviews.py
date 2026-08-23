@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Parses tracked changes and review comments from Word documents."""
 import sys
 import zipfile
 import xml.etree.ElementTree as ET

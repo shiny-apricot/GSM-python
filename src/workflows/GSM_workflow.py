@@ -119,7 +119,8 @@ from src.utils.rank_aggregation import (
     aggregate_model_feature_importance_rra
 )
 from src.utils.biological_validation import run_biological_validation
-from src.data_processing.normalization import fit_scaler
+from src.utils.feature_stability import compute_feature_stability, save_feature_stability_report
+from src.data_processing.normalization import fit_scaler, normalize_within_split
 from src.inference.model_bundle import (
     ModelArtifact,
     save_bundle as save_model_bundle,
@@ -434,7 +435,7 @@ def gsm_run(
             pass
 
     # Run the GSM pipeline
-    logger.info("Preprocessing data...")
+    logger.info("Preprocessing data (labels + cleaning, normalization deferred to within-split)...")
     data_preprocessed = preprocess_data(
         input_data,
         label_column,
@@ -444,18 +445,21 @@ def gsm_run(
         normalization_method=normalization_method,
         apply_class_balancing=apply_class_balancing,
         min_class_balance_ratio=min_class_balance_ratio,
-        sampling_method=sampling_method
+        sampling_method=sampling_method,
+        skip_normalization=True,  # C1 fix: normalize inside each split
     )
-    logger.info("Data preprocessed.")
+    logger.info("Data preprocessed (un-normalized).")
 
-    # Fit normalization scaler for inference bundle
-    # This captures the exact scaler parameters used during preprocessing
+    # Fit normalization scaler on the FULL un-normalized data for inference bundle.
+    # This is correct: at inference time, a new patient sample needs to be
+    # normalized using the population statistics, which are best estimated
+    # from the full training cohort (all samples).
     inference_scaler = fit_scaler(
         data_preprocessed,
         label_column_name=label_column,
         method=normalization_method,
     )
-    logger.debug("Normalization scaler fitted for inference bundle")
+    logger.debug("Inference scaler fitted on full un-normalized data")
 
     group_data_processed = preprocess_grouping_data(group_data, 
                                                     gene_column_name=gene_column,
@@ -465,12 +469,21 @@ def gsm_run(
 
     # One-time feature scoring on full preprocessed data (reporting only)
     # This is NOT used in group ranking or modeling — purely informational.
-    # Set seed before scoring so results are reproducible across runs.
+    # Normalize with the inference scaler for consistency (this is report-only,
+    # so using the full-data scaler is acceptable).
     set_random_seed(initial_seed)
     logger.info("Feature scoring (one-time)...")
     X_full = data_preprocessed.drop(columns=[label_column])
     y_full = data_preprocessed[label_column]
-    feature_scores = score_all_features(X_full, y_full, logger, random_state=initial_seed)
+    # Select only the features the scaler was fitted on (same order)
+    scaler_features = list(inference_scaler.feature_names_in_)
+    X_full_for_scoring = X_full[scaler_features].apply(pd.to_numeric, errors='coerce').fillna(0)
+    X_full_normalized = pd.DataFrame(
+        inference_scaler.transform(X_full_for_scoring),
+        columns=scaler_features,
+        index=X_full.index,
+    )
+    feature_scores = score_all_features(X_full_normalized, y_full, logger, random_state=initial_seed)
     logger.info("Feature scoring done")
     features_output = output_folder_path / "individual_feature_scores.csv"
     save_ranked_features(
@@ -518,7 +531,8 @@ def gsm_run(
             best_groups_to_keep=best_groups_to_keep,
             cross_validation_folds=cross_validation_folds,
             iteration_seed=iteration_seed,
-            save_group_derived_features=(i == 1)
+            save_group_derived_features=(i == 1),
+            normalization_method=normalization_method,
         )
         
         iteration_results.append(IterationResult(
@@ -527,17 +541,20 @@ def gsm_run(
             modeling_results=modeling_result
         ))
 
-        # Collect the best model from this iteration for the inference bundle
+        # Collect the model from the FIXED-K step (last in the loop) for the
+        # inference bundle. We do NOT pick max F1 across group counts — that
+        # would be model selection on the test set (C1 reviewer concern).
+        # The K value is a pre-set hyperparameter justified by sensitivity analysis.
         if modeling_result:
-            best_model_result = max(modeling_result, key=lambda r: r.f1_score)
-            if best_model_result.fitted_model is not None:
+            fixed_k_result = modeling_result[-1]  # Last step = full K groups
+            if fixed_k_result.fitted_model is not None:
                 collected_model_artifacts.append(ModelArtifact(
-                    model=best_model_result.fitted_model,
+                    model=fixed_k_result.fitted_model,
                     iteration=i,
-                    f1_score=best_model_result.f1_score,
-                    auc_roc=best_model_result.auc_roc,
-                    num_features_used=best_model_result.num_features_used,
-                    num_groups_used=best_model_result.num_groups_used,
+                    f1_score=fixed_k_result.f1_score,
+                    auc_roc=fixed_k_result.auc_roc,
+                    num_features_used=fixed_k_result.num_features_used,
+                    num_groups_used=fixed_k_result.num_groups_used,
                 ))
         
         # Track iteration timing and compute ETA
@@ -611,6 +628,13 @@ def gsm_run(
             logger=logger
         )
 
+    # Feature stability analysis (reviewer I3)
+    try:
+        stability_result = compute_feature_stability(iteration_results, logger)
+        save_feature_stability_report(stability_result, output_folder_path, logger)
+    except Exception as e:
+        logger.warning(f"Feature stability analysis failed: {e}")
+
     # Visualize the F1 scores across different numbers of groups for all iterations
     logger.info("Generating visualizations...")
     viz_data = []
@@ -660,10 +684,10 @@ def gsm_run(
             feature_rows = []
             for iter_data in _results_for_features:
                 iter_num = iter_data["metadata"]["iteration"]
-                # Use the result with the most features (last modeling step)
+                # Use the fixed-K result (last/largest step, consistent with C1 fix)
                 results_list = iter_data.get("results", [])
                 if results_list:
-                    best_result = max(results_list, key=lambda r: r.get("num_features_used", 0))
+                    best_result = results_list[-1]  # Last step = fixed K groups
                     fi = best_result.get("feature_importance", {})
                     for feat_name, importance in fi.items():
                         feature_rows.append({
@@ -792,7 +816,7 @@ def gsm_run(
             logger.warning(f"⚠️ Biological validation failed: {e}")
             logger.warning(
                 "💡 You can re-run it later with:  "
-                f"python -m gsm bio-validate --run {output_folder_path}"
+                f"python run_gsm.py bio-validate --run {output_folder_path}"
             )
             logger.warning(
                 "   Or use the CLI: Browse Output Runs → "
@@ -869,19 +893,21 @@ def gsm_main_loop(data: pd.DataFrame,
                   cross_validation_folds: int = CROSS_VALIDATION_FOLDS,
                   scoring_model: str = SCORING_MODEL,
                   iteration_seed: int = RANDOM_SEED,
-                  save_group_derived_features: bool = False) -> List[ModelingResult]:
+                  save_group_derived_features: bool = False,
+                  normalization_method: str = NORMALIZATION_METHOD) -> List[ModelingResult]:
     """
     Executes one complete iteration of the GSM workflow.
 
     Pipeline Stages:
     1. Data splitting (train/test) with iteration-specific seed
-    2. Preliminary feature filtering (t-test on training data only)
-    3. Gene grouping analysis (using filtered features)
-    4. Group performance scoring (CV on training data)
-    5. Model training and evaluation (on held-out test data)
+    2. **Normalization (fit on train only, transform both)** — prevents leakage
+    3. Preliminary feature filtering (t-test on training data only)
+    4. Gene grouping analysis (using filtered features)
+    5. Group performance scoring (CV on training data)
+    6. Model training and evaluation (on held-out test data)
 
     Args:
-        data: Preprocessed expression data
+        data: Preprocessed expression data (un-normalized; labels converted, missing handled)
         grouping_data: Processed group definitions
         model_name: Selected ML model identifier
         output_dir: Directory to save results
@@ -897,10 +923,12 @@ def gsm_main_loop(data: pd.DataFrame,
         cross_validation_folds: Number of folds for stratified CV scoring
         iteration_seed: Random seed for this iteration's train/test split
         save_group_derived_features: Whether to save group-derived feature scores
+        normalization_method: Normalization method ('zscore', 'minmax', 'robust')
 
     Technical Notes:
         - Uses stratified sampling for data splitting
         - Each iteration uses a different seed for a unique train/test split
+        - **Normalization is fit on training data only (C1 leakage fix)**
         - Feature scoring is computed on training data only (no data leakage)
     """
     logger.info("##### Starting GSM Main Loop #####")
@@ -912,6 +940,25 @@ def gsm_main_loop(data: pd.DataFrame,
         data, label_column, test_size=test_size, stratify=True, random_state=iteration_seed
     )
     
+    # ── Normalization: fit on TRAIN only, transform both (C1 leakage fix) ──
+    # Reconstruct DataFrames with label column for normalize_within_split
+    train_with_label = train_test_split_data.X_train.copy()
+    train_with_label[label_column] = train_test_split_data.y_train.values
+    test_with_label = train_test_split_data.X_test.copy()
+    test_with_label[label_column] = train_test_split_data.y_test.values
+
+    train_norm, test_norm, _split_scaler = normalize_within_split(
+        train_with_label, test_with_label,
+        label_column_name=label_column,
+        logger=logger,
+        method=normalization_method,
+    )
+
+    # Update the split data with normalized values
+    train_test_split_data.X_train = train_norm.drop(columns=[label_column])
+    train_test_split_data.X_test = test_norm.drop(columns=[label_column])
+    # y_train / y_test remain unchanged
+
     # Feature Filtering (on training data only — no data leakage)
     filtered_train = preliminary_ttest_filter(train_test_split_data.X_train, 
                                         train_test_split_data.y_train,

@@ -81,6 +81,7 @@ def preprocess_data(
     apply_class_balancing: bool = False,
     min_class_balance_ratio: float = DEFAULT_MIN_CLASS_BALANCE_RATIO,
     sampling_method: str = DEFAULT_SAMPLING_METHOD,
+    skip_normalization: bool = False,
 ) -> pd.DataFrame:
     """
     Executes the complete data preprocessing pipeline.
@@ -97,6 +98,8 @@ def preprocess_data(
         apply_class_balancing (bool, optional): Whether to apply class balancing. Defaults to False
         min_class_balance_ratio (float, optional): Minimum acceptable ratio between classes. Defaults to 0.5
         sampling_method (str, optional): Method for balancing ('undersampling', 'oversampling'). Defaults to 'undersampling'
+        skip_normalization (bool, optional): If True, skip normalization here (it will be
+            done inside each train/test split to prevent data leakage). Defaults to False.
     
     Returns:
         pd.DataFrame: Processed data
@@ -106,6 +109,14 @@ def preprocess_data(
     """
     # Validate
     validate_input_data(input_data, label_column_name)
+    
+    # Coerce object feature columns to numeric (corrupted string cells become NaN)
+    features = [c for c in input_data.columns if c != label_column_name]
+    object_cols = [c for c in features if input_data[c].dtype == object]
+    if object_cols:
+        logger.info(f"Coercing {len(object_cols)} object columns to numeric to handle corrupted data")
+        for c in object_cols:
+            input_data[c] = pd.to_numeric(input_data[c], errors='coerce')
     
     # handle missing values
     input_data = drop_missing_values(input_data)
@@ -118,11 +129,15 @@ def preprocess_data(
         label_of_positive_class
     )
     
-    # Normalize features
-    normalized_data = normalize_data(input_data,
-                                     label_column_name=label_column_name,
-                                     logger=logger,
-                                     method=normalization_method)
+    # Normalize features (skip if normalization will be done inside each split)
+    if skip_normalization:
+        logger.info("Normalization deferred to within-split (no leakage mode)")
+        normalized_data = input_data
+    else:
+        normalized_data = normalize_data(input_data,
+                                         label_column_name=label_column_name,
+                                         logger=logger,
+                                         method=normalization_method)
     
     # Apply class balancing if enabled
     if apply_class_balancing:

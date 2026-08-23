@@ -135,15 +135,70 @@ def _gl_feature_selection(
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train_exp)
 
+    if getattr(config, "enable_hyperparam_search", False):
+        logger.info("    Running internal hyperparameter search...")
+        try:
+            X_tr, X_val, y_tr, y_val = train_test_split(
+                X_train_scaled, y_train, test_size=0.2, stratify=y_train, random_state=config.random_seed
+            )
+        except ValueError:
+            X_tr, X_val, y_tr, y_val = train_test_split(
+                X_train_scaled, y_train, test_size=0.2, random_state=config.random_seed
+            )
+            
+        best_f1 = -1.0
+        best_params = {"group_reg": config.group_reg, "l1_reg": config.l1_reg}
+        g_grid = sorted(getattr(config, "group_reg_grid", [0.005, 0.01, 0.05]))
+        l_grid = sorted(getattr(config, "l1_reg_grid", [0.01, 0.05, 0.1]))
+        
+        search_model = LogisticGroupLasso(
+            groups=dup_result.groups,
+            group_reg=g_grid[0],
+            l1_reg=l_grid[0],
+            n_iter=config.n_iter,
+            tol=config.tol,
+            scale_reg=config.scale_reg,
+            fit_intercept=config.fit_intercept,
+            random_state=config.random_seed,
+            warm_start=True,
+            subsampling_scheme=config.subsampling_scheme,
+            supress_warning=True,
+        )
+        
+        for g_reg in g_grid:
+            for l_reg in l_grid:
+                search_model.group_reg = g_reg
+                search_model.l1_reg = l_reg
+                search_model.fit(X_tr, y_tr)
+                
+                preds = search_model.predict(X_val)
+                f1 = float(f1_score(y_val, preds, average="weighted"))
+                
+                if np.sum(search_model.sparsity_mask_) == 0:
+                    f1 = -1.0
+                
+                if f1 > best_f1:
+                    best_f1 = f1
+                    best_params = {"group_reg": g_reg, "l1_reg": l_reg}
+                    
+        logger.info(f"    Best params found: group_reg={best_params['group_reg']}, l1_reg={best_params['l1_reg']} (Val F1={best_f1:.4f})")
+        final_group_reg = best_params["group_reg"]
+        final_l1_reg = best_params["l1_reg"]
+    else:
+        final_group_reg = config.group_reg
+        final_l1_reg = config.l1_reg
+
     model = LogisticGroupLasso(
         groups=dup_result.groups,
-        group_reg=config.group_reg,
-        l1_reg=config.l1_reg,
+        group_reg=final_group_reg,
+        l1_reg=final_l1_reg,
         n_iter=config.n_iter,
         tol=config.tol,
         scale_reg=config.scale_reg,
         fit_intercept=config.fit_intercept,
         random_state=config.random_seed,
+        warm_start=config.warm_start,
+        subsampling_scheme=config.subsampling_scheme,
         supress_warning=True,
     )
 

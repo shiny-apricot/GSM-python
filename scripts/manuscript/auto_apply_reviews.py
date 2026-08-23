@@ -1,3 +1,4 @@
+"""Automated script to apply reviewer comments to the manuscript."""
 import re
 import difflib
 from pathlib import Path

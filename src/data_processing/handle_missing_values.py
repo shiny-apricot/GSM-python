@@ -1,18 +1,4 @@
-"""
-File's primary purpose and role in the pipeline:
-This module provides functions to handle missing values in datasets, ensuring data integrity for subsequent analysis steps.
-
-Key functions:
-- drop_missing_values: Removes rows with missing values from the dataset.
-- fill_missing_values: Fills missing values using specified strategies (mean, median, mode).
-
-Usage examples:
-- cleaned_data = drop_missing_values(data)
-- filled_data = fill_missing_values(data, strategy='mean')
-
-Important notes:
-- Ensure that the chosen strategy for filling missing values aligns with the data characteristics.
-"""
+"""Handles missing values and imputations in datasets."""
 
 import pandas as pd
 

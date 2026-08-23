@@ -177,3 +177,65 @@ def normalize_data(
     except Exception as e:
         logger.error(f"Error during normalization: {str(e)}")
         raise
+
+
+def normalize_within_split(
+    train_data: pd.DataFrame,
+    test_data: pd.DataFrame,
+    label_column_name: str,
+    logger,
+    method: str = 'zscore',
+) -> tuple[pd.DataFrame, pd.DataFrame, object]:
+    """Fit normalization on TRAINING data only, transform both splits.
+
+    This prevents data leakage by ensuring the test set never influences
+    scaler parameters (mean, std, min, max, etc.).
+
+    Args:
+        train_data: Training split (samples × features + label column)
+        test_data:  Test split (same columns as train_data)
+        label_column_name: Column to exclude from normalization
+        logger:     Logger instance
+        method:     'zscore', 'minmax', or 'robust'
+
+    Returns:
+        (normalized_train, normalized_test, fitted_scaler)
+    """
+    scaler_map = {
+        'zscore': StandardScaler,
+        'minmax': MinMaxScaler,
+        'robust': RobustScaler,
+    }
+    if method not in scaler_map:
+        raise ValueError(f"Unknown normalization method: {method}. Choose from {list(scaler_map)}")
+
+    feature_cols = train_data.columns.difference([label_column_name])
+
+    # Coerce non-numeric columns (some GEO datasets have stray values)
+    train_features = _coerce_to_numeric(train_data[feature_cols].copy(), logger)
+    test_features = _coerce_to_numeric(test_data[feature_cols].copy(), logger)
+
+    # Fit on train only
+    scaler = scaler_map[method]()
+    scaler.fit(train_features)
+
+    # Transform both
+    train_normalized = pd.DataFrame(
+        scaler.transform(train_features),
+        columns=feature_cols,
+        index=train_data.index,
+    )
+    test_normalized = pd.DataFrame(
+        scaler.transform(test_features),
+        columns=feature_cols,
+        index=test_data.index,
+    )
+
+    # Re-attach the label column
+    train_out = train_normalized.copy()
+    train_out[label_column_name] = train_data[label_column_name].values
+    test_out = test_normalized.copy()
+    test_out[label_column_name] = test_data[label_column_name].values
+
+    logger.debug(f"Normalized within split ({method}): train={train_out.shape}, test={test_out.shape}")
+    return train_out, test_out, scaler

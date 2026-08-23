@@ -1,3 +1,4 @@
+"""Analyzes results from seed stability experiments."""
 
 import os
 import pandas as pd

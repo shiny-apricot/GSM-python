@@ -1,10 +1,4 @@
-"""
-File Purpose: Implementation of XGBoost classifier for the GSM pipeline.
-Key Functions:
-- train_xgboost_classifier: Trains an XGBoost classifier on the provided data.
-Usage Example:
-    model = train_xgboost_classifier(X_train, y_train)
-"""
+"""XGBoost Classifier Implementation."""
 
 import xgboost as xgb
 from sklearn.metrics import accuracy_score

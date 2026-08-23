@@ -1,6 +1,4 @@
-"""
-...existing code...
-"""
+"""Performance Profiler for execution time and memory usage."""
 
 import json
 from datetime import datetime

@@ -64,7 +64,7 @@ scripts/                   # Manuscript, experiments, maintenance
 DOCS/                      # This documentation
 ```
 
-For a complete function-level map, see [PROJECT_MAP.md](../PROJECT_MAP.md).
+For a complete function-level map, see [PROJECT_MAP.md](../../.ai_context/PROJECT_MAP.md).
 
 ### Data Flow
 

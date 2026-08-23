@@ -1,3 +1,4 @@
+"""Applies AI-suggested edits directly to the manuscript DOCX."""
 import re
 from pathlib import Path
 

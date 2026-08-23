@@ -22,8 +22,8 @@ patient_003,7.45,2.34,5.67,3.45,6.78
 
 ```bash
 # Interactive mode auto-discovers files from this folder
-python -m gsm
+python run_gsm.py
 
 # Or specify directly
-python -m gsm infer -b output/.../bundles/bundle.gsm.zip -p data/patient_data/my_patients.csv
+python run_gsm.py infer -b output/.../bundles/bundle.gsm.zip -p data/patient_data/my_patients.csv
 ```

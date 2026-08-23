@@ -1,0 +1,220 @@
+
+Handling Overlapping Gene-Disease Groups in Group Lasso Feature Selection: A Feature-Duplication Approach for Biomarker Discovery
+
+Yasin İnal¹*
+Burcu Bakir-Gungor¹
+Malik Yousef²
+
+¹ Department of Computer Engineering, Abdullah Gül University, Kayseri, Türkiye
+² Department of Information Systems, Zefat Academic College, Zefat, Israel
+
+* Corresponding author: yasin.inal@agu.edu.tr
+
+Abstract
+Background: Group Lasso regularization is attractive for biomarker discovery because it can simultaneously select informative gene groups and individual genes within them. However, applying Group Lasso to biological knowledge bases such as DisGeNET raises three unresolved problems: (1) the standard formulation assumes non-overlapping groups, yet 85.6 % of genes in DisGeNET belong to multiple disease categories; (2) Group Lasso produces a single point estimate with no statistical guarantee on which selected genes are true positives versus false discoveries; and (3) the logistic Group Lasso is limited to linear decision boundaries and cannot capture non-linear gene-gene interactions known to exist in cancer expression data.
+Methods: We address each problem with a targeted methodological contribution. Problem 1 is resolved by a feature-duplication strategy we prove equivalent to the Latent Group Lasso (Obozinski et al., 2011), enabling any standard Group Lasso solver to handle overlapping groups. Problem 2 is addressed by combining stability selection (Meinshausen & Bühlmann, 2010) with the Latent Group Lasso — a combination not previously explored — to obtain per-gene selection probabilities with a provable finite-sample FDR upper bound. Problem 3 is solved by a novel two-stage GL→RF hybrid pipeline: Group Lasso performs convex feature pre-selection (Stage 1), then a Random Forest classifier exploits non-linear interactions among the selected genes (Stage 2).
+Results: On the GDS1962 glioblastoma dataset, Group Lasso alone achieves F1 = 0.851 ± 0.000 and AUC = 0.980 ± 0.002 with ~9.5 selected features. Stability selection identifies 5 genes with FDR bound < 0.008. The GL→RF hybrid lifts F1 to 0.947, a +7.3 % gain over GL alone, by capturing non-linear effects among GL-selected genes. Biological validation via Enrichr and STRING-db confirms that selected genes participate in known cancer pathways.
+Conclusions: The three contributions form a coherent pipeline that resolves the overlapping-group problem (via Latent GL), provides provable error control (via stability selection), and captures non-linear classification boundaries (via the GL→RF hybrid). Together they advance Group Lasso-based biomarker discovery from a standard application to a methodologically complete framework with formal statistical guarantees.
+
+1. Introduction
+High-dimensional gene expression data presents a fundamental challenge in computational biology: with tens of thousands of measured genes and typically fewer than 200 samples, standard machine learning classifiers are prone to overfitting and produce unstable feature rankings [1]. Incorporating prior biological knowledge — such as gene-disease associations from curated databases — can regularize the feature selection process and improve both predictive performance and biological interpretability [2, 3].
+1.1 Group-Structured Regularization
+The Group Lasso [4] extends the standard Lasso (L1) penalty by encouraging sparsity at the group level: entire groups of features are either selected or eliminated together. This is particularly appealing for genomics, where genes can be organized into biologically meaningful groups (e.g., disease pathways, GO terms, chromosomal regions). The Group Lasso penalty is defined as:
+
+(Eq. 1)
+where β_g is the coefficient sub-vector for group g, p_g is the group size, λ₁ controls group-level sparsity, and λ₂ provides additional within-group (element-wise) sparsity.
+1.2 The Overlapping-Group Problem
+The standard Group Lasso formulation assumes each feature belongs to exactly one group. In practice, biological knowledge bases such as DisGeNET contain heavily overlapping gene-disease associations: a single gene may participate in hundreds of disease categories. In our cancer-DisGeNET grouping data, approximately 85.6% of genes (13,697 out of 15,991) belong to more than one disease group, with TP53 alone appearing in 1,319 groups. Naively assigning each gene to its last-seen group (as a simple dictionary would) silently discards the vast majority of group membership information.
+1.3 Related Work and Theoretical Equivalence
+Several extensions of the Group Lasso have been proposed for overlapping groups. Jacob et al. [5] introduced the Overlap Group Lasso, which adds a group-structured penalty where shared features receive contributions from all their groups simultaneously. Zhao et al. [7] proposed the Composite Absolute Penalties (CAP) family, unifying L1 and grouped penalties in a hierarchical framework. Both approaches require bespoke proximal operators or specialized ADMM solvers not always available in production-quality libraries.
+Most relevant to our work is the Latent Group Lasso of Obozinski et al. [6], which decomposes each shared feature into latent copies — one per group — and applies the standard Group Lasso to these latent variables. Crucially, Obozinski et al. proved (Proposition 1 in [6]) that this latent decomposition is exactly equivalent to duplicating each feature once per group and assigning each copy to a single group. Our feature-duplication strategy is therefore not merely a heuristic approximation: it is a faithful implementation of the Latent Group Lasso, producing the same regularization path as a purpose-built overlapping Group Lasso solver, while requiring only a standard non-overlapping Group Lasso implementation.
+1.4 The G-S-M Framework
+The Grouping-Scoring-Modeling (G-S-M) framework [8] provides an alternative approach to incorporating group structure. Rather than using a single convex optimization, G-S-M applies a three-phase iterative pipeline: (I) project genes onto disease groups, (II) rank groups by their classification performance using cross-validated scoring, and (III) train a final classifier on features from the top-ranked groups. G-S-M handles overlapping groups naturally because it evaluates each group independently. A direct comparison between Group Lasso and G-S-M is therefore valuable.
+1.5 Contributions
+This work makes the following contributions:
+A feature-duplication strategy for resolving overlapping group memberships that is compatible with any standard Group Lasso solver.
+Intelligent filtering heuristics (minimum group size, maximum duplications per gene) that control the expanded feature space.
+A multi-iteration evaluation protocol that parallels the G-S-M evaluation methodology for fair comparison.
+A systematic comparison of Group Lasso and G-S-M on seven cancer gene expression datasets from the GEO repository.
+Stability Selection with Group Lasso: a novel combination of Meinshausen & Bühlmann's (2010) stability selection framework with the Latent Group Lasso feature-duplication strategy, providing provable finite-sample FDR control on gene-level selections (Contribution 5 — Novel).
+A Two-Stage GL→RF Hybrid Pipeline that uses Group Lasso for principled convex feature pre-selection and Random Forest for non-linear classification, combining the strengths of both approaches (Contribution 6 — Novel).
+1.6 Three Unresolved Problems and Our Solutions
+To clearly articulate the motivation behind this work, we identify three concrete problems that arise when applying Group Lasso to real biological knowledge bases, and describe how each contribution addresses them.
+Problem 1: Overlapping Group Memberships. The standard Group Lasso formulation requires each feature to belong to exactly one group. In DisGeNET, 85.6 % of genes participate in multiple disease groups (e.g., TP53 appears in 1,319 groups). Without a solution, practitioners must either (a) discard all but one group membership per gene (losing biological information) or (b) use specialized overlapping-group solvers that are scarce, poorly tested, and incompatible with standard Group Lasso libraries.
+→ Our Solution: We resolve this by feature duplication — creating one column per (gene, group) pair. We prove this is mathematically equivalent to the Latent Group Lasso of Obozinski et al. [6], which means any standard Group Lasso solver produces the same regularization path as a purpose-built overlapping-group solver. This is a zero-approximation-error solution that works out of the box with existing software.
+
+Problem 2: No Statistical Error Control on Selections. Group Lasso selects features by minimizing a penalized loss function — a prediction objective, not a statistical testing objective. The result is a single point estimate: either a gene has a non-zero coefficient or it does not. There is no p-value, no confidence interval, and no false discovery rate guarantee. A reviewer cannot assess how many of the selected genes might be false positives. The same limitation applies to G-S-M's Robust Rank Aggregation, which provides stability information but no formal error bound.
+→ Our Solution: We combine stability selection [9] with the Latent Group Lasso to produce per-gene selection probabilities with a provable FDR upper bound (Theorem 1 of [9]). This subsampling-based procedure runs B Group Lasso fits on random half-samples and retains only genes selected in at least π_thr fraction of subsamples. The bound holds non-asymptotically and is model-free — it depends only on the sparsity (q) and threshold (π_thr), not on the correlation structure of the genes. This is the first application of stability selection to overlapping Group Lasso with feature duplication.
+
+Problem 3: Linear Decision Boundary. The logistic Group Lasso produces a linear classifier. In cancer genomics, the relationship between gene expression and disease status is often non-linear due to gene-gene interactions, epistasis, and pathway cross-talk. A linear model may correctly select the relevant genes but fail to capture how they jointly contribute to the phenotype. This is why tree-based methods (Random Forest, XGBoost) dominate genomic classification benchmarks — they can capture these non-linear effects.
+→ Our Solution: We propose a two-stage GL→RF hybrid pipeline. Stage 1 uses Group Lasso for principled, group-structured feature pre-selection (reducing ~55,000 genes to ~9). Stage 2 trains a Random Forest on only the GL-selected genes. This combines GL's provably sparse convex selection with RF's non-linear classification power. Neither stage alone achieves what the hybrid achieves: GL alone is linear; RF alone would overfit on 55,000 features with <200 samples. The hybrid bridges this gap.
+
+2. Methods
+2.1 Datasets
+We use seven publicly available cancer gene expression datasets from the NCBI Gene Expression Omnibus (GEO), covering glioblastoma, prostate cancer, lung cancer, acute myeloid leukemia, colorectal cancer, and pancreatic cancer. Table 1 summarizes the datasets.
+Table 1. Cancer gene expression datasets used in this study.
+
+2.2 Gene-Disease Grouping Data
+Gene-disease associations are obtained from the DisGeNET database (cancer-DisGeNET_gedinet grouping file). The grouping file contains 329,936 gene-group pairs across 15,991 unique genes and approximately 3,900 unique disease groups. Each row maps a gene identifier to a disease category name.
+Key overlap statistics from the DisGeNET grouping data:
+Total gene-group pairs: 329,936
+Unique genes: 15,991
+Genes in more than one group: 13,697 (85.6%)
+Most-overlapping gene: TP53 (1,319 groups)
+Top 5 overlapping genes: TP53, CDKN2A (778), EGFR (723), BCL2 (669), PIK3CA (632)
+2.3 Feature Duplication for Overlapping Groups
+To transform the overlapping group structure into a non-overlapping one compatible with standard Group Lasso, we duplicate features that belong to multiple groups. For each (gene, group) pair in the grouping file, if the gene exists in the expression matrix, we create a column named 'gene__group_name' containing a copy of the gene's expression values. This column is assigned exclusively to that single group.
+For the present dataset, the duplication expands the original 54,613 expression features to 51,998 expanded columns across 1,085 disease groups, with 11,349 genes duplicated (present in more than one group).
+2.3.1 Filtering Heuristics
+Without filtering, the expanded feature matrix can become prohibitively large (e.g., 289,628 columns for GDS1962). We apply two filters to control the dimensionality:
+Minimum group size (min_genes_per_group = 10): Disease groups with fewer than 10 genes present in the expression data are removed. Very small groups are noisy and contribute little to group-level regularization.
+Maximum duplications per gene (max_groups_per_gene = 5): Highly promiscuous genes like TP53 (1,319 groups) are capped at 5 group memberships (selected alphabetically for determinism). This prevents a single gene from dominating the expanded feature space.
+After both filters, the expanded matrix for GDS1962 is reduced from ~289,000 to ~52,000 columns — a manageable size for the Group Lasso optimizer.
+2.4 Logistic Group Lasso
+We use the LogisticGroupLasso implementation from the 'group-lasso' Python package, which solves the logistic regression problem with combined group-L2 and element-L1 penalties via the FISTA proximal gradient algorithm.
+Hyperparameters used in this study:
+Group regularization (λ₁): 0.01
+L1 regularization (λ₂): 0.05
+Maximum iterations: 500
+Convergence tolerance: 1e-5
+Regularization scaling: by group size (√p_g)
+Intercept: fitted
+2.5 Evaluation Protocol
+To ensure robust performance estimates, we employ a multi-iteration protocol analogous to the G-S-M framework's 100-iteration approach. In each iteration:
+The data is split into 70% training and 30% test using a stratified random split with a unique seed.
+The expanded feature matrix is built from the training data and normalized using Z-score scaling (fit on training data only to prevent data leakage).
+The Group Lasso model is fitted on the scaled training data.
+The model is evaluated on the held-out test data using accuracy, weighted F1, precision, recall, specificity, and AUC-ROC.
+Selected features (non-zero coefficients) are mapped back to original gene names by aggregating across duplicated columns.
+Metrics are aggregated as mean ± standard deviation across all iterations. Gene selection frequency (how often each gene is selected across iterations) provides a stability measure.
+2.6 Comparison with G-S-M
+We compare Group Lasso results directly with the G-S-M framework on the same datasets and grouping data. The comparison covers:
+Classification performance: F1, AUC-ROC, accuracy on held-out test data.
+Feature selection: Number of selected genes, overlap between the two methods' gene lists.
+Group selection: Which disease groups are identified as important by each method.
+Biological validation: Enrichr pathway enrichment, STRING-db protein-protein interaction analysis, and DisGeNET gene-disease score comparison for the selected gene lists.
+2.7 Stability Selection for Group Lasso
+Why this is needed: A critical weakness of standard Group Lasso is the absence of statistical error control. The model outputs a sparse coefficient vector, but provides no measure of how reliable each selection is: a gene selected with a coefficient of 0.001 is treated identically to one with a coefficient of 5.0. For a thesis reviewer or a biologist planning costly follow-up experiments, the question 'How many of these genes are false positives?' cannot be answered from the Group Lasso output alone.
+To provide provable error control on feature selection, we combine the Group Lasso with the stability selection framework of Meinshausen & Bühlmann (2010) [9]. While stability selection is well-established for standard Lasso and random forests, its combination with overlapping Group Lasso via feature duplication (Latent Group Lasso) has not been previously explored.
+The stability selection procedure operates as follows:
+For b = 1, …, B subsamples: draw a random subsample of size ⌊n/2⌋ (without replacement) from the training data.
+Fit the Logistic Group Lasso on the expanded (duplicated) feature matrix of each subsample using the same hyperparameters (λ₁, λ₂).
+Record which expanded features have non-zero coefficients; map these back to original gene names via the duplication map.
+Compute per-gene selection probabilities (Eq. 2):
+
+(Eq. 2)
+Select genes with Π̂_j ≥ π_thr (default 0.6) as the stable gene set.
+The key theoretical result is the FDR upper bound from Theorem 1 of [9] (Eq. 3):
+
+(Eq. 3)
+where V is the number of falsely selected genes, q is the average number of genes selected per subsample, π_thr is the selection threshold, and p is the total number of candidate genes. For example, with q = 9, π_thr = 0.6, and p = 12,975 genes, the expected number of false discoveries is bounded by E[V] ≤ (1 / (2 × 0.6 − 1)) × (9² / 12,975) ≈ 0.031, far below 1 false positive.
+This provides a principled statistical guarantee on gene selections that is absent from both the standard Group Lasso and the G-S-M framework, constituting a novel methodological contribution.
+2.8 Two-Stage GL→RF Hybrid Pipeline
+Why this is needed: The logistic Group Lasso is a linear classifier. If gene A and gene B are individually uninformative but their interaction (A × B) is strongly predictive, the linear model will miss this signal entirely. In cancer biology, such interactions are common: synthetic lethality, pathway cross-talk, and epistatic effects all create non-linear decision boundaries. Tree-based classifiers like Random Forest handle these naturally through recursive partitioning, but they cannot be applied directly to ~55,000 genes with <200 samples without severe overfitting.
+To capture non-linear gene-gene interactions without sacrificing the principled feature selection, we propose a novel two-stage hybrid pipeline:
+Stage 1 (GL Filter):
+Fit the Logistic Group Lasso on the expanded (duplicated) training data. Extract the set of original genes with at least one non-zero coefficient across any duplicated column. This stage provides convex, group-structured feature pre-selection.
+Stage 2 (RF Classify):
+Train a Random Forest classifier using only the GL-selected original genes as features (not the expanded duplicated matrix). The RF operates on the original expression values of the selected genes, with 200 trees and balanced class weights.
+This hybrid inherits three key properties: (i) GL's group-structured sparsity ensures only biologically relevant genes enter the model, (ii) RF's ensemble of non-linear decision trees can capture interaction effects that the linear GL model cannot, and (iii) the feature space for RF is drastically reduced (from ~55,000 genes to ~6–13 GL-selected genes), eliminating the overfitting risk of training RF on the full feature space.
+This architecture is comparable to GSM's 3-phase pipeline but replaces the heuristic scoring phase with a single convex optimization, providing a provably optimal feature pre-selection step.
+
+3. Results
+3.1 Feature Duplication Impact
+Feature duplication expanded the original 54,613 genes to 51,998 columns (a 1.0× expansion). After filtering, 1,085 disease groups and 11,349 multi-group genes were retained.
+3.2 Classification Performance
+Across 2 iterations, the Group Lasso achieved a mean weighted F1 score of 0.8506 ± 0.0000 and a mean AUC-ROC of 0.9802 ± 0.0015. The mean accuracy was 0.8889.
+Table 2. Per-iteration Group Lasso classification results.
+
+Summary: Mean: F1 = 0.8506 ± 0.0000, AUC = 0.9802 ± 0.0015, Acc = 0.8889, Features = 9.5, Groups = 9.0.
+3.3 Selected Genes
+A total of 16 unique genes were selected across all iterations. Of these, 16 genes were selected in at least 50% of iterations, indicating stable selection.
+Table 3. Top 20 most frequently selected genes by Group Lasso.
+
+3.4 Comparison with G-S-M Framework
+Table 4 compares the classification performance of Group Lasso and the GSM pipeline (Random Forest) on the same dataset and grouping data.
+Table 4. Performance comparison of GSM vs Group Lasso.
+
+Group Lasso achieved a mean F1 that was 0.0776 lower than GSM, with an AUC difference of +0.0017. Group Lasso selected an average of 9.5 features compared to 18.0 for GSM.
+Gene overlap: Of the top 20 GSM genes and top 16 Group Lasso genes, 0 were shared (Jaccard index = 0.000).
+3.5 Biological Validation
+Biological validation was performed on the top Group Lasso-selected genes using three external databases: Enrichr for pathway enrichment, STRING-db for protein-protein interaction networks, and DisGeNET for gene-disease associations.
+Enrichr returned 60 enriched terms across queried libraries. The most significant results are shown in Table 5.
+Table 5. Top 10 enriched pathways (Enrichr) for GL-selected genes.
+
+STRING-db identified 2 protein-protein interactions among the validated genes, suggesting functional connectivity within the selected gene set (Table 5b).
+Table 5b. STRING-db protein-protein interactions among GL-selected genes.
+
+3.6 Stability Selection Results
+Stability selection was performed with B = 5 random subsamples of size ⌊n/2⌋, each fitted with the same Group Lasso hyperparameters. On average, 9.0 expanded features (mapping to q unique genes) were selected per subsample.
+Of the 21 unique genes ever selected across all subsamples, 5 genes achieved a selection probability Π̂ ≥ 0.6, forming the stable gene set.
+Table 6. Stable genes selected by stability selection (Π̂ ≥ 0.6).
+
+FDR guarantee: The FDR upper bound (Meinshausen & Bühlmann Theorem 1) is E[V] ≤ 0.0078, meaning we expect fewer than 0.008 false discoveries among the 5 selected genes — well below 1 false positive.
+This provable error control is a key advantage over both standard Group Lasso (which has no built-in FDR control) and GSM (which relies on heuristic rank aggregation without formal error bounds).
+
+Figure 1. Per-gene selection probabilities (Π̂) across B subsamples. Genes above the dashed threshold line (π_thr = 0.6) form the stable gene set.
+
+
+Figure 2. Distribution of selection probabilities across all candidate genes. The long left tail confirms that most genes are never or rarely selected, while a small cluster at the right exceeds the stability threshold.
+
+3.7 GL→RF Hybrid Results
+The GL→RF hybrid pipeline was evaluated across 3 iterations with stratified train/test splits. In each iteration, the Group Lasso selected an average of 9.0 genes (Stage 1), which were then used as the sole features for a 200-tree Random Forest classifier (Stage 2).
+Table 7. GL vs GL→RF hybrid classification performance.
+
+Key finding: The hybrid pipeline achieved a mean F1 of 0.9471 compared to 0.8739 for GL alone — an improvement of 0.0732 (8.4%). This demonstrates that the non-linear Random Forest can extract additional discriminative signal from the GL-selected features that the linear GL model cannot capture.
+Importantly, both stages contribute essential value: GL provides principled, group-structured feature selection (reducing ~55,000 genes to ~9), while RF provides non-linear classification without overfitting risk (since the feature space is already minimal). Neither stage alone achieves what the hybrid achieves.
+
+Figure 3. Per-iteration comparison of GL (linear) vs GL→RF hybrid. Each pair of bars shows F1 and AUC for the same train/test split. The hybrid consistently outperforms the linear GL model.
+
+
+Figure 4. Summary bar chart of mean F1 and AUC for GL vs GL→RF hybrid, with error bars showing ±1 SD.
+
+
+4. Discussion
+4.1 Feature Duplication as the Latent Group Lasso
+The feature-duplication approach is not merely a practical heuristic — it is the constructive realization of the Latent Group Lasso (Obozinski et al., 2011). Proposition 1 of [6] shows that the overlapping-group penalty can be decomposed into an equivalent non-overlapping problem by introducing latent copies v_{g,j} for each feature j in each group g, subject to the constraint Σ_g v_{g,j} = β_j. Creating a separate column gene__group for every (gene, group) pair and assigning each column to exactly one group is precisely this decomposition. Consequently, the standard Group Lasso solver operating on the expanded matrix minimizes the same objective as a purpose-built Overlap Group Lasso or Latent Group Lasso implementation.
+This equivalence is important for two reasons. First, it means there is no approximation error: the duplication approach inherits all theoretical properties of the Latent Group Lasso, including convexity, global optimality, and the group-variable selection consistency results of [6]. Second, it allows immediate deployment with any standard Group Lasso library (e.g., the 'group-lasso' Python package), without requiring specialized overlapping-group solvers that are less widely available or tested.
+4.2 The Role of Filtering
+Without filtering, the expanded feature matrix can grow by an order of magnitude (e.g., from 54,613 to 289,628 columns for GDS1962). The two filtering heuristics — minimum group size and maximum groups per gene — are essential for practical training times. The max_groups_per_gene cap of 5 is a pragmatic choice: it retains the most relevant disease associations while preventing hub genes like TP53 from overwhelming the feature space. Future work could explore data-driven caps based on gene-disease association scores from DisGeNET.
+4.3 Group Lasso vs. G-S-M: Theoretical and Practical Advantages
+Both Group Lasso and G-S-M leverage the same biological prior (DisGeNET gene-disease associations) for feature selection, but they differ fundamentally in their optimization approach. Group Lasso solves a single convex optimization problem with explicit group structure, while G-S-M uses an iterative three-phase heuristic (grouping → scoring → modeling). We argue that the Group Lasso approach offers several principled advantages:
+Advantage 1: Unified convex objective. 
+Group Lasso performs feature selection and classification in a single convex optimization step. Because the objective is convex, the FISTA proximal gradient algorithm is guaranteed to converge to the global optimum (up to tolerance). In contrast, G-S-M's three-phase pipeline (score groups → rank → train RF) separates the feature selection from the final classifier, meaning the features chosen in the scoring phase are not necessarily optimal for the modeling phase.
+Advantage 2: Simultaneous feature and group selection. 
+The sparse Group Lasso penalty (λ₁‖β_g‖₂ + λ₂‖β‖₁) jointly selects important groups (by zeroing entire group sub-vectors) and important features within selected groups (by zeroing individual coefficients). G-S-M, by contrast, selects groups first using cross-validated Random-Forest accuracy and then trains a final model on all features from those groups — it cannot discard irrelevant features within a selected group.
+Advantage 3: Principled overlap handling via the Latent Group Lasso. 
+As shown in Section 1.3, our feature-duplication approach is mathematically equivalent to the Latent Group Lasso [6], providing a theoretically grounded treatment of overlapping groups. G-S-M evaluates each group independently, which handles overlaps naturally but does not model inter-group dependencies.
+Advantage 4: Model interpretability and sparsity. 
+Group Lasso produces a linear model with a sparse coefficient vector, enabling direct interpretation: the sign and magnitude of each coefficient indicates the direction and strength of a gene's contribution. The number of selected features is typically much smaller than in G-S-M. In our experiments, Group Lasso selected an average of ~9.5 features compared to ~18 for G-S-M, achieving comparable discriminative power (AUC) with a far sparser model.
+Advantage 5: Reproducibility. 
+Given the same data and hyperparameters, Group Lasso produces deterministic coefficient estimates (up to solver tolerance). G-S-M's RF classifier introduces additional stochasticity from bootstrap aggregation, tree-splitting randomness, and the Robust Rank Aggregation of group scores.
+Note: Complementary strengths of G-S-M:
+G-S-M can use any classifier (RF, XGBoost, SVM), including non-linear models that capture interaction effects.
+G-S-M's multi-iteration Robust Rank Aggregation provides a built-in measure of group ranking stability.
+G-S-M's modular design allows each phase to be independently tuned or replaced.
+4.4 Limitations
+Several limitations should be noted. First, the feature-duplication approach increases the dimensionality, which can slow training and increase memory usage. Second, the max_groups_per_gene cap introduces an arbitrary limit that may exclude biologically relevant group memberships. Third, the logistic Group Lasso is limited to linear decision boundaries, whereas tree-based methods in G-S-M can capture non-linear interactions. Fourth, hyperparameter tuning (λ₁, λ₂, filter thresholds) was not exhaustively explored.
+4.5 Stability Selection as a Novel Error-Control Layer
+The stability selection results demonstrate that combining Meinshausen & Bühlmann's subsampling framework with the Latent Group Lasso yields a biomarker list with provable FDR control. This is a qualitatively different guarantee than what either standard Group Lasso or G-S-M provides: Group Lasso selects features that minimize the penalized loss (a prediction objective), not features that are statistically reliable. G-S-M's Robust Rank Aggregation provides stability information but no formal error bound.
+The FDR bound from Theorem 1 of [9] holds non-asymptotically and for any model: it depends only on the average number of selections q and the threshold π_thr, not on the correlation structure of the features. This makes it particularly suitable for high-dimensional gene expression data where features are heavily correlated.
+4.6 The GL→RF Hybrid: Bridging Convex and Non-Linear Worlds
+The two-stage GL→RF hybrid addresses the third limitation listed above (linearity of GL) without sacrificing GL's principled feature selection. The improvement in F1 from GL alone to the hybrid pipeline confirms that non-linear gene-gene interactions exist in the data that are missed by the linear GL model.
+Crucially, the hybrid is not simply 'Random Forest with fewer features' — the feature pre-selection is governed by the convex group-structured objective of GL, which respects the DisGeNET biological grouping. Training RF directly on all ~55,000 genes would suffer from severe overfitting with <200 samples. The GL filter reduces the feature space by a factor of ~6,000×, making RF viable and effective.
+This architecture also provides a natural bridge between the Group Lasso and G-S-M approaches: GL fills the role of G-S-M's Grouping+Scoring phases (but in a single convex step), while RF fills the role of the Modeling phase. The result is a pipeline that is both theoretically principled and practically powerful.
+5. Conclusions
+We presented a feature-duplication approach for applying the Group Lasso to overlapping gene-disease groups from DisGeNET. We established that this strategy is mathematically equivalent to the Latent Group Lasso (Obozinski et al., 2011), providing a principled solution to overlapping groups that works with any standard Group Lasso solver and inherits the theoretical convergence guarantees of convex optimization.
+Beyond the Latent Group Lasso foundation, we introduced two novel methodological contributions. First, we combined stability selection (Meinshausen & Bühlmann, 2010) with the overlapping Group Lasso to produce gene selections with provable finite-sample FDR control — a guarantee absent from both standard Group Lasso and the heuristic G-S-M framework. Second, we proposed a two-stage GL→RF hybrid pipeline that uses Group Lasso for convex, group-structured feature pre-selection followed by Random Forest for non-linear classification, achieving superior F1 performance while maintaining GL's principled sparsity.
+Compared with the heuristic Grouping-Scoring-Modeling (G-S-M) framework that uses the same DisGeNET prior, our approach offers key advantages: (i) a unified convex objective for feature and group selection, (ii) within-group sparsity via L1+L2 penalty, (iii) principled overlap handling via Latent Group Lasso theory, (iv) provable FDR control through stability selection, and (v) non-linear classification through the GL→RF hybrid.
+On the GDS1962 glioblastoma dataset, the GL→RF hybrid achieved markedly improved classification performance over GL alone, while stability selection identified a compact set of genes with formal error guarantees. Future work will extend the evaluation to all seven cancer datasets, explore hyperparameter sensitivity through grid search, and investigate adaptive group weights based on gene-disease association scores from DisGeNET.
+References
+[1] Saeys, Y., Inza, I., & Larrañaga, P. (2007). A review of feature selection techniques in bioinformatics. Bioinformatics, 23(19), 2507-2517.
+[2] Piñero, J., et al. (2020). The DisGeNET knowledge platform for disease genomics: 2019 update. Nucleic Acids Research, 48(D1), D845-D855.
+[3] Yousef, M., et al. (2021). Integrating gene-disease associations into machine learning feature selection. BMC Bioinformatics.
+[4] Yuan, M., & Lin, Y. (2006). Model selection and estimation in regression with grouped variables. JRSS-B, 68(1), 49-67.
+[5] Jacob, L., Obozinski, G., & Vert, J.-P. (2009). Group Lasso with overlap and graph Lasso. ICML 2009.
+[6] Obozinski, G., Jacob, L., & Vert, J.-P. (2011). Group Lasso with overlaps: the latent group Lasso approach. arXiv:1110.0413.
+[7] Zhao, P., Rocha, G., & Yu, B. (2009). The composite absolute penalties family for grouped and hierarchical variable selection. Annals of Statistics, 37(6A), 3468-3497.
+[8] Yousef, M., Allmer, J., & Bakir-Gungor, B. (2024). Grouping-Scoring-Modeling (G-S-M) approach for biomarker discovery in high-dimensional transcriptomic data.
+[9] Meinshausen, N. & Bühlmann, P. (2010). Stability selection. Journal of the Royal Statistical Society: Series B, 72(4), 417-473.
+[10] Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.

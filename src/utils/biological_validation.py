@@ -530,11 +530,28 @@ def query_string_db(genes: List[str], logger: logging.Logger, species: int = 960
     if enrichment_response is not None and enrichment_response.status_code == 200:
         string_enrichment = enrichment_response.json()
         logger.debug(f"STRING enrichment: {len(string_enrichment)} terms")
+        
+    # Get PPI enrichment stats (p-value, expected edges)
+    try:
+        ppi_response = _request_with_retry(
+            "GET", f"{STRING_API_URL}/json/ppi_enrichment", logger, params=params
+        )
+    except Exception as exc:
+        logger.warning(f"   ⚠️ STRING PPI enrichment query failed after retries: {exc}")
+        ppi_response = None
+        
+    ppi_stats = {}
+    if ppi_response is not None and ppi_response.status_code == 200:
+        ppi_data = ppi_response.json()
+        if len(ppi_data) > 0:
+            ppi_stats = ppi_data[0]
+            logger.debug(f"STRING PPI stats: p-value {ppi_stats.get('p_value')}")
     
     return {
         "interactions": interactions,
         "network_url": network_url,
-        "enrichment": string_enrichment
+        "enrichment": string_enrichment,
+        "ppi_stats": ppi_stats
     }
 
 
@@ -660,6 +677,13 @@ def save_string_results(data: Dict, output_dir: Path, logger: logging.Logger) ->
         with open(enrichment_path, 'w') as f:
             json.dump(data['enrichment'], f, indent=2)
         logger.debug(f"Saved: {enrichment_path.name}")
+        
+    # Save PPI stats
+    if data.get('ppi_stats'):
+        ppi_stats_path = output_dir / "string_ppi_stats.json"
+        with open(ppi_stats_path, 'w') as f:
+            json.dump(data['ppi_stats'], f, indent=2)
+        logger.debug(f"Saved: {ppi_stats_path.name}")
 
 
 def save_disgenet_results(

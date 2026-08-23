@@ -6,11 +6,11 @@ Purpose:
     Supports both direct commands and a guided interactive menu.
 
 Usage:
-    python -m gsm                  # Interactive menu (recommended)
-    python -m gsm train            # Direct training command
-    python -m gsm infer            # Clinical inference
-    python -m gsm bundle-info      # Inspect a model bundle
-    python -m gsm ui               # Launch Streamlit dashboard
+    python run_gsm.py                  # Interactive menu (recommended)
+    python run_gsm.py train            # Direct training command
+    python run_gsm.py infer            # Clinical inference
+    python run_gsm.py bundle-info      # Inspect a model bundle
+    python run_gsm.py ui               # Launch Streamlit dashboard
 
 Key Functions:
     - main(): Entry point — routes to interactive or direct mode
@@ -20,9 +20,9 @@ Key Functions:
     - handle_bundle_info(): Display bundle metadata
 
 Example Usage:
-    python -m gsm
-    python -m gsm train --test --iterations 5
-    python -m gsm infer -b bundle.gsm.zip -p patients.csv
+    python run_gsm.py
+    python run_gsm.py train --test --iterations 5
+    python run_gsm.py infer -b bundle.gsm.zip -p patients.csv
 
 File Map:
     Discovery helpers:
@@ -1905,32 +1905,32 @@ def _show_help(console) -> None:
     t.add_column("Command", style="bold cyan")
     t.add_column("Description")
     t.add_column("Example", style="dim")
-    t.add_row("python -m gsm", "Interactive menu", "")
+    t.add_row("python run_gsm.py", "Interactive menu", "")
     t.add_row(
-        "python -m gsm train", "Train pipeline",
+        "python run_gsm.py train", "Train pipeline",
         "--data GDS2545.csv --iterations 100",
     )
     t.add_row(
-        "python -m gsm infer", "Clinical inference",
+        "python run_gsm.py infer", "Clinical inference",
         "-b bundle.gsm.zip -p patients.csv",
     )
     t.add_row(
-        "python -m gsm bundle-info", "Inspect bundle",
+        "python run_gsm.py bundle-info", "Inspect bundle",
         "-b bundle.gsm.zip",
     )
     t.add_row(
-        "python -m gsm runs", "Browse output runs",
+        "python run_gsm.py runs", "Browse output runs",
         "",
     )
     t.add_row(
-        "python -m gsm jobs", "Monitor background jobs",
+        "python run_gsm.py jobs", "Monitor background jobs",
         "",
     )
     t.add_row(
-        "python -m gsm bio-validate", "Re-run bio validation",
+        "python run_gsm.py bio-validate", "Re-run bio validation",
         "--run output/gsm_2026_...",
     )
-    t.add_row("python -m gsm ui", "Streamlit dashboard", "")
+    t.add_row("python run_gsm.py ui", "Streamlit dashboard", "")
     t.add_row(
         "python scripts/maintenance/run_test.py", "Quick test (legacy)",
         "--iterations 5",
@@ -2193,10 +2193,10 @@ def _execute_train(
             console.print()
             console.print(Panel(
                 f"  To diagnose patients:\n"
-                f"  [bold cyan]python -m gsm infer "
+                f"  [bold cyan]python run_gsm.py infer "
                 f"-b {bundle_files[0]} -p patients.csv[/bold cyan]\n\n"
                 f"  To inspect the bundle:\n"
-                f"  [bold cyan]python -m gsm bundle-info "
+                f"  [bold cyan]python run_gsm.py bundle-info "
                 f"-b {bundle_files[0]}[/bold cyan]",
                 title="[bold]Next Steps[/bold]",
                 border_style="dim",
@@ -2526,16 +2526,16 @@ def _build_parser() -> argparse.ArgumentParser:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Interactive mode (no arguments):\n"
-            "  python -m gsm\n\n"
+            "  python run_gsm.py\n\n"
             "Direct commands:\n"
-            "  python -m gsm train --data data/expression_data/GDS2545.csv "
+            "  python run_gsm.py train --data data/expression_data/GDS2545.csv "
             "--iterations 100\n"
-            "  python -m gsm bio-validate --run output/gsm_2026_...\n"
-            "  python -m gsm infer -b bundle.gsm.zip -p patients.csv\n"
-            "  python -m gsm multi-infer -b b1.gsm.zip b2.gsm.zip "
+            "  python run_gsm.py bio-validate --run output/gsm_2026_...\n"
+            "  python run_gsm.py infer -b bundle.gsm.zip -p patients.csv\n"
+            "  python run_gsm.py multi-infer -b b1.gsm.zip b2.gsm.zip "
             "-p patients.csv\n"
-            "  python -m gsm bundle-info -b bundle.gsm.zip\n"
-            "  python -m gsm ui\n"
+            "  python run_gsm.py bundle-info -b bundle.gsm.zip\n"
+            "  python run_gsm.py ui\n"
         ),
     )
     subparsers = parser.add_subparsers(

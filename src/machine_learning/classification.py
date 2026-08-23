@@ -1,17 +1,4 @@
-"""
-File Purpose:
-This module contains functions for training and predicting with machine learning models.
-
-Key Functions:
-- train_model: Trains a specified machine learning model on the provided data.
-- predict: Generates predictions using the trained model.
-
-Usage Example:
-    from machine_learning.classification import train_model, predict
-
-    model, X_train, y_train, X_test, y_test = train_model('RandomForest', data_x, data_y)
-    predictions = predict(model, X_test)
-"""
+"""Standardized Classification Interface for ML Models."""
 
 from typing import Tuple
 import pandas as pd

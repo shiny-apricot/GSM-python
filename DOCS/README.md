@@ -25,7 +25,7 @@ Think of them like a "lab protocol" for running and contributing to this codebas
 
 | Document | Description |
 |----------|-------------|
-| **[Project Map](../PROJECT_MAP.md)** | Every file, folder, and key function |
+| **[Project Map](../.ai_context/PROJECT_MAP.md)** | Every file, folder, and key function |
 | **[Ranking Methods](methods/RANKING_EXPLANATION.md)** | Understand how aggregated group ranking works |
 | **[Feature Methods](methods/FEATURE_METHODS.md)** | Understand the two methods for feature ranking |
 | **[Dataset Exclusions](methods/DATASET_EXCLUSIONS.md)** | Why GDS3268 and GDS4206 were dropped |

@@ -6,12 +6,12 @@ Purpose:
     It centralizes all the parameters, making it easy to manage and modify the workflow's behavior.
 """
 
-from dataclasses import dataclass
-from typing import Union
+from dataclasses import dataclass, field
+from typing import Union, List
 
 # --- Constants ---
 # Define a constant for the random seed to ensure reproducibility across the script.
-RANDOM_SEED = 42
+RANDOM_SEED = 44
 
 # --- Configuration ---
 
@@ -42,6 +42,14 @@ class GroupLassoConfig:
     # Regularization parameter for feature-level sparsity within groups (lambda2).
     # Higher values lead to more individual features being removed from the selected groups.
     l1_reg: float = 0.05
+    
+    # --- Hyperparameter Search ---
+    # Whether to perform an internal grid search for regularization parameters
+    enable_hyperparam_search: bool = True
+    # Grid of group_reg values to search over
+    group_reg_grid: List[float] = field(default_factory=lambda: [0.005, 0.01, 0.05])
+    # Grid of l1_reg values to search over
+    l1_reg_grid: List[float] = field(default_factory=lambda: [0.01, 0.05, 0.1])
     # The maximum number of iterations to perform.
     n_iter: int = 500
     # The convergence tolerance. The optimization will stop once the norm of the change in coefficients is less than this.

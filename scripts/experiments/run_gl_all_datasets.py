@@ -21,16 +21,16 @@ Example Usage:
 
 import argparse
 import json
+import logging  # <-- Moved to the top so Python knows what it is!
 import sys
 import time
-from dataclasses import asdict
 from pathlib import Path
 from typing import List
 
 import numpy as np
 import pandas as pd
 
-project_root = Path(__file__).resolve().parents[1]
+project_root = Path(__file__).resolve().parents[2]
 if str(project_root) not in sys.path:
     sys.path.append(str(project_root))
 
@@ -67,7 +67,7 @@ DATASET_NAMES = {
 
 def run_all(
     datasets: List[str] = None,
-    n_iterations: int = 10,
+    n_iterations: int = 100,
     run_bio_validation: bool = True,
     base_output: Path = None,
 ) -> dict:
@@ -131,13 +131,11 @@ def run_all(
             summary = {
                 "dataset": ds_id,
                 "name": ds_name,
-                "mean_f1": results.mean_f1,
-                "std_f1": results.std_f1,
-                "mean_auc": results.mean_auc,
-                "std_auc": results.std_auc,
-                "mean_accuracy": results.mean_accuracy,
+                "gl_f1": results.mean_f1,
+                "gl_auc": results.mean_auc,
+                "rf_f1": results.rf_mean_f1,
+                "rf_auc": results.rf_mean_auc,
                 "mean_selected_features": results.mean_selected_features,
-                "mean_selected_groups": results.mean_selected_groups,
                 "time_seconds": elapsed,
             }
             all_results[ds_id] = {"output_dir": str(ds_output), "summary": summary, "error": None}
@@ -196,22 +194,22 @@ def summarize_runs(
     for s in summaries:
         logger.info(
             f"{s['dataset']:<14} {s['name']:<14} "
-            f"{s['mean_f1']:.4f}±{s['std_f1']:.4f}  "
-            f"{s['mean_auc']:.4f}±{s['std_auc']:.4f}  "
-            f"{s['mean_selected_features']:>6.1f}  "
-            f"{s['time_seconds']:>6.0f}s"
+            f"{s.get('gl_f1', 0):.4f}  "
+            f"{s.get('gl_auc', 0):.4f}  "
+            f"{s.get('mean_selected_features', 0):>6.1f}  "
+            f"{s.get('time_seconds', 0):>6.0f}s"
         )
     logger.info("=" * 85)
 
     # Grand average
-    avg_f1 = np.mean([s["mean_f1"] for s in summaries])
-    avg_auc = np.mean([s["mean_auc"] for s in summaries])
+    avg_f1 = np.mean([s.get("gl_f1", 0) for s in summaries])
+    avg_auc = np.mean([s.get("gl_auc", 0) for s in summaries])
     logger.info(f"Grand average: F1={avg_f1:.4f}  AUC={avg_auc:.4f}")
 
 
 ##### FIGURE #####
 
-def _generate_all_datasets_figure(output_dir: Path, logger):
+def _generate_all_datasets_figure(output_dir: Path, logger: logging.Logger):
     """Bar chart of F1 and AUC across datasets."""
     json_path = output_dir / "cross_dataset_summary.json"
     if not json_path.exists():
@@ -259,14 +257,12 @@ def _generate_all_datasets_figure(output_dir: Path, logger):
 
 ##### CLI #####
 
-import logging   # for type hint in summarize_runs
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Group Lasso on all datasets")
     parser.add_argument("--datasets", nargs="+", default=None,
                         help="Dataset IDs (default: all 7)")
-    parser.add_argument("--n-iterations", type=int, default=10,
-                        help="Iterations per dataset (default: 10)")
+    parser.add_argument("--n-iterations", type=int, default=100,
+                        help="Iterations per dataset (default: 100)")
     parser.add_argument("--no-bio-validation", action="store_true",
                         help="Skip biological validation")
     parser.add_argument("--out-dir", type=str, default=None,

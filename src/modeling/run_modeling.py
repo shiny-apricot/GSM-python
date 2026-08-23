@@ -34,7 +34,8 @@ import numpy as np
 import logging
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score,
-                            roc_auc_score)
+                            roc_auc_score, balanced_accuracy_score, matthews_corrcoef,
+                            average_precision_score, confusion_matrix)
 from sklearn.model_selection import StratifiedKFold
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
@@ -106,6 +107,14 @@ class ModelingResult:
     cv_f1_std: float = 0.0
     # Probability predictions (mean probability for positive class)
     mean_positive_probability: float = 0.0
+    # Extended metrics (reviewer I4: class imbalance)
+    balanced_accuracy: float = 0.0
+    mcc: float = 0.0  # Matthews Correlation Coefficient
+    pr_auc: float = 0.0  # Precision-Recall AUC
+    tp: int = 0
+    fp: int = 0
+    tn: int = 0
+    fn: int = 0
     # Feature importance
     feature_importance: Dict[str, float] = field(default_factory=dict)
     training_time: float = 0.0
@@ -391,13 +400,21 @@ def train_and_evaluate_model(
     rec = recall_score(test_y, y_pred, average='binary', zero_division=0)
     f1 = f1_score(test_y, y_pred, average='binary', zero_division=0)
     
+    # Extended metrics (reviewer I4: class imbalance)
+    bal_acc = balanced_accuracy_score(test_y, y_pred)
+    mcc = matthews_corrcoef(test_y, y_pred)
+    cm = confusion_matrix(test_y, y_pred)
+    tn, fp, fn, tp = cm.ravel() if cm.shape == (2, 2) else (0, 0, 0, 0)
+    
     # Calculate AUC-ROC (important for assessing classification quality)
     auc = 0.0
+    pr_auc = 0.0
     if y_proba is not None and len(np.unique(test_y)) > 1:
         try:
             auc = roc_auc_score(test_y, y_proba)
+            pr_auc = average_precision_score(test_y, y_proba)
         except ValueError as e:
-            logger.warning(f"AUC-ROC unavailable: {e}")
+            logger.warning(f"AUC metrics unavailable: {e}")
     
     # Compute 95% confidence intervals via bootstrapping
     test_y_arr = np.array(test_y)
@@ -413,6 +430,10 @@ def train_and_evaluate_model(
         "recall": rec,
         "f1": f1,
         "auc_roc": auc,
+        "balanced_accuracy": bal_acc,
+        "mcc": mcc,
+        "pr_auc": pr_auc,
+        "tp": int(tp), "fp": int(fp), "tn": int(tn), "fn": int(fn),
         "training_time": training_time,
         # Confidence intervals
         "accuracy_ci_lower": acc_ci.lower,
@@ -563,6 +584,13 @@ def run_modeling(
             cv_f1_mean=training_result.metrics.get("cv_f1_mean", 0.0),
             cv_f1_std=training_result.metrics.get("cv_f1_std", 0.0),
             mean_positive_probability=training_result.metrics.get("mean_positive_probability", 0.0),
+            balanced_accuracy=training_result.metrics.get("balanced_accuracy", 0.0),
+            mcc=training_result.metrics.get("mcc", 0.0),
+            pr_auc=training_result.metrics.get("pr_auc", 0.0),
+            tp=training_result.metrics.get("tp", 0),
+            fp=training_result.metrics.get("fp", 0),
+            tn=training_result.metrics.get("tn", 0),
+            fn=training_result.metrics.get("fn", 0),
             training_time=training_result.metrics["training_time"],
             feature_importance=training_result.feature_importance,
             used_features=available_features,

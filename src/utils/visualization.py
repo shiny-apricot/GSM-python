@@ -1,20 +1,4 @@
-"""
-File's primary purpose and role in the pipeline:
-This module provides utility functions for visualizing data distributions and relationships in the context of bioinformatics analysis.
-
-Key functions:
-- plot_histogram: Plots a histogram of the given data.
-- plot_scatter: Creates a scatter plot for two variables.
-- plot_box: Generates a box plot for visualizing data distributions.
-
-Usage examples:
-    plot_histogram(data, bins=30)
-    plot_scatter(x, y)
-    plot_box(data)
-
-Important notes:
-- Ensure that matplotlib is installed in your environment.
-"""
+"""Data Visualization and Plotting Utilities."""
 
 import matplotlib.pyplot as plt
 import seaborn as sns

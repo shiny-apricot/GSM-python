@@ -12,8 +12,8 @@ Purpose:
         4. SVM-RBF       — Support Vector Machine with RBF kernel
 
     Each baseline is evaluated with the same protocol as the GSM pipeline:
-        - 80/20 stratified train/test split
-        - 100 random iterations with different seeds
+        - 70/30 stratified train/test split (MATCHING GSM pipeline)
+        - 100 random iterations with seeds matching GSM (initial_seed=44)
         - Bootstrap 95 % CI on the test-set F1 and AUC
         - Stratified 5-fold CV F1 mean ± SD on training set
 
@@ -40,6 +40,8 @@ from sklearn.model_selection import (
 )
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
+from xgboost import XGBClassifier
+from sklearn.feature_selection import RFE
 
 warnings.filterwarnings("ignore")
 
@@ -81,7 +83,7 @@ N_ITERATIONS = 100          # number of random train/test splits
 N_BOOTSTRAP = 500          # bootstrap resamples for CI
 CV_FOLDS = 5               # stratified CV folds
 TTEST_TOP_K = 100          # genes to keep for RF-ttest baseline
-RANDOM_SEED_BASE = 42
+RANDOM_SEED_BASE = 44      # MUST match GSM pipeline initial_seed
 project_root = Path(__file__).resolve().parents[2]
 DATA_DIR = project_root / "data" / "expression_data"
 
@@ -100,7 +102,12 @@ def load_dataset(dataset_id: str) -> tuple[pd.DataFrame, pd.Series]:
     # Label column is 'class' with values 'pos' / 'neg'
     label_col = "class"
     y_raw = df[label_col]
-    X = df.drop(columns=[label_col])
+    X = df.drop(columns=["class"])
+
+    # Coerce object feature columns to numeric (corrupted string cells become NaN)
+    object_cols = [c for c in X.columns if X[c].dtype == object]
+    for c in object_cols:
+        X[c] = pd.to_numeric(X[c], errors='coerce')
 
     # Keep only numeric columns and fill NaN with 0
     X = X.select_dtypes(include=[np.number]).fillna(0)
@@ -111,7 +118,7 @@ def load_dataset(dataset_id: str) -> tuple[pd.DataFrame, pd.Series]:
     return X, y
 
 
-def bootstrap_ci(y_true, y_pred, y_proba, n_boot=N_BOOTSTRAP, seed=42):
+def bootstrap_ci(y_true, y_pred, y_proba, n_boot=N_BOOTSTRAP, seed=44):
     """Compute bootstrap 95% CI for F1 and AUC-ROC."""
     rng = np.random.RandomState(seed)
     n = len(y_true)
@@ -160,13 +167,13 @@ def run_single_split(
 ) -> dict:
     """Run one train/test split for a given method. Returns metric dict."""
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, stratify=y, random_state=seed
+        X, y, test_size=0.3, stratify=y, random_state=seed
     )
 
     # Feature selection for ttest-based baselines
     # LASSO and SVM also use pre-filtered features (standard practice:
     # these methods are not designed for raw 50K+ features)
-    if method in ("RF-ttest-100", "LASSO", "SVM-RBF"):
+    if method in ("RF-ttest-100", "LASSO", "SVM-RBF", "ElasticNet", "XGB-ttest-100", "SVM-RFE"):
         top_genes = select_top_ttest_genes(X_train, y_train, TTEST_TOP_K)
         top_genes = [g for g in top_genes if g in X_train.columns]
         if not top_genes:
@@ -176,14 +183,12 @@ def run_single_split(
 
     n_features = X_train.shape[1]
 
-    # Scale data for LASSO and SVM
-    if method in ("LASSO", "SVM-RBF"):
-        scaler = StandardScaler()
-        X_train_arr = scaler.fit_transform(X_train)
-        X_test_arr = scaler.transform(X_test)
-    else:
-        X_train_arr = X_train.values
-        X_test_arr = X_test.values
+    # Scale ALL baselines: fit on train only, transform both (C1 leakage fix).
+    # This ensures fair comparison with the GSM pipeline and is standard
+    # practice for numerical features.
+    scaler = StandardScaler()
+    X_train_arr = scaler.fit_transform(X_train)
+    X_test_arr = scaler.transform(X_test)
 
     y_train_arr = y_train.values
     y_test_arr = y_test.values
@@ -206,6 +211,20 @@ def run_single_split(
         model = SVC(
             kernel="rbf", probability=True, random_state=seed, C=1.0
         )
+    elif method == "ElasticNet":
+        model = LogisticRegression(
+            penalty="elasticnet", solver="saga", max_iter=5000,
+            C=1.0, l1_ratio=0.5, random_state=seed, n_jobs=-1
+        )
+    elif method == "XGB-ttest-100":
+        model = XGBClassifier(
+            n_estimators=100, max_depth=6, learning_rate=0.1,
+            use_label_encoder=False, eval_metric="logloss",
+            verbosity=0, random_state=seed, n_jobs=-1
+        )
+    elif method == "SVM-RFE":
+        base_svm = SVC(kernel="linear", probability=True, random_state=seed)
+        model = RFE(base_svm, n_features_to_select=20, step=0.2)
     else:
         raise ValueError(f"Unknown method: {method}")
 
@@ -316,7 +335,7 @@ def main():
     print("  GSM Baseline Comparison Runner")
     print("=" * 70)
 
-    methods = ["RF-All", "RF-ttest-100", "LASSO", "SVM-RBF"]
+    methods = ["RF-All", "RF-ttest-100", "LASSO", "SVM-RBF", "ElasticNet", "XGB-ttest-100", "SVM-RFE"]
     results: list[BaselineResult] = []
 
     for dataset_id, disease in DATASETS.items():

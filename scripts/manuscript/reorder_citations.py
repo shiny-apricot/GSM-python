@@ -1,3 +1,4 @@
+"""Reorders citation numbers sequentially in the manuscript."""
 import re
 
 def process():

@@ -77,7 +77,7 @@ GEO Expression Data + DisGeNET Gene-Disease Knowledge
 | [GitHub Workflow](DOCS/developer/GITHUB_WORKFLOW.md) | Branching, PRs, and safe collaboration |
 | [Troubleshooting](DOCS/TROUBLESHOOTING.md) | Common errors and fixes |
 | [GitHub Copilot Guide](DOCS/developer/COPILOT.md) | AI-assisted coding setup |
-| [Project Map](PROJECT_MAP.md) | Complete file/folder/function reference |
+| [Project Map](.ai_context/PROJECT_MAP.md) | Complete file/folder/function reference |
 | [Feature Ranking Methods](DOCS/methods/FEATURE_METHODS.md) | Explains the two methods for feature ranking |
 | [Aggregated Ranking](DOCS/methods/RANKING_EXPLANATION.md) | Explains robust rank aggregation (RRA) |
 | [Dataset Exclusions](DOCS/methods/DATASET_EXCLUSIONS.md) | Why GDS3268 and GDS4206 were dropped |
@@ -100,7 +100,7 @@ contributes independently; the consensus is weighted by training F1.
 
 ```bash
 # Launch the interactive guided menu — no arguments needed
-python -m gsm
+python run_gsm.py
 ```
 
 The interactive mode walks you through dataset selection, classifier choice,
@@ -112,19 +112,19 @@ iteration count, and more — with numbered menus and color-coded output.
 
 ```bash
 # 1. Train and produce a model bundle
-python -m gsm train --data data/expression_data/GDS2545.csv \
+python run_gsm.py train --data data/expression_data/GDS2545.csv \
                      --groups data/grouping_data/cancer-DisGeNET_gedinet.txt
 
 # 2. Inspect the bundle
-python -m gsm bundle-info --bundle output/.../bundles/bundle_GDS2545_*.gsm.zip
+python run_gsm.py bundle-info --bundle output/.../bundles/bundle_GDS2545_*.gsm.zip
 
 # 3. Run inference on new patient samples
-python -m gsm infer --bundle output/.../bundles/bundle_GDS2545_*.gsm.zip \
+python run_gsm.py infer --bundle output/.../bundles/bundle_GDS2545_*.gsm.zip \
                      --patients new_patients.csv \
                      --output results/
 
 # 4. Multi-bundle inference (combine multiple datasets)
-python -m gsm multi-infer \
+python run_gsm.py multi-infer \
     -b output/.../bundle_GDS2545_*.gsm.zip \
        output/.../bundle_GDS3257_*.gsm.zip \
     -p new_patients.csv
@@ -186,7 +186,7 @@ patient_002,4.87,2.99,6.54,3.01,...
 
 GSM ships with **two front-ends** that share the same engine:
 
-| Feature | CLI (`python -m gsm`) | Streamlit (`streamlit run src/ui/app.py`) |
+| Feature | CLI (`python run_gsm.py`) | Streamlit (`streamlit run src/ui/app.py`) |
 |---------|----------------------|------------------------------------------|
 | **Best for** | Power users, automation, SSH servers | Visual exploration, demos, non-coders |
 | **Training** | Foreground or background jobs | Single-click with live log streaming |
@@ -247,10 +247,10 @@ pip install -r dependencies.txt
 
 ```bash
 # Quick test — verify everything works (~1-2 min)
-python -m gsm train --test
+python run_gsm.py train --test
 
 # Full single-dataset run (edit config first)
-python -m gsm train
+python run_gsm.py train
 
 # Batch run on all 7 datasets (100 iterations each)
 python scripts/experiments/run_all_datasets.py --iterations 100
@@ -259,13 +259,13 @@ python scripts/experiments/run_all_datasets.py --iterations 100
 streamlit run src/ui/app.py
 
 # Interactive CLI (guided menu — recommended for first use)
-python -m gsm
+python run_gsm.py
 
 # Direct CLI commands
-python -m gsm train --test --iterations 3
-python -m gsm infer --bundle output/.../bundle.gsm.zip --patients data.csv
-python -m gsm bundle-info --bundle output/.../bundle.gsm.zip
-python -m gsm ui                    # Launch Streamlit dashboard
+python run_gsm.py train --test --iterations 3
+python run_gsm.py infer --bundle output/.../bundle.gsm.zip --patients data.csv
+python run_gsm.py bundle-info --bundle output/.../bundle.gsm.zip
+python run_gsm.py ui                    # Launch Streamlit dashboard
 ```
 
 For detailed setup, see the [Installation Guide](DOCS/INSTALLATION.md).
@@ -276,9 +276,9 @@ For detailed setup, see the [Installation Guide](DOCS/INSTALLATION.md).
 
 ### Quick Test
 ```bash
-python -m gsm train --test            # Sample data, 3 iterations (~1 min)
-python -m gsm train --test -n 5       # Custom iteration count
-python -m gsm train                   # Real data (interactive)
+python run_gsm.py train --test            # Sample data, 3 iterations (~1 min)
+python run_gsm.py train --test -n 5       # Custom iteration count
+python run_gsm.py train                   # Real data (interactive)
 ```
 
 ### Single Dataset
@@ -307,7 +307,7 @@ python scripts/experiments/run_all_datasets.py --iterations 100
 ### Clinical Inference (after training)
 ```bash
 # Via CLI
-python -m gsm infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
+python run_gsm.py infer --bundle output/.../bundles/bundle_GDS2545.gsm.zip \
                      --patients new_patients.csv --output inference_results/
 
 # Via Streamlit
@@ -352,12 +352,12 @@ GSM-to-python/
 ├── tests/                      # 44 unit tests (pytest)
 ├── output/                     # Pipeline results + model bundles (gitignored)
 ├── DOCS/                       # User & developer documentation
-├── gsm/                        # Package entry point (python -m gsm)
+├── gsm/                        # Package entry point (python run_gsm.py)
 ├── dependencies.txt            # pip requirements
-└── PROJECT_MAP.md              # Complete file/function reference
+└── .ai_context/PROJECT_MAP.md    # Complete file/function reference
 ```
 
-See [PROJECT_MAP.md](PROJECT_MAP.md) for the full function-level reference.
+See [PROJECT_MAP.md](.ai_context/PROJECT_MAP.md) for the full function-level reference.
 
 ---
 
