@@ -27,6 +27,7 @@ It combines a high-level directory tree with a detailed Abstract Syntax Tree (AS
 │   ├── methods/
 │   │   ├── DATASET_EXCLUSIONS.md
 │   │   ├── FEATURE_METHODS.md
+│   │   ├── GL_IMPROVEMENTS.md
 │   │   ├── RANKING_EXPLANATION.md
 ├── scripts/ (Experiment runners and maintenance scripts)
 │   ├── extract_kegg_pvalues.py (Extracts KEGG enrichment p-values for biological validation.)
@@ -39,6 +40,7 @@ It combines a high-level directory tree with a detailed Abstract Syntax Tree (AS
 │   │   ├── compute_sensitivity_impact.py (Compute parameter impact from sensitivity analysis results.)
 │   │   ├── cross_dataset_transfer.py (Cross-Dataset Transfer Evaluation)
 │   │   ├── extend_classifier_comparison.py (Extended Classifier Comparison - Biological Validation)
+│   │   ├── extract_hybrid_results.py (No module docstring provided)
 │   │   ├── feature_space_overlap.py (Feature-space overlap analysis across expression datasets.)
 │   │   ├── generate_gene_lists.py (Generates formatted gene lists for biological validation.)
 │   │   ├── generate_tables.py (Generates LaTeX/Markdown tables for experiment results.)
@@ -51,6 +53,7 @@ It combines a high-level directory tree with a detailed Abstract Syntax Tree (AS
 │   │   ├── run_baselines.py (Baseline Comparisons for GSM Manuscript)
 │   │   ├── run_gl_all_datasets.py (Run Group Lasso on All Datasets 🧬)
 │   │   ├── run_grouping_comparison.py (Grouping Source Comparison Experiment)
+│   │   ├── run_hybrid_all_datasets.py (Run GL->RF Hybrid Workflow on all 7 datasets.)
 │   │   ├── run_prostate_transfer_experiment.py (Run a prostate-focused transfer experiment using selected bundles and test datasets.)
 │   │   ├── run_publication_experiments.py (Publication Experiment Suite — Master Orchestrator)
 │   │   ├── run_sensitivity_analysis.py (Sensitivity Analysis for GSM Pipeline Parameters 📊)
@@ -146,7 +149,7 @@ It combines a high-level directory tree with a detailed Abstract Syntax Tree (AS
 │   │   ├── __init__.py (🔄 Workflows Package)
 │   │   ├── classification_workflow.py (🤖 Classification_Workflow.py - Machine Learning Classification Pipeline)
 │   │   ├── classification_workflow_config.py (🔧 Classification Workflow Configuration)
-│   │   ├── gl_rf_hybrid.py (Two-Stage GL→RF Hybrid Pipeline 🧬🌲)
+│   │   ├── gl_rf_hybrid.py (Two-Stage GL→RF Hybrid Pipeline v2.0 🧬🌲)
 │   │   ├── group_lasso_workflow.py (Group Lasso & RF Hybrid Workflow 🧬🌲)
 │   │   ├── group_lasso_workflow_config.py (Group Lasso Workflow Configuration 🧬)
 │   │   ├── stability_selection_gl.py (Stability Selection for Group Lasso 🧬🔒)
@@ -301,6 +304,9 @@ def load_expression_data()
 def load_grouping_data()
 def run_single_experiment()
 def load_biological_metrics()
+def main()
+
+### scripts/experiments/run_hybrid_all_datasets.py
 def main()
 
 ### scripts/experiments/run_prostate_transfer_experiment.py
@@ -975,9 +981,13 @@ class ComprehensiveConfig:
 class ProductionConfig:
 
 ### src/workflows/gl_rf_hybrid.py
+class ParetoPoint:
 class HybridIterationResult:
 class HybridResults:
-def _gl_feature_selection()
+def _apply_ttest_prefilter()
+def _optuna_find_pareto_hps()
+def _select_pareto_configs()
+def _run_stability_selection()
 def _rf_classification()
 def run_hybrid_iteration()
 def gl_rf_hybrid_workflow()

@@ -366,7 +366,24 @@ def extract_top_genes(results_path: Path, logger: logging.Logger, top_n: int = 2
     with open(results_path, 'r') as f:
         all_results = json.load(f)
     
-    # Aggregate feature importance across all iterations
+    # Check if it's a Group Lasso Hybrid results file
+    if isinstance(all_results, dict) and 'optuna_hps' in all_results:
+        logger.debug("Detected GL v2.0 Hybrid results JSON structure")
+        gene_counts = {}
+        for it in all_results.get('iterations', []):
+            for point in it.get('pareto_points', []):
+                for gene in point.get('selected_genes', []):
+                    # Clean gene name just in case
+                    clean_gene = gene.split('(')[0] if '(' in gene else gene
+                    gene_counts[clean_gene] = gene_counts.get(clean_gene, 0) + 1
+        
+        # Sort by frequency of selection across all Pareto points and iterations
+        sorted_genes = sorted(gene_counts.items(), key=lambda x: x[1], reverse=True)
+        top_genes = [gene for gene, _ in sorted_genes[:top_n]]
+        logger.debug(f"Extracted {len(top_genes)} top genes by pooling Pareto points")
+        return top_genes
+
+    # Aggregate feature importance across all iterations for GSM format
     gene_scores = {}
     
     for iteration_data in all_results:

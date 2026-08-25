@@ -14,6 +14,13 @@ Do not infer or invent data. If a requested metric is missing, halt and instruct
 Phase 2: Drafting
 Structure the document using standard academic formatting: Abstract, Introduction, Methodology, Results, Discussion, and Conclusion.
 
+When targeting `.tex` files (common in this repository for presentations and papers):
+- Write and inject valid LaTeX code directly without breaking compilation.
+- Ensure all figures use `\includegraphics{}` and tables use the appropriate LaTeX table environment.
+
+When writing Markdown artifacts or drafts:
+- Always embed generated plots and figures directly into the text using absolute paths (e.g., `![caption](/absolute/path/to/plot.png)`).
+
 All factual claims must be immediately followed by a placeholder for a citation or a direct reference to the generated data.
 
 Maintain an objective, formal academic tone. Do not use conversational filler.
